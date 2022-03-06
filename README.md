@@ -2,6 +2,10 @@
 
 Game World Design project
 
+---
+
+To clone the repository: git clone --recurse-submodules https://github.com/Jazzpah01/GWDNotAGameStudio.git
+
 ----
 
 Features:

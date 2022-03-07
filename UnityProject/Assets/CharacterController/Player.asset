@@ -14,7 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ColliderFlags:
   - {fileID: 11400000, guid: 2d25a9dabdd1f9c4d8c96cc498d484da, type: 2}
-  - {fileID: 11400000, guid: 8b82a557d350d0b449c6bdb29b3a4b29, type: 2}
   PlatformFlags: []
   speed: 9
   walkAcceleration: 50

@@ -4,15 +4,21 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using USceneManager = UnityEngine.SceneManagement.SceneManager;
 
-public class SceneManager : MonoBehaviour
+public class LevelManager : MonoBehaviour
 {
-    public Vector3 spawnPoint;
+    public Transform spawnPoint;
+    public Stretchable assetArea;
+
+    [Header("References")]
+    public GameObject playerPrefab;
 
     private void Start()
     {
         // Use scene information to populate stuff
 
         // Spawn player
+        GameObject player = Instantiate(playerPrefab);
+        player.transform.position = spawnPoint.position;
     }
 
     public void ChangeScene()

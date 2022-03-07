@@ -6,6 +6,7 @@ using UnityEngine;
 public class TerrainObject
 {
     public GameObject prefab;
-    public Vector2 position;
-    public Quaternion rotation = Quaternion.identity;
+    public Vector2 offset = Vector2.zero;
+    [Range(0.001f, 1)]
+    public float weight = 1;
 }

@@ -4,7 +4,7 @@ using UnityEngine;
 
 public static class GlyphManager
 {
-    public static Time time;
+    public static TimeGlyph time;
     public static Landscape landscape;
     public static Biome biome;
 }

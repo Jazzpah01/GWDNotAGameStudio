@@ -5,5 +5,5 @@ using UnityEngine;
 [CreateAssetMenu(menuName ="Assets/Glyph/Biome")]
 public class Biome : Glyph
 {
-    List<TerrainObject> foreGround;
+    public List<TerrainObject> foreGround;
 }

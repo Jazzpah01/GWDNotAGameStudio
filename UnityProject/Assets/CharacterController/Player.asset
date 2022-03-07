@@ -9,18 +9,18 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1f2c85324fd19a648adfd6fd3b4a9929, type: 3}
+  m_Script: {fileID: 11500000, guid: f66a4c0f14073f04b98517478e36fc18, type: 3}
   m_Name: Player
   m_EditorClassIdentifier: 
   ColliderFlags:
   - {fileID: 11400000, guid: 2d25a9dabdd1f9c4d8c96cc498d484da, type: 2}
   PlatformFlags: []
   speed: 9
-  walkAcceleration: 55
-  airAcceleration: 20
+  walkAcceleration: 75
+  airAcceleration: 30
   groundDeceleration: 70
-  jumpHeight: 2
-  gravityAcceleration: -30
+  jumpHeight: 4
+  gravityAcceleration: -9.81
   initialGravityAcceleration: 0
   GMDescend: 1
   GMFall: 1

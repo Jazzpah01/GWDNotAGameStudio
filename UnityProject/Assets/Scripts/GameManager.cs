@@ -26,19 +26,17 @@ public class GameManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+
         isUIopen = false;
+
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (isUIopen)
-        {
-            canvasUI.gameObject.SetActive(true);
-        } else
-        {
-            canvasUI.gameObject.SetActive(false);
-        }
+        
+        canvasUI.gameObject.SetActive(isUIopen);
+        
     }
 
 

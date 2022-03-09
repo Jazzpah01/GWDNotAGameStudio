@@ -9,13 +9,13 @@ using System.Linq;
 public class LevelManager : MonoBehaviour
 {
     public Transform spawnPoint;
-    public Region assetArea;
     public float spawnRate = 1;
 
     public static LevelManager instance;
 
     [Header("References")]
     public GameObject playerPrefab;
+    public Transform background;
 
     private void Awake()
     {
@@ -26,18 +26,37 @@ public class LevelManager : MonoBehaviour
     {
         DOTween.Init();
 
-        Biome biome = GlyphManager.biome;
+        PopulateScene();
+    }
 
-        int toSpawn = Mathf.FloorToInt(spawnRate * assetArea.Range.x * biome.spawnrate);
+    public void PopulateScene()
+    {
+        SpawnRegion[] backgroundRegions = background.GetComponentsInChildren<SpawnRegion>();
 
-        // Use scene information to populate stuff
-        for (int i = 0; i < toSpawn; i++)
+        foreach (SpawnRegion assetArea in backgroundRegions)
         {
-            float x = Random.value * assetArea.Range.x + assetArea.PositionMin.x;
-            float y = assetArea.PositionMin.y;
-            int index = GetWeightedIndex(GlyphManager.biome.foreGround.Cast<IWeighted>().ToList());
-            GameObject newGO = Instantiate(GlyphManager.biome.foreGround[index].prefab);
-            newGO.transform.position = new Vector3(x, y, 0.1f);
+            Biome biome = GlyphManager.biome;
+
+            int toSpawn = Mathf.FloorToInt(spawnRate * assetArea.Range.x * biome.spawnrate);
+
+            // Use scene information to populate stuff
+            for (int i = 0; i < toSpawn; i++)
+            {
+                float x = Random.value * assetArea.Range.x + assetArea.PositionMin.x;
+                float y = assetArea.PositionMin.y;
+                float z = 10;
+
+                if (assetArea.Range.y > 0)
+                {
+                    float h = Random.value * assetArea.Range.y;
+                    y += h;
+                    z += h;
+                }
+
+                int index = GetWeightedIndex(GlyphManager.biome.foreGround.Cast<IWeighted>().ToList());
+                GameObject newGO = Instantiate(GlyphManager.biome.foreGround[index].prefab);
+                newGO.transform.position = new Vector3(x, y, z);
+            }
         }
 
         // Spawn player

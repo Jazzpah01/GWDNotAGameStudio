@@ -42,6 +42,9 @@ public class LevelManager : MonoBehaviour
 
         foreach (SpawnRegion assetArea in backgroundRegions)
         {
+            if (GlyphManager.biome.foreGround.Count == 0)
+                break;
+
             GlyphBiome biome = GlyphManager.biome;
 
             int toSpawn = Mathf.FloorToInt(spawnRate * assetArea.Range.x * biome.spawnrate);

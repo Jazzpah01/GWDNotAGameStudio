@@ -9,8 +9,12 @@ public class InitialLevel : MonoBehaviour
     public GlyphBiome biomeGlyph;
     public GlyphLandscape landscapeGlyph;
 
-    private void Awake()
+    public List<Glyph> playerGlyphs;
+
+    void Start()
     {
+        GameManager.instance.playerGlyphs = playerGlyphs;
+
         GlyphManager.time = timeGlyph;
         GlyphManager.biome = biomeGlyph;
         GlyphManager.landscape = landscapeGlyph;

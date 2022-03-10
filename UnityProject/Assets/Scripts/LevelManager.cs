@@ -13,6 +13,10 @@ public class LevelManager : MonoBehaviour
 
     public static LevelManager instance;
 
+    public static bool init = false;
+
+    public bool populateThis = true;
+
     [Header("References")]
     public GameObject playerPrefab;
     public Transform background;
@@ -24,6 +28,9 @@ public class LevelManager : MonoBehaviour
 
     private void Start()
     {
+        if (!populateThis)
+            return;
+
         DOTween.Init();
 
         PopulateScene();
@@ -66,6 +73,7 @@ public class LevelManager : MonoBehaviour
 
     public void ChangeScene()
     {
+        init = true;
         USceneManager.LoadScene(GlyphManager.landscape.sceneName);
     }
 

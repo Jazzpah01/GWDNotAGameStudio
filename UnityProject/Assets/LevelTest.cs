@@ -4,9 +4,9 @@ using UnityEngine;
 
 public class LevelTest : MonoBehaviour
 {
-    public Biome biome;
-    public TimeGlyph time;
-    public Landscape landscape;
+    public GlyphBiome biome;
+    public GlyphTime time;
+    public GlyphLandscape landscape;
 
     private static bool init = false;
 

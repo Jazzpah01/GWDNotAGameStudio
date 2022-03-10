@@ -5,9 +5,9 @@ using UnityEngine.SceneManagement;
 
 public class InitialLevel : MonoBehaviour
 {
-    public TimeGlyph timeGlyph;
-    public Biome biomeGlyph;
-    public Landscape landscapeGlyph;
+    public GlyphTime timeGlyph;
+    public GlyphBiome biomeGlyph;
+    public GlyphLandscape landscapeGlyph;
 
     private void Awake()
     {

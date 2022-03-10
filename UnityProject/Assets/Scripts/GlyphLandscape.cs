@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 
 [CreateAssetMenu(menuName ="Assets/Glyph/Landscape")]
-public class Landscape : Glyph
+public class GlyphLandscape : Glyph
 {
     public string sceneName;
 }

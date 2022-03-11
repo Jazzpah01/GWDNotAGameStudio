@@ -24,6 +24,13 @@ public class LevelManager : MonoBehaviour
     [Header("Debug")]
     public SpawnRegion[] backgroundRegions;
 
+    // cloud stuff
+    public GameObject cloud_prefab;
+    private float cloud_timer;
+    public float cloud_interval;
+    public int cloud_capacity;
+    public int clouds_active;
+
     private void Awake()
     {
         instance = this;
@@ -34,9 +41,26 @@ public class LevelManager : MonoBehaviour
         if (!populateThis)
             return;
 
-        DOTween.Init();
+        DOTween.Init(); // empty param = default settings
 
         PopulateScene();
+
+        cloud_timer = 0f;
+    }
+
+    private void Update()
+    {
+        // cloud spawning
+        cloud_timer += Time.deltaTime;
+        if (cloud_timer > cloud_interval && clouds_active <= cloud_capacity)
+        {
+            Transform spawnPos = GameManager.instance.player.transform;
+            spawnPos.position.Set(spawnPos.position.x - 10f, spawnPos.position.y + 5f, 0f); // TODO: replace magic numbers with camera dimensions
+            Instantiate(cloud_prefab, spawnPos);
+            clouds_active++;
+            cloud_timer = 0f;
+            Debug.Log("Cloud Spawned! - Number of active clouds = " + clouds_active);
+        }
     }
 
     public void PopulateScene()

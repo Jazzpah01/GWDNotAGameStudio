@@ -69,6 +69,7 @@ public class LevelManager : MonoBehaviour
         backgroundRegions = background.GetComponentsInChildren<SpawnRegion>();
 
         GlyphBiome biome = GlyphManager.biome;
+        int biomeIndex = 0;
 
         foreach (SpawnRegion assetArea in backgroundRegions)
         {
@@ -76,7 +77,10 @@ public class LevelManager : MonoBehaviour
             if (biome.foreGround.Count == 0)
                 break;
             Debug.Log("During region!");
-            
+            biomeIndex++;
+            float factor = 1;
+            if (assetArea.beforePlayarea)
+                factor = -1;
 
             int toSpawn = Mathf.FloorToInt(spawnRate * assetArea.Range.x * biome.spawnrate);
 
@@ -86,7 +90,7 @@ public class LevelManager : MonoBehaviour
                 Debug.Log("Spawning!");
                 float x = Random.value * assetArea.Range.x + assetArea.PositionMin.x;
                 float y = assetArea.PositionMin.y;
-                float z = 10;
+                float z = factor * biomeIndex;
 
                 float r = 0;
                 if (assetArea.Range.y > 0)
@@ -94,7 +98,7 @@ public class LevelManager : MonoBehaviour
                     r = Random.value;
                     float h = r * assetArea.Range.y;
                     y += h;
-                    z += r;
+                    z += r * factor;
                 }
 
                 int index = GetWeightedIndex(GlyphManager.biome.foreGround.Cast<IWeighted>().ToList());

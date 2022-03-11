@@ -7,8 +7,8 @@ public class Region : MonoBehaviour
     private void Update()
     {
         // Set in update to allow for Start in other scripts
-        //if (!Debugger.Debug)
-        //    this.gameObject.SetActive(false);
+        if (!Debugger.Debug)
+            this.gameObject.SetActive(false);
     }
 
     public enum Axis
@@ -55,7 +55,7 @@ public class Region : MonoBehaviour
         {
             if (positionAxis == Axis.y)
             {
-                return transform.localScale;
+                return new Vector2(Mathf.Abs(transform.localScale.x), Mathf.Abs(transform.localScale.y));
             }
             else
             {

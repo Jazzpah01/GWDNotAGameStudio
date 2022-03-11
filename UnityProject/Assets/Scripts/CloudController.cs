@@ -10,11 +10,13 @@ public class CloudController : MonoBehaviour
     public float distance;
     public float duration;
 
+    public AnimationCurve aCurve;
+
     // Start is called before the first frame update
     void Start()
     {
         DOTween.Init(); // add settings as param if needed - empty is default
-        transform.DOMoveX(transform.position.x + distance, duration).OnComplete(EndCloud);
+        transform.DOMoveX(transform.position.x + distance, duration).OnComplete(EndCloud).SetEase(aCurve);
     }
 
     // Update is called once per frame

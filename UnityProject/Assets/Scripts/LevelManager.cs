@@ -54,12 +54,15 @@ public class LevelManager : MonoBehaviour
         cloud_timer += Time.deltaTime;
         if (cloud_timer > cloud_interval && clouds_active <= cloud_capacity)
         {
-            Transform spawnPos = GameManager.instance.player.transform;
-            spawnPos.position.Set(spawnPos.position.x - 10f, spawnPos.position.y + 5f, 0f); // TODO: replace magic numbers with camera dimensions
-            Instantiate(cloud_prefab, spawnPos);
+            Vector3 playerPos = GameManager.instance.player.transform.position;
+            //Transform spawnPos = playerPos.
+            //spawnPos.position.Set(spawnPos.position.x - 10f, spawnPos.position.y + 5f, 0f); // TODO: replace magic numbers with camera dimensions
+            Vector3 spawnPos = new Vector3(playerPos.x - 10f, playerPos.y + 5f, 0f);
+            GameObject cloud = Instantiate(cloud_prefab);
+            cloud.transform.position = spawnPos;
             clouds_active++;
             cloud_timer = 0f;
-            Debug.Log("Cloud Spawned! - Number of active clouds = " + clouds_active);
+            Debug.Log("Cloud Spawned! (pos: " + spawnPos + " ) - Number of active clouds = " + clouds_active);
         }
     }
 
@@ -111,6 +114,7 @@ public class LevelManager : MonoBehaviour
 
         // Spawn player
         GameObject player = Instantiate(playerPrefab);
+        GameManager.instance.player = player;
         player.transform.position = spawnPoint.position;
     }
 

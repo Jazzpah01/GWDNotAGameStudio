@@ -17,3 +17,6 @@ MonoBehaviour:
   - prefab: {fileID: 3625725771489325887, guid: 89de61074016ed240bf2f321230a10b0, type: 3}
     offset: {x: 0, y: 0}
     weight: 1
+  - prefab: {fileID: 3178933327912566159, guid: cfd889d41bf3048499bd3d5883fba6df, type: 3}
+    offset: {x: 0, y: 0}
+    weight: 1

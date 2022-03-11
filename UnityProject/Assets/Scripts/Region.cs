@@ -55,7 +55,7 @@ public class Region : MonoBehaviour
         {
             if (positionAxis == Axis.y)
             {
-                return transform.localScale;
+                return new Vector2(Mathf.Abs(transform.localScale.x), Mathf.Abs(transform.localScale.y));
             }
             else
             {

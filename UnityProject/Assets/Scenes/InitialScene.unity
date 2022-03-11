@@ -537,9 +537,9 @@ MonoBehaviour:
   biomeGlyph: {fileID: 11400000, guid: 0301f76479b63394a89d420f7fc684ac, type: 2}
   landscapeGlyph: {fileID: 11400000, guid: caa56952924210c419bb3e0146bf0640, type: 2}
   playerGlyphs:
-  - {fileID: 11400000, guid: 0301f76479b63394a89d420f7fc684ac, type: 2}
   - {fileID: 11400000, guid: caa56952924210c419bb3e0146bf0640, type: 2}
   - {fileID: 11400000, guid: 4f07cc7fa8f6a0a47817e9f0b54c5dea, type: 2}
+  - {fileID: 11400000, guid: 0301f76479b63394a89d420f7fc684ac, type: 2}
   - {fileID: 11400000, guid: dd0fe0b9a6f069b42ab01f63d73696f4, type: 2}
 --- !u!4 &1491654869
 Transform:
@@ -603,8 +603,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canvasUI: {fileID: 1771794172}
-  playerGlyphs: []
+  playerGlyphs:
+  - {fileID: 11400000, guid: caa56952924210c419bb3e0146bf0640, type: 2}
+  - {fileID: 11400000, guid: 4f07cc7fa8f6a0a47817e9f0b54c5dea, type: 2}
+  - {fileID: 11400000, guid: 0301f76479b63394a89d420f7fc684ac, type: 2}
+  - {fileID: 11400000, guid: dd0fe0b9a6f069b42ab01f63d73696f4, type: 2}
   currentGlyph: {fileID: 0}
+  init: 0
 --- !u!4 &1713389050
 Transform:
   m_ObjectHideFlags: 0

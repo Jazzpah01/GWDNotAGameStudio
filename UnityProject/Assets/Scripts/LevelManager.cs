@@ -81,9 +81,9 @@ public class LevelManager : MonoBehaviour
                 break;
             Debug.Log("During region!");
             biomeIndex++;
-            float factor = 1;
+            float factor = 1.1f;
             if (assetArea.beforePlayarea)
-                factor = -1;
+                factor = -1.1f;
 
             int toSpawn = Mathf.FloorToInt(spawnRate * assetArea.Range.x * biome.spawnrate);
 
@@ -101,7 +101,7 @@ public class LevelManager : MonoBehaviour
                     r = Random.value;
                     float h = r * assetArea.Range.y;
                     y += h;
-                    z += r * factor;
+                    z += r;
                 }
 
                 int index = GetWeightedIndex(GlyphManager.biome.foreGround.Cast<IWeighted>().ToList());

@@ -7,8 +7,8 @@ public class Region : MonoBehaviour
     private void Update()
     {
         // Set in update to allow for Start in other scripts
-        if (!Debugger.Debug)
-            this.gameObject.SetActive(false);
+        //if (!Debugger.Debug)
+        //    this.gameObject.SetActive(false);
     }
 
     public enum Axis

@@ -7,6 +7,7 @@ public class GameManager : MonoBehaviour
 
     public static GameManager instance;
     public Canvas canvasUI;
+    public WaystoneUI waystoneUI;
 
     private bool isUIopen;
 
@@ -18,17 +19,21 @@ public class GameManager : MonoBehaviour
 
     public Glyph currentGlyph;
 
+    public bool init = false;
+
 
     private void Awake()
     {
         // MonoBehavior singleton pattern
-        if(GameManager.instance == null)
-        {
-            GameManager.instance = this;
-        } else
-        {
-            Destroy(this.gameObject);
-        }
+        //if(GameManager.instance == null)
+        //{
+        //    GameManager.instance = this;
+        //} else
+        //{
+        //    Destroy(this.gameObject);
+        //}
+        GameManager.instance = this;
+        init = false;
     }
 
     // Start is called before the first frame update
@@ -36,15 +41,20 @@ public class GameManager : MonoBehaviour
     {
         isUIopen = false;
 
+        //canvasUI = WaystoneUI.instance.transform.parent.GetComponent<Canvas>();
+    }
 
+    void DelayedStart()
+    {
+        playerGlyphs = GlyphManager.playerGlyphs;
 
-        WaystoneUI ui = canvasUI.GetComponentInChildren<WaystoneUI>();
+        waystoneUI = WaystoneUI.instance;
 
         // Populate ui
         // TODO
 
         // Delegate button presses
-        playerGlyphsUI = ui.playerGlyphs.GetComponentsInChildren<InteractableUI>();
+        playerGlyphsUI = waystoneUI.playerGlyphs.GetComponentsInChildren<InteractableUI>();
 
         for (int i = 0; i < playerGlyphsUI.Length; i++)
         {
@@ -52,20 +62,26 @@ public class GameManager : MonoBehaviour
             playerGlyphsUI[i].OnClicked += delegate { SelectGlyph(playerGlyphs[index]); };
         }
 
-        waystoneGlyphsUI = ui.waystoneGlyphs.GetComponentsInChildren<InteractableUI>();
+        waystoneGlyphsUI = waystoneUI.waystoneGlyphs.GetComponentsInChildren<InteractableUI>();
 
         waystoneGlyphsUI[0].OnClicked += delegate { SetGlyph(currentGlyph); };
         waystoneGlyphsUI[1].OnClicked += delegate { SetGlyph(currentGlyph); };
 
-        submitButton = ui.submitButton.GetComponent<InteractableUI>();
+        submitButton = waystoneUI.submitButton.GetComponent<InteractableUI>();
         submitButton.OnClicked += delegate { Submit(); };
+
+        init = true;
     }
 
     // Update is called once per frame
     void Update()
     {
+        if (!init)
+        {
+            DelayedStart();
+        }
         
-        canvasUI.gameObject.SetActive(isUIopen);
+        waystoneUI.gameObject.SetActive(isUIopen);
         
         if (isUIopen)
         {

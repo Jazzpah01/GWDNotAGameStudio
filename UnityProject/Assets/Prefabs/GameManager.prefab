@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6425899288415603264}
-  - component: {fileID: 6425899288415603265}
+  - component: {fileID: 4288533482937009650}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -32,7 +32,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &6425899288415603265
+--- !u!114 &4288533482937009650
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -45,9 +45,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canvasUI: {fileID: 0}
-  playerGlyphs:
-  - {fileID: 11400000, guid: 0301f76479b63394a89d420f7fc684ac, type: 2}
-  - {fileID: 11400000, guid: caa56952924210c419bb3e0146bf0640, type: 2}
-  - {fileID: 11400000, guid: 4f07cc7fa8f6a0a47817e9f0b54c5dea, type: 2}
-  - {fileID: 11400000, guid: dd0fe0b9a6f069b42ab01f63d73696f4, type: 2}
+  playerGlyphs: []
   currentGlyph: {fileID: 0}

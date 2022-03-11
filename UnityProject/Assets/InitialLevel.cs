@@ -13,7 +13,12 @@ public class InitialLevel : MonoBehaviour
 
     void Start()
     {
-        GameManager.instance.playerGlyphs = playerGlyphs;
+        //GameManager.instance.playerGlyphs = playerGlyphs;
+
+        foreach (Glyph glyph in playerGlyphs)
+        {
+            GlyphManager.playerGlyphs.Add(glyph);
+        }
 
         GlyphManager.time = timeGlyph;
         GlyphManager.biome = biomeGlyph;

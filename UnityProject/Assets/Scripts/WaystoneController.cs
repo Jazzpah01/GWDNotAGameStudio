@@ -34,7 +34,7 @@ public class WaystoneController : MonoBehaviour
     {
         if (collision.tag == "Player")
         {
-            // when player enters waystone activation radius
+            // when player exits waystone activation radius
             GameManager.instance.setIsUIopen(false);
         }
     }

@@ -55,14 +55,16 @@ public class LevelManager : MonoBehaviour
         if (cloud_timer > cloud_interval && clouds_active <= cloud_capacity)
         {
             Vector3 playerPos = GameManager.instance.player.transform.position;
-            //Transform spawnPos = playerPos.
-            //spawnPos.position.Set(spawnPos.position.x - 10f, spawnPos.position.y + 5f, 0f); // TODO: replace magic numbers with camera dimensions
-            Vector3 spawnPos = new Vector3(playerPos.x - 10f, playerPos.y + 5f, 0f);
+            Vector3 spawnPos = new Vector3(playerPos.x - 10f, playerPos.y + 5f, 0f);    // TODO: replace magic numbers with camera dimensions
             GameObject cloud = Instantiate(cloud_prefab);
             cloud.transform.position = spawnPos;
             clouds_active++;
             cloud_timer = 0f;
             Debug.Log("Cloud Spawned! (pos: " + spawnPos + " ) - Number of active clouds = " + clouds_active);
+        } 
+        else if (cloud_timer > cloud_interval) 
+        {
+            cloud_timer = 0f;
         }
     }
 

@@ -15,11 +15,11 @@ MonoBehaviour:
   ColliderFlags:
   - {fileID: 11400000, guid: 2d25a9dabdd1f9c4d8c96cc498d484da, type: 2}
   PlatformFlags: []
-  speed: 9
+  speed: 5
   walkAcceleration: 50
   airAcceleration: 15
   groundDeceleration: 45
-  jumpHeight: 2
+  jumpHeight: 3
   gravityAcceleration: -30
   initialGravityAcceleration: 0
   GMDescend: 1

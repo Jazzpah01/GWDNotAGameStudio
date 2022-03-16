@@ -8,6 +8,7 @@ public class GameManager : MonoBehaviour
     public static GameManager instance;
     public Canvas canvasUI;
     public WaystoneUI waystoneUI;
+    public GameObject player;
 
     private bool isUIopen;
 

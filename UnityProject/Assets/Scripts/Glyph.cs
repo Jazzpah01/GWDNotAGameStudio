@@ -5,5 +5,5 @@ using UnityEngine.UI;
 
 public abstract class Glyph : ScriptableObject
 {
-    public Image image;
+    public Sprite icon;
 }

@@ -94,11 +94,13 @@ public class GameManager : MonoBehaviour
     {
         Debug.Log("Glyph selected!");
         currentGlyph = g;
+        waystoneUI.SelectGlyph(g);
     }
 
     public void SetGlyph(Glyph g)
     {
         Debug.Log("Glyph set!");
+        waystoneUI.SetGlyph(g);
         if (g is GlyphLandscape)
         {
             GlyphManager.landscape = (GlyphLandscape)g;

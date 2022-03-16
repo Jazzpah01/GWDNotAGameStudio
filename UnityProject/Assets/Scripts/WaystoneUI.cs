@@ -41,10 +41,10 @@ public class WaystoneUI : MonoBehaviour
     {
         if (g is GlyphBiome)
         {
-            biomeSlot.Image = g.image;
+            biomeSlot.Sprite = g.icon;
         } else if (g is GlyphLandscape)
         {
-            landscapeSlot.Image = g.image;
+            landscapeSlot.Sprite = g.icon;
         }
     }
 }

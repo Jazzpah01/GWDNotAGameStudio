@@ -65,15 +65,15 @@ public class InteractableUI : MonoBehaviour, IPointerClickHandler, IPointerEnter
     private bool interactable = true;
     private bool toggled = false;
 
-    public Image Image
+    public Sprite Sprite
     {
         set
         {
-            image = value;
+            image.sprite = value;
         }
         get
         {
-            return image;
+            return image.sprite;
         }
     }
 

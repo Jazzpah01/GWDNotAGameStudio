@@ -535,6 +535,8 @@ MonoBehaviour:
   playerGlyphs: {fileID: 8314469044624454489}
   waystoneGlyphs: {fileID: 7549100520391546004}
   submitButton: {fileID: 774354470095248886}
+  landscapeSlot: {fileID: 8522731746083212506}
+  biomeSlot: {fileID: 8522731746083212505}
 --- !u!1 &6443212694139677523
 GameObject:
   m_ObjectHideFlags: 0

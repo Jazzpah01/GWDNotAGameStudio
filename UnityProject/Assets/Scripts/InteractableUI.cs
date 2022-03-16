@@ -65,6 +65,18 @@ public class InteractableUI : MonoBehaviour, IPointerClickHandler, IPointerEnter
     private bool interactable = true;
     private bool toggled = false;
 
+    public Image Image
+    {
+        set
+        {
+            image = value;
+        }
+        get
+        {
+            return image;
+        }
+    }
+
     public bool Interactable
     {
         get => interactable;

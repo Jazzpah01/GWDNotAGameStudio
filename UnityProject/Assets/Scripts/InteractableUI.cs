@@ -37,6 +37,7 @@ public class InteractableUI : MonoBehaviour, IPointerClickHandler, IPointerEnter
     [Tooltip("If this is a button, specify the mouse buttons to use.")]
     public MouseClickEvent mouseButton = MouseClickEvent.None;
     public float scaleOnToggled = 1;
+    public bool initialInteractable = true;
 
     [Header("References")]
     [Tooltip("The main/parent GameObject of a UI element.")]
@@ -46,6 +47,7 @@ public class InteractableUI : MonoBehaviour, IPointerClickHandler, IPointerEnter
     public Image image;
     public GameObject highlightImage;
     public Image toggledImage;
+    public Image uninteractableImage;
 
     private Color initialImageColor;
     private bool inside = false;
@@ -87,35 +89,21 @@ public class InteractableUI : MonoBehaviour, IPointerClickHandler, IPointerEnter
 
             if (value)
             {
-                if (image != null)
-                {
-                    image.color = initialImageColor;
-                }
+                if (uninteractableImage != null)
+                    uninteractableImage.gameObject.SetActive(false);
 
-                for (int i = 0; i < images.Length; i++)
-                {
-                    images[i].color = colors[i];
-                }
-
-                interactable = value;
+                interactable = true;
             }
             else
             {
                 SetHighlighted(false);
 
-                for (int i = 0; i < images.Length; i++)
-                {
-                    Color c = images[i].color;
-                    c.a = 0.5f;
-                    c.r = 0;
-                    c.g = 0;
-                    c.b = 0;
-                    images[i].color = c;
-                }
+                if (uninteractableImage != null)
+                    uninteractableImage.gameObject.SetActive(true);
 
                 OnDisable();
 
-                interactable = value;
+                interactable = false;
             }
         }
     }
@@ -164,6 +152,9 @@ public class InteractableUI : MonoBehaviour, IPointerClickHandler, IPointerEnter
         {
             colors.Add(item.color);
         }
+
+        interactable = !initialInteractable;
+        Interactable = initialInteractable;
     }
 
     public void OnPointerClick(PointerEventData eventData)

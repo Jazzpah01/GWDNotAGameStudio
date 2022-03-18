@@ -26,6 +26,7 @@ public class LevelManager : MonoBehaviour
 
     // cloud stuff
     public GameObject cloud_prefab;
+    public Vector3 cloud_spawn; // TODO: decide cloud spawn position
     private float cloud_timer;
     public float cloud_interval;
     public int cloud_capacity;
@@ -52,7 +53,7 @@ public class LevelManager : MonoBehaviour
     {
         // cloud spawning
         cloud_timer += Time.deltaTime;
-        if (cloud_timer > cloud_interval && clouds_active <= cloud_capacity)
+        if (GameManager.instance.player != null && cloud_timer > cloud_interval && clouds_active <= cloud_capacity)
         {
             Vector3 playerPos = GameManager.instance.player.transform.position;
             Vector3 spawnPos = new Vector3(playerPos.x - 10f, playerPos.y + 5f, 0f);    // TODO: replace magic numbers with camera dimensions

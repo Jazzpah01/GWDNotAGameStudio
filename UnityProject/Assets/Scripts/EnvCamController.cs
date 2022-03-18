@@ -32,6 +32,7 @@ public class EnvCamController : MonoBehaviour
     void Update()
     {
         //BG_child.transform.position.x = player.transform.position.x; // 
+        if (player == null) player = GameManager.instance.player;
 
         BG_child.transform.position = new Vector3(player.transform.position.x * BG_multiplier, originPos.y, originPos.z);
 

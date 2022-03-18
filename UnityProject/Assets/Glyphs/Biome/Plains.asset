@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 127122afcdb612b45ab614e9fdc527d3, type: 3}
   m_Name: Plains
   m_EditorClassIdentifier: 
+  icon: {fileID: 21300000, guid: b424c215b0cd8ba42a2e866a80c1f273, type: 3}
   spawnrate: 1
   foreGround:
   - prefab: {fileID: 3625725771489325887, guid: 89de61074016ed240bf2f321230a10b0, type: 3}

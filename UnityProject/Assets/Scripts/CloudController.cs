@@ -27,7 +27,7 @@ public class CloudController : MonoBehaviour
 
     void EndCloud()
     {
-        LevelManager.instance.clouds_active--;
+        EnvCamController.instance.clouds_active--;
         Destroy(this.gameObject);
     }
 }

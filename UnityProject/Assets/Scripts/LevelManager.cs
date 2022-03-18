@@ -19,7 +19,7 @@ public class LevelManager : MonoBehaviour
 
     [Header("References")]
     public GameObject playerPrefab;
-    public Transform background;
+    public Transform spawnRegions;
 
     [Header("Debug")]
     public SpawnRegion[] backgroundRegions;
@@ -72,7 +72,7 @@ public class LevelManager : MonoBehaviour
     public void PopulateScene()
     {
         Debug.Log("Populating!");
-        backgroundRegions = background.GetComponentsInChildren<SpawnRegion>();
+        backgroundRegions = spawnRegions.GetComponentsInChildren<SpawnRegion>();
 
         GlyphBiome biome = GlyphManager.biome;
         int biomeIndex = 0;

@@ -156,7 +156,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -189,7 +189,7 @@ MonoBehaviour:
   mouseButton: 1
   scaleOnToggled: 1
   mainGameObject: {fileID: 2987213704594450715}
-  image: {fileID: 0}
+  image: {fileID: 7541050920869836717}
   highlightImage: {fileID: 0}
   toggledImage: {fileID: 0}
 --- !u!1 &5808996645119184005
@@ -310,7 +310,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -343,7 +343,7 @@ MonoBehaviour:
   mouseButton: 1
   scaleOnToggled: 1
   mainGameObject: {fileID: 7305854531473485979}
-  image: {fileID: 0}
+  image: {fileID: 2613852785902580370}
   highlightImage: {fileID: 0}
   toggledImage: {fileID: 0}
 --- !u!1 &7549100520391546004

@@ -40,6 +40,9 @@ public class WaystoneUI : MonoBehaviour
         biomeSlot.OnClicked += delegate { SetGlyph(currentGlyph); };
 
         submitButton.GetComponent<InteractableUI>().OnClicked += delegate { Submit(); };
+
+        SetGlyph(GlyphManager.landscape);
+        SetGlyph(GlyphManager.biome);
     }
 
     void PopulateMenuItems()
@@ -49,7 +52,9 @@ public class WaystoneUI : MonoBehaviour
         for (int i = 0; i < GlyphManager.playerGlyphs.Count; i++)
         {
             GameObject go = Instantiate(playerItemPrefab, playerGlyphs.transform);
-            playerItems.Add(go.GetComponent<InteractableUI>());
+            InteractableUI iui = go.GetComponent<InteractableUI>();
+            iui.Sprite = GlyphManager.playerGlyphs[i].icon;
+            playerItems.Add(iui); ;
         }
     }
 

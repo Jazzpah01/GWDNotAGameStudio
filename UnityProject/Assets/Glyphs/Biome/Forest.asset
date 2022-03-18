@@ -12,11 +12,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 127122afcdb612b45ab614e9fdc527d3, type: 3}
   m_Name: Forest
   m_EditorClassIdentifier: 
+  icon: {fileID: 0}
   spawnrate: 2
   foreGround:
   - prefab: {fileID: 581258597812816177, guid: 823e471d2d4cb524a8840a2d11d3145c, type: 3}
     offset: {x: 0, y: 0}
     weight: 0.53
   - prefab: {fileID: 3625725771489325887, guid: 89de61074016ed240bf2f321230a10b0, type: 3}
+    offset: {x: 0, y: 0}
+    weight: 1
+  - prefab: {fileID: 4443229909947995629, guid: 2b73db4e61c23844fb012c94a23d6abc, type: 3}
     offset: {x: 0, y: 0}
     weight: 1

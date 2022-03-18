@@ -18,6 +18,8 @@ public class WaystoneUI : MonoBehaviour
 
     private Glyph currentGlyph;
     private List<InteractableUI> playerItems;
+
+    private InteractableUI oldToggled;
     
 
     private void Awake()
@@ -33,11 +35,20 @@ public class WaystoneUI : MonoBehaviour
         for (int i = 0; i < playerItems.Count; i++)
         {
             int index = i;
-            playerItems[i].OnClicked += delegate { SelectGlyph(GlyphManager.playerGlyphs[index]); };
+            playerItems[i].OnClicked += delegate { 
+                SelectGlyph(GlyphManager.playerGlyphs[index]); 
+                playerItems[index].Toggled = true;
+                if (oldToggled != null)
+                    oldToggled.Toggled = false;
+                oldToggled = playerItems[index];
+            };
         }
 
         landscapeSlot.OnClicked += delegate { SetGlyph(currentGlyph); };
         biomeSlot.OnClicked += delegate { SetGlyph(currentGlyph); };
+
+        landscapeSlot.Interactable = false;
+        biomeSlot.Interactable = false;
 
         submitButton.GetComponent<InteractableUI>().OnClicked += delegate { Submit(); };
 
@@ -81,6 +92,13 @@ public class WaystoneUI : MonoBehaviour
 
     public void SetGlyph(Glyph g)
     {
+        if (oldToggled != null)
+        {
+            oldToggled.Toggled = false;
+            oldToggled = null;
+        }
+        biomeSlot.Interactable = false;
+        landscapeSlot.Interactable = false;
         if (g is GlyphBiome)
         {
             biomeSlot.Sprite = g.icon;

@@ -155,6 +155,9 @@ public class InteractableUI : MonoBehaviour, IPointerClickHandler, IPointerEnter
 
         interactable = !initialInteractable;
         Interactable = initialInteractable;
+
+        if (toggledImage != null)
+            Toggled = false;
     }
 
     public void OnPointerClick(PointerEventData eventData)

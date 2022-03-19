@@ -187,13 +187,8 @@ MonoBehaviour:
   spawnRate: 1
   populateThis: 1
   playerPrefab: {fileID: 4509995404389645508, guid: c1406cc5652e89642ba823afd0885d17, type: 3}
-  background: {fileID: 115726542}
+  spawnRegions: {fileID: 12536787}
   backgroundRegions: []
-  cloud_prefab: {fileID: 5586456569347609013, guid: e7641480491accf45aef1f3069e9dcef, type: 3}
-  cloud_spawn: {x: 0, y: 0, z: 0}
-  cloud_interval: 2
-  cloud_capacity: 10
-  clouds_active: 0
 --- !u!4 &52477854
 Transform:
   m_ObjectHideFlags: 0

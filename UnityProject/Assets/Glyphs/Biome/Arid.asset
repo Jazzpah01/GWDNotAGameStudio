@@ -1,0 +1,41 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 127122afcdb612b45ab614e9fdc527d3, type: 3}
+  m_Name: Arid
+  m_EditorClassIdentifier: 
+  icon: {fileID: 21300000, guid: b424c215b0cd8ba42a2e866a80c1f273, type: 3}
+  spawnrate: 1
+  foreGround:
+  - prefab: {fileID: 1896643349414191890, guid: e1fc7dfc4c363451da914cd5af0dccaf, type: 3}
+    offset: {x: 0, y: 0}
+    weight: 1
+  - prefab: {fileID: 7362824271370681229, guid: 1ca58046733064cfe891f02dd875a27f, type: 3}
+    offset: {x: 0, y: 0}
+    weight: 1
+  - prefab: {fileID: 8037243679516195717, guid: b14309b62bb8f448b915542c31ee4353, type: 3}
+    offset: {x: 0, y: 0}
+    weight: 1
+  - prefab: {fileID: 4829135610899173917, guid: e4e277a85382d49adb98b36bd7fa745a, type: 3}
+    offset: {x: 0, y: 0}
+    weight: 1
+  - prefab: {fileID: 8866826659540026962, guid: fd9edf4296a484f67ab2645cd29aabaa, type: 3}
+    offset: {x: 0, y: 0}
+    weight: 1
+  - prefab: {fileID: 5537613345446190452, guid: a3f7b95fca7214d9bab65cf8d93121c8, type: 3}
+    offset: {x: 0, y: 0}
+    weight: 1
+  - prefab: {fileID: 6464396676167114238, guid: 0f08b8f82390f48aaa24bf769f37f888, type: 3}
+    offset: {x: 0, y: 0}
+    weight: 1
+  - prefab: {fileID: 3830845542670251409, guid: 9420b1668a59848fd8924935bbbc1217, type: 3}
+    offset: {x: 0, y: 0}
+    weight: 1

@@ -1,0 +1,47 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 127122afcdb612b45ab614e9fdc527d3, type: 3}
+  m_Name: Desert
+  m_EditorClassIdentifier: 
+  icon: {fileID: 0}
+  spawnrate: 1
+  foreGround:
+  - prefab: {fileID: 7369780891568204197, guid: 99a23809820f84033a9c8941687cb719, type: 3}
+    offset: {x: 0, y: 0}
+    weight: 1
+  - prefab: {fileID: 74917634704776851, guid: 8c55ef467d783488584fca8695be4eb7, type: 3}
+    offset: {x: 0, y: 0}
+    weight: 1
+  - prefab: {fileID: 5324080435646386351, guid: 95bff7bcdcbb44be69496a80a21c7b8c, type: 3}
+    offset: {x: 0, y: 0}
+    weight: 1
+  - prefab: {fileID: 5898518055188882003, guid: 6fdcc355b109e40debb71f8d3db739dd, type: 3}
+    offset: {x: 0, y: 0}
+    weight: 1
+  - prefab: {fileID: 3312658954047895452, guid: 7812b7d02c4fe4686a293aa2691d617b, type: 3}
+    offset: {x: 0, y: 0}
+    weight: 1
+  - prefab: {fileID: 44575725078296079, guid: a4bfdf5fc64f74efd96586e42f60e6be, type: 3}
+    offset: {x: 0, y: 0}
+    weight: 1
+  - prefab: {fileID: 3767787436490412308, guid: 4ea971a9e9e4e46aea5adb13233a5957, type: 3}
+    offset: {x: 0, y: 0}
+    weight: 1
+  - prefab: {fileID: 1170208334263131002, guid: f69c96c9a14824cc3819b34e0bc415be, type: 3}
+    offset: {x: 0, y: 0}
+    weight: 1
+  - prefab: {fileID: 8276126209454397651, guid: 2ded1c82072b84b63a7204d05e451647, type: 3}
+    offset: {x: 0, y: 0}
+    weight: 1
+  - prefab: {fileID: 5592758160944369020, guid: 61152dbe408b74f5783868f6e2d224a8, type: 3}
+    offset: {x: 0, y: 0}
+    weight: 1

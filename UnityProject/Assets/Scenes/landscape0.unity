@@ -187,7 +187,7 @@ MonoBehaviour:
   spawnRate: 1
   populateThis: 1
   playerPrefab: {fileID: 4509995404389645508, guid: c1406cc5652e89642ba823afd0885d17, type: 3}
-  spawnRegions: {fileID: 12536787}
+  spawnRegions: {fileID: 115726542}
   backgroundRegions: []
 --- !u!4 &52477854
 Transform:

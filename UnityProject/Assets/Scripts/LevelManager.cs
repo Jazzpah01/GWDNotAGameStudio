@@ -74,9 +74,7 @@ public class LevelManager : MonoBehaviour
         {
             // Spawn regions
             biomeIndex++;
-            float factor = 1.1f;
-            if (assetArea.beforePlayarea)
-                factor = -1.1f;
+            float factor = 1f;
 
             int toSpawn = Mathf.FloorToInt(spawnRate * assetArea.Range.x * biome.spawnrate);
 
@@ -85,7 +83,7 @@ public class LevelManager : MonoBehaviour
             {
                 float x = Random.value * assetArea.Range.x + assetArea.PositionMin.x;
                 float y = assetArea.PositionMin.y;
-                float z = factor * biomeIndex;
+                float z = 0;
 
                 float r = 0;
                 if (assetArea.Range.y > 0)
@@ -100,6 +98,7 @@ public class LevelManager : MonoBehaviour
                 GameObject newGO = Instantiate(GlyphManager.biome.foreGround[index].prefab);
                 newGO.transform.position = new Vector3(x, y, z);
                 newGO.transform.localScale = newGO.transform.localScale * Mathf.Lerp(assetArea.buttomScale, assetArea.topScale, r);
+                newGO.GetComponent<SpriteRenderer>().sortingLayerID = assetArea.sortingLayer;
             }
         }
 

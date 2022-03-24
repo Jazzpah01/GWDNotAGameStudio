@@ -7,7 +7,7 @@ using DG.Tweening;
 public class CloudController : MonoBehaviour
 {
     //public float speed; // flip negative if other direction
-    //public float distance;
+    public float distance;
     //public float duration;
 
     public AnimationCurve aCurve;
@@ -24,7 +24,9 @@ public class CloudController : MonoBehaviour
     {
         player = GameManager.instance.player;
         origin = transform.position;
+        travelled = 0f;
         Debug.Log("cloud spawn at: " + origin);
+
         //DOTween.Init(); // add settings as param if needed - empty is default
         //transform.DOMoveX(transform.position.x + distance, duration).OnComplete(EndCloud).SetEase(aCurve); // prolly wont work with relative positions
     }
@@ -47,15 +49,14 @@ public class CloudController : MonoBehaviour
     }
 
     private void FixedUpdate()
-    {
-        //float speed = 2;
+    {      
         float step = speed * Time.fixedDeltaTime;
         travelled += step;
         origin.x = player.transform.position.x + x_offset;
 
         transform.position = new Vector3(origin.x + travelled, transform.position.y, transform.position.z);
 
-        if (transform.position.x > player.transform.position.x + x_offset || transform.position.x < player.transform.position.x - x_offset)
+        if (Mathf.Abs(travelled) > distance)
         {
             EndCloud();
         }
@@ -74,6 +75,7 @@ public class CloudController : MonoBehaviour
     public void SetMovesRight(bool movesRight)
     {
         this.movesRight = movesRight;
+        if (!movesRight) this.speed *= -1;
     }
 
     void EndCloud()

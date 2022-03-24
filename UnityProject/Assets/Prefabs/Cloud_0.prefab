@@ -45,9 +45,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a39fcc965623930488a06a6ceef38f81, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 2
-  distance: 30
-  duration: 20
+  distance: 20
   aCurve:
     serializedVersion: 2
     m_Curve:

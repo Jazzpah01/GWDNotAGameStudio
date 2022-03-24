@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 127122afcdb612b45ab614e9fdc527d3, type: 3}
   m_Name: Arid
   m_EditorClassIdentifier: 
-  icon: {fileID: 21300000, guid: b424c215b0cd8ba42a2e866a80c1f273, type: 3}
-  spawnrate: 1
+  icon: {fileID: 21300000, guid: 86d2d61ff6a9ef34e94a7c6c259926f9, type: 3}
+  spawnrate: 0.5
   foreGround:
   - prefab: {fileID: 1896643349414191890, guid: e1fc7dfc4c363451da914cd5af0dccaf, type: 3}
     offset: {x: 0, y: 0}

@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: valley
   m_EditorClassIdentifier: 
   icon: {fileID: 21300000, guid: d57d97edd957cc94c9582f26e7eeeaca, type: 3}
-  sceneName: landscape1
+  sceneName: valley
   locations:
   - landscape: {fileID: 0}
     biome: {fileID: 11400000, guid: dd0fe0b9a6f069b42ab01f63d73696f4, type: 2}

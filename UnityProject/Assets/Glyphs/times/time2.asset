@@ -14,4 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   icon: {fileID: 0}
   sunSprite: {fileID: 21300000, guid: 89313aa4552b9a74caae86302679c995, type: 3}
-  sunPosition: {x: 2, y: 3}
+  sunPosition: {x: 2, y: 5}

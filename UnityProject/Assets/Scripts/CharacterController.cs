@@ -60,21 +60,21 @@ public class CharacterController : MonoBehaviour
             body.FallInput();
         }
 
-        if (Input.GetKeyDown(KeyCode.LeftShift))
+        if (Input.GetKeyDown(KeyCode.LeftShift) && running != null)
         {
             body.ApplyFilter(running);
         }
-        if (Input.GetKeyUp(KeyCode.LeftShift))
+        if (Input.GetKeyUp(KeyCode.LeftShift) && running != null)
         {
             body.RemoveFilter(running);
         }
 
 
-        if (Input.GetKeyDown(KeyCode.LeftControl))
+        if (Input.GetKeyDown(KeyCode.LeftControl) && crouch != null)
         {
             body.ApplyFilter(crouch);
         }
-        if (Input.GetKeyUp(KeyCode.LeftControl))
+        if (Input.GetKeyUp(KeyCode.LeftControl) && crouch != null)
         {
             body.RemoveFilter(crouch);
         }

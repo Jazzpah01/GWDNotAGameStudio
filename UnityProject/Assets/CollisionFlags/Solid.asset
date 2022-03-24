@@ -12,4 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2eb69b7222194a14e9ed2581b467124a, type: 3}
   m_Name: Solid
   m_EditorClassIdentifier: 
-  uniqueIndex: 0
+  uniqueIndex: 1

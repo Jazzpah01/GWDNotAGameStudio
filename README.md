@@ -8,7 +8,7 @@ To clone the repository: git clone --recurse-submodules https://github.com/Jazzp
 
 To update submodules: git submodule foreach git pull origin main
 
-If you already have cloned the project, run the following:
+If you already have clones the project, run the following:
 
 git submodule init
 

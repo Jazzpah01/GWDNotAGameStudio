@@ -4,11 +4,6 @@ using UnityEngine;
 
 public static class GlyphManager
 {
-<<<<<<< HEAD
-    public static Time time;
-    public static Landscape landscape;
-    public static Biome biome;
-=======
     public static GlyphTime time;
     public static GlyphLandscape landscape;
     public static GlyphBiome biome;
@@ -39,5 +34,4 @@ public static class GlyphManager
 
         throw new System.Exception("Cannot find location");
     }
->>>>>>> develop
 }

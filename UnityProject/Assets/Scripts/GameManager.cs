@@ -6,8 +6,6 @@ public class GameManager : MonoBehaviour
 {
 
     public static GameManager instance;
-<<<<<<< HEAD
-=======
     public Canvas canvasUI;
     public WaystoneUI waystoneUI;
     public GameObject player;
@@ -23,20 +21,10 @@ public class GameManager : MonoBehaviour
     public Glyph currentGlyph;
 
     public bool init = false;
->>>>>>> develop
 
 
     private void Awake()
     {
-<<<<<<< HEAD
-        if(GameManager.instance == null)
-        {
-            GameManager.instance = this;
-        } else
-        {
-            Destroy(this.gameObject);
-        }
-=======
         // MonoBehavior singleton pattern
         //if(GameManager.instance == null)
         //{
@@ -47,15 +35,11 @@ public class GameManager : MonoBehaviour
         //}
         GameManager.instance = this;
         init = false;
->>>>>>> develop
     }
 
     // Start is called before the first frame update
     void Start()
     {
-<<<<<<< HEAD
-        
-=======
         isUIopen = false;
 
         //canvasUI = WaystoneUI.instance.transform.parent.GetComponent<Canvas>();
@@ -73,15 +57,11 @@ public class GameManager : MonoBehaviour
 
 
         init = true;
->>>>>>> develop
     }
 
     // Update is called once per frame
     void Update()
     {
-<<<<<<< HEAD
-        
-=======
         if (!init)
         {
             DelayedStart();
@@ -108,6 +88,5 @@ public class GameManager : MonoBehaviour
     {
         isUIopen = isOpen;
         Debug.Log("UI open is:   " + isOpen);
->>>>>>> develop
     }
 }

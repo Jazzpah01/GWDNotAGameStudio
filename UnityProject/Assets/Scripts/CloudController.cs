@@ -6,15 +6,16 @@ using DG.Tweening;
 
 public class CloudController : MonoBehaviour
 {
-    public float speed; // flip negative if other direction
-    public float distance;
-    public float duration;
+    //public float speed; // flip negative if other direction
+    //public float distance;
+    //public float duration;
 
     public AnimationCurve aCurve;
 
     private GameObject player;
     private Vector3 origin;
     private float travelled;
+    //private float speed;
 
     // Start is called before the first frame update
     void Start()
@@ -45,6 +46,7 @@ public class CloudController : MonoBehaviour
 
     private void FixedUpdate()
     {
+        float speed = 2;
         float step = speed * Time.fixedDeltaTime;
         travelled += step;
         origin.x = player.transform.position.x - 10f;
@@ -55,6 +57,11 @@ public class CloudController : MonoBehaviour
         {
             EndCloud();
         }
+    }
+
+    public void SetSpeed(float speed)
+    {
+
     }
 
     void EndCloud()

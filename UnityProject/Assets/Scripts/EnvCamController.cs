@@ -25,6 +25,7 @@ public class EnvCamController : MonoBehaviour
     public float cloud_interval;
     public int cloud_capacity;
     public int clouds_active;
+    public float cloud_speed;
 
     private void Awake()
     {

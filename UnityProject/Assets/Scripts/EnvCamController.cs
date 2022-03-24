@@ -75,6 +75,8 @@ public class EnvCamController : MonoBehaviour
         }
     }
 
+
+
     private float GetPlayerOriginOffset()
     {
         return 0f;

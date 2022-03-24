@@ -12,9 +12,12 @@ public class CloudController : MonoBehaviour
 
     public AnimationCurve aCurve;
 
+    private GameObject player;
+
     // Start is called before the first frame update
     void Start()
     {
+        player = GameManager.instance.player;
         DOTween.Init(); // add settings as param if needed - empty is default
         transform.DOMoveX(transform.position.x + distance, duration).OnComplete(EndCloud).SetEase(aCurve);
     }

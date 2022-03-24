@@ -18,20 +18,19 @@ public static class GlyphManager
 
 
     // TODO: refactor this
-    public static Location GetLocation(GlyphLandscape x, GlyphBiome y)
+    public static Location GetLocation()
     {
-        int i = landscapes.IndexOf(x);
+        
+        int i = landscapes.IndexOf(landscape);
 
         Location retval = null;
 
-        foreach (GlyphBiome b in biomes)
+        foreach (Location l in landscapes[i].locations)
         {
-            foreach (Location l in landscapes[i].locations)
-            {
-                if (l.biome == b)
-                    return l;
-            }
+            if (l.biome == biome)
+                return l;
         }
+        
 
         throw new System.Exception("Cannot find location");
     }

@@ -89,6 +89,7 @@ public class EnvCamController : MonoBehaviour
         Background = Instantiate<GameObject>(prefab);
 
         //TODO set sprite of background
+        Background.GetComponent<SpriteRenderer>().sprite = GlyphManager.GetLocation().backGround;
 
         Background.transform.position = originPos;
     }

@@ -20,11 +20,12 @@ public class EnvCamController : MonoBehaviour
 
     // cloud stuff
     public GameObject cloud_prefab;
-    public Vector3 cloud_spawn; // TODO: decide cloud spawn position
+    public Vector2 cloud_spawn; // TODO: decide cloud spawn position
     private float cloud_timer;
     public float cloud_interval;
     public int cloud_capacity;
     public int clouds_active;
+    public bool cloud_moves_right;  
     public float cloud_speed;
 
     private void Awake()
@@ -63,9 +64,13 @@ public class EnvCamController : MonoBehaviour
         if (GameManager.instance.player != null && cloud_prefab != null && cloud_timer > cloud_interval && clouds_active <= cloud_capacity)
         {
             Vector3 playerPos = GameManager.instance.player.transform.position;
-            Vector3 spawnPos = new Vector3(playerPos.x - 10f, 5f, 0f);    // TODO: replace magic numbers with camera dimensions
+            //Vector3 spawnPos = new Vector3(playerPos.x - 10f, 5f, 0f);    // TODO: replace magic numbers with camera dimensions
+            Vector3 spawnPos = new Vector3(playerPos.x + cloud_spawn.x, cloud_spawn.y, 0f);
             GameObject cloud = Instantiate(cloud_prefab);
             cloud.transform.position = spawnPos;
+            cloud.GetComponent<CloudController>().SetSpeed(cloud_speed);
+            cloud.GetComponent<CloudController>().SetXOffset(cloud_spawn.x);
+            cloud.GetComponent<CloudController>().SetMovesRight(cloud_moves_right);
             clouds_active++;
             cloud_timer = 0f;
             Debug.Log("Cloud Spawned! (pos: " + spawnPos + " ) - Number of active clouds = " + clouds_active);

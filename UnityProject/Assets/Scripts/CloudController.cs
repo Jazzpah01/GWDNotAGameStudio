@@ -15,7 +15,9 @@ public class CloudController : MonoBehaviour
     private GameObject player;
     private Vector3 origin;
     private float travelled;
-    //private float speed;
+    private float speed;
+    private float x_offset;
+    private bool movesRight;
 
     // Start is called before the first frame update
     void Start()
@@ -46,14 +48,14 @@ public class CloudController : MonoBehaviour
 
     private void FixedUpdate()
     {
-        float speed = 2;
+        //float speed = 2;
         float step = speed * Time.fixedDeltaTime;
         travelled += step;
-        origin.x = player.transform.position.x - 10f;
+        origin.x = player.transform.position.x + x_offset;
 
         transform.position = new Vector3(origin.x + travelled, transform.position.y, transform.position.z);
 
-        if (transform.position.x > player.transform.position.x + 10f)
+        if (transform.position.x > player.transform.position.x + x_offset || transform.position.x < player.transform.position.x - x_offset)
         {
             EndCloud();
         }
@@ -61,7 +63,17 @@ public class CloudController : MonoBehaviour
 
     public void SetSpeed(float speed)
     {
+        this.speed = speed;
+    }
 
+    public void SetXOffset(float x)
+    {
+        this.x_offset = x;
+    }
+
+    public void SetMovesRight(bool movesRight)
+    {
+        this.movesRight = movesRight;
     }
 
     void EndCloud()

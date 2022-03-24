@@ -8,18 +8,21 @@ using System.Linq;
 
 public class LevelManager : MonoBehaviour
 {
-    public Transform spawnPoint;
-    public float spawnRate = 1;
-
     public static LevelManager instance;
-
     public static bool init = false;
 
     public bool populateThis = true;
+    public float spawnRate = 1;
 
     [Header("References")]
-    public GameObject playerPrefab;
     public Transform spawnRegions;
+    public Transform spawnPoint;
+    public EnvCamController environmentController;
+
+    [Header("External References")]
+    public GameObject backgroundPrefab;
+    public GameObject sunPrefab;
+    public GameObject playerPrefab;
 
     [Header("Debug")]
     public SpawnRegion[] backgroundRegions;
@@ -27,6 +30,12 @@ public class LevelManager : MonoBehaviour
     
     private void Awake()
     {
+        if (!InitialLevel.gameInitialized)
+        {
+            // TODO: set location glyph to match the scene.
+            SceneManager.LoadScene(0);
+        }
+
         instance = this;
     }
 
@@ -52,15 +61,18 @@ public class LevelManager : MonoBehaviour
         Debug.Log("Populating!");
         backgroundRegions = spawnRegions.GetComponentsInChildren<SpawnRegion>();
 
+        // Spawn background
+        environmentController.SpawnBackground(backgroundPrefab);
+
+        // Spawn sun
+        environmentController.SpawnSun(sunPrefab);
+
+        // Spawn regions
         GlyphBiome biome = GlyphManager.biome;
         int biomeIndex = 0;
-
         foreach (SpawnRegion assetArea in backgroundRegions)
         {
-            Debug.Log("Before region!");
-            if (biome.foreGround.Count == 0)
-                break;
-            Debug.Log("During region!");
+            // Spawn regions
             biomeIndex++;
             float factor = 1.1f;
             if (assetArea.beforePlayarea)
@@ -71,7 +83,6 @@ public class LevelManager : MonoBehaviour
             // Use scene information to populate stuff
             for (int i = 0; i < toSpawn; i++)
             {
-                Debug.Log("Spawning!");
                 float x = Random.value * assetArea.Range.x + assetArea.PositionMin.x;
                 float y = assetArea.PositionMin.y;
                 float z = factor * biomeIndex;
@@ -90,7 +101,6 @@ public class LevelManager : MonoBehaviour
                 newGO.transform.position = new Vector3(x, y, z);
                 newGO.transform.localScale = newGO.transform.localScale * Mathf.Lerp(assetArea.buttomScale, assetArea.topScale, r);
             }
-            Debug.Log("After region!");
         }
 
         // Spawn player

@@ -7,4 +7,5 @@ using UnityEngine.SceneManagement;
 public class GlyphLandscape : Glyph
 {
     public string sceneName;
+    public List<Sprite> backgrounds;
 }

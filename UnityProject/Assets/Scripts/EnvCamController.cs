@@ -8,7 +8,7 @@ public class EnvCamController : MonoBehaviour
 
     private GameObject player;
 
-    private GameObject BG_child;
+    public GameObject Background;
     public GameObject Sun;
 
     public Vector3 originPos = new Vector3();
@@ -35,11 +35,6 @@ public class EnvCamController : MonoBehaviour
     void Start()
     {
         player = GameManager.instance.player;
-        BG_child = GetComponentInChildren<SpriteRenderer>().gameObject;
-        BG_child.transform.position = originPos;
-        Debug.Log("Env Init at: " + BG_child.transform.position + " == " + originPos);
-
-        if (Sun != null) sunOrigin = Sun.transform.position;
 
         cloud_timer = 0f;
     }
@@ -50,7 +45,7 @@ public class EnvCamController : MonoBehaviour
         //BG_child.transform.position.x = player.transform.position.x; // 
         if (player == null && GameManager.instance.player != null) player = GameManager.instance.player;
 
-        BG_child.transform.position = new Vector3(player.transform.position.x * BG_multiplier, originPos.y, originPos.z);
+        Background.transform.position = new Vector3(player.transform.position.x * BG_multiplier, originPos.y, originPos.z);
 
         if (Sun != null)
         {
@@ -73,6 +68,24 @@ public class EnvCamController : MonoBehaviour
         {
             cloud_timer = 0f;
         }
+    }
+
+    public void SpawnSun(GameObject prefab)
+    {
+        Sun = Instantiate<GameObject>(prefab);
+
+        Sun.GetComponent<SpriteRenderer>().sprite = GlyphManager.time.sunSprite;
+
+        sunOrigin = (Vector3)GlyphManager.time.sunPosition + transform.position;
+    }
+
+    public void SpawnBackground(GameObject prefab)
+    {
+        Background = Instantiate<GameObject>(prefab);
+
+        //TODO set sprite of background
+
+        Background.transform.position = originPos;
     }
 
     private float GetPlayerOriginOffset()

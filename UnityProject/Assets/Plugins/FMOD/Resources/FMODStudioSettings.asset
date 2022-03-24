@@ -399,8 +399,13 @@ MonoBehaviour:
   SwitchSettingsMigration: 1
   HasSourceProject: 1
   HasPlatforms: 1
+<<<<<<< HEAD
   sourceProjectPath: 
   sourceBankPath: 
+=======
+  sourceProjectPath: gwdFMOD/gwdFMOD.fspro
+  sourceBankPath: gwdFMOD/Build
+>>>>>>> develop
   SourceBankPathUnformatted: 
   BankRefreshCooldown: 5
   ShowBankRefreshWindow: 1

@@ -3,9 +3,20 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [System.Serializable]
+<<<<<<< HEAD
 public class TerrainObject
 {
     public GameObject prefab;
     public Vector2 position;
     public Quaternion rotation = Quaternion.identity;
+=======
+public class TerrainObject : IWeighted
+{
+    public GameObject prefab;
+    public Vector2 offset = Vector2.zero;
+    [Range(0.001f, 1)]
+    public float weight = 1;
+
+    public float Weight => weight;
+>>>>>>> develop
 }

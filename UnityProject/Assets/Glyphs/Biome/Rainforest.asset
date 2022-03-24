@@ -1,0 +1,47 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 127122afcdb612b45ab614e9fdc527d3, type: 3}
+  m_Name: Rainforest
+  m_EditorClassIdentifier: 
+  icon: {fileID: 21300000, guid: ce1494d676a48b44fadde7e611470f76, type: 3}
+  spawnrate: 0.5
+  foreGround:
+  - prefab: {fileID: 4717175861883442912, guid: d35fa0eed5c4e4e169e0cc6bd6b505ad, type: 3}
+    offset: {x: 0, y: 0}
+    weight: 1
+  - prefab: {fileID: 4768902375776213689, guid: 0f75d88e05bfa4fa4bb9315d6a3331bb, type: 3}
+    offset: {x: 0, y: 0}
+    weight: 1
+  - prefab: {fileID: 7620216314535369429, guid: 576ed7b8edbcc49d380650e5d21dc2f0, type: 3}
+    offset: {x: 0, y: 0}
+    weight: 1
+  - prefab: {fileID: 323922712822829498, guid: f6e4dfb3ebb4246a19a779b50f782078, type: 3}
+    offset: {x: 0, y: 0}
+    weight: 1
+  - prefab: {fileID: 6254418087844817562, guid: c271ba5a1a8794c1d9ff8413ec9203d1, type: 3}
+    offset: {x: 0, y: 0}
+    weight: 1
+  - prefab: {fileID: 6301611594188696470, guid: 69f7c22c577b24156ac2aa9874868dc8, type: 3}
+    offset: {x: 0, y: 0}
+    weight: 1
+  - prefab: {fileID: 8070026690069392170, guid: bce0e8d5533b44a5f811fcc87f8f0569, type: 3}
+    offset: {x: 0, y: 0}
+    weight: 1
+  - prefab: {fileID: 2517541058754201665, guid: 30128e05600794fa1afd5348367c6e32, type: 3}
+    offset: {x: 0, y: 0}
+    weight: 1
+  - prefab: {fileID: 6371369248821352872, guid: 1084a7fa8b6fb433583eb45f1f21dc31, type: 3}
+    offset: {x: 0, y: 0}
+    weight: 1
+  - prefab: {fileID: 6580836140728683461, guid: e16933f8ccca7466eb7f493e1d5608a7, type: 3}
+    offset: {x: 0, y: 0}
+    weight: 1

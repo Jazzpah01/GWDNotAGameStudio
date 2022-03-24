@@ -45,7 +45,7 @@ public class LevelManager : MonoBehaviour
         }
 
         DOTween.Init(); // empty param = default settings
-
+        SetupGlyphs();
         PopulateScene();
 
         
@@ -56,10 +56,20 @@ public class LevelManager : MonoBehaviour
         
     }
 
+    public void SetupGlyphs()
+    {
+        GlyphManager.timeIndex = (GlyphManager.timeIndex + 1) % GlyphManager.times.Count;
+        GlyphManager.time = GlyphManager.times[GlyphManager.timeIndex];
+    }
+
     public void PopulateScene()
     {
-        Debug.Log("Populating!");
         backgroundRegions = spawnRegions.GetComponentsInChildren<SpawnRegion>();
+
+        // Spawn player
+        GameObject player = Instantiate(playerPrefab);
+        GameManager.instance.player = player;
+        player.transform.position = spawnPoint.position;
 
         // Spawn background
         environmentController.SpawnBackground(backgroundPrefab);
@@ -76,7 +86,7 @@ public class LevelManager : MonoBehaviour
             biomeIndex++;
             float factor = 1f;
 
-            int toSpawn = Mathf.FloorToInt(spawnRate * assetArea.Range.x * biome.spawnrate);
+            int toSpawn = Mathf.FloorToInt(spawnRate * assetArea.Range.x * biome.spawnrate * assetArea.spawnrate);
 
             // Use scene information to populate stuff
             for (int i = 0; i < toSpawn; i++)
@@ -101,11 +111,6 @@ public class LevelManager : MonoBehaviour
                 newGO.GetComponent<SpriteRenderer>().sortingLayerID = assetArea.sortingLayer;
             }
         }
-
-        // Spawn player
-        GameObject player = Instantiate(playerPrefab);
-        GameManager.instance.player = player;
-        player.transform.position = spawnPoint.position;
     }
 
     public void ChangeScene()

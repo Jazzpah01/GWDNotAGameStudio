@@ -81,7 +81,7 @@ public class EnvCamController : MonoBehaviour
 
         Sun.GetComponent<SpriteRenderer>().sprite = GlyphManager.time.sunSprite;
 
-        sunOrigin = (Vector3)GlyphManager.time.sunPosition + transform.position;
+        sunOrigin = (Vector3)GlyphManager.time.sunPosition;
     }
 
     public void SpawnBackground(GameObject prefab)

@@ -30,12 +30,6 @@ public class LevelManager : MonoBehaviour
     
     private void Awake()
     {
-        if (!InitialLevel.gameInitialized)
-        {
-            // TODO: set location glyph to match the scene.
-            SceneManager.LoadScene(0);
-        }
-
         instance = this;
     }
 
@@ -43,6 +37,12 @@ public class LevelManager : MonoBehaviour
     {
         if (!populateThis)
             return;
+
+        if (!InitialLevel.gameInitialized)
+        {
+            // TODO: set location glyph to match the scene.
+            SceneManager.LoadScene(0);
+        }
 
         DOTween.Init(); // empty param = default settings
 

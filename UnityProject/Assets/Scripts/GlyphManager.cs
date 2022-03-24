@@ -22,14 +22,14 @@ public static class GlyphManager
 
         Location retval = null;
 
-        //foreach (GlyphBiome b in biomes)
-        //{
-        //    foreach (Location l in landscapes[i].locations)
-        //    {
-        //        if (l.biome == b)
-        //            return l;
-        //    }
-        //}
+        foreach (GlyphBiome b in biomes)
+        {
+            foreach (Location l in landscapes[i].locations)
+            {
+                if (l.biome == b)
+                    return l;
+            }
+        }
 
         throw new System.Exception("Cannot find location");
     }

@@ -62,7 +62,7 @@ public class EnvCamController : MonoBehaviour
         if (GameManager.instance.player != null && cloud_prefab != null && cloud_timer > cloud_interval && clouds_active <= cloud_capacity)
         {
             Vector3 playerPos = GameManager.instance.player.transform.position;
-            Vector3 spawnPos = new Vector3(playerPos.x - 10f, playerPos.y + 5f, 0f);    // TODO: replace magic numbers with camera dimensions
+            Vector3 spawnPos = new Vector3(playerPos.x - 10f, 5f, 0f);    // TODO: replace magic numbers with camera dimensions
             GameObject cloud = Instantiate(cloud_prefab);
             cloud.transform.position = spawnPos;
             clouds_active++;

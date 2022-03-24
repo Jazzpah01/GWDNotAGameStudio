@@ -27,7 +27,7 @@ public class LocationsEditor : Editor
         {
             foreach (LocationLandscapeAxis item in o.landscapeAxis)
             {
-                item.biomeAxis.Add(ScriptableObject.CreateInstance<Location>());
+                //item.biomeAxis.Add(ScriptableObject.CreateInstance<Location>());
             }
         }
 

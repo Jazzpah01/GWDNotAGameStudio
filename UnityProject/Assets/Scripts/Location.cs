@@ -2,8 +2,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-
-public class Location : ScriptableObject
+[System.Serializable]
+public class Location
 {
-    Sprite backGround;
+    public GlyphLandscape landscape;
+    public GlyphBiome biome;
+    public Sprite backGround;
 }

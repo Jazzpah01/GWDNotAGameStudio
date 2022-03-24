@@ -7,5 +7,5 @@ using UnityEngine.SceneManagement;
 public class GlyphLandscape : Glyph
 {
     public string sceneName;
-    public List<Sprite> backgrounds;
+    public List<Location> locations; // Temp until we get a good system
 }

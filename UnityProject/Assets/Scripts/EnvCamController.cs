@@ -37,7 +37,7 @@ public class EnvCamController : MonoBehaviour
     void Start()
     {
         player = GameManager.instance.player;
-
+        sunOrigin = Sun.transform.position;
         cloud_timer = 0f;
     }
 
@@ -56,7 +56,7 @@ public class EnvCamController : MonoBehaviour
 
         // cloud spawning
         cloud_timer += Time.deltaTime;
-        if (GameManager.instance.player != null && cloud_prefab != null && cloud_timer > cloud_interval && clouds_active <= cloud_capacity)
+        if (GameManager.instance.player != null && cloud_prefab != null && cloud_timer > cloud_interval && clouds_active < cloud_capacity)
         {
             Vector3 playerPos = GameManager.instance.player.transform.position;
             Vector3 spawnPos = new Vector3(playerPos.x + cloud_spawn.x, cloud_spawn.y, 0f);

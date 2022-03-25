@@ -10,7 +10,7 @@ public class CloudController : MonoBehaviour
     public float distance;
     //public float duration;
 
-    public AnimationCurve aCurve;
+    //public AnimationCurve aCurve;
 
     private GameObject player;
     private Vector3 origin;
@@ -25,7 +25,7 @@ public class CloudController : MonoBehaviour
         player = GameManager.instance.player;
         origin = transform.position;
         travelled = 0f;
-        Debug.Log("cloud spawn at: " + origin);
+        //Debug.Log("cloud spawn at: " + origin);
 
         //DOTween.Init(); // add settings as param if needed - empty is default
         //transform.DOMoveX(transform.position.x + distance, duration).OnComplete(EndCloud).SetEase(aCurve); // prolly wont work with relative positions

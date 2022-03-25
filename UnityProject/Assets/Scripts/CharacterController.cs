@@ -10,8 +10,12 @@ public class CharacterController : MonoBehaviour
     public BaseModifier crouch;
     public BaseModifier bouncy;
 
+    //public SpriteRenderer[] sprites;
+
     private Animator anim;
     private bool isWalking;
+    //public bool isFlipped;
+    public Transform rig;
 
     private bool bouncing = false;
 
@@ -38,6 +42,8 @@ public class CharacterController : MonoBehaviour
         this.anim = GetComponentInChildren<Animator>();
         if (this.anim != null) Debug.Log("Character Animator initialized");
         isWalking = false;
+        //sprites = anim.gameObject.GetComponentsInChildren<SpriteRenderer>();
+        FlipSprite(false);
     }
 
     // Update is called once per frame
@@ -52,23 +58,26 @@ public class CharacterController : MonoBehaviour
             }
             body.JumpInput(1);
         }
+        if (Input.GetKeyUp(KeyCode.UpArrow))
+        {
+            body.FallInput();
+        }
+
         if (Input.GetKey(KeyCode.LeftArrow))
         {
             body.HorizontalInput(-1);
-
-        }
-        if (Input.GetKey(KeyCode.RightArrow))
+            SetWalking(true);
+            FlipSprite(true);
+        } else if (Input.GetKey(KeyCode.RightArrow))
         {
             body.HorizontalInput(1);
             SetWalking(true);
-        }
-        else if(Input.GetKeyUp(KeyCode.UpArrow))
+            FlipSprite(false);
+        } else
         {
-            body.FallInput();
-            SetWalking(true);
-        } else {
             SetWalking(false);
         }
+        
 
         if (Input.GetKeyDown(KeyCode.LeftShift) && running != null)
         {
@@ -99,5 +108,31 @@ public class CharacterController : MonoBehaviour
     private void SetWalking(bool isWalking)
     {
         anim.SetBool("isWalking", isWalking);
+    }
+
+    private void FlipSprite(bool flip)
+    {
+        //SpriteRenderer[] sprites = anim.gameObject.GetComponentsInChildren<SpriteRenderer>();
+        //anim.gameObject.GetComponentsInChildren<SpriteRenderer>().flipX = isFlipped;
+        /*
+        foreach (SpriteRenderer sprite in sprites)
+        {
+            //sprite.flipX = flip;
+            //Vector3 spritePos = sprite.transform.position;
+
+            if (flip) {
+                sprite.transform.localScale = new Vector3(-1f, 1f, 1f);
+            } else {
+                sprite.transform.localScale = new Vector3(1f, 1f, 1f);
+            } 
+        }
+        */
+        if (flip)
+        {
+            rig.localScale = new Vector3(-1f, 1f, 1f);
+        } else
+        {
+            rig.localScale = new Vector3(1f, 1f, 1f);
+        }
     }
 }

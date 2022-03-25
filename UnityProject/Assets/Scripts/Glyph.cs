@@ -6,4 +6,5 @@ using UnityEngine.UI;
 public abstract class Glyph : ScriptableObject
 {
     public Sprite icon;
+    public int seed;
 }

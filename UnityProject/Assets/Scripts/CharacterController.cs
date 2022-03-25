@@ -10,6 +10,9 @@ public class CharacterController : MonoBehaviour
     public BaseModifier crouch;
     public BaseModifier bouncy;
 
+    private Animator anim;
+    private bool isWalking;
+
     private bool bouncing = false;
 
     private bool Flipped
@@ -32,7 +35,9 @@ public class CharacterController : MonoBehaviour
 
     private void Start()
     {
-        
+        this.anim = GetComponentInChildren<Animator>();
+        if (this.anim != null) Debug.Log("Character Animator initialized");
+        isWalking = false;
     }
 
     // Update is called once per frame
@@ -50,14 +55,19 @@ public class CharacterController : MonoBehaviour
         if (Input.GetKey(KeyCode.LeftArrow))
         {
             body.HorizontalInput(-1);
+
         }
         if (Input.GetKey(KeyCode.RightArrow))
         {
             body.HorizontalInput(1);
+            SetWalking(true);
         }
-        if (Input.GetKeyUp(KeyCode.UpArrow))
+        else if(Input.GetKeyUp(KeyCode.UpArrow))
         {
             body.FallInput();
+            SetWalking(true);
+        } else {
+            SetWalking(false);
         }
 
         if (Input.GetKeyDown(KeyCode.LeftShift) && running != null)
@@ -84,5 +94,10 @@ public class CharacterController : MonoBehaviour
             body.RemoveFilter(bouncy);
             bouncing = false;
         }
+    }
+
+    private void SetWalking(bool isWalking)
+    {
+        anim.SetBool("isWalking", isWalking);
     }
 }

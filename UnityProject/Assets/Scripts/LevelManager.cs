@@ -108,7 +108,21 @@ public class LevelManager : MonoBehaviour
                 GameObject newGO = Instantiate(GlyphManager.biome.foreGround[index].prefab);
                 newGO.transform.position = new Vector3(x, y, z);
                 newGO.transform.localScale = newGO.transform.localScale * Mathf.Lerp(assetArea.buttomScale, assetArea.topScale, r);
-                newGO.GetComponent<SpriteRenderer>().sortingOrder = assetArea.sortingLayer;
+
+                SpriteRenderer ren = newGO.GetComponent<SpriteRenderer>();
+
+                if (assetArea.sortingLayer == SpawnRegion.Layer.BehindPlayer)
+                {
+                    ren.sortingLayerName = "Behind";
+                } else if (assetArea.sortingLayer == SpawnRegion.Layer.InFrontOfPlayer)
+                {
+                    ren.sortingLayerName = "Front";
+                } else
+                {
+                    throw new System.Exception("Layer is wrong");
+                }
+
+                ren.sortingOrder = assetArea.sortingOrder;
             }
         }
     }

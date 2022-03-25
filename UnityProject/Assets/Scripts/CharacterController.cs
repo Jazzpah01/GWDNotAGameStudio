@@ -10,6 +10,8 @@ public class CharacterController : MonoBehaviour
     public BaseModifier crouch;
     public BaseModifier bouncy;
 
+    private Animator anim;
+
     private bool bouncing = false;
 
     private bool Flipped
@@ -32,7 +34,8 @@ public class CharacterController : MonoBehaviour
 
     private void Start()
     {
-        
+        this.anim = GetComponentInChildren<Animator>();
+        if (this.anim != null) Debug.Log("Character Animator initialized");
     }
 
     // Update is called once per frame
@@ -50,6 +53,7 @@ public class CharacterController : MonoBehaviour
         if (Input.GetKey(KeyCode.LeftArrow))
         {
             body.HorizontalInput(-1);
+
         }
         if (Input.GetKey(KeyCode.RightArrow))
         {

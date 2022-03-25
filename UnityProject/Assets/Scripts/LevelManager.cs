@@ -27,6 +27,8 @@ public class LevelManager : MonoBehaviour
     [Header("Debug")]
     public SpawnRegion[] backgroundRegions;
 
+    System.Random rng;
+
     
     private void Awake()
     {
@@ -80,6 +82,7 @@ public class LevelManager : MonoBehaviour
         // Spawn regions
         GlyphBiome biome = GlyphManager.biome;
         int biomeIndex = 0;
+        rng = new System.Random(GlyphManager.time.seed);
         foreach (SpawnRegion assetArea in backgroundRegions)
         {
             // Spawn regions
@@ -91,14 +94,14 @@ public class LevelManager : MonoBehaviour
             // Use scene information to populate stuff
             for (int i = 0; i < toSpawn; i++)
             {
-                float x = Random.value * assetArea.Range.x + assetArea.PositionMin.x;
+                float x = (float)rng.NextDouble() % 1f * assetArea.Range.x + assetArea.PositionMin.x;
                 float y = assetArea.PositionMin.y;
                 float z = 0;
 
                 float r = 0;
                 if (assetArea.Range.y > 0)
                 {
-                    r = Random.value;
+                    r = (float)rng.NextDouble() % 1f;
                     float h = r * assetArea.Range.y;
                     y += h;
                     z += r;
@@ -147,7 +150,7 @@ public class LevelManager : MonoBehaviour
             total += weights[i].Weight;
         }
 
-        float value = Random.value * total;
+        float value = (float)rng.NextDouble() % 1f * total;
 
         for (int i = 0; i < map.Count; i++)
         {

@@ -437,9 +437,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 03302dadf37e73947911fe531ab915df, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timeGlyph: {fileID: 0}
+  timeGlyph: {fileID: 11400000, guid: c4ef068ec96997a4181b8dd407818fb6, type: 2}
   biomeGlyph: {fileID: 11400000, guid: 0301f76479b63394a89d420f7fc684ac, type: 2}
   landscapeGlyph: {fileID: 11400000, guid: caa56952924210c419bb3e0146bf0640, type: 2}
+  landscapes:
+  - {fileID: 11400000, guid: caa56952924210c419bb3e0146bf0640, type: 2}
+  - {fileID: 11400000, guid: 4f07cc7fa8f6a0a47817e9f0b54c5dea, type: 2}
+  - {fileID: 11400000, guid: cdf2469a907c9804aa2c92605877951e, type: 2}
+  - {fileID: 11400000, guid: 0f37ff6e7fd4c3b45a49fd59091b0812, type: 2}
+  biomes:
+  - {fileID: 11400000, guid: dd0fe0b9a6f069b42ab01f63d73696f4, type: 2}
+  - {fileID: 11400000, guid: 8642289d9e19747d0811a4c248263909, type: 2}
+  - {fileID: 11400000, guid: 0301f76479b63394a89d420f7fc684ac, type: 2}
+  - {fileID: 11400000, guid: 6d5bf97df702444cdb6b05f0c5a3ad88, type: 2}
+  times:
+  - {fileID: 11400000, guid: c4ef068ec96997a4181b8dd407818fb6, type: 2}
+  - {fileID: 11400000, guid: 6039305ef7b849941b0144aa37501464, type: 2}
+  - {fileID: 11400000, guid: 744a2e9ef0b94bb489b745c1eeb6556f, type: 2}
+  - {fileID: 11400000, guid: 90e1f6d6cc3d1c046809ec48e8c7710d, type: 2}
   playerGlyphs:
   - {fileID: 11400000, guid: caa56952924210c419bb3e0146bf0640, type: 2}
   - {fileID: 11400000, guid: 4f07cc7fa8f6a0a47817e9f0b54c5dea, type: 2}
@@ -472,17 +487,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e5a7766c53dc15542a7e44016cd479d5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spawnPoint: {fileID: 0}
-  spawnRate: 1
   populateThis: 0
+  spawnRate: 1
+  spawnRegions: {fileID: 0}
+  spawnPoint: {fileID: 0}
+  environmentController: {fileID: 0}
+  backgroundPrefab: {fileID: 0}
+  sunPrefab: {fileID: 0}
   playerPrefab: {fileID: 0}
-  background: {fileID: 1132350490}
   backgroundRegions: []
-  cloud_prefab: {fileID: 0}
-  cloud_spawn: {x: 0, y: 0, z: 0}
-  cloud_interval: 0
-  cloud_capacity: 0
-  clouds_active: 0
 --- !u!1 &1713389048
 GameObject:
   m_ObjectHideFlags: 0

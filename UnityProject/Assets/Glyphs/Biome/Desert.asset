@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 127122afcdb612b45ab614e9fdc527d3, type: 3}
   m_Name: Desert
   m_EditorClassIdentifier: 
-  icon: {fileID: 0}
-  spawnrate: 1
+  icon: {fileID: 21300000, guid: 961ad87c4bc117e4988393909a7738b2, type: 3}
+  spawnrate: 0.5
   foreGround:
   - prefab: {fileID: 7369780891568204197, guid: 99a23809820f84033a9c8941687cb719, type: 3}
     offset: {x: 0, y: 0}

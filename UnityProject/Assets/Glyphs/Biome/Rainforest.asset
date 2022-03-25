@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 127122afcdb612b45ab614e9fdc527d3, type: 3}
   m_Name: Rainforest
   m_EditorClassIdentifier: 
-  icon: {fileID: 0}
-  spawnrate: 1
+  icon: {fileID: 21300000, guid: ce1494d676a48b44fadde7e611470f76, type: 3}
+  spawnrate: 0.5
   foreGround:
   - prefab: {fileID: 4717175861883442912, guid: d35fa0eed5c4e4e169e0cc6bd6b505ad, type: 3}
     offset: {x: 0, y: 0}

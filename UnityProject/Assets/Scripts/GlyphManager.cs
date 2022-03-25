@@ -9,4 +9,29 @@ public static class GlyphManager
     public static GlyphBiome biome;
 
     public static List<Glyph> playerGlyphs = new List<Glyph>();
+
+    public static int timeIndex = -1;
+
+    public static List<GlyphLandscape> landscapes;
+    public static List<GlyphBiome> biomes;
+    public static List<GlyphTime> times;
+
+
+    // TODO: refactor this
+    public static Location GetLocation()
+    {
+        
+        int i = landscapes.IndexOf(landscape);
+
+        Location retval = null;
+
+        foreach (Location l in landscapes[i].locations)
+        {
+            if (l.biome == biome)
+                return l;
+        }
+        
+
+        throw new System.Exception("Cannot find location");
+    }
 }

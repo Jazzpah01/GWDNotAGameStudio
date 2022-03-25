@@ -13,5 +13,6 @@ MonoBehaviour:
   m_Name: time0
   m_EditorClassIdentifier: 
   icon: {fileID: 0}
+  seed: 0
   sunSprite: {fileID: 21300000, guid: 3ab80c059e2decd4887683b9665169ac, type: 3}
-  sunPosition: {x: -3, y: 5}
+  sunPosition: {x: -3, y: 3}

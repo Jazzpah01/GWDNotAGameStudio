@@ -12,7 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9cd47433d3324c74798b2aa86dbcfc42, type: 3}
   m_Name: flatland
   m_EditorClassIdentifier: 
-  icon: {fileID: 21300000, guid: c05c02b23dd174b21a382501be3cb9bd, type: 3}
+  icon: {fileID: 21300000, guid: b42996c4893a04ccd9a44820efcc3b10, type: 3}
+  seed: 0
   sceneName: flatland
   locations:
   - landscape: {fileID: 0}

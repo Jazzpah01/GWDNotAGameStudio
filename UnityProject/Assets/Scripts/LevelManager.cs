@@ -108,7 +108,7 @@ public class LevelManager : MonoBehaviour
                 GameObject newGO = Instantiate(GlyphManager.biome.foreGround[index].prefab);
                 newGO.transform.position = new Vector3(x, y, z);
                 newGO.transform.localScale = newGO.transform.localScale * Mathf.Lerp(assetArea.buttomScale, assetArea.topScale, r);
-                newGO.GetComponent<SpriteRenderer>().sortingLayerID = assetArea.sortingLayer;
+                newGO.GetComponent<SpriteRenderer>().sortingOrder = assetArea.sortingLayer;
             }
         }
     }

@@ -1,5 +1,32 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-303060382908309031
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Glyphs/GlyphInteractionGWD
+  m_EditorClassIdentifier: 
+  Path: event:/Glyphs/GlyphInteractionGWD
+  Guid:
+    Data1: -60890593
+    Data2: 1082855705
+    Data3: 797959350
+    Data4: -2116961585
+  Banks:
+  - {fileID: 2038365989225577009}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 1700
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12,10 +39,209 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d32cf7c32a3ed8347bac48ef5ed56d82, type: 3}
   m_Name: FMODStudioCache
   m_EditorClassIdentifier: 
-  EditorBanks: []
-  EditorEvents: []
+  EditorBanks:
+  - {fileID: 4467477308227861636}
+  - {fileID: 565867343320947695}
+  - {fileID: 2038365989225577009}
+  - {fileID: 6968221525733921813}
+  EditorEvents:
+  - {fileID: 5705891242211003167}
+  - {fileID: 315093036853244901}
+  - {fileID: -303060382908309031}
+  - {fileID: 660316860556963439}
+  - {fileID: 3787406161090497864}
   EditorParameters: []
-  MasterBanks: []
-  StringsBanks: []
-  cacheTime: 0
+  MasterBanks:
+  - {fileID: 6968221525733921813}
+  StringsBanks:
+  - {fileID: 4467477308227861636}
+  cacheTime: 637837945104287295
   cacheVersion: 10
+--- !u!114 &315093036853244901
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Character/WallBumpGWD
+  m_EditorClassIdentifier: 
+  Path: event:/Character/WallBumpGWD
+  Guid:
+    Data1: 2041345289
+    Data2: 1179614360
+    Data3: 2130685626
+    Data4: 1257639464
+  Banks:
+  - {fileID: 565867343320947695}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 300
+--- !u!114 &565867343320947695
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Character.bank
+  m_EditorClassIdentifier: 
+  Path: gwdFMOD/Build/Desktop/Character.bank
+  Name: Character
+  StudioPath: bank:/Character
+  lastModified: 637837945103970639
+  FileSizes:
+  - Name: Desktop
+    Value: 23200
+  Exists: 1
+--- !u!114 &660316860556963439
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Glyphs/GlyphAqusitionGWD
+  m_EditorClassIdentifier: 
+  Path: event:/Glyphs/GlyphAqusitionGWD
+  Guid:
+    Data1: -1477016996
+    Data2: 1130439422
+    Data3: -2086337114
+    Data4: -282968960
+  Banks:
+  - {fileID: 2038365989225577009}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 4000
+--- !u!114 &2038365989225577009
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Glyph.bank
+  m_EditorClassIdentifier: 
+  Path: gwdFMOD/Build/Desktop/Glyph.bank
+  Name: Glyph
+  StudioPath: bank:/Glyph
+  lastModified: 637837945104287295
+  FileSizes:
+  - Name: Desktop
+    Value: 299584
+  Exists: 1
+--- !u!114 &3787406161090497864
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Glyphs/TeleportGWD
+  m_EditorClassIdentifier: 
+  Path: event:/Glyphs/TeleportGWD
+  Guid:
+    Data1: -591127298
+    Data2: 1196617252
+    Data3: 885937843
+    Data4: -345663040
+  Banks:
+  - {fileID: 2038365989225577009}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 10000
+--- !u!114 &4467477308227861636
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.strings.bank
+  m_EditorClassIdentifier: 
+  Path: gwdFMOD/Build/Desktop/Master.strings.bank
+  Name: Master.strings
+  StudioPath: bank:/Master.strings
+  lastModified: 637837945103758297
+  FileSizes:
+  - Name: Desktop
+    Value: 1092
+  Exists: 1
+--- !u!114 &5705891242211003167
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Character/FootstepsLush
+  m_EditorClassIdentifier: 
+  Path: event:/Character/FootstepsLush
+  Guid:
+    Data1: -1389764350
+    Data2: 1298534641
+    Data3: 1314804881
+    Data4: 1355572809
+  Banks:
+  - {fileID: 565867343320947695}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 480
+--- !u!114 &6968221525733921813
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: gwdFMOD/Build/Desktop/Master.bank
+  Name: Master
+  StudioPath: bank:/Master
+  lastModified: 637837945103737613
+  FileSizes:
+  - Name: Desktop
+    Value: 1036
+  Exists: 1

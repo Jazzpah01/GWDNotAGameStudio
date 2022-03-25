@@ -12,7 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9cd47433d3324c74798b2aa86dbcfc42, type: 3}
   m_Name: valley
   m_EditorClassIdentifier: 
-  icon: {fileID: 21300000, guid: d57d97edd957cc94c9582f26e7eeeaca, type: 3}
+  icon: {fileID: 21300000, guid: b568733ae44084d86a79b42b859c7f68, type: 3}
+  seed: 0
   sceneName: valley
   locations:
   - landscape: {fileID: 0}

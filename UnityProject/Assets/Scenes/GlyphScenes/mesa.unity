@@ -140,7 +140,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8532004738753024356, guid: 91ca82b0409b09f439ac999fcb2f6bab, type: 3}
       propertyPath: m_LocalScale.x
-      value: 37.17015
+      value: 78.52194
       objectReference: {fileID: 0}
     - target: {fileID: 8532004738753024356, guid: 91ca82b0409b09f439ac999fcb2f6bab, type: 3}
       propertyPath: m_LocalScale.y
@@ -218,11 +218,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8532004738753024356, guid: 91ca82b0409b09f439ac999fcb2f6bab, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -10.3591
+      value: -29.44
       objectReference: {fileID: 0}
     - target: {fileID: 8532004738753024356, guid: 91ca82b0409b09f439ac999fcb2f6bab, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.5729
+      value: 2.31
       objectReference: {fileID: 0}
     - target: {fileID: 8532004738753024356, guid: 91ca82b0409b09f439ac999fcb2f6bab, type: 3}
       propertyPath: m_LocalPosition.z
@@ -334,7 +334,7 @@ Canvas:
   m_OverrideSorting: 0
   m_OverridePixelPerfect: 0
   m_SortingBucketNormalizedSize: 0
-  m_AdditionalShaderChannelsFlag: 0
+  m_AdditionalShaderChannelsFlag: 25
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
@@ -1078,11 +1078,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8532004738753024356, guid: 91ca82b0409b09f439ac999fcb2f6bab, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 28.36
+      value: 47.47
       objectReference: {fileID: 0}
     - target: {fileID: 8532004738753024356, guid: 91ca82b0409b09f439ac999fcb2f6bab, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.5729
+      value: 2.29
       objectReference: {fileID: 0}
     - target: {fileID: 8532004738753024356, guid: 91ca82b0409b09f439ac999fcb2f6bab, type: 3}
       propertyPath: m_LocalPosition.z

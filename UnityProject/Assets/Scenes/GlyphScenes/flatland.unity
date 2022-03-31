@@ -370,11 +370,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8532004738753024356, guid: 91ca82b0409b09f439ac999fcb2f6bab, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -17.95
+      value: -38.2
       objectReference: {fileID: 0}
     - target: {fileID: 8532004738753024356, guid: 91ca82b0409b09f439ac999fcb2f6bab, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.1
+      value: 2.69
       objectReference: {fileID: 0}
     - target: {fileID: 8532004738753024356, guid: 91ca82b0409b09f439ac999fcb2f6bab, type: 3}
       propertyPath: m_LocalPosition.z
@@ -435,11 +435,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8532004738753024356, guid: 91ca82b0409b09f439ac999fcb2f6bab, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 45.4417
+      value: 65.8
       objectReference: {fileID: 0}
     - target: {fileID: 8532004738753024356, guid: 91ca82b0409b09f439ac999fcb2f6bab, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.0999999
+      value: 2.72
       objectReference: {fileID: 0}
     - target: {fileID: 8532004738753024356, guid: 91ca82b0409b09f439ac999fcb2f6bab, type: 3}
       propertyPath: m_LocalPosition.z
@@ -760,7 +760,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8532004738753024356, guid: 91ca82b0409b09f439ac999fcb2f6bab, type: 3}
       propertyPath: m_LocalScale.x
-      value: 65.45646
+      value: 106.366745
       objectReference: {fileID: 0}
     - target: {fileID: 8532004738753024356, guid: 91ca82b0409b09f439ac999fcb2f6bab, type: 3}
       propertyPath: m_LocalScale.y
@@ -768,7 +768,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8532004738753024356, guid: 91ca82b0409b09f439ac999fcb2f6bab, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 13.8244
+      value: 13.824
       objectReference: {fileID: 0}
     - target: {fileID: 8532004738753024356, guid: 91ca82b0409b09f439ac999fcb2f6bab, type: 3}
       propertyPath: m_LocalPosition.y
@@ -1012,7 +1012,7 @@ Canvas:
   m_OverrideSorting: 0
   m_OverridePixelPerfect: 0
   m_SortingBucketNormalizedSize: 0
-  m_AdditionalShaderChannelsFlag: 0
+  m_AdditionalShaderChannelsFlag: 25
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0

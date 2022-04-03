@@ -13,7 +13,11 @@ public class InitialLevel : MonoBehaviour
     public List<GlyphBiome> biomes;
     public List<GlyphTime> times;
 
+    public GlyphCollection glyphCollection;
+
     public List<Glyph> playerGlyphs;
+
+    public Places places;
 
     public static bool gameInitialized = false;
 
@@ -26,15 +30,15 @@ public class InitialLevel : MonoBehaviour
             GlyphManager.playerGlyphs.Add(glyph);
         }
 
-        GlyphManager.times = times;
-        GlyphManager.biomes = biomes;
-        GlyphManager.landscapes = landscapes;
+        GlyphManager.collection = glyphCollection;
 
         GlyphManager.time = timeGlyph;
         GlyphManager.biome = biomeGlyph;
         GlyphManager.landscape = landscapeGlyph;
 
         gameInitialized = true;
+
+        PlaceManager._places = places;
 
         SceneManager.LoadScene(landscapeGlyph.sceneName);
     }

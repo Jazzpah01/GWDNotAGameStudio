@@ -15,9 +15,11 @@ public class LevelManager : MonoBehaviour
     public float spawnRate = 1;
 
     [Header("References")]
+    public GlyphLandscape landscapeGlyph;
     public Transform spawnRegions;
     public Transform spawnPoint;
     public EnvCamController environmentController;
+    public PlaceManager placeManager;
 
     [Header("External References")]
     public GameObject backgroundPrefab;
@@ -43,7 +45,9 @@ public class LevelManager : MonoBehaviour
         if (!InitialLevel.gameInitialized)
         {
             // TODO: set location glyph to match the scene.
+            GlyphManager.landscape = landscapeGlyph;
             SceneManager.LoadScene(0);
+            return;
         }
 
         DOTween.Init(); // empty param = default settings
@@ -60,8 +64,8 @@ public class LevelManager : MonoBehaviour
 
     public void SetupGlyphs()
     {
-        GlyphManager.timeIndex = (GlyphManager.timeIndex + 1) % GlyphManager.times.Count;
-        GlyphManager.time = GlyphManager.times[GlyphManager.timeIndex];
+        GlyphManager.timeIndex = (GlyphManager.timeIndex + 1) % GlyphManager.collection.times.Count;
+        GlyphManager.time = GlyphManager.collection.times[GlyphManager.timeIndex];
     }
 
     public void PopulateScene()
@@ -128,6 +132,11 @@ public class LevelManager : MonoBehaviour
                 ren.sortingOrder = assetArea.sortingOrder;
             }
         }
+
+        // Load place
+        placeManager.biome = GlyphManager.biome;
+        placeManager.time = GlyphManager.time;
+        placeManager.LoadPlace();
     }
 
     public void ChangeScene()

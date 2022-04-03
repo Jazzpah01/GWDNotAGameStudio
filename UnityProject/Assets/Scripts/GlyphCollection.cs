@@ -5,7 +5,7 @@ using UnityEngine;
 [CreateAssetMenu(menuName ="Assets/Glyph Collection")]
 public class GlyphCollection : ScriptableObject
 {
-    public List<GlyphLandscape> landscapeGlyphs;
-    public List<GlyphBiome> biomeGlyphs;
-    public List<GlyphTime> timeGlyphs;
+    public List<GlyphLandscape> landscapes;// Glyphs;
+    public List<GlyphBiome> biomes;// Glyphs;
+    public List<GlyphTime> times;// Glyphs;
 }

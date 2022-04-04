@@ -36,7 +36,9 @@ public class CameraController : MonoBehaviour
         */
         if (GameManager.instance.player != null)
         {
-            gameObject.transform.position = new Vector3(GameManager.instance.player.transform.position.x + x_offset, GameManager.instance.player.transform.position.y + y_offset, -10f);
+            //gameObject.transform.position = new Vector3(GameManager.instance.player.transform.position.x + x_offset, GameManager.instance.player.transform.position.y + y_offset, -10f);
+            gameObject.transform.position = new Vector3(GameManager.instance.player.transform.position.x + x_offset, y_offset, -10f);
+            // TO-DO: Add Camera lerping on player jumping etc.
         }
     }
 }

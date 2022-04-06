@@ -6,11 +6,13 @@ public class GameManager : MonoBehaviour
 {
 
     public static GameManager instance;
+    //public static QuestManager qManager; // is static
     public Canvas canvasUI;
     public WaystoneUI waystoneUI;
     public GameObject player;
 
     private bool isUIopen;
+    private bool isDialogueActive;
 
     InteractableUI[] playerGlyphsUI;
     InteractableUI[] waystoneGlyphsUI;
@@ -88,5 +90,15 @@ public class GameManager : MonoBehaviour
     {
         isUIopen = isOpen;
         Debug.Log("UI open is:   " + isOpen);
+    }
+
+    public bool getIsDialogueActive()
+    {
+        return isDialogueActive;
+    }
+
+    public void setIsDialogueActive(bool active)
+    {
+        isDialogueActive = active;
     }
 }

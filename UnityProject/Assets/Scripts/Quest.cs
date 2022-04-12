@@ -2,16 +2,20 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class DialogueUI : MonoBehaviour
+public class Quest : MonoBehaviour
 {
 
-    public GameObject npc;
+    // list of quest events
+
+    // execute quest events on a specific trigger based on scene objects
+
+    
 
 
     // Start is called before the first frame update
     void Start()
     {
-        // Load in text strings from dialogue data
+        
     }
 
     // Update is called once per frame

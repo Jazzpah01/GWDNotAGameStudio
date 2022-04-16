@@ -14,6 +14,8 @@ public class LevelManager : MonoBehaviour
     public bool populateThis = true;
     public float spawnRate = 1;
 
+    public SceneContext sceneContext;
+
     [Header("References")]
     public GlyphLandscape landscapeGlyph;
     public Transform spawnRegions;
@@ -137,6 +139,21 @@ public class LevelManager : MonoBehaviour
         placeManager.biome = GlyphManager.biome;
         placeManager.time = GlyphManager.time;
         placeManager.LoadPlace();
+    }
+
+    public void ExecuteQuestEvents()
+    {
+        foreach (Quest quest in QuestManager.currentQuests)
+        {
+            foreach (QuestEvent qevent in quest.questEvents)
+            {
+                if (qevent.ShouldExecute(sceneContext))
+                {
+                    qevent.Execute(sceneContext);
+                    qevent.hasExecuted = true;
+                }
+            }
+        }
     }
 
     public void ChangeScene()

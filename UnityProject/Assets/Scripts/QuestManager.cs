@@ -11,6 +11,8 @@ public static class QuestManager
 
     public static int currentQuestIndex;
 
+    public static List<Quest> currentQuests = new List<Quest>();
+
 
 
     

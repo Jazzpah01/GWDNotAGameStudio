@@ -19,6 +19,12 @@ public class CharacterController : MonoBehaviour
 
     private bool bouncing = false;
 
+
+    //quest and dialogue stuff:
+    public bool isInDialogue;
+    public int currentQuest;
+
+
     private bool Flipped
     {
         get
@@ -49,59 +55,67 @@ public class CharacterController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.UpArrow))
+        if (!isInDialogue)
         {
-            if (Input.GetKey(KeyCode.Space) && !bouncing)
+            if (Input.GetKeyDown(KeyCode.UpArrow) || Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.W))
             {
-                body.ApplyFilter(bouncy);
-                bouncing = true;
+                if (Input.GetKey(KeyCode.Space) && !bouncing)
+                {
+                    //body.ApplyFilter(bouncy);
+                    //bouncing = true;
+                }
+                body.JumpInput(1);
             }
-            body.JumpInput(1);
-        }
-        if (Input.GetKeyUp(KeyCode.UpArrow))
-        {
-            body.FallInput();
-        }
+            if (Input.GetKeyUp(KeyCode.UpArrow))
+            {
+                body.FallInput();
+            }
 
-        if (Input.GetKey(KeyCode.LeftArrow))
-        {
-            body.HorizontalInput(-1);
-            SetWalking(true);
-            FlipSprite(true);
-        } else if (Input.GetKey(KeyCode.RightArrow))
-        {
-            body.HorizontalInput(1);
-            SetWalking(true);
-            FlipSprite(false);
+            if (Input.GetKey(KeyCode.LeftArrow) || Input.GetKey(KeyCode.A))
+            {
+                body.HorizontalInput(-1);
+                SetWalking(true);
+                FlipSprite(true);
+            }
+            else if (Input.GetKey(KeyCode.RightArrow) || Input.GetKey(KeyCode.D))
+            {
+                body.HorizontalInput(1);
+                SetWalking(true);
+                FlipSprite(false);
+            }
+            else
+            {
+                SetWalking(false);
+            }
+
+
+            if (Input.GetKeyDown(KeyCode.LeftShift) && running != null)
+            {
+                body.ApplyFilter(running);
+            }
+            if (Input.GetKeyUp(KeyCode.LeftShift) && running != null)
+            {
+                body.RemoveFilter(running);
+            }
+
+
+            if (Input.GetKeyDown(KeyCode.LeftControl) && crouch != null)
+            {
+                body.ApplyFilter(crouch);
+            }
+            if (Input.GetKeyUp(KeyCode.LeftControl) && crouch != null)
+            {
+                body.RemoveFilter(crouch);
+            }
+
+            if (Input.GetKeyUp(KeyCode.Space) && bouncing)
+            {
+                body.RemoveFilter(bouncy);
+                bouncing = false;
+            }
         } else
         {
             SetWalking(false);
-        }
-        
-
-        if (Input.GetKeyDown(KeyCode.LeftShift) && running != null)
-        {
-            body.ApplyFilter(running);
-        }
-        if (Input.GetKeyUp(KeyCode.LeftShift) && running != null)
-        {
-            body.RemoveFilter(running);
-        }
-
-
-        if (Input.GetKeyDown(KeyCode.LeftControl) && crouch != null)
-        {
-            body.ApplyFilter(crouch);
-        }
-        if (Input.GetKeyUp(KeyCode.LeftControl) && crouch != null)
-        {
-            body.RemoveFilter(crouch);
-        }
-
-        if (Input.GetKeyUp(KeyCode.Space) && bouncing)
-        {
-            body.RemoveFilter(bouncy);
-            bouncing = false;
         }
     }
 

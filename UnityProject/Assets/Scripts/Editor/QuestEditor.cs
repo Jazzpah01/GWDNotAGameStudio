@@ -99,7 +99,6 @@ public class QuestEditor : Editor
             }
 
             EditorGUILayout.BeginHorizontal();
-            Debug.Log($"{objectToDraw};{pi};{p};{p.GetValue(objectToDraw)}");
 
             Type pType = p.FieldType;
             object o = p.GetValue(objectToDraw);
@@ -131,6 +130,10 @@ public class QuestEditor : Editor
             {
                 p.SetValue(objectToDraw, EditorGUILayout.EnumFlagsField((Enum)p.GetValue(objectToDraw)));
             }
+            else if (pType == typeof(Vector2))
+            {
+                p.SetValue(objectToDraw, EditorGUILayout.Vector2Field("", (Vector2)p.GetValue(objectToDraw)));
+            }
             else
             {
                 throw new System.Exception("Could not serialize object!");
@@ -156,6 +159,10 @@ public class QuestEditor : Editor
                 return CreateInstance<EnterSceneEvent>();
             case QuestEventType.SetDialogue:
                 return CreateInstance<SetDialogueEvent>();
+            case QuestEventType.SpawnGameObject:
+                return CreateInstance<SpawnGameObjectEvent>();
+            case QuestEventType.RemoveGameObject:
+                return CreateInstance<RemoveGameObjectEvent>();
             default:
                 throw new Exception("Event isn't implemented!");
         }

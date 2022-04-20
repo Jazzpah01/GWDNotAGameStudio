@@ -5,8 +5,8 @@ using UnityEngine;
 public class SceneContext
 {
     /// <summary>
-    /// Key: Scene GameObject.
-    /// Value: Prefab of the GameObject.
+    /// Key: Prefab.
+    /// Value: List of game objects of the prefab.
     /// </summary>
-    public Dictionary<GameObject, GameObject> EventObjects = new Dictionary<GameObject, GameObject>();
+    public Dictionary<GameObject, List<GameObject>> EventObjects = new Dictionary<GameObject, List<GameObject>>();
 }

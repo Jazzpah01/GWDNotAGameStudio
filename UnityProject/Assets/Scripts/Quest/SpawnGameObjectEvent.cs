@@ -20,7 +20,10 @@ public class SpawnGameObjectEvent : QuestEvent
         ngo.transform.position = position;
         ngo.transform.localScale = scale;
 
-        context.EventObjects.Add(ngo, prefab);
+        if (!context.EventObjects.ContainsKey(prefab))
+            context.EventObjects.Add(prefab, new List<GameObject>());
+
+        context.EventObjects[prefab].Add(ngo);
     }
 
     public override bool ShouldExecute(SceneContext context)

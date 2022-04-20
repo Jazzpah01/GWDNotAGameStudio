@@ -12,7 +12,7 @@ public class EnterSceneEvent : QuestEvent
 
     public override void Execute(SceneContext context)
     {
-        quest.QuestIndex += questIncrease;
+
     }
 
     public override bool ShouldExecute(SceneContext context)

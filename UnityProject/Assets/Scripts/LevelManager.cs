@@ -55,7 +55,7 @@ public class LevelManager : MonoBehaviour
         DOTween.Init(); // empty param = default settings
         SetupGlyphs();
         PopulateScene();
-
+        ExecuteQuestEvents();
         
     }
 
@@ -147,8 +147,12 @@ public class LevelManager : MonoBehaviour
         {
             foreach (QuestEvent qevent in quest.questEvents)
             {
+                if (qevent.questIndex > quest.QuestIndex)
+                    continue;
+
                 if (qevent.ShouldExecute(sceneContext))
                 {
+                    print("Executing quest event!");
                     qevent.Execute(sceneContext);
                     qevent.hasExecuted = true;
                 }

@@ -16,8 +16,11 @@ public class RemoveGameObjectEvent : QuestEvent
     {
         if (context.EventObjects.ContainsKey(prefab))
         {
-            Destroy(context.EventObjects[prefab]);
-            context.EventObjects.Remove(prefab);
+            foreach(GameObject go in context.EventObjects[prefab])
+            {
+                context.EventObjects[prefab].Remove(go);
+                Destroy(go);
+            }
         }
     }
 

@@ -16,6 +16,9 @@ public class LevelManager : MonoBehaviour
 
     public SceneContext sceneContext;
 
+    public bool finishedLoading = false;
+    public bool loadingQuestEvents = true;
+
     [Header("References")]
     public GlyphLandscape landscapeGlyph;
     public Transform spawnRegions;
@@ -37,12 +40,15 @@ public class LevelManager : MonoBehaviour
     private void Awake()
     {
         instance = this;
+        sceneContext = new SceneContext();
     }
 
     private void Start()
     {
         if (!populateThis)
             return;
+
+        finishedLoading = false;
 
         if (!InitialLevel.gameInitialized)
         {
@@ -56,6 +62,8 @@ public class LevelManager : MonoBehaviour
         SetupGlyphs();
         PopulateScene();
         ExecuteQuestEvents();
+
+        finishedLoading = true;
         
     }
 
@@ -117,6 +125,7 @@ public class LevelManager : MonoBehaviour
                 GameObject newGO = Instantiate(GlyphManager.biome.foreGround[index].prefab);
                 newGO.transform.position = new Vector3(x, y, z);
                 newGO.transform.localScale = newGO.transform.localScale * Mathf.Lerp(assetArea.buttomScale, assetArea.topScale, r);
+                newGO.transform.parent = transform;
 
                 SpriteRenderer ren = newGO.GetComponent<SpriteRenderer>();
 
@@ -143,6 +152,9 @@ public class LevelManager : MonoBehaviour
 
     public void ExecuteQuestEvents()
     {
+        List<QuestEvent> toExecute = new List<QuestEvent>();
+        loadingQuestEvents = true;
+
         foreach (Quest quest in QuestManager.currentQuests)
         {
             foreach (QuestEvent qevent in quest.questEvents)
@@ -152,11 +164,15 @@ public class LevelManager : MonoBehaviour
 
                 if (qevent.ShouldExecute(sceneContext))
                 {
-                    print("Executing quest event!");
-                    qevent.Execute(sceneContext);
-                    qevent.hasExecuted = true;
+                    toExecute.Add(qevent);
                 }
             }
+        }
+
+        loadingQuestEvents = false;
+        foreach (QuestEvent item in toExecute)
+        {
+            item.Execute(sceneContext);
         }
     }
 

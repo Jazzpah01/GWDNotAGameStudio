@@ -5,8 +5,6 @@ using UnityEngine;
 public enum QuestEventType
 {
     EnterScene,
-    SpawnNPC,
-    RemoveNPC,
     SetDialogue,
     SpawnGameObject,
     RemoveGameObject

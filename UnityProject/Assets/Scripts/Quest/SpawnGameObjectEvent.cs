@@ -24,13 +24,12 @@ public class SpawnGameObjectEvent : QuestEvent
             context.EventObjects.Add(prefab, new List<GameObject>());
 
         context.EventObjects[prefab].Add(ngo);
+
+        CallBack();
     }
 
     public override bool ShouldExecute(SceneContext context)
     {
-        if (!base.ShouldExecute(context))
-            return false;
-
         if (GlyphManager.landscape != landscape || GlyphManager.biome != biome || GlyphManager.time != time)
             return false;
 

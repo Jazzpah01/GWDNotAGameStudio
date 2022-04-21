@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class RemoveGameObjectEvent : QuestEvent
 {
-    public override QuestEventType questEventType => throw new System.NotImplementedException();
+    public override QuestEventType questEventType => QuestEventType.RemoveGameObject;
 
     public GlyphLandscape landscape;
     public GlyphBiome biome;
@@ -16,19 +16,18 @@ public class RemoveGameObjectEvent : QuestEvent
     {
         if (context.EventObjects.ContainsKey(prefab))
         {
-            foreach(GameObject go in context.EventObjects[prefab])
+            foreach(GameObject go in context.EventObjects[prefab].ToArray())
             {
                 context.EventObjects[prefab].Remove(go);
                 Destroy(go);
             }
         }
+
+        CallBack();
     }
 
     public override bool ShouldExecute(SceneContext context)
     {
-        if (!base.ShouldExecute(context))
-            return false;
-
         if (GlyphManager.landscape != landscape || GlyphManager.biome != biome || GlyphManager.time != time)
             return false;
 

@@ -40,6 +40,7 @@ public class InitialLevel : MonoBehaviour
         PlaceManager._places = places;
 
         QuestManager.currentQuests.Add(initialQuest);
+        initialQuest.Init();
 
         SceneManager.LoadScene(landscapeGlyph.sceneName);
     }

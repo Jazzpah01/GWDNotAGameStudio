@@ -11,6 +11,21 @@ public class QuestEditor : Editor
     {
         Quest quest = (Quest)serializedObject.targetObject;
 
+        if (Application.isPlaying && Application.isEditor)
+        {
+            GUILayout.Label($"---DEBUG---");
+            GUILayout.Label($"Quest Index: {quest.QuestIndex}");
+            GUILayout.Label($"---     ---");
+        }
+
+        quest.customEditing = EditorGUILayout.Toggle("Enable Custom Editing", quest.customEditing);
+
+        if (!quest.customEditing)
+        {
+            base.OnInspectorGUI();
+            return;
+        }
+
         if (GUILayout.Button("Save Asset"))
         {
             foreach (QuestEvent item in quest.questEvents)

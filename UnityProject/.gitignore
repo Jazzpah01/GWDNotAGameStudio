@@ -89,4 +89,4 @@ Logs/
 # Log files can be ignored.
 fmod_editor.log
 
-!GWDfmod/Build/*
+!GWDfmod/Build/

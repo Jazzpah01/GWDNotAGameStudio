@@ -2,17 +2,27 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Dialogue : MonoBehaviour
+[CreateAssetMenu(menuName = "Assets/Dialogue")]
+public class Dialogue : ScriptableObject
 {
-    // Start is called before the first frame update
-    void Start()
+
+    public List<DLine> lines = new List<DLine>();
+    public int current = -1;
+
+    private bool isComplete;
+
+    public DLine GetLine(int i)
     {
-        
+        return lines[i];
     }
 
-    // Update is called once per frame
-    void Update()
+    public void SetComplete(bool b)
     {
-        
+        isComplete = b;
+    }
+
+    public bool GetComplete()
+    {
+        return isComplete;
     }
 }

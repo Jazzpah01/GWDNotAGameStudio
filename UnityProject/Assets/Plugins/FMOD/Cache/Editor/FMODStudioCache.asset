@@ -26,7 +26,7 @@ MonoBehaviour:
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 2638
+  Length: 2500
 --- !u!114 &-8149566203998267157
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -53,7 +53,7 @@ MonoBehaviour:
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 1593
+  Length: 551
 --- !u!114 &-7458459281590321133
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -69,11 +69,38 @@ MonoBehaviour:
   Path: GWDfmod/Build/Desktop/Glyph.bank
   Name: Glyph
   StudioPath: bank:/Glyph
-  lastModified: 637849929429465943
+  lastModified: 637862005463280542
   FileSizes:
   - Name: Desktop
-    Value: 298336
+    Value: 477632
   Exists: 1
+--- !u!114 &-6271431284513025131
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Character/Cursor Hover
+  m_EditorClassIdentifier: 
+  Path: event:/Character/Cursor Hover
+  Guid:
+    Data1: -302470945
+    Data2: 1215528060
+    Data3: 647740600
+    Data4: -1725377619
+  Banks:
+  - {fileID: 3551203094586082317}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 2000
 --- !u!114 &-1646406101694628851
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -89,7 +116,7 @@ MonoBehaviour:
   Path: GWDfmod/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 637849929424297729
+  lastModified: 637862005463293286
   FileSizes:
   - Name: Desktop
     Value: 1036
@@ -111,19 +138,42 @@ MonoBehaviour:
   - {fileID: 3551203094586082317}
   - {fileID: -7458459281590321133}
   - {fileID: -1646406101694628851}
+  - {fileID: 1223460719730574784}
   EditorEvents:
   - {fileID: 8740263254286346063}
   - {fileID: -8149566203998267157}
-  - {fileID: 5848928834683262469}
   - {fileID: -8945147672635010749}
   - {fileID: 2257109516051158025}
+  - {fileID: 7067983121640024738}
+  - {fileID: -6271431284513025131}
+  - {fileID: 8833154373312674333}
   EditorParameters: []
   MasterBanks:
   - {fileID: -1646406101694628851}
   StringsBanks:
   - {fileID: 4477200001679575713}
-  cacheTime: 637849929429465943
+  cacheTime: 637862005463341592
   cacheVersion: 10
+--- !u!114 &1223460719730574784
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Background Music.bank
+  m_EditorClassIdentifier: 
+  Path: GWDfmod/Build/Desktop/Background Music.bank
+  Name: Background Music
+  StudioPath: bank:/Background Music
+  lastModified: 637862005452176165
+  FileSizes:
+  - Name: Desktop
+    Value: 304832
+  Exists: 1
 --- !u!114 &2257109516051158025
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -150,7 +200,7 @@ MonoBehaviour:
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 9822
+  Length: 6500
 --- !u!114 &3551203094586082317
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -166,10 +216,10 @@ MonoBehaviour:
   Path: GWDfmod/Build/Desktop/Character.bank
   Name: Character
   StudioPath: bank:/Character
-  lastModified: 637849929424605734
+  lastModified: 637862005458425591
   FileSizes:
   - Name: Desktop
-    Value: 22336
+    Value: 189952
   Exists: 1
 --- !u!114 &4477200001679575713
 MonoBehaviour:
@@ -186,12 +236,12 @@ MonoBehaviour:
   Path: GWDfmod/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 637849929424337985
+  lastModified: 637862005463341592
   FileSizes:
   - Name: Desktop
-    Value: 1062
+    Value: 1196
   Exists: 1
---- !u!114 &5848928834683262469
+--- !u!114 &7067983121640024738
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -201,23 +251,23 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Glyphs/Teleport
+  m_Name: event:/Ambient/Music
   m_EditorClassIdentifier: 
-  Path: event:/Glyphs/Teleport
+  Path: event:/Ambient/Music
   Guid:
-    Data1: 1722716416
-    Data2: 1277952784
-    Data3: -1663111761
-    Data4: -97957680
+    Data1: 404145549
+    Data2: 1255551762
+    Data3: -426562675
+    Data4: -1721918690
   Banks:
-  - {fileID: -7458459281590321133}
+  - {fileID: 1223460719730574784}
   IsStream: 0
   Is3D: 0
-  IsOneShot: 1
+  IsOneShot: 0
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 12146
+  Length: 18075
 --- !u!114 &8740263254286346063
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -245,3 +295,30 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 656
+--- !u!114 &8833154373312674333
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Character/Teleport
+  m_EditorClassIdentifier: 
+  Path: event:/Character/Teleport
+  Guid:
+    Data1: 1722716416
+    Data2: 1277952784
+    Data3: -1663111761
+    Data4: -97957680
+  Banks:
+  - {fileID: -7458459281590321133}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 13605

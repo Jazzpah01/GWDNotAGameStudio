@@ -225,6 +225,9 @@
 		</relationship>
 	</object>
 	<object class="EventMixerGroup" id="{0487f84c-f2e7-44c0-b489-532b498389de}">
+		<property name="volume">
+			<value>-7</value>
+		</property>
 		<property name="name">
 			<value>Castanets 2-3</value>
 		</property>
@@ -322,7 +325,7 @@
 	</object>
 	<object class="EventMixerGroup" id="{6e63ac54-0fb5-427b-bafa-e9b303ca2a5e}">
 		<property name="volume">
-			<value>-14.5</value>
+			<value>-35</value>
 		</property>
 		<property name="name">
 			<value>Bass</value>
@@ -609,10 +612,13 @@
 	</object>
 	<object class="SingleSound" id="{efca8d94-4aef-482a-9ec4-53d153e82ee1}">
 		<property name="start">
-			<value>10</value>
+			<value>12</value>
 		</property>
 		<property name="length">
-			<value>5.5</value>
+			<value>3.5</value>
+		</property>
+		<property name="timelockedOffset">
+			<value>2</value>
 		</property>
 		<relationship name="fadeInCurve">
 			<destination>{85774c96-cc82-4c4b-aab7-73c6e62db463}</destination>
@@ -659,6 +665,9 @@
 		</relationship>
 	</object>
 	<object class="EventMixerGroup" id="{e6ca7a6d-732e-4086-a45d-948dfc6653be}">
+		<property name="volume">
+			<value>-14.5</value>
+		</property>
 		<property name="name">
 			<value>Ascending Piano</value>
 		</property>
@@ -673,6 +682,9 @@
 		</relationship>
 	</object>
 	<object class="EventMixerGroup" id="{9da3bd1c-6e63-477d-818c-1b1b1a933690}">
+		<property name="volume">
+			<value>-17</value>
+		</property>
 		<property name="name">
 			<value>Decending Piano</value>
 		</property>
@@ -1664,7 +1676,7 @@
 	</object>
 	<object class="AutomationPoint" id="{a23ef1cc-6add-4aa6-a29c-1def569867a8}">
 		<property name="position">
-			<value>10</value>
+			<value>12</value>
 		</property>
 		<property name="value">
 			<value>0</value>
@@ -1675,7 +1687,7 @@
 	</object>
 	<object class="AutomationPoint" id="{c698db2e-8392-40cc-b0a5-4b27e7586d72}">
 		<property name="position">
-			<value>10.375</value>
+			<value>12.375</value>
 		</property>
 		<property name="value">
 			<value>1</value>

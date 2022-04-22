@@ -2,25 +2,46 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Quest : MonoBehaviour
+[CreateAssetMenu(menuName ="Assets/Quest")]
+public class Quest : ScriptableObject
 {
+    public string guid;
+    [HideInInspector] public bool customEditing = true;
+    private int questIndex = 0;
 
-    // list of quest events
-
-    // execute quest events on a specific trigger based on scene objects
-
-    
-
-
-    // Start is called before the first frame update
-    void Start()
+    public int QuestIndex
     {
-        
+        get => questIndex;
+        set
+        {
+            float delta = value - questIndex;
+
+            int i = 0;
+            for (int j = 0; j < questEvents.Count; j++)
+            {
+                i += questEvents[j].questIncrease;
+                if (i > value)
+                    break;
+
+                if (questEvents[j].questIndex >= questIndex && 
+                    questEvents[j].ShouldExecute(LevelManager.instance.sceneContext))
+                {
+                    questEvents[j].Execute(LevelManager.instance.sceneContext);
+                }
+            }
+
+            questIndex = value;
+        }
     }
 
-    // Update is called once per frame
-    void Update()
+    public void Init()
     {
-        
+        questIndex = 0;
+        foreach (QuestEvent e in questEvents)
+        {
+            e.Init(this);
+        }
     }
+
+    public List<QuestEvent> questEvents = new List<QuestEvent>();
 }

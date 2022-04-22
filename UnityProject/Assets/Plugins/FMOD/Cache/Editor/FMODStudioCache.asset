@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!114 &-303060382908309031
+--- !u!114 &-8945147672635010749
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -10,54 +10,24 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Glyphs/GlyphInteractionGWD
+  m_Name: event:/Glyphs/Interaction
   m_EditorClassIdentifier: 
-  Path: event:/Glyphs/GlyphInteractionGWD
+  Path: event:/Glyphs/Interaction
   Guid:
-    Data1: -60890593
-    Data2: 1082855705
-    Data3: 797959350
-    Data4: -2116961585
+    Data1: -1839576300
+    Data2: 1327057923
+    Data3: 174364302
+    Data4: 1783670800
   Banks:
-  - {fileID: 2038365989225577009}
+  - {fileID: -6860250179441994483}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 1700
---- !u!114 &11400000
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d32cf7c32a3ed8347bac48ef5ed56d82, type: 3}
-  m_Name: FMODStudioCache
-  m_EditorClassIdentifier: 
-  EditorBanks:
-  - {fileID: 4467477308227861636}
-  - {fileID: 565867343320947695}
-  - {fileID: 2038365989225577009}
-  - {fileID: 6968221525733921813}
-  EditorEvents:
-  - {fileID: 5705891242211003167}
-  - {fileID: 315093036853244901}
-  - {fileID: -303060382908309031}
-  - {fileID: 660316860556963439}
-  - {fileID: 3787406161090497864}
-  EditorParameters: []
-  MasterBanks:
-  - {fileID: 6968221525733921813}
-  StringsBanks:
-  - {fileID: 4467477308227861636}
-  cacheTime: 637837945104287295
-  cacheVersion: 10
---- !u!114 &315093036853244901
+  Length: 2638
+--- !u!114 &-8149566203998267157
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -67,71 +37,24 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Character/WallBumpGWD
+  m_Name: event:/Character/Wall Bump
   m_EditorClassIdentifier: 
-  Path: event:/Character/WallBumpGWD
+  Path: event:/Character/Wall Bump
   Guid:
-    Data1: 2041345289
-    Data2: 1179614360
-    Data3: 2130685626
-    Data4: 1257639464
+    Data1: -1197581765
+    Data2: 1310792267
+    Data3: 1238089623
+    Data4: -1296574310
   Banks:
-  - {fileID: 565867343320947695}
+  - {fileID: 7815961245167401626}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 300
---- !u!114 &565867343320947695
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/Character.bank
-  m_EditorClassIdentifier: 
-  Path: gwdFMOD/Build/Desktop/Character.bank
-  Name: Character
-  StudioPath: bank:/Character
-  lastModified: 637837945103970639
-  FileSizes:
-  - Name: Desktop
-    Value: 23200
-  Exists: 1
---- !u!114 &660316860556963439
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Glyphs/GlyphAqusitionGWD
-  m_EditorClassIdentifier: 
-  Path: event:/Glyphs/GlyphAqusitionGWD
-  Guid:
-    Data1: -1477016996
-    Data2: 1130439422
-    Data3: -2086337114
-    Data4: -282968960
-  Banks:
-  - {fileID: 2038365989225577009}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 4000
---- !u!114 &2038365989225577009
+  Length: 1593
+--- !u!114 &-6860250179441994483
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -146,86 +69,12 @@ MonoBehaviour:
   Path: gwdFMOD/Build/Desktop/Glyph.bank
   Name: Glyph
   StudioPath: bank:/Glyph
-  lastModified: 637837945104287295
+  lastModified: 637862295350296908
   FileSizes:
   - Name: Desktop
-    Value: 299584
+    Value: 298336
   Exists: 1
---- !u!114 &3787406161090497864
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Glyphs/TeleportGWD
-  m_EditorClassIdentifier: 
-  Path: event:/Glyphs/TeleportGWD
-  Guid:
-    Data1: -591127298
-    Data2: 1196617252
-    Data3: 885937843
-    Data4: -345663040
-  Banks:
-  - {fileID: 2038365989225577009}
-  IsStream: 1
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 10000
---- !u!114 &4467477308227861636
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/Master.strings.bank
-  m_EditorClassIdentifier: 
-  Path: gwdFMOD/Build/Desktop/Master.strings.bank
-  Name: Master.strings
-  StudioPath: bank:/Master.strings
-  lastModified: 637837945103758297
-  FileSizes:
-  - Name: Desktop
-    Value: 1092
-  Exists: 1
---- !u!114 &5705891242211003167
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Character/FootstepsLush
-  m_EditorClassIdentifier: 
-  Path: event:/Character/FootstepsLush
-  Guid:
-    Data1: -1389764350
-    Data2: 1298534641
-    Data3: 1314804881
-    Data4: 1355572809
-  Banks:
-  - {fileID: 565867343320947695}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 0
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 480
---- !u!114 &6968221525733921813
+--- !u!114 &-4849557027829471668
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -240,8 +89,159 @@ MonoBehaviour:
   Path: gwdFMOD/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 637837945103737613
+  lastModified: 637862295350376637
   FileSizes:
   - Name: Desktop
     Value: 1036
   Exists: 1
+--- !u!114 &-4494051216002206365
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.strings.bank
+  m_EditorClassIdentifier: 
+  Path: gwdFMOD/Build/Desktop/Master.strings.bank
+  Name: Master.strings
+  StudioPath: bank:/Master.strings
+  lastModified: 637862295350476339
+  FileSizes:
+  - Name: Desktop
+    Value: 1062
+  Exists: 1
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d32cf7c32a3ed8347bac48ef5ed56d82, type: 3}
+  m_Name: FMODStudioCache
+  m_EditorClassIdentifier: 
+  EditorBanks:
+  - {fileID: -4494051216002206365}
+  - {fileID: 7815961245167401626}
+  - {fileID: -6860250179441994483}
+  - {fileID: -4849557027829471668}
+  EditorEvents:
+  - {fileID: 8740263254286346063}
+  - {fileID: -8149566203998267157}
+  - {fileID: 5848928834683262469}
+  - {fileID: -8945147672635010749}
+  - {fileID: 2257109516051158025}
+  EditorParameters: []
+  MasterBanks:
+  - {fileID: -4849557027829471668}
+  StringsBanks:
+  - {fileID: -4494051216002206365}
+  cacheTime: 637862295350476339
+  cacheVersion: 10
+--- !u!114 &2257109516051158025
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Glyphs/Aqusistion
+  m_EditorClassIdentifier: 
+  Path: event:/Glyphs/Aqusistion
+  Guid:
+    Data1: -1656270151
+    Data2: 1147754346
+    Data3: -233533259
+    Data4: -1952723351
+  Banks:
+  - {fileID: -6860250179441994483}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 9822
+--- !u!114 &5848928834683262469
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Glyphs/Teleport
+  m_EditorClassIdentifier: 
+  Path: event:/Glyphs/Teleport
+  Guid:
+    Data1: 1722716416
+    Data2: 1277952784
+    Data3: -1663111761
+    Data4: -97957680
+  Banks:
+  - {fileID: -6860250179441994483}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 12146
+--- !u!114 &7815961245167401626
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Character.bank
+  m_EditorClassIdentifier: 
+  Path: gwdFMOD/Build/Desktop/Character.bank
+  Name: Character
+  StudioPath: bank:/Character
+  lastModified: 637862295350139344
+  FileSizes:
+  - Name: Desktop
+    Value: 22336
+  Exists: 1
+--- !u!114 &8740263254286346063
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Character/Footsteps
+  m_EditorClassIdentifier: 
+  Path: event:/Character/Footsteps
+  Guid:
+    Data1: -1874089204
+    Data2: 1257187022
+    Data3: -1104084825
+    Data4: 307849288
+  Banks:
+  - {fileID: 7815961245167401626}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 656

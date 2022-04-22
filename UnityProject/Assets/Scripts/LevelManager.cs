@@ -14,6 +14,11 @@ public class LevelManager : MonoBehaviour
     public bool populateThis = true;
     public float spawnRate = 1;
 
+    public SceneContext sceneContext;
+
+    public bool finishedLoading = false;
+    public bool loadingQuestEvents = true;
+
     [Header("References")]
     public GlyphLandscape landscapeGlyph;
     public Transform spawnRegions;
@@ -35,12 +40,15 @@ public class LevelManager : MonoBehaviour
     private void Awake()
     {
         instance = this;
+        sceneContext = new SceneContext();
     }
 
     private void Start()
     {
         if (!populateThis)
             return;
+
+        finishedLoading = false;
 
         if (!InitialLevel.gameInitialized)
         {
@@ -53,7 +61,9 @@ public class LevelManager : MonoBehaviour
         DOTween.Init(); // empty param = default settings
         SetupGlyphs();
         PopulateScene();
+        ExecuteQuestEvents();
 
+        finishedLoading = true;
         
     }
 
@@ -64,7 +74,9 @@ public class LevelManager : MonoBehaviour
 
     public void SetupGlyphs()
     {
-        GlyphManager.timeIndex = (GlyphManager.timeIndex + 1) % GlyphManager.collection.times.Count;
+        GlyphManager.timeIndex += (GlyphManager.GetIndex(GlyphManager.landscape) +
+            GlyphManager.GetIndex(GlyphManager.biome));
+        GlyphManager.timeIndex = GlyphManager.timeIndex % GlyphManager.collection.times.Count;
         GlyphManager.time = GlyphManager.collection.times[GlyphManager.timeIndex];
     }
 
@@ -115,6 +127,7 @@ public class LevelManager : MonoBehaviour
                 GameObject newGO = Instantiate(GlyphManager.biome.foreGround[index].prefab);
                 newGO.transform.position = new Vector3(x, y, z);
                 newGO.transform.localScale = newGO.transform.localScale * Mathf.Lerp(assetArea.buttomScale, assetArea.topScale, r);
+                newGO.transform.parent = transform;
 
                 SpriteRenderer ren = newGO.GetComponent<SpriteRenderer>();
 
@@ -137,6 +150,32 @@ public class LevelManager : MonoBehaviour
         placeManager.biome = GlyphManager.biome;
         placeManager.time = GlyphManager.time;
         placeManager.LoadPlace();
+    }
+
+    public void ExecuteQuestEvents()
+    {
+        List<QuestEvent> toExecute = new List<QuestEvent>();
+        loadingQuestEvents = true;
+
+        foreach (Quest quest in QuestManager.currentQuests)
+        {
+            foreach (QuestEvent qevent in quest.questEvents)
+            {
+                if (qevent.questIndex > quest.QuestIndex)
+                    continue;
+
+                if (qevent.ShouldExecute(sceneContext))
+                {
+                    toExecute.Add(qevent);
+                }
+            }
+        }
+
+        loadingQuestEvents = false;
+        foreach (QuestEvent item in toExecute)
+        {
+            item.Execute(sceneContext);
+        }
     }
 
     public void ChangeScene()

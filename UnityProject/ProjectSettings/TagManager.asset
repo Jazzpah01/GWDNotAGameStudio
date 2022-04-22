@@ -54,3 +54,6 @@ TagManager:
   - name: Front
     uniqueID: 373868651
     locked: 0
+  - name: Debug
+    uniqueID: 1315374859
+    locked: 0

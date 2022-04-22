@@ -77,12 +77,14 @@ public class WaystoneUI : MonoBehaviour
             GlyphManager.biome = (GlyphBiome)g;
             landscapeSlot.Interactable = false;
             biomeSlot.Interactable = true;
+            SetGlyph(g);
         }
         else if (g is GlyphLandscape)
         {
             GlyphManager.landscape = (GlyphLandscape)g;
             biomeSlot.Interactable = false;
             landscapeSlot.Interactable = true;
+            SetGlyph(g);
         } else
         {
             landscapeSlot.Interactable = true;

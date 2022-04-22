@@ -37,7 +37,7 @@ public class EnvCamController : MonoBehaviour
     void Start()
     {
         player = GameManager.instance.player;
-        sunOrigin = Sun.transform.position;
+        //sunOrigin = Sun.transform.position;
         cloud_timer = 0f;
     }
 

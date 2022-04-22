@@ -218,6 +218,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6629155770079248815, guid: de7d487e8452e4b4dae5188a9acd4255, type: 3}
+      propertyPath: m_AdditionalShaderChannelsFlag
+      value: 25
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: de7d487e8452e4b4dae5188a9acd4255, type: 3}
 --- !u!1001 &229629528
@@ -317,8 +321,16 @@ PrefabInstance:
       value: Arid Cactus - 2
       objectReference: {fileID: 0}
     - target: {fileID: 5016777491334105592, guid: ae6900c1d87c942478ec992f6903289e, type: 3}
+      propertyPath: m_SortingLayer
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 5016777491334105592, guid: ae6900c1d87c942478ec992f6903289e, type: 3}
       propertyPath: m_SortingOrder
       value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5016777491334105592, guid: ae6900c1d87c942478ec992f6903289e, type: 3}
+      propertyPath: m_SortingLayerID
+      value: 373868651
       objectReference: {fileID: 0}
     - target: {fileID: 5588724086966639392, guid: ae6900c1d87c942478ec992f6903289e, type: 3}
       propertyPath: m_RootOrder
@@ -444,8 +456,16 @@ PrefabInstance:
       value: Arid Cactus - 7
       objectReference: {fileID: 0}
     - target: {fileID: 5016777491334105592, guid: 40df847cc1f0d3444863a7c9d12adf43, type: 3}
+      propertyPath: m_SortingLayer
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 5016777491334105592, guid: 40df847cc1f0d3444863a7c9d12adf43, type: 3}
       propertyPath: m_SortingOrder
       value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5016777491334105592, guid: 40df847cc1f0d3444863a7c9d12adf43, type: 3}
+      propertyPath: m_SortingLayerID
+      value: 373868651
       objectReference: {fileID: 0}
     - target: {fileID: 5588724086966639392, guid: 40df847cc1f0d3444863a7c9d12adf43, type: 3}
       propertyPath: m_RootOrder
@@ -562,8 +582,16 @@ PrefabInstance:
       value: Arid Grass (3)
       objectReference: {fileID: 0}
     - target: {fileID: 5016777491334105592, guid: 0046b7c5fa212704cacc34be02be5186, type: 3}
+      propertyPath: m_SortingLayer
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 5016777491334105592, guid: 0046b7c5fa212704cacc34be02be5186, type: 3}
       propertyPath: m_SortingOrder
       value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5016777491334105592, guid: 0046b7c5fa212704cacc34be02be5186, type: 3}
+      propertyPath: m_SortingLayerID
+      value: 373868651
       objectReference: {fileID: 0}
     - target: {fileID: 5588724086966639392, guid: 0046b7c5fa212704cacc34be02be5186, type: 3}
       propertyPath: m_RootOrder
@@ -897,9 +925,13 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3542046030398533181, guid: c1406cc5652e89642ba823afd0885d17, type: 3}
+      propertyPath: m_FlipX
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3714396304325429894, guid: c1406cc5652e89642ba823afd0885d17, type: 3}
       propertyPath: m_BackGroundColor.b
-      value: 0.9069762
+      value: 0.8872591
       objectReference: {fileID: 0}
     - target: {fileID: 3714396304325429894, guid: c1406cc5652e89642ba823afd0885d17, type: 3}
       propertyPath: m_BackGroundColor.g
@@ -907,23 +939,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3714396304325429894, guid: c1406cc5652e89642ba823afd0885d17, type: 3}
       propertyPath: m_BackGroundColor.r
-      value: 0.6745283
+      value: 0.6273585
       objectReference: {fileID: 0}
-    - target: {fileID: 4509995404111147301, guid: c1406cc5652e89642ba823afd0885d17, type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 21300000, guid: aa86a341d622e4f46b27177abdb53a0e, type: 3}
-    - target: {fileID: 4509995404111147301, guid: c1406cc5652e89642ba823afd0885d17, type: 3}
-      propertyPath: m_Color.b
+    - target: {fileID: 4101720846466101960, guid: c1406cc5652e89642ba823afd0885d17, type: 3}
+      propertyPath: m_LocalScale.x
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 4509995404111147301, guid: c1406cc5652e89642ba823afd0885d17, type: 3}
-      propertyPath: m_Color.g
+    - target: {fileID: 4101720846466101960, guid: c1406cc5652e89642ba823afd0885d17, type: 3}
+      propertyPath: m_LocalScale.y
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 4509995404111147301, guid: c1406cc5652e89642ba823afd0885d17, type: 3}
-      propertyPath: m_Color.r
+    - target: {fileID: 4101720846466101960, guid: c1406cc5652e89642ba823afd0885d17, type: 3}
+      propertyPath: m_LocalScale.z
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4101720846466101960, guid: c1406cc5652e89642ba823afd0885d17, type: 3}
+      propertyPath: m_ConstrainProportionsScale
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4509995404389645508, guid: c1406cc5652e89642ba823afd0885d17, type: 3}
       propertyPath: m_Name
@@ -935,7 +967,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4509995404389645562, guid: c1406cc5652e89642ba823afd0885d17, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 5.93
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4509995404389645562, guid: c1406cc5652e89642ba823afd0885d17, type: 3}
       propertyPath: m_LocalPosition.y
@@ -1058,8 +1090,16 @@ PrefabInstance:
       value: Agave
       objectReference: {fileID: 0}
     - target: {fileID: 5016777491334105592, guid: 76ead6f8934fc824fa5e9f68b37e430d, type: 3}
+      propertyPath: m_SortingLayer
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 5016777491334105592, guid: 76ead6f8934fc824fa5e9f68b37e430d, type: 3}
       propertyPath: m_SortingOrder
       value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5016777491334105592, guid: 76ead6f8934fc824fa5e9f68b37e430d, type: 3}
+      propertyPath: m_SortingLayerID
+      value: 373868651
       objectReference: {fileID: 0}
     - target: {fileID: 5588724086966639392, guid: 76ead6f8934fc824fa5e9f68b37e430d, type: 3}
       propertyPath: m_RootOrder
@@ -1245,8 +1285,16 @@ PrefabInstance:
       value: Arid Grass (2)
       objectReference: {fileID: 0}
     - target: {fileID: 5016777491334105592, guid: 0046b7c5fa212704cacc34be02be5186, type: 3}
+      propertyPath: m_SortingLayer
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 5016777491334105592, guid: 0046b7c5fa212704cacc34be02be5186, type: 3}
       propertyPath: m_SortingOrder
       value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5016777491334105592, guid: 0046b7c5fa212704cacc34be02be5186, type: 3}
+      propertyPath: m_SortingLayerID
+      value: 373868651
       objectReference: {fileID: 0}
     - target: {fileID: 5588724086966639392, guid: 0046b7c5fa212704cacc34be02be5186, type: 3}
       propertyPath: m_RootOrder

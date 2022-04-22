@@ -10,10 +10,20 @@ public class CharacterController : MonoBehaviour
     public BaseModifier crouch;
     public BaseModifier bouncy;
 
+    //public SpriteRenderer[] sprites;
+
     private Animator anim;
     private bool isWalking;
+    //public bool isFlipped;
+    public Transform rig;
 
     private bool bouncing = false;
+
+
+    //quest and dialogue stuff:
+    public bool isInDialogue;
+    public int currentQuest;
+
 
     private bool Flipped
     {
@@ -38,66 +48,105 @@ public class CharacterController : MonoBehaviour
         this.anim = GetComponentInChildren<Animator>();
         if (this.anim != null) Debug.Log("Character Animator initialized");
         isWalking = false;
+        //sprites = anim.gameObject.GetComponentsInChildren<SpriteRenderer>();
+        FlipSprite(false);
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.UpArrow))
+        if (!isInDialogue)
         {
-            if (Input.GetKey(KeyCode.Space) && !bouncing)
+            if (Input.GetKeyDown(KeyCode.UpArrow) || Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.W))
             {
-                body.ApplyFilter(bouncy);
-                bouncing = true;
+                if (Input.GetKey(KeyCode.Space) && !bouncing)
+                {
+                    //body.ApplyFilter(bouncy);
+                    //bouncing = true;
+                }
+                body.JumpInput(1);
             }
-            body.JumpInput(1);
-        }
-        if (Input.GetKey(KeyCode.LeftArrow))
-        {
-            body.HorizontalInput(-1);
+            if (Input.GetKeyUp(KeyCode.UpArrow))
+            {
+                body.FallInput();
+            }
 
-        }
-        if (Input.GetKey(KeyCode.RightArrow))
+            if (Input.GetKey(KeyCode.LeftArrow) || Input.GetKey(KeyCode.A))
+            {
+                body.HorizontalInput(-1);
+                SetWalking(true);
+                FlipSprite(true);
+            }
+            else if (Input.GetKey(KeyCode.RightArrow) || Input.GetKey(KeyCode.D))
+            {
+                body.HorizontalInput(1);
+                SetWalking(true);
+                FlipSprite(false);
+            }
+            else
+            {
+                SetWalking(false);
+            }
+
+
+            if (Input.GetKeyDown(KeyCode.LeftShift) && running != null)
+            {
+                body.ApplyFilter(running);
+            }
+            if (Input.GetKeyUp(KeyCode.LeftShift) && running != null)
+            {
+                body.RemoveFilter(running);
+            }
+
+
+            if (Input.GetKeyDown(KeyCode.LeftControl) && crouch != null)
+            {
+                body.ApplyFilter(crouch);
+            }
+            if (Input.GetKeyUp(KeyCode.LeftControl) && crouch != null)
+            {
+                body.RemoveFilter(crouch);
+            }
+
+            if (Input.GetKeyUp(KeyCode.Space) && bouncing)
+            {
+                body.RemoveFilter(bouncy);
+                bouncing = false;
+            }
+        } else
         {
-            body.HorizontalInput(1);
-            SetWalking(true);
-        }
-        else if(Input.GetKeyUp(KeyCode.UpArrow))
-        {
-            body.FallInput();
-            SetWalking(true);
-        } else {
             SetWalking(false);
-        }
-
-        if (Input.GetKeyDown(KeyCode.LeftShift) && running != null)
-        {
-            body.ApplyFilter(running);
-        }
-        if (Input.GetKeyUp(KeyCode.LeftShift) && running != null)
-        {
-            body.RemoveFilter(running);
-        }
-
-
-        if (Input.GetKeyDown(KeyCode.LeftControl) && crouch != null)
-        {
-            body.ApplyFilter(crouch);
-        }
-        if (Input.GetKeyUp(KeyCode.LeftControl) && crouch != null)
-        {
-            body.RemoveFilter(crouch);
-        }
-
-        if (Input.GetKeyUp(KeyCode.Space) && bouncing)
-        {
-            body.RemoveFilter(bouncy);
-            bouncing = false;
         }
     }
 
     private void SetWalking(bool isWalking)
     {
         anim.SetBool("isWalking", isWalking);
+    }
+
+    private void FlipSprite(bool flip)
+    {
+        //SpriteRenderer[] sprites = anim.gameObject.GetComponentsInChildren<SpriteRenderer>();
+        //anim.gameObject.GetComponentsInChildren<SpriteRenderer>().flipX = isFlipped;
+        /*
+        foreach (SpriteRenderer sprite in sprites)
+        {
+            //sprite.flipX = flip;
+            //Vector3 spritePos = sprite.transform.position;
+
+            if (flip) {
+                sprite.transform.localScale = new Vector3(-1f, 1f, 1f);
+            } else {
+                sprite.transform.localScale = new Vector3(1f, 1f, 1f);
+            } 
+        }
+        */
+        if (flip)
+        {
+            rig.localScale = new Vector3(-1f, 1f, 1f);
+        } else
+        {
+            rig.localScale = new Vector3(1f, 1f, 1f);
+        }
     }
 }

@@ -133,7 +133,7 @@ GameObject:
   m_Component:
   - component: {fileID: 113769691}
   - component: {fileID: 113769690}
-  - component: {fileID: 113769689}
+  - component: {fileID: 113769692}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -141,14 +141,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!81 &113769689
-AudioListener:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 113769688}
-  m_Enabled: 1
 --- !u!20 &113769690
 Camera:
   m_ObjectHideFlags: 0
@@ -207,6 +199,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &113769692
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 113769688}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86c6556701af9e04380698b89f691b6e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  attenuationObject: {fileID: 0}
+  ListenerNumber: -1
 --- !u!1001 &151692543
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -438,23 +444,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timeGlyph: {fileID: 11400000, guid: c4ef068ec96997a4181b8dd407818fb6, type: 2}
-  biomeGlyph: {fileID: 11400000, guid: 0301f76479b63394a89d420f7fc684ac, type: 2}
+  biomeGlyph: {fileID: 11400000, guid: dd0fe0b9a6f069b42ab01f63d73696f4, type: 2}
   landscapeGlyph: {fileID: 11400000, guid: caa56952924210c419bb3e0146bf0640, type: 2}
-  landscapes:
-  - {fileID: 11400000, guid: caa56952924210c419bb3e0146bf0640, type: 2}
-  - {fileID: 11400000, guid: 4f07cc7fa8f6a0a47817e9f0b54c5dea, type: 2}
-  - {fileID: 11400000, guid: cdf2469a907c9804aa2c92605877951e, type: 2}
-  - {fileID: 11400000, guid: 0f37ff6e7fd4c3b45a49fd59091b0812, type: 2}
-  biomes:
-  - {fileID: 11400000, guid: dd0fe0b9a6f069b42ab01f63d73696f4, type: 2}
-  - {fileID: 11400000, guid: 8642289d9e19747d0811a4c248263909, type: 2}
-  - {fileID: 11400000, guid: 0301f76479b63394a89d420f7fc684ac, type: 2}
-  - {fileID: 11400000, guid: 6d5bf97df702444cdb6b05f0c5a3ad88, type: 2}
-  times:
-  - {fileID: 11400000, guid: c4ef068ec96997a4181b8dd407818fb6, type: 2}
-  - {fileID: 11400000, guid: 6039305ef7b849941b0144aa37501464, type: 2}
-  - {fileID: 11400000, guid: 744a2e9ef0b94bb489b745c1eeb6556f, type: 2}
-  - {fileID: 11400000, guid: 90e1f6d6cc3d1c046809ec48e8c7710d, type: 2}
+  glyphCollection: {fileID: 11400000, guid: 55b020531aeb9884b83d360c2939f61a, type: 2}
   playerGlyphs:
   - {fileID: 11400000, guid: caa56952924210c419bb3e0146bf0640, type: 2}
   - {fileID: 11400000, guid: 4f07cc7fa8f6a0a47817e9f0b54c5dea, type: 2}
@@ -464,6 +456,8 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 8642289d9e19747d0811a4c248263909, type: 2}
   - {fileID: 11400000, guid: dd0fe0b9a6f069b42ab01f63d73696f4, type: 2}
   - {fileID: 11400000, guid: 6d5bf97df702444cdb6b05f0c5a3ad88, type: 2}
+  places: {fileID: 11400000, guid: 132d6f659f9d2824b877cc9cca2f9e1e, type: 2}
+  initialQuest: {fileID: 11400000, guid: 959d155e309d576428f0ef3d4393f9c6, type: 2}
 --- !u!4 &1491654869
 Transform:
   m_ObjectHideFlags: 0
@@ -493,9 +487,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   populateThis: 0
   spawnRate: 1
+  landscapeGlyph: {fileID: 0}
   spawnRegions: {fileID: 0}
   spawnPoint: {fileID: 0}
   environmentController: {fileID: 0}
+  placeManager: {fileID: 0}
   backgroundPrefab: {fileID: 0}
   sunPrefab: {fileID: 0}
   playerPrefab: {fileID: 0}
@@ -630,7 +626,7 @@ Canvas:
   m_OverrideSorting: 0
   m_OverridePixelPerfect: 0
   m_SortingBucketNormalizedSize: 0
-  m_AdditionalShaderChannelsFlag: 0
+  m_AdditionalShaderChannelsFlag: 25
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0

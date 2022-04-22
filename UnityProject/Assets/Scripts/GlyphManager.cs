@@ -12,20 +12,45 @@ public static class GlyphManager
 
     public static int timeIndex = -1;
 
-    public static List<GlyphLandscape> landscapes;
-    public static List<GlyphBiome> biomes;
-    public static List<GlyphTime> times;
+    public static GlyphCollection collection;
+
+    public static int GetIndex(Glyph g)
+    {
+        if (g is GlyphLandscape)
+        {
+            for (int i = 0; i < collection.landscapes.Count; i++)
+            {
+                if (g == collection.landscapes[i])
+                    return i;
+            }
+        } else if (g is GlyphBiome)
+        {
+            for (int i = 0; i < collection.biomes.Count; i++)
+            {
+                if (g == collection.biomes[i])
+                    return i;
+            }
+        } else if (g is GlyphTime)
+        {
+            for (int i = 0; i < collection.times.Count; i++)
+            {
+                if (g == collection.times[i])
+                    return i;
+            }
+        }
+        throw new System.Exception("Could not find index from glyph.");
+    }
 
 
     // TODO: refactor this
     public static Location GetLocation()
     {
         
-        int i = landscapes.IndexOf(landscape);
+        int i = collection.landscapes.IndexOf(landscape);
 
         Location retval = null;
 
-        foreach (Location l in landscapes[i].locations)
+        foreach (Location l in collection.landscapes[i].locations)
         {
             if (l.biome == biome)
                 return l;

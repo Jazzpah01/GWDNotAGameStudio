@@ -82,6 +82,7 @@ public class NPCController : MonoBehaviour
             EndDialoguePrompt();
             if (Input.GetKeyDown(KeyCode.E))
             {
+                Debug.Log("ENDING DIALOGUE");
                 ClearText();
                 dialogueActive = false;
                 playerInRange = false; // TODO: fix this ugly ass hack
@@ -105,6 +106,7 @@ public class NPCController : MonoBehaviour
             dialogue.current++;
             SetLine();
         }
+        Debug.Log("---next---current line: " + dialogue.current);
     }
 
     private void DPrevious()
@@ -119,6 +121,7 @@ public class NPCController : MonoBehaviour
             dialogue.current--;
             SetLine();
         }
+        Debug.Log("---pre---current line: " + dialogue.current);
     }
 
 

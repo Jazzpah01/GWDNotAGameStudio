@@ -90,7 +90,7 @@ public class CharacterController : MonoBehaviour
 
                 SetWalking(true);
                 FlipSprite(true);
-                print("Walking");
+                //print("Walking");
             }
             else if (Input.GetKey(KeyCode.RightArrow) || Input.GetKey(KeyCode.D))
             {
@@ -101,12 +101,12 @@ public class CharacterController : MonoBehaviour
 
                 SetWalking(true);
                 FlipSprite(false);
-                print("Walking");
+                //print("Walking");
             }
             else
             {
                 SetWalking(false);
-                print("Stopping");
+                //print("Stopping");
                 walkEmitter.Stop();
                 //walkEvent.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
             }

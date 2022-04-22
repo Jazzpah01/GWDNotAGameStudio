@@ -19,7 +19,7 @@ MonoBehaviour:
   walkAcceleration: 50
   airAcceleration: 15
   groundDeceleration: 45
-  jumpHeight: 3
+  jumpHeight: 2
   gravityAcceleration: -30
   initialGravityAcceleration: 0
   GMDescend: 1

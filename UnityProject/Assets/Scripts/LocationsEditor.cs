@@ -64,6 +64,5 @@ public class LocationsEditor : Editor
 
             EditorGUILayout.EndHorizontal();
         }
-
     }
 }

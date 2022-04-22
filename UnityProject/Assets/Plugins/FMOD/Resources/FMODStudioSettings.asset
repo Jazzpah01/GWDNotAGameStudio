@@ -399,8 +399,8 @@ MonoBehaviour:
   SwitchSettingsMigration: 1
   HasSourceProject: 1
   HasPlatforms: 1
-  sourceProjectPath: gwdFMOD/gwdFMOD.fspro
-  sourceBankPath: gwdFMOD/Build
+  sourceProjectPath: GWDfmod/GWDfmod.fspro
+  sourceBankPath: GWDfmod/Build
   SourceBankPathUnformatted: 
   BankRefreshCooldown: 5
   ShowBankRefreshWindow: 1
@@ -422,8 +422,11 @@ MonoBehaviour:
   VirtualChannelSettings: []
   RealChannelSettings: []
   Plugins: []
-  MasterBanks: []
-  Banks: []
+  MasterBanks:
+  - Master
+  Banks:
+  - Character
+  - Glyph
   BanksToLoad: []
   LiveUpdatePort: 9264
   EnableMemoryTracking: 0
@@ -436,7 +439,7 @@ MonoBehaviour:
   SharedLibraryTimeSinceStart: 1019.7811074
   CurrentVersion: 131588
   HideSetupWizard: 1
-  LastEventReferenceScanVersion: 0
+  LastEventReferenceScanVersion: 131588
   Platforms:
   - {fileID: -8816484894565151657}
   - {fileID: -6112941066539871290}

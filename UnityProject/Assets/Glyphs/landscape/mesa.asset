@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9cd47433d3324c74798b2aa86dbcfc42, type: 3}
   m_Name: mesa
   m_EditorClassIdentifier: 
-  icon: {fileID: 21300000, guid: 64c7bf141630a4add9c4a300aaddbbf6, type: 3}
+  icon: {fileID: 21300000, guid: b6ba75a5f33a443deacae62133f27037, type: 3}
   seed: 0
   sceneName: mesa
   locations:

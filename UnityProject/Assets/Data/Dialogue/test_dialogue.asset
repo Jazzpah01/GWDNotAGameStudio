@@ -13,9 +13,12 @@ MonoBehaviour:
   m_Name: test_dialogue
   m_EditorClassIdentifier: 
   lines:
-  - npc line 1
-  - player line 1
-  - npc line 2
-  - player line 2
-  current: 0
-  playerTalksFirst: 0
+  - isPlayer: 0
+    line: npc line 1
+  - isPlayer: 1
+    line: player line 1
+  - isPlayer: 0
+    line: npc line 2
+  - isPlayer: 1
+    line: player line 2
+  current: 4

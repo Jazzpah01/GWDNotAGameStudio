@@ -35,6 +35,8 @@ public class InitialLevel : MonoBehaviour
         GlyphManager.biome = biomeGlyph;
         GlyphManager.landscape = landscapeGlyph;
 
+        GlyphManager.timeIndex = 0;
+
         gameInitialized = true;
 
         PlaceManager._places = places;

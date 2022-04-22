@@ -76,7 +76,9 @@ public class LevelManager : MonoBehaviour
     {
         GlyphManager.timeIndex += (GlyphManager.GetIndex(GlyphManager.landscape) +
             GlyphManager.GetIndex(GlyphManager.biome));
-        GlyphManager.timeIndex = GlyphManager.timeIndex % GlyphManager.collection.times.Count;
+        GlyphManager.timeIndex %= GlyphManager.collection.times.Count;
+        print($"{GlyphManager.GetIndex(GlyphManager.landscape)};{GlyphManager.GetIndex(GlyphManager.biome)}");
+        print($"{GlyphManager.timeIndex};{GlyphManager.collection.times.Count}");
         GlyphManager.time = GlyphManager.collection.times[GlyphManager.timeIndex];
     }
 

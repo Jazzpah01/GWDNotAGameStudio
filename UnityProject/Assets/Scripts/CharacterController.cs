@@ -5,6 +5,11 @@ using UnityEngine;
 
 public class CharacterController : MonoBehaviour
 {
+    [Header("FMOD")]
+    public FMODUnity.EventReference flipSound;
+    public FMODUnity.EventReference walkSound;
+
+    [Header("Other")]
     public Body2d body;
     public BaseModifier running;
     public BaseModifier crouch;
@@ -144,6 +149,7 @@ public class CharacterController : MonoBehaviour
         if (flip)
         {
             rig.localScale = new Vector3(-1f, 1f, 1f);
+            FMODUnity.RuntimeManager.CreateInstance(flipSound.Guid);
         } else
         {
             rig.localScale = new Vector3(1f, 1f, 1f);

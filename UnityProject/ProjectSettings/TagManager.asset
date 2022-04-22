@@ -57,3 +57,6 @@ TagManager:
   - name: Debug
     uniqueID: 1315374859
     locked: 0
+  - name: Void
+    uniqueID: 959136305
+    locked: 0

@@ -6,8 +6,8 @@ using UnityEngine;
 public class CharacterController : MonoBehaviour
 {
     [Header("FMOD")]
-    public FMODUnity.EventReference flipSound;
-    public FMODUnity.EventReference walkSound;
+    public FMODUnity.EventReference bumpEvent;
+    public FMODUnity.StudioEventEmitter walkEmitter;
 
     [Header("Other")]
     public Body2d body;
@@ -23,6 +23,7 @@ public class CharacterController : MonoBehaviour
     public Transform rig;
 
     private bool bouncing = false;
+    private bool grounded = false;
 
 
     //quest and dialogue stuff:
@@ -53,13 +54,17 @@ public class CharacterController : MonoBehaviour
         this.anim = GetComponentInChildren<Animator>();
         if (this.anim != null) Debug.Log("Character Animator initialized");
         isWalking = false;
-        //sprites = anim.gameObject.GetComponentsInChildren<SpriteRenderer>();
         FlipSprite(false);
     }
 
     // Update is called once per frame
     void Update()
     {
+        if (!grounded && body.grounded)
+            FMODUnity.RuntimeManager.PlayOneShot(bumpEvent);
+
+        grounded = body.grounded;
+
         if (!isInDialogue)
         {
             if (Input.GetKeyDown(KeyCode.UpArrow) || Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.W))
@@ -79,18 +84,31 @@ public class CharacterController : MonoBehaviour
             if (Input.GetKey(KeyCode.LeftArrow) || Input.GetKey(KeyCode.A))
             {
                 body.HorizontalInput(-1);
+                //walkEvent.start();
+                if (!walkEmitter.IsPlaying())
+                    walkEmitter.Play();
+
                 SetWalking(true);
                 FlipSprite(true);
+                print("Walking");
             }
             else if (Input.GetKey(KeyCode.RightArrow) || Input.GetKey(KeyCode.D))
             {
                 body.HorizontalInput(1);
+                //walkEvent.start();
+                if (!walkEmitter.IsPlaying())
+                    walkEmitter.Play();
+
                 SetWalking(true);
                 FlipSprite(false);
+                print("Walking");
             }
             else
             {
                 SetWalking(false);
+                print("Stopping");
+                walkEmitter.Stop();
+                //walkEvent.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
             }
 
 
@@ -146,10 +164,10 @@ public class CharacterController : MonoBehaviour
             } 
         }
         */
+
         if (flip)
         {
             rig.localScale = new Vector3(-1f, 1f, 1f);
-            FMODUnity.RuntimeManager.CreateInstance(flipSound.Guid);
         } else
         {
             rig.localScale = new Vector3(1f, 1f, 1f);

@@ -69,7 +69,7 @@ MonoBehaviour:
   Path: GWDfmod/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 637862295350476339
+  lastModified: 637862405390188030
   FileSizes:
   - Name: Desktop
     Value: 1062
@@ -89,7 +89,7 @@ MonoBehaviour:
   Path: GWDfmod/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 637862295350376637
+  lastModified: 637862405390097329
   FileSizes:
   - Name: Desktop
     Value: 1036
@@ -122,7 +122,7 @@ MonoBehaviour:
   - {fileID: -427958435786858804}
   StringsBanks:
   - {fileID: -2280142548856867481}
-  cacheTime: 637862295350476339
+  cacheTime: 637862405390188030
   cacheVersion: 10
 --- !u!114 &3558165542667943408
 MonoBehaviour:
@@ -193,7 +193,7 @@ MonoBehaviour:
   Path: GWDfmod/Build/Desktop/Character.bank
   Name: Character
   StudioPath: bank:/Character
-  lastModified: 637862295350139344
+  lastModified: 637862405389888207
   FileSizes:
   - Name: Desktop
     Value: 22336
@@ -213,7 +213,7 @@ MonoBehaviour:
   Path: GWDfmod/Build/Desktop/Glyph.bank
   Name: Glyph
   StudioPath: bank:/Glyph
-  lastModified: 637862295350296908
+  lastModified: 637862405390017526
   FileSizes:
   - Name: Desktop
     Value: 298336

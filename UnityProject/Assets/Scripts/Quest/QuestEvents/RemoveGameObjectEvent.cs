@@ -14,14 +14,7 @@ public class RemoveGameObjectEvent : QuestEvent
 
     public override void Execute(SceneContext context)
     {
-        if (context.EventObjects.ContainsKey(prefab))
-        {
-            foreach(GameObject go in context.EventObjects[prefab].ToArray())
-            {
-                context.EventObjects[prefab].Remove(go);
-                Destroy(go);
-            }
-        }
+        context.RemoveGameObject(prefab);
 
         CallBack();
     }

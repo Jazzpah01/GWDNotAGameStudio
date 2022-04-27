@@ -8,6 +8,9 @@ public class NPCController : MonoBehaviour
 {
     GameManager game;
     private GameObject player;
+
+    public string characterName;
+
     public GameObject rig;
 
     public bool hasMet;
@@ -33,7 +36,6 @@ public class NPCController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        LevelManager.instance.sceneContext.npcs.Add(this);
 
         if (GameManager.instance != null) player = GameManager.instance.player;
         text = dialogueUI.GetComponent<TextMeshPro>();
@@ -48,7 +50,12 @@ public class NPCController : MonoBehaviour
     {
         delayTimer += Time.deltaTime;
 
-        if (!playerInRange) ClearText();
+        if (!playerInRange || dialogue == null)
+        {
+            ClearText();
+            dialogueActive = false;
+            return;
+        }
 
         if (dialogueActive && !playerInRange) dialogueActive = false;
 
@@ -90,7 +97,9 @@ public class NPCController : MonoBehaviour
                 Debug.Log("ENDING DIALOGUE");
                 ClearText();
                 dialogueActive = false;
-                playerInRange = false; // TODO: fix this ugly ass hack
+
+
+                //playerInRange = false; // TODO: fix this ugly ass hack
             }
         }
     }

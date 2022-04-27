@@ -47,6 +47,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 03aad89612a7df54aa239a374f1f5577, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  characterName: Hermit
   rig: {fileID: 1333667154897380025}
   hasMet: 0
   hasDialogue: 0
@@ -55,6 +56,7 @@ MonoBehaviour:
   dialogueActive: 0
   dialogue: {fileID: 0}
   dialogueUI: {fileID: 4110973462934935474}
+  currentLine: 0
   delayInterval: 0.2
 --- !u!61 &7298694616215967852
 BoxCollider2D:

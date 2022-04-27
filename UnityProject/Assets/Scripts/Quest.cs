@@ -20,13 +20,13 @@ public class Quest : ScriptableObject
             for (int j = 0; j < questEvents.Count; j++)
             {
                 i += questEvents[j].questIncrease;
-                if (i > value)
-                    break;
+                if (questEvents[j].questIndex > value || i <= questIndex)
+                    continue;
 
                 if (questEvents[j].questIndex >= questIndex && 
                     questEvents[j].ShouldExecute(LevelManager.instance.sceneContext))
                 {
-                    questEvents[j].Execute(LevelManager.instance.sceneContext);
+                    QuestManager.SubscribeEvent(questEvents[j]);
                 }
             }
 

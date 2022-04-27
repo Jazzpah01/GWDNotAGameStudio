@@ -1,0 +1,90 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c6a835d05eaa80b419430c51f8e79900, type: 3}
+  m_Name: hermit_after_fire
+  m_EditorClassIdentifier: 
+  lines:
+  - isPlayer: 0
+    line: 'Thank you! You saved my home. At least a very substantial part of it. '
+  - isPlayer: 1
+    line: You are welcome, I guess.
+  - isPlayer: 0
+    line: I apologise! I have not interacted with anyone for quite a while. My manners
+      are not as sharp as they used to be.
+  - isPlayer: 1
+    line: "What do you mean? You can\u2019t be here all alone."
+  - isPlayer: 0
+    line: "Yup, not a soul but good ol\u2019 me."
+  - isPlayer: 1
+    line: That cannot be true, how do you even stay alive? Stay sane?
+  - isPlayer: 0
+    line: What an odd question? There are animals and imaginary friends, of course!
+      Did you know turkeys tend to be very well-spoken?
+  - isPlayer: 1
+    line: I did not know that.
+  - isPlayer: 0
+    line: Squirrels tell the best jokes but raccoons are plain rude.
+  - isPlayer: 1
+    line: That is very enlightening but are you sure you have not seen anyone else?
+      You see, I am looking for my friend.
+  - isPlayer: 0
+    line: Child, I may not discern imaginary from actual but you are the only person
+      I have seen this week.
+  - isPlayer: 1
+    line: 'That is strange. My friend just disappeared after telling me to use these
+      pebbles. '
+  - isPlayer: 0
+    line: "You placed them in a strange looking rock and you found yourself here,
+      didn\u2019t you?"
+  - isPlayer: 1
+    line: How did you know?
+  - isPlayer: 0
+    line: That is how I got here, myself.
+  - isPlayer: 1
+    line: So you know how to go back. Tell me how to do it.
+  - isPlayer: 0
+    line: Easy, there. I do not know how to travel with the glyphs. I needed a place
+      to escape and I had been told to use these two to come here.
+  - isPlayer: 1
+    line: What did you run from?
+  - isPlayer: 0
+    line: "That is a very long story that I don\u2019t feel ready to tell, even after
+      all these years."
+  - isPlayer: 1
+    line: "Understandable. You said you had been told to use these \u201Cglyphs\u201D.
+      Who told you that?"
+  - isPlayer: 0
+    line: Years ago, some guy appeared in my town. He asked for food and a place
+      to stay so I let him stay for the night.
+  - isPlayer: 0
+    line: He disappeared the very next day. Everyone thought he was a ghost but he
+      was not. He was merely a traveller who lost his way.
+  - isPlayer: 0
+    line: 'He started to visit the town regularly and eventually decided to settle
+      in the town. '
+  - isPlayer: 1
+    line: 'Where is this person? '
+  - isPlayer: 0
+    line: They are still living in the town I assume.
+  - isPlayer: 1
+    line: I need to talk to them. I gotta find Kwolan.
+  - isPlayer: 0
+    line: You helped me, kid. Let me help you back
+  - isPlayer: 0
+    line: He gave me a third glyph, in case I changed my mind, telling me to use
+      it whenever I was ready to go back to the town.
+  - isPlayer: 0
+    line: I am not ready and you need this more than I do. Go find him and tell them
+      I sent you.
+  - isPlayer: 1
+    line: Thank you!
+  current: -1

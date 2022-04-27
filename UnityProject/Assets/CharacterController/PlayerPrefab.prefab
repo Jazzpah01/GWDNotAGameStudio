@@ -9,9 +9,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 9200523212617699112}
-  - component: {fileID: 9200523212617699114}
   - component: {fileID: 9200523212617699113}
   - component: {fileID: 9200523212617699115}
+  - component: {fileID: -8713784493234032176}
+  - component: {fileID: 5234186764062223393}
   m_Layer: 0
   m_Name: PlayerPrefab
   m_TagString: Untagged
@@ -36,22 +37,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &9200523212617699114
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9200523212617699094}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6652e78cd4069fd47bb1f6113941aebe, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  body: {fileID: 9200523212617699113}
-  running: {fileID: 0}
-  crouch: {fileID: 0}
-  bouncy: {fileID: 0}
 --- !u!114 &9200523212617699113
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -82,6 +67,69 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   flags:
   - {fileID: 11400000, guid: 89d6f32dc2834e84db5af32e4d860d37, type: 2}
+--- !u!114 &-8713784493234032176
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9200523212617699094}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -1197581765
+      Data2: 1310792267
+      Data3: 1238089623
+      Data4: -1296574310
+    Path: event:/Character/Wall Bump
+  Event: 
+  PlayEvent: 0
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
+--- !u!114 &5234186764062223393
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9200523212617699094}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 586bf0e44ba86b24a8e56cb52d1129f9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  flipSound:
+    Guid:
+      Data1: -1197581765
+      Data2: 1310792267
+      Data3: 1238089623
+      Data4: -1296574310
+    Path: event:/Character/Wall Bump
+  walkSound:
+    Guid:
+      Data1: -1874089204
+      Data2: 1257187022
+      Data3: -1104084825
+      Data4: 307849288
+    Path: event:/Character/Footsteps
+  body: {fileID: 0}
+  running: {fileID: 0}
+  crouch: {fileID: 0}
+  bouncy: {fileID: 0}
+  rig: {fileID: 0}
+  isInDialogue: 0
+  currentQuest: 0
 --- !u!1 &9200523213395313397
 GameObject:
   m_ObjectHideFlags: 0

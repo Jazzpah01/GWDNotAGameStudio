@@ -149,22 +149,6 @@ public class CharacterController : MonoBehaviour
 
     private void FlipSprite(bool flip)
     {
-        //SpriteRenderer[] sprites = anim.gameObject.GetComponentsInChildren<SpriteRenderer>();
-        //anim.gameObject.GetComponentsInChildren<SpriteRenderer>().flipX = isFlipped;
-        /*
-        foreach (SpriteRenderer sprite in sprites)
-        {
-            //sprite.flipX = flip;
-            //Vector3 spritePos = sprite.transform.position;
-
-            if (flip) {
-                sprite.transform.localScale = new Vector3(-1f, 1f, 1f);
-            } else {
-                sprite.transform.localScale = new Vector3(1f, 1f, 1f);
-            } 
-        }
-        */
-
         if (flip)
         {
             rig.localScale = new Vector3(-1f, 1f, 1f);

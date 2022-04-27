@@ -406,6 +406,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: npc_Hermit
       objectReference: {fileID: 0}
+    - target: {fileID: 7032458771797593176, guid: e5c68e9ca7d452a4a8c875c658171880, type: 3}
+      propertyPath: dialogue
+      value: 
+      objectReference: {fileID: 11400000, guid: 58829cd840212334e997b29408201366, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e5c68e9ca7d452a4a8c875c658171880, type: 3}
 --- !u!1001 &643788437

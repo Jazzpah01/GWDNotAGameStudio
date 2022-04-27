@@ -19,9 +19,9 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 0f37ff6e7fd4c3b45a49fd59091b0812, type: 2}
   biomes:
   - {fileID: 11400000, guid: dd0fe0b9a6f069b42ab01f63d73696f4, type: 2}
-  - {fileID: 11400000, guid: 8642289d9e19747d0811a4c248263909, type: 2}
-  - {fileID: 11400000, guid: 0301f76479b63394a89d420f7fc684ac, type: 2}
   - {fileID: 11400000, guid: 6d5bf97df702444cdb6b05f0c5a3ad88, type: 2}
+  - {fileID: 11400000, guid: 0301f76479b63394a89d420f7fc684ac, type: 2}
+  - {fileID: 11400000, guid: 8642289d9e19747d0811a4c248263909, type: 2}
   times:
   - {fileID: 11400000, guid: c4ef068ec96997a4181b8dd407818fb6, type: 2}
   - {fileID: 11400000, guid: 6039305ef7b849941b0144aa37501464, type: 2}

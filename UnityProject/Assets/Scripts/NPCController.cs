@@ -28,6 +28,8 @@ public class NPCController : MonoBehaviour
     private float delayTimer;
     public float delayInterval = 0.2f;
 
+    private Color orange = new Color(0.5f, 0.5f, 0f, 1f);
+
     private void Awake()
     {
         game = GameManager.instance;
@@ -49,6 +51,8 @@ public class NPCController : MonoBehaviour
     void Update()
     {
         delayTimer += Time.deltaTime;
+
+        player.GetComponent<CharacterController>().isInDialogue = dialogueActive;
 
         if (!playerInRange || dialogue == null)
         {
@@ -139,6 +143,7 @@ public class NPCController : MonoBehaviour
             dialogue.current++;
             SetLine();
         }
+        currentLine = dialogue.current;
         Debug.Log("---next---current line: " + dialogue.current);
     }
 
@@ -150,10 +155,12 @@ public class NPCController : MonoBehaviour
         {
             dialogue.current = -1;
             StartDialoguePrompt();
+            dialogueActive = false;
         } else {
             dialogue.current--;
             SetLine();
         }
+        currentLine = dialogue.current;
         Debug.Log("---pre---current line: " + dialogue.current);
     }
 
@@ -163,7 +170,19 @@ public class NPCController : MonoBehaviour
         if (dialogue.current >= dialogue.lines.Count)
             return;
 
+
+        if (dialogue.lines[dialogue.current].isPlayer)
+        {
+            text.color = Color.red;
+        } else
+        {
+            //text.color = Color.yellow;
+            text.color = orange;
+        }
+
         text.text = dialogue.lines[dialogue.current].line;
+        currentLine = dialogue.current;
+
         Debug.Log("Set Line: " + dialogue.lines[dialogue.current].line);
         // TODO: Make text distinct based on who talks
     }

@@ -50,10 +50,12 @@ MonoBehaviour:
   rig: {fileID: 1333667154897380025}
   hasMet: 0
   hasDialogue: 0
+  hasFinishedDialogue: 0
   playerInRange: 0
   dialogueActive: 0
-  dialogue: {fileID: 11400000, guid: 9113ed4ed13af4e4f973c3b0a161d7c8, type: 2}
+  dialogue: {fileID: 0}
   dialogueUI: {fileID: 4110973462934935474}
+  delayInterval: 0.2
 --- !u!61 &7298694616215967852
 BoxCollider2D:
   m_ObjectHideFlags: 0

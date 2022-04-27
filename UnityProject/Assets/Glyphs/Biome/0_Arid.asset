@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 127122afcdb612b45ab614e9fdc527d3, type: 3}
-  m_Name: Arid
+  m_Name: 0_Arid
   m_EditorClassIdentifier: 
   icon: {fileID: 21300000, guid: 86d2d61ff6a9ef34e94a7c6c259926f9, type: 3}
   seed: 0

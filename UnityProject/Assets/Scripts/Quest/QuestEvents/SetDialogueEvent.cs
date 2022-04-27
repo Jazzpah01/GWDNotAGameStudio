@@ -10,11 +10,18 @@ public class SetDialogueEvent : QuestEvent
     public GlyphBiome biome;
     public GlyphTime time;
 
-    public List<string> dialogue;
+    public NPCController npc;
+    public Dialogue dialogue;
 
     public override void Execute(SceneContext context)
     {
-        throw new System.NotImplementedException();
+        foreach (NPCController npc in context.npcs)
+        {
+            if (npc == this.npc)
+            {
+                npc.SetDialogue(dialogue, CallBack);
+            }
+        }
     }
 
     public override bool ShouldExecute(SceneContext context)

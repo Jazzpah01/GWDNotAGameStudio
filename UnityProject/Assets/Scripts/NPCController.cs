@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using System;
 
 public class NPCController : MonoBehaviour
 {
@@ -16,7 +17,9 @@ public class NPCController : MonoBehaviour
     public bool dialogueActive = false;
 
     public Dialogue dialogue;
+    public Action callback;
     public GameObject dialogueUI;
+    public int currentLine;
 
     private TextMeshPro text;
     private float delayTimer;
@@ -30,6 +33,8 @@ public class NPCController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        LevelManager.instance.sceneContext.npcs.Add(this);
+
         if (GameManager.instance != null) player = GameManager.instance.player;
         text = dialogueUI.GetComponent<TextMeshPro>();
         if (text != null) Debug.Log("text init success");
@@ -88,6 +93,18 @@ public class NPCController : MonoBehaviour
                 playerInRange = false; // TODO: fix this ugly ass hack
             }
         }
+    }
+
+    /// <summary>
+    /// Set Dialogue for NPC
+    /// </summary>
+    /// <param name="dialogue"></param>
+    /// <param name="callback"></param>
+    public void SetDialogue(Dialogue dialogue, Action callback = null)
+    {
+        this.dialogue = dialogue;
+        this.callback = callback;
+        dialogue.current = -1;
     }
 
 

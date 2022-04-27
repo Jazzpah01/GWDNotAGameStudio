@@ -12,13 +12,13 @@ public class EnterSceneEvent : QuestEvent
 
     public override void Execute(SceneContext context)
     {
-        if (!LevelManager.instance.loadingQuestEvents)
-            CallBack();
+        CallBack();
     }
 
     public override bool ShouldExecute(SceneContext context)
     {
-        if (GlyphManager.landscape != landscape || GlyphManager.biome != biome || GlyphManager.time != time)
+        if (GlyphManager.landscape != landscape || GlyphManager.biome != biome || GlyphManager.time != time || 
+            !LevelManager.instance.loadingQuestEvents)
             return false;
 
         return true;

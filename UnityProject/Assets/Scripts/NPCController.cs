@@ -97,9 +97,7 @@ public class NPCController : MonoBehaviour
                 Debug.Log("ENDING DIALOGUE");
                 ClearText();
                 dialogueActive = false;
-
-
-                //playerInRange = false; // TODO: fix this ugly ass hack
+                playerInRange = false; // TODO: fix this ugly ass hack
             }
         }
     }
@@ -111,9 +109,16 @@ public class NPCController : MonoBehaviour
     /// <param name="callback"></param>
     public void SetDialogue(Dialogue dialogue, Action callback = null)
     {
-        this.dialogue = dialogue;
-        this.callback = callback;
-        dialogue.current = -1;
+        if (dialogue == null)
+        {
+            this.dialogue = null;
+            this.callback = null;
+        } else
+        {
+            this.dialogue = dialogue;
+            this.callback = callback;
+            dialogue.current = -1;
+        }
     }
 
 
@@ -126,6 +131,8 @@ public class NPCController : MonoBehaviour
             //dialogueActive = false;
             hasFinishedDialogue = true;
             dialogue.SetComplete(true); // TODO: Link this up with quest progression
+            if (callback != null)
+                callback();
             //EndDialoguePrompt();
         } else
         {
@@ -153,6 +160,9 @@ public class NPCController : MonoBehaviour
 
     private void SetLine()
     {
+        if (dialogue.current >= dialogue.lines.Count)
+            return;
+
         text.text = dialogue.lines[dialogue.current].line;
         Debug.Log("Set Line: " + dialogue.lines[dialogue.current].line);
         // TODO: Make text distinct based on who talks
@@ -171,6 +181,7 @@ public class NPCController : MonoBehaviour
     private void StartDialoguePrompt()
     {
         text.text = "( Press [E] to start conversation! )";
+        dialogue.current = -1;
     }
 
     private void EndDialoguePrompt()

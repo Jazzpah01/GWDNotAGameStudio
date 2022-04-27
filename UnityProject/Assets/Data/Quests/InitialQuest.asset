@@ -16,6 +16,22 @@ MonoBehaviour:
   questIncrease: 1
   npcPrefab: {fileID: 1340676740333891396, guid: e5c68e9ca7d452a4a8c875c658171880, type: 3}
   dialogue: {fileID: 11400000, guid: 80d4c88dcd763084db75319712355d2d, type: 2}
+--- !u!114 &-3121070518937560922
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 34046101b1f069c428a58bb51b915585, type: 3}
+  m_Name: SetDialogue
+  m_EditorClassIdentifier: 
+  questIndex: 1
+  questIncrease: 0
+  npcPrefab: {fileID: 1340676740333891396, guid: e5c68e9ca7d452a4a8c875c658171880, type: 3}
+  dialogue: {fileID: 0}
 --- !u!114 &-1365525983496492526
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -28,7 +44,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c66578638b9a8a747bd4a9362316af27, type: 3}
   m_Name: RemoveGameObject
   m_EditorClassIdentifier: 
-  questIndex: 666
+  questIndex: 2
   questIncrease: 0
   landscape: {fileID: 11400000, guid: 4f07cc7fa8f6a0a47817e9f0b54c5dea, type: 2}
   biome: {fileID: 11400000, guid: dd0fe0b9a6f069b42ab01f63d73696f4, type: 2}
@@ -51,7 +67,26 @@ MonoBehaviour:
   questEvents:
   - {fileID: 2777699862564925069}
   - {fileID: -3969051415396973418}
+  - {fileID: -3121070518937560922}
+  - {fileID: 2138139565389794544}
   - {fileID: -1365525983496492526}
+--- !u!114 &2138139565389794544
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 12a88f59804a1164699d9e31964ad621, type: 3}
+  m_Name: EnterScene
+  m_EditorClassIdentifier: 
+  questIndex: 1
+  questIncrease: 1
+  landscape: {fileID: 11400000, guid: 4f07cc7fa8f6a0a47817e9f0b54c5dea, type: 2}
+  biome: {fileID: 11400000, guid: dd0fe0b9a6f069b42ab01f63d73696f4, type: 2}
+  time: {fileID: 11400000, guid: 6039305ef7b849941b0144aa37501464, type: 2}
 --- !u!114 &2777699862564925069
 MonoBehaviour:
   m_ObjectHideFlags: 0

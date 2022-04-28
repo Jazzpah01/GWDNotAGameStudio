@@ -31,6 +31,14 @@ public class SceneContext
         }
     }
 
+    public void AddNPC(NPCController npc)
+    {
+        if (npcs.Contains(npc))
+            return;
+
+        npcs.Add(npc);
+    }
+
     public void RemoveGameObject(GameObject prefab)
     {
         if (EventObjects.ContainsKey(prefab))
@@ -42,12 +50,18 @@ public class SceneContext
             EventObjects[prefab].Clear();
         } else
         {
-            NPCController npc = prefab.GetComponentInChildren<NPCController>();
+            NPCController npc = prefab.GetComponent<NPCController>();
             //Make NPC that didn't spawn in quest removeable
-            //foreach (var item in collection)
-            //{
+            foreach (NPCController othernpc in npcs.ToArray())
+            {
+                if (npc.characterName == othernpc.characterName)
+                {
+                    npcs.Remove(othernpc);
+                    EventObjects.Remove(othernpc.gameObject);
+                }
 
-            //}
+                MonoBehaviour.Destroy(othernpc.gameObject);
+            }
         }
     }
 }

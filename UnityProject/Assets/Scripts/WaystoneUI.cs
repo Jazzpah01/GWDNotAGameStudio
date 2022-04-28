@@ -9,8 +9,8 @@ public class WaystoneUI : MonoBehaviour
     public GameObject waystoneGlyphs;
     public GameObject submitButton;
 
-    public InteractableUI landscapeSlot;
-    public InteractableUI biomeSlot;
+    public SpriteRenderer landscapeSlot;
+    public SpriteRenderer biomeSlot;
 
     public GameObject playerItemPrefab;
 
@@ -32,16 +32,16 @@ public class WaystoneUI : MonoBehaviour
         CleanupMenuItems();
         PopulateMenuItems();
 
-        landscapeSlot.OnClicked += delegate { SetGlyph(currentGlyph); };
-        biomeSlot.OnClicked += delegate { SetGlyph(currentGlyph); };
+        //landscapeSlot.OnClicked += delegate { SetGlyph(currentGlyph); };
+        //biomeSlot.OnClicked += delegate { SetGlyph(currentGlyph); };
 
-        landscapeSlot.Interactable = false;
-        biomeSlot.Interactable = false;
+        //landscapeSlot.Interactable = false;
+        //biomeSlot.Interactable = false;
 
         submitButton.GetComponent<InteractableUI>().OnClicked += delegate { Submit(); };
 
-        SetGlyph(GlyphManager.landscape);
-        SetGlyph(GlyphManager.biome);
+        //SetGlyph(GlyphManager.landscape);
+        //SetGlyph(GlyphManager.biome);
     }
 
     public void Resetup()
@@ -97,20 +97,14 @@ public class WaystoneUI : MonoBehaviour
         if (g is GlyphBiome)
         {
             GlyphManager.biome = (GlyphBiome)g;
-            landscapeSlot.Interactable = false;
-            biomeSlot.Interactable = true;
             SetGlyph(g);
         }
         else if (g is GlyphLandscape)
         {
             GlyphManager.landscape = (GlyphLandscape)g;
-            biomeSlot.Interactable = false;
-            landscapeSlot.Interactable = true;
             SetGlyph(g);
         } else
         {
-            landscapeSlot.Interactable = true;
-            biomeSlot.Interactable = true;
         }
     }
 
@@ -121,14 +115,12 @@ public class WaystoneUI : MonoBehaviour
             oldToggled.Toggled = false;
             oldToggled = null;
         }
-        biomeSlot.Interactable = false;
-        landscapeSlot.Interactable = false;
         if (g is GlyphBiome)
         {
-            biomeSlot.Sprite = g.icon;
+            biomeSlot.sprite = g.icon;
         } else if (g is GlyphLandscape)
         {
-            landscapeSlot.Sprite = g.icon;
+            landscapeSlot.sprite = g.icon;
         }
     }
 

@@ -23,6 +23,6 @@ MonoBehaviour:
     line: USE. THE. PEBBLES.
   - isPlayer: 1
     line: Use them how? Where?
-  - isPlayer: 0
+  - isPlayer: 1
     line: 'What the? '
-  current: -1
+  current: 4

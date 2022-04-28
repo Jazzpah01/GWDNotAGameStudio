@@ -428,7 +428,7 @@ PrefabInstance:
       objectReference: {fileID: 11400000, guid: f9d7367acb2623340a5f197224252459, type: 2}
     - target: {fileID: 3734234397727408793, guid: e5c68e9ca7d452a4a8c875c658171880, type: 3}
       propertyPath: m_fontStyle
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3734234397727408793, guid: e5c68e9ca7d452a4a8c875c658171880, type: 3}
       propertyPath: m_fontColor.b
@@ -945,12 +945,13 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1061258373}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1e8db7a1035c1374ea86d1f3c078b36a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   started: 0
+  ended: 0
   gary: {fileID: 1619516908}
   player: {fileID: 1224334622}
   dialogue: {fileID: 11400000, guid: 90674bdc9c3009547aaf72decb878e12, type: 2}
@@ -1102,11 +1103,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4509995404389645562, guid: c1406cc5652e89642ba823afd0885d17, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -23.97
+      value: 6.56
       objectReference: {fileID: 0}
     - target: {fileID: 4509995404389645562, guid: c1406cc5652e89642ba823afd0885d17, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -2.87
+      value: -2.03
       objectReference: {fileID: 0}
     - target: {fileID: 4509995404389645562, guid: c1406cc5652e89642ba823afd0885d17, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1138,6 +1139,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4509995404389645562, guid: c1406cc5652e89642ba823afd0885d17, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7209916983510949665, guid: c1406cc5652e89642ba823afd0885d17, type: 3}
+      propertyPath: y_offset
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []

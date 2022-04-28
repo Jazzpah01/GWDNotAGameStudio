@@ -31,7 +31,8 @@ public class NPCController : MonoBehaviour
     private float delayTimer;
     public float delayInterval = 0.2f;
 
-    private Color orange = new Color(0.5f, 0.5f, 0f, 1f);
+    private Color orange = new Color(0.8f, 0.8f, 0.3f, 1f);
+    private Color defaultTextColor;
 
 
     private void Awake()
@@ -46,6 +47,7 @@ public class NPCController : MonoBehaviour
         if (GameManager.instance != null) player = GameManager.instance.player;
         text = dialogueUI.GetComponent<TextMeshPro>();
         if (text != null) Debug.Log("text init success");
+        defaultTextColor = text.color;
         ClearText();
         if (dialogue != null) dialogue.current = -1;
         delayTimer = 0f;
@@ -183,7 +185,8 @@ public class NPCController : MonoBehaviour
         } else
         {
             //text.color = Color.yellow;
-            text.color = orange;
+            //text.color = orange;
+            text.color = defaultTextColor;
             text.gameObject.transform.position = (new Vector3(2.2f, 2.5f)) + gameObject.transform.position;
         }
 

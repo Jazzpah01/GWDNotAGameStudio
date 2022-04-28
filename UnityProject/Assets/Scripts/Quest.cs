@@ -19,7 +19,7 @@ public class Quest : ScriptableObject
             for (int j = 0; j < questEvents.Count; j++)
             {
                 i += questEvents[j].questIncrease;
-                if (questEvents[j].questIndex > value || i <= questIndex)
+                if (questEvents[j].questIndex > value || questEvents[j].questIndex <= questIndex)
                     continue;
 
                 if (questEvents[j].questIndex >= questIndex && 

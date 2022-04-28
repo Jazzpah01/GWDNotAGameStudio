@@ -29,20 +29,8 @@ public class WaystoneUI : MonoBehaviour
 
     private void Start()
     {
+        CleanupMenuItems();
         PopulateMenuItems();
-
-        // Delegate button presses
-        for (int i = 0; i < playerItems.Count; i++)
-        {
-            int index = i;
-            playerItems[i].OnClicked += delegate { 
-                SelectGlyph(GlyphManager.playerGlyphs[index]); 
-                playerItems[index].Toggled = true;
-                if (oldToggled != null)
-                    oldToggled.Toggled = false;
-                oldToggled = playerItems[index];
-            };
-        }
 
         landscapeSlot.OnClicked += delegate { SetGlyph(currentGlyph); };
         biomeSlot.OnClicked += delegate { SetGlyph(currentGlyph); };
@@ -56,16 +44,50 @@ public class WaystoneUI : MonoBehaviour
         SetGlyph(GlyphManager.biome);
     }
 
+    public void Resetup()
+    {
+        CleanupMenuItems();
+        PopulateMenuItems();
+    }
+
+    void CleanupMenuItems()
+    {
+        if (playerItems == null)
+            return;
+
+        foreach (InteractableUI item in playerItems.ToArray())
+        {
+            item.OnClicked = null;
+            Destroy(item.gameObject);
+        }
+
+        playerItems.Clear();
+    }
+
     void PopulateMenuItems()
     {
         playerItems = new List<InteractableUI>();
 
+        // Create UI elements for player items
         for (int i = 0; i < GlyphManager.playerGlyphs.Count; i++)
         {
             GameObject go = Instantiate(playerItemPrefab, playerGlyphs.transform);
             InteractableUI iui = go.GetComponent<InteractableUI>();
             iui.Sprite = GlyphManager.playerGlyphs[i].icon;
             playerItems.Add(iui); ;
+        }
+
+        // Delegate button presses for player items
+        for (int i = 0; i < playerItems.Count; i++)
+        {
+            int index = i;
+            playerItems[i].OnClicked += delegate {
+                SelectGlyph(GlyphManager.playerGlyphs[index]);
+                playerItems[index].Toggled = true;
+                if (oldToggled != null)
+                    oldToggled.Toggled = false;
+                oldToggled = playerItems[index];
+            };
         }
     }
 
@@ -120,31 +142,6 @@ public class WaystoneUI : MonoBehaviour
 
         LevelManager.instance.ChangeScene();
     }
-
-    //public void SelectGlyph(Glyph g)
-    //{
-    //    Debug.Log("Glyph selected!");
-    //    currentGlyph = g;
-    //    waystoneUI.SelectGlyph(g);
-    //}
-
-    //public void SetGlyph(Glyph g)
-    //{
-    //    Debug.Log("Glyph set!");
-    //    waystoneUI.SetGlyph(g);
-    //    if (g is GlyphLandscape)
-    //    {
-    //        GlyphManager.landscape = (GlyphLandscape)g;
-    //    }
-    //    else if (g is GlyphBiome)
-    //    {
-    //        GlyphManager.biome = (GlyphBiome)g;
-    //    }
-    //    else if (g is GlyphTime)
-    //    {
-    //        GlyphManager.time = (GlyphTime)g;
-    //    }
-    //}
 
 
 }

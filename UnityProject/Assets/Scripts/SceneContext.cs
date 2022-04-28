@@ -27,7 +27,6 @@ public class SceneContext
 
         if (npc != null)
         {
-            Debug.Log("NPC added!");
             npcs.Add(npc);
         }
     }

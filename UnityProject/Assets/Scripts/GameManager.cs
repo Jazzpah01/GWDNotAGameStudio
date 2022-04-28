@@ -89,7 +89,6 @@ public class GameManager : MonoBehaviour
     public void setIsUIopen(bool isOpen)
     {
         isUIopen = isOpen;
-        Debug.Log("UI open is:   " + isOpen);
     }
 
     public bool getIsDialogueActive()

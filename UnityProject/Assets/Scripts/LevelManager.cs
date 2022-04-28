@@ -159,23 +159,20 @@ public class LevelManager : MonoBehaviour
 
         foreach (Quest quest in QuestManager.currentQuests)
         {
-            foreach (QuestEvent qevent in quest.questEvents)
+            for (int i = 0; i < quest.questEvents.Count; i++)
             {
-                if (qevent.questIndex > quest.QuestIndex)
+                QuestEvent questEvent = quest.questEvents[i];
+
+                if (questEvent.questIndex > quest.QuestIndex)
                     continue;
 
-                if (qevent.ShouldExecute(sceneContext))
-                {
-                    toExecute.Add(qevent);
-                }
+                QuestManager.SubscribeEvent(questEvent);
             }
         }
 
+        QuestManager.ExecuteEvents();
+
         loadingQuestEvents = false;
-        foreach (QuestEvent item in toExecute)
-        {
-            item.Execute(sceneContext);
-        }
     }
 
     public void ChangeScene()

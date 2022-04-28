@@ -1,8 +1,9 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public abstract class QuestEvent : ScriptableObject
+public abstract class QuestEvent : ScriptableObject, IComparable<QuestEvent>
 {
     public int questIndex = 0;
     public int questIncrease = 0;
@@ -30,5 +31,22 @@ public abstract class QuestEvent : ScriptableObject
             hasExecuted = true;
             quest.QuestIndex += questIncrease;
         }
+    }
+
+    public int CompareTo(QuestEvent y)
+    {
+        QuestEvent x = this;
+
+        if (x.questIndex < y.questIndex)
+            return -1;
+        if (x.questIndex > y.questIndex)
+            return 1;
+
+        if (x.questIncrease < y.questIncrease)
+            return -1;
+        if (x.questIncrease > y.questIncrease)
+            return 1;
+
+        return 0;
     }
 }

@@ -36,7 +36,6 @@ public class SetDialogueEvent : QuestEvent
                 return true;
             }
         }
-        Debug.Log($"No dialogue. NPC count: {context.npcs.Count}");
         return false;
     }
 }

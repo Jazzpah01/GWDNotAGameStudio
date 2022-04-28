@@ -52,7 +52,7 @@ public class CharacterController : MonoBehaviour
     private void Start()
     {
         this.anim = GetComponentInChildren<Animator>();
-        if (this.anim != null) Debug.Log("Character Animator initialized");
+        //if (this.anim != null) Debug.Log("Character Animator initialized");
         isWalking = false;
         FlipSprite(false);
     }

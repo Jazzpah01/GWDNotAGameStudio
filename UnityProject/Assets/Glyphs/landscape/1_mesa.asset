@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: 1_mesa
   m_EditorClassIdentifier: 
   icon: {fileID: 21300000, guid: b6ba75a5f33a443deacae62133f27037, type: 3}
-  seed: 0
+  seed: 2
   sceneName: 1_mesa
   locations:
   - landscape: {fileID: 0}

@@ -97,7 +97,8 @@ GameObject:
   - component: {fileID: 4509995404389645563}
   - component: {fileID: 4509995404389645566}
   - component: {fileID: 4509995404389645567}
-  - component: {fileID: -2509703402849642663}
+  - component: {fileID: 6004298613416520212}
+  - component: {fileID: 5634747571698348646}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -136,6 +137,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 586bf0e44ba86b24a8e56cb52d1129f9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bumpEvent:
+    Guid:
+      Data1: -1197581765
+      Data2: 1310792267
+      Data3: 1238089623
+      Data4: -1296574310
+    Path: event:/Character/Wall Bump
+  walkEmitter: {fileID: 5634747571698348646}
   body: {fileID: 4509995404389645563}
   running: {fileID: 0}
   crouch: {fileID: 0}
@@ -206,7 +215,21 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!114 &-2509703402849642663
+--- !u!114 &6004298613416520212
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4509995404389645508}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86c6556701af9e04380698b89f691b6e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  attenuationObject: {fileID: 4509995404389645508}
+  ListenerNumber: -1
+--- !u!114 &5634747571698348646
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -227,7 +250,7 @@ MonoBehaviour:
       Data4: 307849288
     Path: event:/Character/Footsteps
   Event: 
-  PlayEvent: 1
+  PlayEvent: 0
   StopEvent: 0
   AllowFadeout: 1
   TriggerOnce: 0

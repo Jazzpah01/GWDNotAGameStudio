@@ -5,19 +5,18 @@ using UnityEngine.SceneManagement;
 
 public class InitialLevel : MonoBehaviour
 {
+    // Initial place to load:
     public GlyphTime timeGlyph;
     public GlyphBiome biomeGlyph;
     public GlyphLandscape landscapeGlyph;
-
-    public List<GlyphLandscape> landscapes;
-    public List<GlyphBiome> biomes;
-    public List<GlyphTime> times;
 
     public GlyphCollection glyphCollection;
 
     public List<Glyph> playerGlyphs;
 
     public Places places;
+
+    public Quest initialQuest;
 
     public static bool gameInitialized = false;
 
@@ -36,9 +35,14 @@ public class InitialLevel : MonoBehaviour
         GlyphManager.biome = biomeGlyph;
         GlyphManager.landscape = landscapeGlyph;
 
+        GlyphManager.timeIndex = 0;
+
         gameInitialized = true;
 
         PlaceManager._places = places;
+
+        QuestManager.currentQuests.Add(initialQuest);
+        initialQuest.Init();
 
         SceneManager.LoadScene(landscapeGlyph.sceneName);
     }

@@ -9,15 +9,15 @@ EditorBuildSettings:
     path: Assets/Scenes/InitialScene.unity
     guid: a4c45d66d45065a4a912f95cd3ca7bfe
   - enabled: 1
-    path: Assets/Scenes/GlyphScenes/flatland.unity
+    path: Assets/Scenes/GlyphScenes/0_flatland.unity
     guid: 37f5fb020fb904d46bcfc0a60177d531
   - enabled: 1
-    path: Assets/Scenes/GlyphScenes/mesa.unity
+    path: Assets/Scenes/GlyphScenes/1_mesa.unity
     guid: 96e0d60d75980474d821e15ffd2b3add
   - enabled: 1
-    path: Assets/Scenes/GlyphScenes/valley.unity
+    path: Assets/Scenes/GlyphScenes/2_valley.unity
     guid: 0af21cb6b0d00ab41b770b21aff8549f
   - enabled: 1
-    path: Assets/Scenes/GlyphScenes/volcano.unity
+    path: Assets/Scenes/GlyphScenes/3_volcano.unity
     guid: a4983748aa5d86a4daebce47b40586d1
   m_configObjects: {}

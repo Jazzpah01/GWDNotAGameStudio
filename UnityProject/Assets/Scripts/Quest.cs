@@ -5,7 +5,6 @@ using UnityEngine;
 [CreateAssetMenu(menuName ="Assets/Quest")]
 public class Quest : ScriptableObject
 {
-    public string guid;
     [HideInInspector] public bool customEditing = true;
     private int questIndex = 0;
 

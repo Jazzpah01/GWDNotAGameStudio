@@ -30,6 +30,10 @@ public class NPCController : MonoBehaviour
 
     private Color orange = new Color(0.5f, 0.5f, 0f, 1f);
 
+    private Animator anim;
+    
+    private bool isWalking;
+
     private void Awake()
     {
         game = GameManager.instance;
@@ -229,6 +233,11 @@ public class NPCController : MonoBehaviour
         {
             playerInRange = false;
         }
+
+    }
+
+    public void MoveNPC(Vector2 goalPos)
+    {
 
     }
 }

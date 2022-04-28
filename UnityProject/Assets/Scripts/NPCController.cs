@@ -31,7 +31,7 @@ public class NPCController : MonoBehaviour
     private Color orange = new Color(0.5f, 0.5f, 0f, 1f);
 
     private Animator anim;
-    public Transform rig;
+    
     private bool isWalking;
 
     private void Awake()

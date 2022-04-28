@@ -61,6 +61,7 @@ public class LevelManager : MonoBehaviour
         DOTween.Init(); // empty param = default settings
         SetupGlyphs();
         PopulateScene();
+        SetPlaceNPCs();
         ExecuteQuestEvents();
 
         finishedLoading = true;
@@ -150,6 +151,15 @@ public class LevelManager : MonoBehaviour
         placeManager.biome = GlyphManager.biome;
         placeManager.time = GlyphManager.time;
         placeManager.LoadPlace();
+    }
+
+    public void SetPlaceNPCs()
+    {
+        NPCController[] npcs = placeManager.GetComponentsInChildren<NPCController>();
+        foreach (NPCController npc in npcs)
+        {
+            sceneContext.AddNPC(npc);
+        }
     }
 
     public void ExecuteQuestEvents()

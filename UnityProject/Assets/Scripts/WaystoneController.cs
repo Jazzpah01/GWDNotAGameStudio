@@ -7,12 +7,16 @@ public class WaystoneController : MonoBehaviour
 
     public BoxCollider2D triggerCollider;
 
+    public SpriteRenderer left;
+    public SpriteRenderer right;
+
 
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        WaystoneUI.instance.landscapeSlot = left;
+        WaystoneUI.instance.biomeSlot = right;
     }
 
     // Update is called once per frame

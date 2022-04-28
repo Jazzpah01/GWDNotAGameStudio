@@ -21,10 +21,10 @@ MonoBehaviour:
     backGround: {fileID: 21300000, guid: fe27e55338fd344b6828ad9c98309569, type: 3}
   - landscape: {fileID: 0}
     biome: {fileID: 11400000, guid: 6d5bf97df702444cdb6b05f0c5a3ad88, type: 2}
-    backGround: {fileID: 21300000, guid: 25894c3d66a484f1daa919aec46a8fa2, type: 3}
+    backGround: {fileID: 21300000, guid: e765b365609b940f981591be20f7e32f, type: 3}
   - landscape: {fileID: 0}
     biome: {fileID: 11400000, guid: 0301f76479b63394a89d420f7fc684ac, type: 2}
     backGround: {fileID: 21300000, guid: 851e07f9d2945c541a707b3177aabc93, type: 3}
   - landscape: {fileID: 0}
     biome: {fileID: 11400000, guid: 8642289d9e19747d0811a4c248263909, type: 2}
-    backGround: {fileID: 21300000, guid: e765b365609b940f981591be20f7e32f, type: 3}
+    backGround: {fileID: 21300000, guid: 25894c3d66a484f1daa919aec46a8fa2, type: 3}

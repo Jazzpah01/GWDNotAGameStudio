@@ -36,6 +36,11 @@ public class QuestEditor : Editor
             AssetDatabase.SaveAssets();
         }
 
+        if (GUILayout.Button("Sort"))
+        {
+            quest.questEvents.Sort();
+        }
+
         if (quest.questEvents != null)
         {
             for (int i = 0; i < quest.questEvents.Count; i++)

@@ -58,6 +58,7 @@ MonoBehaviour:
   dialogueUI: {fileID: 1123414462719791972}
   currentLine: 0
   delayInterval: 0.2
+  lookAtPlayer: 0
 --- !u!61 &3184405756820806108
 BoxCollider2D:
   m_ObjectHideFlags: 0

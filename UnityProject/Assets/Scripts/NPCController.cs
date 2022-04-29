@@ -34,6 +34,8 @@ public class NPCController : MonoBehaviour
     private Color orange = new Color(0.8f, 0.8f, 0.3f, 1f);
     private Color defaultTextColor;
 
+    public bool lookAtPlayer = true;
+
 
     private void Awake()
     {
@@ -51,6 +53,7 @@ public class NPCController : MonoBehaviour
         ClearText();
         if (dialogue != null) dialogue.current = -1;
         delayTimer = 0f;
+        dialogueActive = false;
     }
 
     // Update is called once per frame
@@ -63,13 +66,13 @@ public class NPCController : MonoBehaviour
         if (!playerInRange || dialogue == null)
         {
             //ClearText();
-            dialogueActive = false;
+            //dialogueActive = false;
             return;
         }
 
         if (dialogueActive && !playerInRange) dialogueActive = false;
 
-        if (playerInRange)
+        if (playerInRange && lookAtPlayer)
         {
             if (player.transform.position.x < transform.position.x) // turn npc towards player
             {
@@ -211,6 +214,7 @@ public class NPCController : MonoBehaviour
     {
         text.text = "( Press [E] to start conversation! )";
         dialogue.current = -1;
+        hasFinishedDialogue = false;
     }
 
     private void EndDialoguePrompt()

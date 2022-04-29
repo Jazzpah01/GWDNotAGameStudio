@@ -30,7 +30,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 34046101b1f069c428a58bb51b915585, type: 3}
   m_Name: SetDialogue
   m_EditorClassIdentifier: 
-  questIndex: 6
+  questIndex: 5
   questIncrease: 0
   npcPrefab: {fileID: 1340676740333891396, guid: e5c68e9ca7d452a4a8c875c658171880, type: 3}
   dialogue: {fileID: 11400000, guid: 80d4c88dcd763084db75319712355d2d, type: 2}
@@ -68,7 +68,7 @@ MonoBehaviour:
   biome: {fileID: 11400000, guid: dd0fe0b9a6f069b42ab01f63d73696f4, type: 2}
   time: {fileID: 11400000, guid: c4ef068ec96997a4181b8dd407818fb6, type: 2}
   prefab: {fileID: 1307371538597369448, guid: cb5f95b2fc6c2eb4a845ced3266d18ed, type: 3}
-  position: {x: 15, y: -0.2}
+  position: {x: 12, y: -0.2}
   scale: {x: 1, y: 1}
 --- !u!114 &-3121070518937560922
 MonoBehaviour:
@@ -111,8 +111,8 @@ MonoBehaviour:
   - {fileID: 6264699055906971696}
   - {fileID: 6414580759219795814}
   - {fileID: -3121070518937560922}
-  - {fileID: 8292976313948776874}
   - {fileID: -4998833930898407210}
+  - {fileID: 8292976313948776874}
 --- !u!114 &2777699862564925069
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -131,7 +131,7 @@ MonoBehaviour:
   biome: {fileID: 11400000, guid: dd0fe0b9a6f069b42ab01f63d73696f4, type: 2}
   time: {fileID: 11400000, guid: c4ef068ec96997a4181b8dd407818fb6, type: 2}
   prefab: {fileID: 1340676740333891396, guid: e5c68e9ca7d452a4a8c875c658171880, type: 3}
-  position: {x: 13, y: -3.3}
+  position: {x: 15, y: -3.3}
   scale: {x: 1, y: 1}
 --- !u!114 &2999729165166882097
 MonoBehaviour:
@@ -201,7 +201,7 @@ MonoBehaviour:
   biome: {fileID: 11400000, guid: dd0fe0b9a6f069b42ab01f63d73696f4, type: 2}
   time: {fileID: 11400000, guid: c4ef068ec96997a4181b8dd407818fb6, type: 2}
   prefab: {fileID: 7481150037995999874, guid: 2c9f7447c9c464676a7767903a155bba, type: 3}
-  position: {x: 15, y: -0.2}
+  position: {x: 12, y: -0.2}
   scale: {x: 1, y: 1}
 --- !u!114 &7125183320204626010
 MonoBehaviour:
@@ -221,7 +221,7 @@ MonoBehaviour:
   biome: {fileID: 11400000, guid: dd0fe0b9a6f069b42ab01f63d73696f4, type: 2}
   time: {fileID: 11400000, guid: c4ef068ec96997a4181b8dd407818fb6, type: 2}
   prefab: {fileID: 3735002686978342717, guid: dd360bb4c75079948a68e4a4bf6db268, type: 3}
-  position: {x: 10, y: -1}
+  position: {x: 6, y: -2}
   scale: {x: 1, y: 1}
 --- !u!114 &8038277705686425248
 MonoBehaviour:
@@ -253,4 +253,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   questIndex: 5
   questIncrease: 1
-  glyph: {fileID: 0}
+  glyph: {fileID: 11400000, guid: 4f07cc7fa8f6a0a47817e9f0b54c5dea, type: 2}

@@ -28,11 +28,9 @@ public class SetDialogueEvent : QuestEvent
     {
         foreach (NPCController npc in context.npcs)
         {
-            Debug.Log($"{npc.characterName}---{this.npcPrefab.GetComponent<NPCController>().characterName}");
-            if (npc.characterName != null && npc.characterName != "" &&
+            if (npc != null && npc.characterName != null && npc.characterName != "" &&
                 npc.characterName == this.npcPrefab.GetComponent<NPCController>().characterName)
             {
-                Debug.Log("Yes dialogue");
                 return true;
             }
         }

@@ -19,7 +19,7 @@ MonoBehaviour:
     Data3: 174364302
     Data4: 1783670800
   Banks:
-  - {fileID: 7984869853343724365}
+  - {fileID: 5345573164738149018}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -46,7 +46,7 @@ MonoBehaviour:
     Data3: -1104084825
     Data4: 307849288
   Banks:
-  - {fileID: 6319648391342093685}
+  - {fileID: 6507139071202492389}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -54,7 +54,7 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 656
---- !u!114 &-2280142548856867481
+--- !u!114 &-4503475774658731278
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -66,33 +66,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
   m_Name: bank:/Master.strings.bank
   m_EditorClassIdentifier: 
-  Path: GWDfmod/Build/Desktop/Master.strings.bank
+  Path: gwdFMOD/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 637862405390188030
+  lastModified: 637867244308953559
   FileSizes:
   - Name: Desktop
     Value: 1062
-  Exists: 1
---- !u!114 &-427958435786858804
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/Master.bank
-  m_EditorClassIdentifier: 
-  Path: GWDfmod/Build/Desktop/Master.bank
-  Name: Master
-  StudioPath: bank:/Master
-  lastModified: 637862405390097329
-  FileSizes:
-  - Name: Desktop
-    Value: 1036
   Exists: 1
 --- !u!114 &11400000
 MonoBehaviour:
@@ -107,10 +87,10 @@ MonoBehaviour:
   m_Name: FMODStudioCache
   m_EditorClassIdentifier: 
   EditorBanks:
-  - {fileID: -2280142548856867481}
-  - {fileID: -427958435786858804}
-  - {fileID: 6319648391342093685}
-  - {fileID: 7984869853343724365}
+  - {fileID: -4503475774658731278}
+  - {fileID: 6507139071202492389}
+  - {fileID: 5345573164738149018}
+  - {fileID: 8355847689012072180}
   EditorEvents:
   - {fileID: -6074732205434318191}
   - {fileID: 4527809457698103644}
@@ -119,10 +99,10 @@ MonoBehaviour:
   - {fileID: 3558165542667943408}
   EditorParameters: []
   MasterBanks:
-  - {fileID: -427958435786858804}
+  - {fileID: 8355847689012072180}
   StringsBanks:
-  - {fileID: -2280142548856867481}
-  cacheTime: 637862405390188030
+  - {fileID: -4503475774658731278}
+  cacheTime: 637867244308953559
   cacheVersion: 10
 --- !u!114 &3558165542667943408
 MonoBehaviour:
@@ -143,7 +123,7 @@ MonoBehaviour:
     Data3: -233533259
     Data4: -1952723351
   Banks:
-  - {fileID: 7984869853343724365}
+  - {fileID: 5345573164738149018}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -170,7 +150,7 @@ MonoBehaviour:
     Data3: 1238089623
     Data4: -1296574310
   Banks:
-  - {fileID: 6319648391342093685}
+  - {fileID: 6507139071202492389}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -178,27 +158,7 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 1593
---- !u!114 &6319648391342093685
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/Character.bank
-  m_EditorClassIdentifier: 
-  Path: GWDfmod/Build/Desktop/Character.bank
-  Name: Character
-  StudioPath: bank:/Character
-  lastModified: 637862405389888207
-  FileSizes:
-  - Name: Desktop
-    Value: 22336
-  Exists: 1
---- !u!114 &7984869853343724365
+--- !u!114 &5345573164738149018
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -210,13 +170,53 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
   m_Name: bank:/Glyph.bank
   m_EditorClassIdentifier: 
-  Path: GWDfmod/Build/Desktop/Glyph.bank
+  Path: gwdFMOD/Build/Desktop/Glyph.bank
   Name: Glyph
   StudioPath: bank:/Glyph
-  lastModified: 637862405390017526
+  lastModified: 637867244308950610
   FileSizes:
   - Name: Desktop
     Value: 298336
+  Exists: 1
+--- !u!114 &6507139071202492389
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Character.bank
+  m_EditorClassIdentifier: 
+  Path: gwdFMOD/Build/Desktop/Character.bank
+  Name: Character
+  StudioPath: bank:/Character
+  lastModified: 637867244308932798
+  FileSizes:
+  - Name: Desktop
+    Value: 22336
+  Exists: 1
+--- !u!114 &8355847689012072180
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: gwdFMOD/Build/Desktop/Master.bank
+  Name: Master
+  StudioPath: bank:/Master
+  lastModified: 637867244308952201
+  FileSizes:
+  - Name: Desktop
+    Value: 1036
   Exists: 1
 --- !u!114 &8951964514713132447
 MonoBehaviour:
@@ -237,7 +237,7 @@ MonoBehaviour:
     Data3: -1663111761
     Data4: -97957680
   Banks:
-  - {fileID: 7984869853343724365}
+  - {fileID: 5345573164738149018}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1

@@ -1,0 +1,112 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-8728451397209023604
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4360fe7d5ce7c4644931e761bc79349a, type: 3}
+  m_Name: SpawnGameObject
+  m_EditorClassIdentifier: 
+  questIndex: 0
+  questIncrease: 0
+  landscape: {fileID: 11400000, guid: 0f37ff6e7fd4c3b45a49fd59091b0812, type: 2}
+  biome: {fileID: 11400000, guid: 8642289d9e19747d0811a4c248263909, type: 2}
+  time: {fileID: 11400000, guid: c4ef068ec96997a4181b8dd407818fb6, type: 2}
+  prefab: {fileID: 5346684185266132660, guid: 91a82242c1ed6fa45b0ed864cf3dcc5f, type: 3}
+  position: {x: 13, y: -3.3}
+  scale: {x: 1, y: 1}
+--- !u!114 &-7729350891373483026
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 12a88f59804a1164699d9e31964ad621, type: 3}
+  m_Name: EnterScene
+  m_EditorClassIdentifier: 
+  questIndex: 0
+  questIncrease: 0
+  landscape: {fileID: 11400000, guid: 0f37ff6e7fd4c3b45a49fd59091b0812, type: 2}
+  biome: {fileID: 11400000, guid: 8642289d9e19747d0811a4c248263909, type: 2}
+  time: {fileID: 11400000, guid: c4ef068ec96997a4181b8dd407818fb6, type: 2}
+--- !u!114 &-6283438625340578469
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c66578638b9a8a747bd4a9362316af27, type: 3}
+  m_Name: RemoveGameObject
+  m_EditorClassIdentifier: 
+  questIndex: 1
+  questIncrease: 2
+  landscape: {fileID: 11400000, guid: 0f37ff6e7fd4c3b45a49fd59091b0812, type: 2}
+  biome: {fileID: 11400000, guid: 8642289d9e19747d0811a4c248263909, type: 2}
+  time: {fileID: 11400000, guid: c4ef068ec96997a4181b8dd407818fb6, type: 2}
+  prefab: {fileID: 5346684185266132660, guid: 91a82242c1ed6fa45b0ed864cf3dcc5f, type: 3}
+--- !u!114 &-2161143850243819267
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4360fe7d5ce7c4644931e761bc79349a, type: 3}
+  m_Name: SpawnGameObject
+  m_EditorClassIdentifier: 
+  questIndex: 0
+  questIncrease: 0
+  landscape: {fileID: 11400000, guid: 0f37ff6e7fd4c3b45a49fd59091b0812, type: 2}
+  biome: {fileID: 11400000, guid: 8642289d9e19747d0811a4c248263909, type: 2}
+  time: {fileID: 11400000, guid: c4ef068ec96997a4181b8dd407818fb6, type: 2}
+  prefab: {fileID: 7492378885617605021, guid: 8590f4a0eec9a470aaa150671345d44c, type: 3}
+  position: {x: 15, y: -0.2}
+  scale: {x: 1, y: 1}
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 76812cc4cf143ee40a123a38a320e2de, type: 3}
+  m_Name: Gary
+  m_EditorClassIdentifier: 
+  customEditing: 1
+  questEvents:
+  - {fileID: -7729350891373483026}
+  - {fileID: -2161143850243819267}
+  - {fileID: -8728451397209023604}
+  - {fileID: 1299480727557357467}
+  - {fileID: -6283438625340578469}
+--- !u!114 &1299480727557357467
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 34046101b1f069c428a58bb51b915585, type: 3}
+  m_Name: SetDialogue
+  m_EditorClassIdentifier: 
+  questIndex: 0
+  questIncrease: 1
+  npcPrefab: {fileID: 5346684185266132660, guid: 91a82242c1ed6fa45b0ed864cf3dcc5f, type: 3}
+  dialogue: {fileID: 11400000, guid: 90674bdc9c3009547aaf72decb878e12, type: 2}

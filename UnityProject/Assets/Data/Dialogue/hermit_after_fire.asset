@@ -84,7 +84,7 @@ MonoBehaviour:
       it whenever I was ready to go back to the town.
   - isPlayer: 0
     line: I am not ready and you need this more than I do. Go find him and tell them
-      I sent you.
+      Tjetlik sent you.
   - isPlayer: 1
     line: Thank you!
   current: -1

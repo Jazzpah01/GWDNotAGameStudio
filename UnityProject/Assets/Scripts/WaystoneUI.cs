@@ -132,6 +132,9 @@ public class WaystoneUI : MonoBehaviour
             return;
         }
 
+        if (biomeSlot.sprite == null || landscapeSlot.sprite == null)
+            return;
+
         LevelManager.instance.ChangeScene();
     }
 

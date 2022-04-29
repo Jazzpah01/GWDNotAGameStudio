@@ -26,7 +26,7 @@ MonoBehaviour:
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 2500
+  Length: 2250
 --- !u!114 &-8149566203998267157
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -69,7 +69,7 @@ MonoBehaviour:
   Path: GWDfmod/Build/Desktop/Glyph.bank
   Name: Glyph
   StudioPath: bank:/Glyph
-  lastModified: 637862005463280542
+  lastModified: 637868123765786819
   FileSizes:
   - Name: Desktop
     Value: 477632
@@ -100,7 +100,7 @@ MonoBehaviour:
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 2000
+  Length: 3250
 --- !u!114 &-1646406101694628851
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -116,10 +116,30 @@ MonoBehaviour:
   Path: GWDfmod/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 637862005463293286
+  lastModified: 637868123765786819
   FileSizes:
   - Name: Desktop
     Value: 1036
+  Exists: 1
+--- !u!114 &-766208694049188802
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Dialouge.bank
+  m_EditorClassIdentifier: 
+  Path: GWDfmod/Build/Desktop/Dialouge.bank
+  Name: Dialouge
+  StudioPath: bank:/Dialouge
+  lastModified: 637868123765123493
+  FileSizes:
+  - Name: Desktop
+    Value: 1848
   Exists: 1
 --- !u!114 &11400000
 MonoBehaviour:
@@ -139,6 +159,7 @@ MonoBehaviour:
   - {fileID: -7458459281590321133}
   - {fileID: -1646406101694628851}
   - {fileID: 1223460719730574784}
+  - {fileID: -766208694049188802}
   EditorEvents:
   - {fileID: 8740263254286346063}
   - {fileID: -8149566203998267157}
@@ -147,12 +168,14 @@ MonoBehaviour:
   - {fileID: 7067983121640024738}
   - {fileID: -6271431284513025131}
   - {fileID: 8833154373312674333}
+  - {fileID: 6012719795842190640}
+  - {fileID: 3107224665196239020}
   EditorParameters: []
   MasterBanks:
   - {fileID: -1646406101694628851}
   StringsBanks:
   - {fileID: 4477200001679575713}
-  cacheTime: 637862005463341592
+  cacheTime: 637868123765852265
   cacheVersion: 10
 --- !u!114 &1223460719730574784
 MonoBehaviour:
@@ -169,10 +192,10 @@ MonoBehaviour:
   Path: GWDfmod/Build/Desktop/Background Music.bank
   Name: Background Music
   StudioPath: bank:/Background Music
-  lastModified: 637862005452176165
+  lastModified: 637868123761782217
   FileSizes:
   - Name: Desktop
-    Value: 304832
+    Value: 403488
   Exists: 1
 --- !u!114 &2257109516051158025
 MonoBehaviour:
@@ -201,6 +224,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 6500
+--- !u!114 &3107224665196239020
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Dialougue/Neutral
+  m_EditorClassIdentifier: 
+  Path: event:/Dialougue/Neutral
+  Guid:
+    Data1: 291328159
+    Data2: 1203387725
+    Data3: 2070210948
+    Data4: -1867150278
+  Banks:
+  - {fileID: -766208694049188802}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
 --- !u!114 &3551203094586082317
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -216,10 +266,10 @@ MonoBehaviour:
   Path: GWDfmod/Build/Desktop/Character.bank
   Name: Character
   StudioPath: bank:/Character
-  lastModified: 637862005458425591
+  lastModified: 637868123765037629
   FileSizes:
   - Name: Desktop
-    Value: 189952
+    Value: 211072
   Exists: 1
 --- !u!114 &4477200001679575713
 MonoBehaviour:
@@ -236,11 +286,38 @@ MonoBehaviour:
   Path: GWDfmod/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 637862005463341592
+  lastModified: 637868123765852265
   FileSizes:
   - Name: Desktop
-    Value: 1196
+    Value: 1328
   Exists: 1
+--- !u!114 &6012719795842190640
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Dialougue/Sad
+  m_EditorClassIdentifier: 
+  Path: event:/Dialougue/Sad
+  Guid:
+    Data1: 1898231120
+    Data2: 1329017283
+    Data3: -115922250
+    Data4: -71516138
+  Banks:
+  - {fileID: -766208694049188802}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
 --- !u!114 &7067983121640024738
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -267,7 +344,7 @@ MonoBehaviour:
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 18075
+  Length: 38000
 --- !u!114 &8740263254286346063
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -290,7 +367,7 @@ MonoBehaviour:
   - {fileID: 3551203094586082317}
   IsStream: 0
   Is3D: 0
-  IsOneShot: 1
+  IsOneShot: 0
   Parameters: []
   MinDistance: 1
   MaxDistance: 20

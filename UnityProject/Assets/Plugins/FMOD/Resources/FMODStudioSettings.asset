@@ -427,6 +427,7 @@ MonoBehaviour:
   Banks:
   - Background Music
   - Character
+  - Dialouge
   - Glyph
   BanksToLoad: []
   LiveUpdatePort: 9264

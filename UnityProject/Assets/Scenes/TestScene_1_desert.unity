@@ -222,6 +222,10 @@ PrefabInstance:
       propertyPath: m_AdditionalShaderChannelsFlag
       value: 25
       objectReference: {fileID: 0}
+    - target: {fileID: 9017366409970129646, guid: de7d487e8452e4b4dae5188a9acd4255, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: de7d487e8452e4b4dae5188a9acd4255, type: 3}
 --- !u!1001 &229629528
@@ -1630,6 +1634,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1994405043}
     m_Modifications:
+    - target: {fileID: 808919534521004871, guid: 445d3ef9d3f89cd4ba6a58931c3a6586, type: 3}
+      propertyPath: dialogue
+      value: 
+      objectReference: {fileID: 11400000, guid: 58829cd840212334e997b29408201366, type: 2}
     - target: {fileID: 7842467871709694746, guid: 445d3ef9d3f89cd4ba6a58931c3a6586, type: 3}
       propertyPath: m_Name
       value: DialogueUI_new
@@ -1704,7 +1712,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7842467871709694747, guid: 445d3ef9d3f89cd4ba6a58931c3a6586, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0
+      value: -260
       objectReference: {fileID: 0}
     - target: {fileID: 7842467871709694747, guid: 445d3ef9d3f89cd4ba6a58931c3a6586, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x

@@ -152,6 +152,7 @@ MonoBehaviour:
   rig: {fileID: 5014707694078836132}
   isInDialogue: 0
   currentQuest: 0
+  isInCutscene: 0
 --- !u!114 &4509995404389645563
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -328,11 +329,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5439338246577535941, guid: de149babd1f674dbbb5005173f024bcd, type: 3}
       propertyPath: m_Bounds.m_Center.x
-      value: -0.00058797
+      value: -0.00058847666
       objectReference: {fileID: 0}
     - target: {fileID: 5439338246577535941, guid: de149babd1f674dbbb5005173f024bcd, type: 3}
       propertyPath: m_Bounds.m_Center.y
-      value: -0.0016841292
+      value: -0.0016844571
       objectReference: {fileID: 0}
     - target: {fileID: 5439338246577535941, guid: de149babd1f674dbbb5005173f024bcd, type: 3}
       propertyPath: m_Bounds.m_Extent.x
@@ -340,7 +341,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5439338246577535941, guid: de149babd1f674dbbb5005173f024bcd, type: 3}
       propertyPath: m_Bounds.m_Extent.y
-      value: 0.38668412
+      value: 0.38668415
       objectReference: {fileID: 0}
     - target: {fileID: 6004650002076255406, guid: de149babd1f674dbbb5005173f024bcd, type: 3}
       propertyPath: m_Bounds.m_Center.x
@@ -532,15 +533,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 586267169695330952, guid: bdbaa0aae3afc214db102157261738cd, type: 3}
       propertyPath: m_BackGroundColor.b
-      value: 0.9050573
+      value: 0.9843138
       objectReference: {fileID: 0}
     - target: {fileID: 586267169695330952, guid: bdbaa0aae3afc214db102157261738cd, type: 3}
       propertyPath: m_BackGroundColor.g
-      value: 1
+      value: 0.882353
       objectReference: {fileID: 0}
     - target: {fileID: 586267169695330952, guid: bdbaa0aae3afc214db102157261738cd, type: 3}
       propertyPath: m_BackGroundColor.r
-      value: 0.4575472
+      value: 0.5137255
       objectReference: {fileID: 0}
     - target: {fileID: 586267169695330954, guid: bdbaa0aae3afc214db102157261738cd, type: 3}
       propertyPath: m_Name

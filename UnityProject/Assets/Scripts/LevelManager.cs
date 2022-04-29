@@ -64,6 +64,8 @@ public class LevelManager : MonoBehaviour
         SetPlaceNPCs();
         ExecuteQuestEvents();
 
+        InitialLevel.firstSceneLoaded = true;
+
         finishedLoading = true;
         
     }
@@ -75,6 +77,9 @@ public class LevelManager : MonoBehaviour
 
     public void SetupGlyphs()
     {
+        if (!InitialLevel.firstSceneLoaded)
+            return;
+
         GlyphManager.timeIndex += (GlyphManager.GetIndex(GlyphManager.landscape) +
             GlyphManager.GetIndex(GlyphManager.biome));
         GlyphManager.timeIndex %= GlyphManager.collection.times.Count;

@@ -19,10 +19,13 @@ public class InitialLevel : MonoBehaviour
     public List<Quest> initialQuests;
 
     public static bool gameInitialized = false;
+    public static bool firstSceneLoaded = false;
 
     void Start()
     {
         //GameManager.instance.playerGlyphs = playerGlyphs;
+
+        firstSceneLoaded = false;
 
         foreach (Glyph glyph in playerGlyphs)
         {

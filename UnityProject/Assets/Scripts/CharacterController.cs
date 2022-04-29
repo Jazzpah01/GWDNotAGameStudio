@@ -33,6 +33,8 @@ public class CharacterController : MonoBehaviour
 
     public bool isInCutscene = false;
 
+    public static CharacterController instance;
+
 
     private bool Flipped
     {
@@ -50,6 +52,11 @@ public class CharacterController : MonoBehaviour
                 transform.localScale = new Vector3(transform.localScale.x * -1, transform.localScale.y, transform.localScale.z);
             }
         }
+    }
+
+    private void Awake()
+    {
+        instance = this;
     }
 
     private void Start()

@@ -144,6 +144,7 @@ public class NPCController : MonoBehaviour
             //dialogueActive = false;
             hasFinishedDialogue = true;
             dialogue.SetComplete(true); // TODO: Link this up with quest progression
+            CharacterController.instance.isInDialogue = false;
             if (callback != null)
                 callback();
             //EndDialoguePrompt();
@@ -179,6 +180,7 @@ public class NPCController : MonoBehaviour
         if (dialogue.current >= dialogue.lines.Count)
             return;
 
+        CharacterController.instance.isInDialogue = true;
 
         if (dialogue.lines[dialogue.current].isPlayer)
         {

@@ -981,6 +981,22 @@ PrefabInstance:
       propertyPath: biome
       value: 
       objectReference: {fileID: 11400000, guid: 8642289d9e19747d0811a4c248263909, type: 2}
+    - target: {fileID: 6384632770917283716, guid: 8ab6869a23b4c1143b8fa1a847ea70a0, type: 3}
+      propertyPath: loadedTime
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 6384632770917283716, guid: 8ab6869a23b4c1143b8fa1a847ea70a0, type: 3}
+      propertyPath: loadedBiome
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 6384632770917283716, guid: 8ab6869a23b4c1143b8fa1a847ea70a0, type: 3}
+      propertyPath: currentPlace
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 6384632770917283716, guid: 8ab6869a23b4c1143b8fa1a847ea70a0, type: 3}
+      propertyPath: loadedLandscape
+      value: 
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8ab6869a23b4c1143b8fa1a847ea70a0, type: 3}
 --- !u!1 &1463940713

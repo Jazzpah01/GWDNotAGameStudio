@@ -9,10 +9,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0bb36709157d4694183d7c020e19972a, type: 3}
-  m_Name: 2_time
+  m_Script: {fileID: 11500000, guid: c6a835d05eaa80b419430c51f8e79900, type: 3}
+  m_Name: Fire_putout
   m_EditorClassIdentifier: 
-  icon: {fileID: 0}
-  seed: 300
-  sunSprite: {fileID: 21300000, guid: 908525aa06de44883b57e26e986d9109, type: 3}
-  sunPosition: {x: 2, y: 3}
+  lines:
+  - isPlayer: 1
+    line: (You throw the water on the hut)
+  current: -1

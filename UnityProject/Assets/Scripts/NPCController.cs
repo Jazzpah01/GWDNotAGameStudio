@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 using System;
+using DG.Tweening;
 
 public class NPCController : MonoBehaviour
 {
@@ -12,6 +13,8 @@ public class NPCController : MonoBehaviour
     public string characterName;
 
     public GameObject rig;
+    private Animator anim;
+    private bool isWalking;
 
     public bool hasMet;
     public bool hasDialogue;
@@ -28,11 +31,9 @@ public class NPCController : MonoBehaviour
     private float delayTimer;
     public float delayInterval = 0.2f;
 
-    private Color orange = new Color(0.5f, 0.5f, 0f, 1f);
+    private Color orange = new Color(0.8f, 0.8f, 0.3f, 1f);
+    private Color defaultTextColor;
 
-    private Animator anim;
-    
-    private bool isWalking;
 
     private void Awake()
     {
@@ -42,10 +43,11 @@ public class NPCController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-
+        this.anim = rig.GetComponent<Animator>();
         if (GameManager.instance != null) player = GameManager.instance.player;
         text = dialogueUI.GetComponent<TextMeshPro>();
         if (text != null) Debug.Log("text init success");
+        defaultTextColor = text.color;
         ClearText();
         if (dialogue != null) dialogue.current = -1;
         delayTimer = 0f;
@@ -60,7 +62,7 @@ public class NPCController : MonoBehaviour
 
         if (!playerInRange || dialogue == null)
         {
-            ClearText();
+            //ClearText();
             dialogueActive = false;
             return;
         }
@@ -178,10 +180,14 @@ public class NPCController : MonoBehaviour
         if (dialogue.lines[dialogue.current].isPlayer)
         {
             text.color = Color.red;
+
+            text.gameObject.transform.position = (new Vector3(2.2f, 2f)) + player.transform.position;
         } else
         {
             //text.color = Color.yellow;
-            text.color = orange;
+            //text.color = orange;
+            text.color = defaultTextColor;
+            text.gameObject.transform.position = (new Vector3(2.2f, 2.5f)) + gameObject.transform.position;
         }
 
         text.text = dialogue.lines[dialogue.current].line;
@@ -236,8 +242,37 @@ public class NPCController : MonoBehaviour
 
     }
 
-    public void MoveNPC(Vector2 goalPos)
+    public void MoveGary(Vector2 goalPos, float duration)
     {
+        
+        FlipSprite(goalPos.x < transform.position.x);
+        SetWalking(true);
+        
+        transform.DOMove(goalPos, duration).SetEase(Ease.Linear).OnComplete(EndMove);
+        
+    }
 
+    private void EndMove()
+    {
+        player.GetComponent<CharacterController>().isInDialogue = false;
+        rig.SetActive(false);
+        //Destroy(this.gameObject);
+    }
+
+    private void SetWalking(bool isWalking)
+    {
+        anim.SetBool("isWalking", isWalking);
+    }
+
+    private void FlipSprite(bool flip)
+    {
+        if (flip)
+        {
+            rig.transform.localScale = new Vector3(-1f, 1f, 1f);
+        }
+        else
+        {
+            rig.transform.localScale = new Vector3(1f, 1f, 1f);
+        }
     }
 }

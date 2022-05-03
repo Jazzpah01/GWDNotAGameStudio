@@ -50,6 +50,7 @@ public class InitialLevel : MonoBehaviour
             item.Init();
         }
 
-        SceneManager.LoadScene(landscapeGlyph.sceneName);
+        //SceneManager.LoadScene(landscapeGlyph.sceneName);
+        LevelManager.ChangeScene();
     }
 }

@@ -169,7 +169,6 @@ public class DialogueUI : MonoBehaviour
             dialogueActive = false;
             dialogue.SetComplete(true);
             if (callback != null) callback(); //callback for quest progression
-            callback = null;
         } else
         {
             dialogue.current++;

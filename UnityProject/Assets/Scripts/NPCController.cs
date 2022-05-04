@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using TMPro;
 using System;
 using DG.Tweening;
@@ -11,6 +12,7 @@ public class NPCController : MonoBehaviour
     private GameObject player;
 
     public string characterName;
+    public Image npcPortrait;
 
     public GameObject rig;
     private Animator anim;
@@ -59,6 +61,7 @@ public class NPCController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        /*
         delayTimer += Time.deltaTime;
 
         player.GetComponent<CharacterController>().isInDialogue = dialogueActive;
@@ -71,6 +74,7 @@ public class NPCController : MonoBehaviour
         }
 
         if (dialogueActive && !playerInRange) dialogueActive = false;
+        */
 
         if (playerInRange && lookAtPlayer)
         {
@@ -83,7 +87,16 @@ public class NPCController : MonoBehaviour
             }
         }
 
+        if (playerInRange && dialogue!= null && !DialogueUI.instance.dialogueActive)
+        {
+            DialogueUI.instance.dialogueAvailable = true;
+        } else
+        {
+            DialogueUI.instance.dialogueAvailable = false;
+        }
+        
 
+        /*
         if (playerInRange && !dialogueActive)
         {
             StartDialoguePrompt();
@@ -113,8 +126,11 @@ public class NPCController : MonoBehaviour
                 playerInRange = false; // TODO: fix this ugly ass hack
             }
         }
+        */
+
     }
 
+    
     /// <summary>
     /// Set Dialogue for NPC
     /// </summary>
@@ -131,8 +147,12 @@ public class NPCController : MonoBehaviour
             this.dialogue = dialogue;
             this.callback = callback;
             dialogue.current = -1;
+
+            DialogueUI.instance.SetDialogue(this, dialogue, callback);
         }
     }
+
+    
 
 
     private void DNext()

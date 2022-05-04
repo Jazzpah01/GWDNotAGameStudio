@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 7826270020463775004}
   - component: {fileID: 8354456919237382815}
   - component: {fileID: 7861355585277392210}
+  - component: {fileID: 5155285954532589398}
   m_Layer: 0
   m_Name: Big-temple
   m_TagString: Untagged
@@ -314,3 +315,17 @@ PolygonCollider2D:
       - {x: -6.075928, y: -0.17043208}
       - {x: -4.915772, y: -0.1598852}
       - {x: -3.7767096, y: -0.14933832}
+--- !u!114 &5155285954532589398
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7492378885617605021}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 807cb35b7067bba45b485398a1e4991c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  flags:
+  - {fileID: 11400000, guid: 2d25a9dabdd1f9c4d8c96cc498d484da, type: 2}

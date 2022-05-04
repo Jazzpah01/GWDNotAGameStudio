@@ -48,6 +48,8 @@ public class LevelManager : MonoBehaviour
         if (!populateThis)
             return;
 
+        StartCoroutine(Fader.FadeOut(1f));
+
         finishedLoading = false;
 
         if (!InitialLevel.gameInitialized)
@@ -58,8 +60,10 @@ public class LevelManager : MonoBehaviour
             return;
         }
 
+        
+
         DOTween.Init(); // empty param = default settings
-        SetupGlyphs();
+        //SetupGlyphs();
         PopulateScene();
         SetPlaceNPCs();
         ExecuteQuestEvents();
@@ -79,6 +83,8 @@ public class LevelManager : MonoBehaviour
     {
         if (!InitialLevel.firstSceneLoaded)
             return;
+
+        GlyphManager.oldTimeIndex = GlyphManager.timeIndex;
 
         GlyphManager.timeIndex += (GlyphManager.GetIndex(GlyphManager.landscape) +
             GlyphManager.GetIndex(GlyphManager.biome));
@@ -190,10 +196,28 @@ public class LevelManager : MonoBehaviour
         loadingQuestEvents = false;
     }
 
-    public void ChangeScene()
+    public static void ChangeScene()
     {
+        LevelManager.instance.SetupGlyphs();
+
         init = true;
-        USceneManager.LoadScene(GlyphManager.landscape.sceneName);
+
+        if (!InitialLevel.firstSceneLoaded)
+        {
+            print("Setting scene.");
+            SetScene(GlyphManager.landscape.sceneName);
+        } else
+        {
+            print("Setting transition scene.");
+            LevelManager.instance.StartCoroutine( Fader.FadeIn(1f,
+                delegate { SetScene("TransitionScene"); }
+            ));
+        }
+    }
+
+    public static void SetScene(string sceneName)
+    {
+        USceneManager.LoadScene(sceneName);
     }
 
     public int GetWeightedIndex(List<IWeighted> weights)

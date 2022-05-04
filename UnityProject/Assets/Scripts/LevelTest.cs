@@ -22,7 +22,7 @@ public class LevelTest : MonoBehaviour
         if (!init)
         {
             init = true;
-            LevelManager.instance.ChangeScene();
+            LevelManager.ChangeScene();
         }
     }
 }

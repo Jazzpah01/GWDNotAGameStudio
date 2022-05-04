@@ -135,7 +135,8 @@ public class WaystoneUI : MonoBehaviour
         if (biomeSlot.sprite == null || landscapeSlot.sprite == null)
             return;
 
-        LevelManager.instance.ChangeScene();
+        print("Submit! ChangeScene in WaystoneUI");
+        LevelManager.ChangeScene();
     }
 
 

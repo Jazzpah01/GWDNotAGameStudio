@@ -59,6 +59,7 @@ public class DialogueUI : MonoBehaviour
     void Start()
     {
         player = GameManager.instance.player;
+        if (player == null) Debug.Log("DialogueUI: Player reference is NULL");
         dialogueAvailable = false;
         dialogueActive = false;
         animActive = false;
@@ -73,7 +74,12 @@ public class DialogueUI : MonoBehaviour
     {
         inputTimer += Time.deltaTime;
 
-        if (player != null) player.GetComponent<CharacterController>().isInDialogue = dialogueActive;
+        if (player != null) {
+            player.GetComponent<CharacterController>().isInDialogue = dialogueActive;
+        } else
+        {
+            player = GameManager.instance.player;
+        }
 
         if (!animActive && dialogueActive && !isEntry) // starting dialogue
         {

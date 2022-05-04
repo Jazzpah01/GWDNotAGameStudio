@@ -70,7 +70,7 @@ public class GameManager : MonoBehaviour
             DelayedStart();
         }
         
-        if (waystoneUI != null) waystoneUI.gameObject.SetActive(isUIopen);
+        //if (waystoneUI != null) waystoneUI.gameObject.SetActive(isUIopen);
 
         if (dialogueUI != null) dialogueUI.gameObject.SetActive(isDialogueActive);
         

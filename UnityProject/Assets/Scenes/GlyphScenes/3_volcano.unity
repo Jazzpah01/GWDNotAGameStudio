@@ -775,6 +775,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: WaystoneUI
       objectReference: {fileID: 0}
+    - target: {fileID: 5808996645119184005, guid: bb0975042b3d86741907d7c2e9e16a5c, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7383252558997272996, guid: bb0975042b3d86741907d7c2e9e16a5c, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0

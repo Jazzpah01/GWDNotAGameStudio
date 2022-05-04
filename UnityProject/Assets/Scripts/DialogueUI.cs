@@ -141,6 +141,10 @@ public class DialogueUI : MonoBehaviour
         }
     }
 
+    public void StartDialogue()
+    {
+        dialogueActive = true;
+    }
 
     private void DNext()
     {

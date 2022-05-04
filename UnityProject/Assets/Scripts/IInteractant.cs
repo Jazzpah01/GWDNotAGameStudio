@@ -5,4 +5,5 @@ using System;
 
 public interface IInteractant{
     void Interact();
+    bool InRange { get; set; }
 }

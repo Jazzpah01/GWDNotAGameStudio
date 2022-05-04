@@ -11,17 +11,40 @@ public class SceneTransition : MonoBehaviour
     public float rotationTime = 3f;
     public float increment = 0.2f;
 
+    public AnimationCurve rotationCurve;
+
     [Header("References")]
     public RectTransform subObject;
 
+    [Header("Debug Params")]
+    public float debugStartRotation;
+    public float debugEndRotation;
+    public float debugRotationTime;
+    bool isDebugging;
+
     float timePassed = 0f;
-    float goalRotation;
+    float endRotation;
     float startRotation;
     bool isFading = false;
 
     private void Start()
     {
         timePassed = 0f;
+
+        // Set fading
+        isFading = true;
+        StartCoroutine(Fader.FadeOut(1f, delegate { isFading = false; }));
+
+        // DEBUG STUFF
+        if (!InitialLevel.firstSceneLoaded)
+        {
+            // Use debug stuff instead
+            startRotation = debugStartRotation;
+            endRotation = debugEndRotation;
+            rotationTime = debugRotationTime;
+            isDebugging = true;
+            return;
+        }
 
         // Set initial rotation
         startRotation = GlyphManager.oldTimeIndex * 90;
@@ -35,11 +58,7 @@ public class SceneTransition : MonoBehaviour
             completeRotations += 1;
 
         // Set rotation that it needs to reach
-        goalRotation = GlyphManager.timeIndex * 90 + completeRotations * 360;
-
-        // Set fading
-        isFading = true;
-        StartCoroutine(Fader.FadeOut(1f, delegate { isFading = false; } ));
+        endRotation = GlyphManager.timeIndex * 90 + completeRotations * 360;
     }
 
     private void Update()
@@ -53,15 +72,17 @@ public class SceneTransition : MonoBehaviour
         {
             // Change scene
             isFading = true;
-            StartCoroutine(Fader.FadeIn(1f, delegate { SceneManager.LoadScene(GlyphManager.landscape.sceneName); }));
+            subObject.rotation = Quaternion.Euler(0, 0, endRotation);
+            if (!isDebugging)
+                StartCoroutine(Fader.FadeIn(1f, delegate { SceneManager.LoadScene(GlyphManager.landscape.sceneName); }));
             return;
         }
 
         if (timePassed > startDelay && timePassed < startDelay + rotationTime)
         {
             float t = (timePassed).Remap(startDelay, startDelay + rotationTime, 0f, 1f);
-            float rot = Mathf.SmoothStep(startRotation, goalRotation, t.Clamp(0f,1f));
-            subObject.rotation = Quaternion.Euler(0, 0, rot % 360);
+            float v = rotationCurve.Evaluate(t).Remap(0f, 1f, startRotation, endRotation);
+            subObject.rotation = Quaternion.Euler(0, 0, v % 360);
         }
     }
 }

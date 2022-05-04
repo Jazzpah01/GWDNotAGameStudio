@@ -675,7 +675,53 @@ MonoBehaviour:
   startDelay: 0.5
   endDelay: 0.5
   rotationTime: 1
+  increment: 0.2
+  rotationCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 0.8892692
+      value: 1.0227649
+      inSlope: 2.6820977
+      outSlope: 2.6820977
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.04826454
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 0.94745487
+      value: 0.99724954
+      inSlope: -1.142747
+      outSlope: -1.142747
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
   subObject: {fileID: 1448086853}
+  debugStartRotation: 0
+  debugEndRotation: 360
+  debugRotationTime: 2
 --- !u!1 &1476030377
 GameObject:
   m_ObjectHideFlags: 0

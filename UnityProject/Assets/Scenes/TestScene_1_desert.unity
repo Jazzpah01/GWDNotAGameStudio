@@ -414,6 +414,10 @@ PrefabInstance:
       propertyPath: m_LocalPosition.y
       value: -3.3
       objectReference: {fileID: 0}
+    - target: {fileID: 1216408338392691594, guid: e5c68e9ca7d452a4a8c875c658171880, type: 3}
+      propertyPath: isInteractable
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1340676740333891396, guid: e5c68e9ca7d452a4a8c875c658171880, type: 3}
       propertyPath: m_Name
       value: npc_Hermit

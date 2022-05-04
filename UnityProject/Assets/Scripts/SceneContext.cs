@@ -12,6 +12,8 @@ public class SceneContext
 
     public List<NPCController> npcs = new List<NPCController>();
 
+    public List<Interactable> interactables = new List<Interactable>();
+
     public void SpawnGameObject(GameObject prefab, Vector2 position, Vector2 scale)
     {
         GameObject ngo = MonoBehaviour.Instantiate(prefab);
@@ -29,6 +31,14 @@ public class SceneContext
         {
             npcs.Add(npc);
         }
+
+        Interactable interact = ngo.GetComponent<Interactable>();
+        Debug.Log("HERE",interact);
+
+        if (interact != null)
+        {
+            interactables.Add(interact);
+        }
     }
 
     public void AddNPC(NPCController npc)
@@ -37,6 +47,15 @@ public class SceneContext
             return;
 
         npcs.Add(npc);
+    }
+
+    public void AddInteractable(Interactable interactable)
+    {
+        if (interactables.Contains(interactable))
+            return;
+        Debug.Log("HERE2", interactable);
+
+        interactables.Add(interactable);
     }
 
     public void RemoveGameObject(GameObject prefab)
@@ -50,17 +69,38 @@ public class SceneContext
             EventObjects[prefab].Clear();
         } else
         {
-            NPCController npc = prefab.GetComponent<NPCController>();
             //Make NPC that didn't spawn in quest removeable
-            foreach (NPCController othernpc in npcs.ToArray())
+            NPCController npc = prefab.GetComponent<NPCController>();
+            if (npc != null)
             {
-                if (npc.characterName == othernpc.characterName)
+                foreach (NPCController othernpc in npcs.ToArray())
                 {
-                    npcs.Remove(othernpc);
-                    EventObjects.Remove(othernpc.gameObject);
-                }
+                    if (npc.characterName == othernpc.characterName)
+                    {
+                        npcs.Remove(othernpc);
+                        EventObjects.Remove(othernpc.gameObject);
+                    }
 
-                MonoBehaviour.Destroy(othernpc.gameObject);
+                    MonoBehaviour.Destroy(othernpc.gameObject);
+                }
+            }
+
+            if (prefab == null)
+                return;
+
+            Interactable interactable = prefab.GetComponent<Interactable>();
+            if (interactable != null)
+            {
+                foreach (Interactable otherinteractable in interactables.ToArray())
+                {
+                    if (interactable.ID == otherinteractable.ID)
+                    {
+                        interactables.Remove(otherinteractable);
+                        EventObjects.Remove(otherinteractable.gameObject);
+                    }
+
+                    MonoBehaviour.Destroy(otherinteractable.gameObject);
+                }
             }
         }
     }

@@ -79,6 +79,8 @@ public class Interactable : MonoBehaviour
     {
         this.callback = callback;
         this.isInteractable = true;
+        if (playerInside)
+            interactText.SetActive(true);
     }
 
     public void SetUninteractable()

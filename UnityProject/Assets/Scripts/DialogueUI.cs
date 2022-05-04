@@ -98,6 +98,25 @@ public class DialogueUI : MonoBehaviour
         }
     }
 
+    public void ForceStart()
+    {
+        if (!dialogueActive && !animActive && !isEntry)
+        {
+            dialogueActive = true;
+            Debug.Log("DialogueUI: Dialogue successfully forced active!");
+        } else if (dialogueActive)
+        {
+            Debug.Log("DialogueUI: Dialogue already active..");
+        } else if (animActive)
+        {
+            Debug.Log("DialogueUI: Animation ongoing..");
+        }
+        else if (isEntry)
+        {
+            Debug.Log("DialogueUI: Dialogue window already open..");
+        }
+    }
+
     private void EntryUI()
     {
         animActive = true;

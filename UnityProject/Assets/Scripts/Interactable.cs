@@ -58,6 +58,9 @@ public class Interactable : MonoBehaviour
         if (!(playerInside && Input.GetKeyDown(KeyCode.E) && isInteractable))
             return;
 
+        playerInside = false;
+        interactText.SetActive(false);
+
         // Player hit collider AND pressed E
         if (interactant == null)
         {
@@ -82,5 +85,6 @@ public class Interactable : MonoBehaviour
     {
         this.callback = null;
         this.isInteractable = false;
+        this.interactText.SetActive(false);
     }
 }

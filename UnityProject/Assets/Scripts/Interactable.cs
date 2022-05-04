@@ -36,6 +36,9 @@ public class Interactable : MonoBehaviour
         playerInside = true;
         if (isInteractable)
             interactText.SetActive(true);
+
+        if (interactant != null)
+            interactant.InRange = true;
     }
 
     private void OnTriggerExit2D(Collider2D collision)
@@ -45,12 +48,19 @@ public class Interactable : MonoBehaviour
 
         playerInside = false;
         interactText.SetActive(false);
+
+        if (interactant != null)
+            interactant.InRange = true;
     }
 
     private void Update()
     {
         if (!(playerInside && Input.GetKeyDown(KeyCode.E) && isInteractable))
             return;
+
+        playerInside = false;
+        interactText.SetActive(false);
+        isInteractable = false;
 
         // Player hit collider AND pressed E
         if (interactant == null)

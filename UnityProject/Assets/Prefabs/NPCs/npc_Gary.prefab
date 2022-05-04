@@ -54,7 +54,6 @@ MonoBehaviour:
   hasMet: 0
   hasDialogue: 0
   hasFinishedDialogue: 0
-  playerInRange: 0
   dialogueActive: 0
   dialogue: {fileID: 0}
   dialogueUI: {fileID: 1478215450786705723}
@@ -380,18 +379,6 @@ PrefabInstance:
     - target: {fileID: 8307264050883692454, guid: f264cae62e2920d4689e5a6ac59acf8b, type: 3}
       propertyPath: m_Name
       value: InteractText
-      objectReference: {fileID: 0}
-    - target: {fileID: 8761438962407871117, guid: f264cae62e2920d4689e5a6ac59acf8b, type: 3}
-      propertyPath: m_text
-      value: ...
-      objectReference: {fileID: 0}
-    - target: {fileID: 8761438962407871117, guid: f264cae62e2920d4689e5a6ac59acf8b, type: 3}
-      propertyPath: m_VerticalAlignment
-      value: 512
-      objectReference: {fileID: 0}
-    - target: {fileID: 8761438962407871117, guid: f264cae62e2920d4689e5a6ac59acf8b, type: 3}
-      propertyPath: m_HorizontalAlignment
-      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f264cae62e2920d4689e5a6ac59acf8b, type: 3}

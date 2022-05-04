@@ -35,13 +35,16 @@ public class NPCController : MonoBehaviour, IInteractant
     private Color orange = new Color(0.8f, 0.8f, 0.3f, 1f);
     private Color defaultTextColor;
 
+    private Interactable interactable;
+
     public bool lookAtPlayer = true;
 
-    public bool InRange { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
+    public bool InRange { get; set; }
 
     private void Awake()
     {
         game = GameManager.instance;
+        interactable = GetComponent<Interactable>();
     }
 
     // Start is called before the first frame update
@@ -49,10 +52,9 @@ public class NPCController : MonoBehaviour, IInteractant
     {
         this.anim = rig.GetComponent<Animator>();
         if (GameManager.instance != null) player = GameManager.instance.player;
-        text = dialogueUI.GetComponent<TextMeshPro>();
         if (text != null) Debug.Log("text init success");
-        defaultTextColor = text.color;
-        ClearText();
+        //defaultTextColor = text.color;
+        //ClearText();
         if (dialogue != null) dialogue.current = -1;
         delayTimer = 0f;
         dialogueActive = false;
@@ -94,13 +96,13 @@ public class NPCController : MonoBehaviour, IInteractant
         {
             this.dialogue = null;
             this.callback = null;
+            interactable.SetUninteractable();
         } else
         {
             this.dialogue = dialogue;
             this.callback = callback;
             dialogue.current = -1;
-
-            //DialogueUI.instance.SetDialogue(this, dialogue, callback);
+            interactable.SetInteractable();
         }
     }
 
@@ -196,10 +198,10 @@ public class NPCController : MonoBehaviour, IInteractant
     //    text.text = "( Press [E] to end conversation... )";
     //}
 
-    private void ClearText()
-    {
-        text.text = "";
-    }
+    //private void ClearText()
+    //{
+    //    text.text = "";
+    //}
 
 
     public void MoveGary(Vector2 goalPos, float duration)

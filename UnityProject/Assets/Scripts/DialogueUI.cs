@@ -91,14 +91,9 @@ public class DialogueUI : MonoBehaviour
             if (Input.GetKey(KeyCode.E)) DNext();
             if (Input.GetKey(KeyCode.Q)) DPrevious();
         }
-
-        if (dialogueAvailable && !dialogueActive && !animActive && !isEntry)
-        {
-            if (Input.GetKey(KeyCode.E)) dialogueActive = true;
-        }
     }
 
-    public void ForceStart()
+    public void StartDialogue()
     {
         if (!dialogueActive && !animActive && !isEntry)
         {
@@ -160,11 +155,6 @@ public class DialogueUI : MonoBehaviour
         }
     }
 
-    public void StartDialogue()
-    {
-        dialogueActive = true;
-    }
-
     private void DNext()
     {
         inputTimer = 0f;
@@ -173,6 +163,7 @@ public class DialogueUI : MonoBehaviour
             dialogueActive = false;
             dialogue.SetComplete(true);
             if (callback != null) callback(); //callback for quest progression
+            callback = null;
         } else
         {
             dialogue.current++;

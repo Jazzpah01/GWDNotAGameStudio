@@ -26,6 +26,10 @@ public class DialogueUI : MonoBehaviour
     public bool animActive;
     public bool isEntry;
     public int currentLine;
+    public float inputDelay;
+    private float inputTimer;
+
+
     //private TextMeshPro text;
     private string writer;
     private Color defaultTextColor;
@@ -38,8 +42,8 @@ public class DialogueUI : MonoBehaviour
     string leadingChar = "";
     bool leadingCharBeforeDelay = false;
 
-    private float y_out = -260f;
-    private float y_in  = 0f;
+    private float y_out;
+    private float y_in;
     public float animSpeed;
 
 
@@ -47,6 +51,8 @@ public class DialogueUI : MonoBehaviour
     {
         if (GameManager.instance != null) game = GameManager.instance;
         instance = this;
+        y_out = transform.position.y;
+        y_in = y_out + 260f;
     }
 
     
@@ -58,23 +64,30 @@ public class DialogueUI : MonoBehaviour
         animActive = false;
         isEntry = false;
 
-        this.gameObject.transform.position = new Vector2(0, y_out);
+
+        //this.gameObject.transform.position = new Vector2(0, y_out);
     }
 
     
     void Update()
     {
-        player.GetComponent<CharacterController>().isInDialogue = dialogueActive;
+        inputTimer += Time.deltaTime;
+
+        if (player != null) player.GetComponent<CharacterController>().isInDialogue = dialogueActive;
 
         if (!animActive && dialogueActive && !isEntry) // starting dialogue
         {
             EntryUI();
+            dialogue.current = -1;
+            DNext();
+            Debug.Log("DialogueUI: Entering Dialogue...");
         } else if (!animActive && !dialogueActive && isEntry) // ending dialogue
         {
             ExitUI();
+            Debug.Log("DialogueUI: Finishing Dialogue...");
         }
 
-        if (dialogueActive && !animActive && isEntry) { 
+        if (dialogueActive && !animActive && isEntry && inputTimer > inputDelay) { 
             if (Input.GetKey(KeyCode.E)) DNext();
             if (Input.GetKey(KeyCode.Q)) DPrevious();
         }
@@ -131,7 +144,8 @@ public class DialogueUI : MonoBehaviour
 
     private void DNext()
     {
-        if (dialogue.lines.Count < dialogue.current + 1)
+        inputTimer = 0f;
+        if (dialogue.lines.Count <= dialogue.current + 1)
         {
             dialogueActive = false;
             dialogue.SetComplete(true);
@@ -141,11 +155,11 @@ public class DialogueUI : MonoBehaviour
             dialogue.current++;
             SetLine();
         }
-
     }
 
     private void DPrevious()
     {
+        inputTimer = 0f;
         if (dialogue.current - 1 < 0)
         {
             dialogue.current = -1;
@@ -177,8 +191,8 @@ public class DialogueUI : MonoBehaviour
 
         tmp.text = dialogue.lines[dialogue.current].line;
         currentLine = dialogue.current;
+        Debug.Log("DialogueUI: line " + currentLine + " set!");
     }
 
-
-
+    
 }

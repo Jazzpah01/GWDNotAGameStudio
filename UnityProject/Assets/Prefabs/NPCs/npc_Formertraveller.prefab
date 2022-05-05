@@ -123,6 +123,13 @@ MonoBehaviour:
   currentLine: 0
   delayInterval: 0.2
   lookAtPlayer: 1
+  defaultVoice:
+    Guid:
+      Data1: 1999574016
+      Data2: 1188104198
+      Data3: -803068242
+      Data4: 369274613
+    Path: event:/Dialougue/Bard Neutral
 --- !u!1001 &3765390571780863337
 PrefabInstance:
   m_ObjectHideFlags: 0

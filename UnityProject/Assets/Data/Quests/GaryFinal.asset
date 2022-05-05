@@ -17,6 +17,7 @@ MonoBehaviour:
   - {fileID: 3270277326524714874}
   - {fileID: 4953088550311669357}
   - {fileID: 6735219705876840421}
+  - {fileID: 7860525356834246945}
 --- !u!114 &3270277326524714874
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -67,6 +68,24 @@ MonoBehaviour:
   m_Name: SetDialogue
   m_EditorClassIdentifier: 
   questIndex: 0
-  questIncrease: 0
+  questIncrease: 1
   npcPrefab: {fileID: 5346684185266132660, guid: 91a82242c1ed6fa45b0ed864cf3dcc5f, type: 3}
-  dialogue: {fileID: 0}
+  dialogue: {fileID: 11400000, guid: 8dd6eccdabfa34841bba256a0898debc, type: 2}
+--- !u!114 &7860525356834246945
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c66578638b9a8a747bd4a9362316af27, type: 3}
+  m_Name: RemoveGameObject
+  m_EditorClassIdentifier: 
+  questIndex: 1
+  questIncrease: 0
+  landscape: {fileID: 11400000, guid: 0f37ff6e7fd4c3b45a49fd59091b0812, type: 2}
+  biome: {fileID: 11400000, guid: 8642289d9e19747d0811a4c248263909, type: 2}
+  time: {fileID: 11400000, guid: 90e1f6d6cc3d1c046809ec48e8c7710d, type: 2}
+  prefab: {fileID: 5346684185266132660, guid: 91a82242c1ed6fa45b0ed864cf3dcc5f, type: 3}

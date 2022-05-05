@@ -212,7 +212,7 @@ public class DialogueUI : MonoBehaviour
 
         tmp.text = dialogue.lines[dialogue.current].line;
 
-        if (dialogue.lines[dialogue.current].hasVoice)
+        if (!dialogue.lines[dialogue.current].voice.IsNull)
         {
             FMODUnity.RuntimeManager.PlayOneShot(dialogue.lines[dialogue.current].voice);
         } else if (dialogue.lines[dialogue.current].isPlayer)

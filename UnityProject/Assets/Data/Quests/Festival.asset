@@ -84,7 +84,7 @@ MonoBehaviour:
   biome: {fileID: 11400000, guid: 0301f76479b63394a89d420f7fc684ac, type: 2}
   time: {fileID: 11400000, guid: 90e1f6d6cc3d1c046809ec48e8c7710d, type: 2}
   prefab: {fileID: 5346684185266132660, guid: 91a82242c1ed6fa45b0ed864cf3dcc5f, type: 3}
-  position: {x: 2, y: -1}
+  position: {x: 2, y: -3.29}
   scale: {x: 1, y: 1}
 --- !u!114 &11400000
 MonoBehaviour:
@@ -206,7 +206,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   questIndex: 5
   questIncrease: 0
-  questToInitiate: {fileID: 0}
+  questToInitiate: {fileID: 11400000, guid: 9081fc702c8bd47ec9b8982ee9160365, type: 2}
 --- !u!114 &7804923551966121430
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -225,5 +225,5 @@ MonoBehaviour:
   biome: {fileID: 11400000, guid: 0301f76479b63394a89d420f7fc684ac, type: 2}
   time: {fileID: 11400000, guid: 90e1f6d6cc3d1c046809ec48e8c7710d, type: 2}
   prefab: {fileID: 161218106855915778, guid: d5c47780554534b4cb28f8ddbb62ab4c, type: 3}
-  position: {x: 32, y: -2}
+  position: {x: 32, y: -3.29}
   scale: {x: 1, y: 1}

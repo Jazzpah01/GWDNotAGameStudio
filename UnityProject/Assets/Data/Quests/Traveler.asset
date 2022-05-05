@@ -43,8 +43,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 34046101b1f069c428a58bb51b915585, type: 3}
   m_Name: SetDialogue
   m_EditorClassIdentifier: 
-  questIndex: 3
-  questIncrease: 0
+  questIndex: 2
+  questIncrease: 1
   npcPrefab: {fileID: 1535640502985467393, guid: d8ff4a065bef94499a1537894e9aff95, type: 3}
   dialogue: {fileID: 11400000, guid: c3d806255b3418647b6fdb9e49aa18f0, type: 2}
 --- !u!114 &-2012742591487917399
@@ -65,7 +65,7 @@ MonoBehaviour:
   biome: {fileID: 11400000, guid: dd0fe0b9a6f069b42ab01f63d73696f4, type: 2}
   time: {fileID: 11400000, guid: 6039305ef7b849941b0144aa37501464, type: 2}
   prefab: {fileID: 1535640502985467393, guid: d8ff4a065bef94499a1537894e9aff95, type: 3}
-  position: {x: -18, y: -1.9}
+  position: {x: -18, y: -3.3}
   scale: {x: 1, y: 1}
 --- !u!114 &-1887391163234166719
 MonoBehaviour:
@@ -142,6 +142,7 @@ MonoBehaviour:
   - {fileID: 4108896651616559094}
   - {fileID: -4605714048899293597}
   - {fileID: -993677569547652233}
+  - {fileID: 4739253154707226985}
 --- !u!114 &1495996819786598149
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -172,12 +173,12 @@ MonoBehaviour:
   m_Name: SpawnGameObject
   m_EditorClassIdentifier: 
   questIndex: 2
-  questIncrease: 1
+  questIncrease: 0
   landscape: {fileID: 11400000, guid: 4f07cc7fa8f6a0a47817e9f0b54c5dea, type: 2}
   biome: {fileID: 11400000, guid: dd0fe0b9a6f069b42ab01f63d73696f4, type: 2}
   time: {fileID: 11400000, guid: 6039305ef7b849941b0144aa37501464, type: 2}
   prefab: {fileID: 1535640502985467393, guid: d8ff4a065bef94499a1537894e9aff95, type: 3}
-  position: {x: 3, y: -1.08}
+  position: {x: 4, y: -3.3}
   scale: {x: 1, y: 1}
 --- !u!114 &4108896651616559094
 MonoBehaviour:
@@ -195,6 +196,21 @@ MonoBehaviour:
   questIncrease: 1
   npcPrefab: {fileID: 1535640502985467393, guid: d8ff4a065bef94499a1537894e9aff95, type: 3}
   dialogue: {fileID: 11400000, guid: 05bfa3ac855fee94f87374ed70d74355, type: 2}
+--- !u!114 &4739253154707226985
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dbe2eaf5432e827408a41b3da938eff9, type: 3}
+  m_Name: StartQuest
+  m_EditorClassIdentifier: 
+  questIndex: 4
+  questIncrease: 0
+  questToInitiate: {fileID: 11400000, guid: 800307a43ae6445e990fff9914bd4983, type: 2}
 --- !u!114 &4913685339926152023
 MonoBehaviour:
   m_ObjectHideFlags: 0

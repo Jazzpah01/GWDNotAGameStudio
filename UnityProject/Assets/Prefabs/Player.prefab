@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &1767897963480611313
+--- !u!1 &2675016644782900561
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,37 +8,37 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 7955881837045484497}
-  - component: {fileID: 7830584383608526789}
+  - component: {fileID: 3403595318920977193}
+  - component: {fileID: 5002875619658801407}
   m_Layer: 0
-  m_Name: MusicMixer2
+  m_Name: Music1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &7955881837045484497
+--- !u!4 &3403595318920977193
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1767897963480611313}
+  m_GameObject: {fileID: 2675016644782900561}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 4509995404389645562}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &7830584383608526789
+--- !u!114 &5002875619658801407
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1767897963480611313}
+  m_GameObject: {fileID: 2675016644782900561}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
@@ -47,11 +47,11 @@ MonoBehaviour:
   CollisionTag: 
   EventReference:
     Guid:
-      Data1: 404145549
-      Data2: 1255551762
-      Data3: -426562675
-      Data4: -1721918690
-    Path: event:/Ambient/3-2 Music
+      Data1: -1432504828
+      Data2: 1104105722
+      Data3: 27356081
+      Data4: 778824752
+    Path: event:/Ambient/2-3 Music
   Event: 
   PlayEvent: 0
   StopEvent: 0
@@ -183,8 +183,8 @@ Transform:
   - {fileID: 3714396304325429889}
   - {fileID: 5014707694078836132}
   - {fileID: 4865047125305169596}
-  - {fileID: 7804955080288638909}
-  - {fileID: 7955881837045484497}
+  - {fileID: 3403595318920977193}
+  - {fileID: 8986491526271916095}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -215,8 +215,8 @@ MonoBehaviour:
       Data4: -1952723351
     Path: event:/Glyphs/Aqusistion
   walkEmitter: {fileID: -2509703402849642663}
-  music1Emitter: {fileID: 5239379247173620652}
-  music2Emitter: {fileID: 7830584383608526789}
+  music1Emitter: {fileID: 5002875619658801407}
+  music2Emitter: {fileID: 1620407595653536658}
   defaultVoice:
     Guid:
       Data1: 291328159
@@ -325,7 +325,7 @@ MonoBehaviour:
   OverrideAttenuation: 0
   OverrideMinDistance: 1
   OverrideMaxDistance: 20
---- !u!1 &5144126687292412794
+--- !u!1 &5544851379067825989
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -333,37 +333,37 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 7804955080288638909}
-  - component: {fileID: 5239379247173620652}
+  - component: {fileID: 8986491526271916095}
+  - component: {fileID: 1620407595653536658}
   m_Layer: 0
-  m_Name: MusicMixer1
+  m_Name: Music2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &7804955080288638909
+--- !u!4 &8986491526271916095
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5144126687292412794}
+  m_GameObject: {fileID: 5544851379067825989}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 4509995404389645562}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &5239379247173620652
+--- !u!114 &1620407595653536658
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5144126687292412794}
+  m_GameObject: {fileID: 5544851379067825989}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
@@ -372,11 +372,11 @@ MonoBehaviour:
   CollisionTag: 
   EventReference:
     Guid:
-      Data1: -1432504828
-      Data2: 1104105722
-      Data3: 27356081
-      Data4: 778824752
-    Path: event:/Ambient/2-3 Music
+      Data1: 404145549
+      Data2: 1255551762
+      Data3: -426562675
+      Data4: -1721918690
+    Path: event:/Ambient/3-2 Music
   Event: 
   PlayEvent: 0
   StopEvent: 0
@@ -660,15 +660,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 586267169695330952, guid: bdbaa0aae3afc214db102157261738cd, type: 3}
       propertyPath: m_BackGroundColor.b
-      value: 0.9050573
+      value: 0.9811321
       objectReference: {fileID: 0}
     - target: {fileID: 586267169695330952, guid: bdbaa0aae3afc214db102157261738cd, type: 3}
       propertyPath: m_BackGroundColor.g
-      value: 1
+      value: 0.85617656
       objectReference: {fileID: 0}
     - target: {fileID: 586267169695330952, guid: bdbaa0aae3afc214db102157261738cd, type: 3}
       propertyPath: m_BackGroundColor.r
-      value: 0.4575472
+      value: 0.90972894
       objectReference: {fileID: 0}
     - target: {fileID: 586267169695330954, guid: bdbaa0aae3afc214db102157261738cd, type: 3}
       propertyPath: m_Name

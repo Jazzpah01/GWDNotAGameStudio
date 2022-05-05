@@ -674,8 +674,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   startDelay: 0.5
   endDelay: 0.5
-  rotationTime: 1.2
-  increment: 0.2
+  rotationTime: 5
+  increment: 0
   rotationCurve:
     serializedVersion: 2
     m_Curve:
@@ -737,6 +737,13 @@ MonoBehaviour:
     m_PostInfinity: 2
     m_RotationOrder: 4
   subObject: {fileID: 1448086853}
+  teleport:
+    Guid:
+      Data1: 1722716416
+      Data2: 1277952784
+      Data3: -1663111761
+      Data4: -97957680
+    Path: event:/Character/Teleport
   debugStartRotation: 0
   debugEndRotation: 360
   debugRotationTime: 5

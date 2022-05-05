@@ -636,6 +636,13 @@ MonoBehaviour:
       Data3: -233533259
       Data4: -1952723351
     Path: event:/Glyphs/Aqusistion
+  transition:
+    Guid:
+      Data1: 1722716416
+      Data2: 1277952784
+      Data3: -1663111761
+      Data4: -97957680
+    Path: event:/Character/Teleport
   hoverEmitter: {fileID: 0}
 --- !u!1 &7842467871881070667
 GameObject:

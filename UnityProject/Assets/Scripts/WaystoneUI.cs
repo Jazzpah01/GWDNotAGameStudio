@@ -26,6 +26,7 @@ public class WaystoneUI : MonoBehaviour
     [Header("FMOD")]
     public FMODUnity.EventReference interact;
     public FMODUnity.EventReference gainGlyph;
+    public FMODUnity.EventReference transition;
     public FMODUnity.StudioEventEmitter hoverEmitter;
 
 

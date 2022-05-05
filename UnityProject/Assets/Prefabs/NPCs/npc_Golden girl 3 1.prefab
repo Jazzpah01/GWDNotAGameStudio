@@ -111,7 +111,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 03aad89612a7df54aa239a374f1f5577, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  characterName: 
+  characterName: Golden Girl 3
   npcPortrait: {fileID: 2570204825745611973, guid: 11c1d6cf26b6c44eda6cce737457785c, type: 3}
   rig: {fileID: 3476580861983433319}
   hasMet: 0

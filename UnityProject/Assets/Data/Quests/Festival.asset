@@ -13,4 +13,43 @@ MonoBehaviour:
   m_Name: Festival
   m_EditorClassIdentifier: 
   customEditing: 1
-  questEvents: []
+  questEvents:
+  - {fileID: 5836007998586683141}
+  - {fileID: 7804923551966121430}
+--- !u!114 &5836007998586683141
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 12a88f59804a1164699d9e31964ad621, type: 3}
+  m_Name: EnterScene
+  m_EditorClassIdentifier: 
+  questIndex: 0
+  questIncrease: 0
+  landscape: {fileID: 11400000, guid: 4f07cc7fa8f6a0a47817e9f0b54c5dea, type: 2}
+  biome: {fileID: 11400000, guid: 0301f76479b63394a89d420f7fc684ac, type: 2}
+  time: {fileID: 11400000, guid: 90e1f6d6cc3d1c046809ec48e8c7710d, type: 2}
+--- !u!114 &7804923551966121430
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4360fe7d5ce7c4644931e761bc79349a, type: 3}
+  m_Name: SpawnGameObject
+  m_EditorClassIdentifier: 
+  questIndex: 0
+  questIncrease: 0
+  landscape: {fileID: 0}
+  biome: {fileID: 0}
+  time: {fileID: 0}
+  prefab: {fileID: 0}
+  position: {x: 0, y: 0}
+  scale: {x: 1, y: 1}

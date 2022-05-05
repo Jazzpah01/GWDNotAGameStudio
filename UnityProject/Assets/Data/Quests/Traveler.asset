@@ -83,6 +83,21 @@ MonoBehaviour:
   questIncrease: 1
   npcPrefab: {fileID: 1535640502985467393, guid: d8ff4a065bef94499a1537894e9aff95, type: 3}
   dialogue: {fileID: 11400000, guid: a7cdd5a89c0287949a9a77b853e02101, type: 2}
+--- !u!114 &-993677569547652233
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dbe2eaf5432e827408a41b3da938eff9, type: 3}
+  m_Name: StartQuest
+  m_EditorClassIdentifier: 
+  questIndex: 4
+  questIncrease: 0
+  questToInitiate: {fileID: 11400000, guid: 376cd7a00a3ac44b0aae4c341292608a, type: 2}
 --- !u!114 &-829115878561084657
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -126,6 +141,7 @@ MonoBehaviour:
   - {fileID: 4913685339926152023}
   - {fileID: 4108896651616559094}
   - {fileID: -4605714048899293597}
+  - {fileID: -993677569547652233}
 --- !u!114 &1495996819786598149
 MonoBehaviour:
   m_ObjectHideFlags: 0

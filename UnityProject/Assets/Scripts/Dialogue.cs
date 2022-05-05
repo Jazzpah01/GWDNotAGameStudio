@@ -8,7 +8,6 @@ public class Dialogue : ScriptableObject
 
     public List<DLine> lines = new List<DLine>();
     public int current = -1;
-    public FMODUnity.EventReference voice;
 
     private bool isComplete;
 

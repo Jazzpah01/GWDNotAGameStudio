@@ -212,7 +212,10 @@ public class DialogueUI : MonoBehaviour
 
         tmp.text = dialogue.lines[dialogue.current].line;
 
-        if (dialogue.lines[dialogue.current].isPlayer)
+        if (dialogue.lines[dialogue.current].hasVoice)
+        {
+            FMODUnity.RuntimeManager.PlayOneShot(dialogue.lines[dialogue.current].voice);
+        } else if (dialogue.lines[dialogue.current].isPlayer)
         {
             CharacterController player = LevelManager.instance.playerPrefab.GetComponent<CharacterController>();
             FMODUnity.RuntimeManager.PlayOneShot(player.defaultVoice);

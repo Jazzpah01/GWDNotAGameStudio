@@ -69,7 +69,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 03aad89612a7df54aa239a374f1f5577, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  characterName: 
+  characterName: Gg2
   npcPortrait: {fileID: 2570204825745611973, guid: 3cdf46eaee9cd4dd4b8e3c915f4f84af, type: 3}
   rig: {fileID: 2096258666935297062}
   hasMet: 0

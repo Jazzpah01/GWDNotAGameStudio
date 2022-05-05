@@ -1,0 +1,41 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c6a835d05eaa80b419430c51f8e79900, type: 3}
+  m_Name: golden_initial
+  m_EditorClassIdentifier: 
+  lines:
+  - isPlayer: 1
+    line: Have you seen a person running around with some rocks?
+  - isPlayer: 0
+    line: Do they look like you?
+  - isPlayer: 1
+    line: Yes.
+  - isPlayer: 0
+    line: What a shame. But yes, they came by and said we were all beautiful.
+  - isPlayer: 1
+    line: That's true,  I like your outfits.
+  - isPlayer: 0
+    line: WHY would you SAY that, you're just as rude as your ugly friend.
+  - isPlayer: 1
+    line: ???
+  - isPlayer: 0
+    line: Okay so, on days of the rabbit we wear gold. So of course we're beautiful.
+  - isPlayer: 0
+    line: "But one of us MUST be the prettiest. That's like\u2026 science."
+  - isPlayer: 0
+    line: You have to choose who's the prettiest. Even though you clearly don't understand
+      style.
+  - isPlayer: 1
+    line: "Wow, only pretty on the outside I guess\u2026 But I choose\u2026"
+  - isPlayer: 0
+    line: Wait! We gotta pitch, first.
+  current: -1

@@ -622,6 +622,21 @@ MonoBehaviour:
   landscapeSlot: {fileID: 0}
   biomeSlot: {fileID: 0}
   playerItemPrefab: {fileID: 8587204107816313666, guid: 68c3fa90d7b650648a31b02dcedbd6f8, type: 3}
+  interact:
+    Guid:
+      Data1: -1839576300
+      Data2: 1327057923
+      Data3: 174364302
+      Data4: 1783670800
+    Path: event:/Glyphs/Interaction
+  gainGlyph:
+    Guid:
+      Data1: -1656270151
+      Data2: 1147754346
+      Data3: -233533259
+      Data4: -1952723351
+    Path: event:/Glyphs/Aqusistion
+  hoverEmitter: {fileID: 0}
 --- !u!1 &7842467871881070667
 GameObject:
   m_ObjectHideFlags: 0

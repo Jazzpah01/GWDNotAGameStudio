@@ -136,6 +136,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 586bf0e44ba86b24a8e56cb52d1129f9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bumpEvent:
+    Guid:
+      Data1: -1197581765
+      Data2: 1310792267
+      Data3: 1238089623
+      Data4: -1296574310
+    Path: event:/Character/Wall Bump
+  walkEvent:
+    Guid:
+      Data1: -1874089204
+      Data2: 1257187022
+      Data3: -1104084825
+      Data4: 307849288
+    Path: event:/Character/Footsteps
+  walkEmitter: {fileID: -2509703402849642663}
   body: {fileID: 4509995404389645563}
   running: {fileID: 0}
   crouch: {fileID: 0}
@@ -143,6 +158,8 @@ MonoBehaviour:
   rig: {fileID: 5014707694078836132}
   isInDialogue: 0
   currentQuest: 0
+  isInCutscene: 0
+  footstepSpeed: 0.1
 --- !u!114 &4509995404389645563
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -227,8 +244,8 @@ MonoBehaviour:
       Data4: 307849288
     Path: event:/Character/Footsteps
   Event: 
-  PlayEvent: 3
-  StopEvent: 4
+  PlayEvent: 0
+  StopEvent: 0
   AllowFadeout: 1
   TriggerOnce: 0
   Preload: 0
@@ -305,11 +322,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5439338246577535941, guid: de149babd1f674dbbb5005173f024bcd, type: 3}
       propertyPath: m_Bounds.m_Center.x
-      value: -0.00058797
+      value: -0.00058847666
       objectReference: {fileID: 0}
     - target: {fileID: 5439338246577535941, guid: de149babd1f674dbbb5005173f024bcd, type: 3}
       propertyPath: m_Bounds.m_Center.y
-      value: -0.0016841292
+      value: -0.0016844571
       objectReference: {fileID: 0}
     - target: {fileID: 5439338246577535941, guid: de149babd1f674dbbb5005173f024bcd, type: 3}
       propertyPath: m_Bounds.m_Extent.x
@@ -317,7 +334,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5439338246577535941, guid: de149babd1f674dbbb5005173f024bcd, type: 3}
       propertyPath: m_Bounds.m_Extent.y
-      value: 0.38668412
+      value: 0.38668415
       objectReference: {fileID: 0}
     - target: {fileID: 6004650002076255406, guid: de149babd1f674dbbb5005173f024bcd, type: 3}
       propertyPath: m_Bounds.m_Center.x

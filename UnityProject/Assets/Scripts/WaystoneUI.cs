@@ -5,6 +5,8 @@ using UnityEngine.UI;
 
 public class WaystoneUI : MonoBehaviour
 {
+
+
     public GameObject playerGlyphs;
     public GameObject waystoneGlyphs;
     public GameObject submitButton;
@@ -20,7 +22,12 @@ public class WaystoneUI : MonoBehaviour
     private List<InteractableUI> playerItems;
 
     private InteractableUI oldToggled;
-    
+
+    [Header("FMOD")]
+    public FMODUnity.EventReference interact;
+    public FMODUnity.EventReference gainGlyph;
+    public FMODUnity.StudioEventEmitter hoverEmitter;
+
 
     private void Awake()
     {
@@ -98,11 +105,13 @@ public class WaystoneUI : MonoBehaviour
         {
             GlyphManager.biome = (GlyphBiome)g;
             SetGlyph(g);
+            FMODUnity.RuntimeManager.PlayOneShot(interact);
         }
         else if (g is GlyphLandscape)
         {
             GlyphManager.landscape = (GlyphLandscape)g;
             SetGlyph(g);
+            FMODUnity.RuntimeManager.PlayOneShot(interact);
         } else
         {
         }

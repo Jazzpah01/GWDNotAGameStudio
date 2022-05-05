@@ -1,0 +1,112 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c6a835d05eaa80b419430c51f8e79900, type: 3}
+  m_Name: bard_initial
+  m_EditorClassIdentifier: 
+  lines:
+  - isPlayer: 0
+    line: Oh, another one. Thank thou the Lord of the Near and Nigh!
+  - isPlayer: 1
+    line: "Another one? Was the other one Kwolan? My height, darker skin, sharp nose\u2026"
+  - isPlayer: 0
+    line: I shall not speak of that vulgarian. Out of sight, out of mind.
+  - isPlayer: 1
+    line: Why not? Where is he? Where did he go?
+  - isPlayer: 0
+    line: "\u2026"
+  - isPlayer: 1
+    line: Could you please tell me where he is?
+  - isPlayer: 0
+    line: Thou art kind, unlike that profane scoundrel. I shall answer thy questions
+      on one condition.
+  - isPlayer: 0
+    line: If thou canst help me, I will help thee.
+  - isPlayer: 1
+    line: Sure, what do you need?
+  - isPlayer: 0
+    line: Dost thou know why the caged jaguar sings?
+  - isPlayer: 1
+    line: Why does the caged jaguar sing?
+  - isPlayer: 0
+    line: "I don\u2019t know, I thought thou might."
+  - isPlayer: 1
+    line: The caged jaguar sings because he has a beautiful voice, he wants to show
+      off.
+  - isPlayer: 0
+    line: Thine thoughts art unpregnant.
+  - isPlayer: 1
+    line: Pregnant? What? Why do you talk like that?
+  - isPlayer: 0
+    line: I am the Mirrored One
+  - isPlayer: 1
+    line: Is that supposed to ring a bell?
+  - isPlayer: 0
+    line: I am the embodiment of the Ocelotl, Enemy of Both Sides.
+  - isPlayer: 1
+    line: Ocelotl? Do you mean that jaguar person?
+  - isPlayer: 0
+    line: YES DUDE. That jaguar person. How can you not know a major god?
+  - isPlayer: 0
+    line: Ugh! You both are so frustrating. First that idiot comes and pisses my
+      jaguar off and then you.
+  - isPlayer: 1
+    line: 'Sorry, friend! We did not grow up in a religious environment. '
+  - isPlayer: 0
+    line: Oh how I envy you. Look at me trying to serenade a fuckin cat. Mirrored
+      One my ass!
+  - isPlayer: 1
+    line: Hey hey hey! Relax. What is really going on here?
+  - isPlayer: 0
+    line: During the festivities of Ocelotl, they cast a Mirrored One, who impersonates
+      the god for a year.
+  - isPlayer: 0
+    line: Living as a god for a year. Everyone treats you as one. Sign me the fuck
+      up, one thinks.
+  - isPlayer: 0
+    line: "Here is the catch though. When the next festival arrives, the Mirrored
+      One must speak his word. I couldn\u2019t come up with it."
+  - isPlayer: 1
+    line: What do you mean by his word?
+  - isPlayer: 0
+    line: A cursed poem. Mirrored One recites a poem in the next festival and hands
+      the role over. Guess, who does not have a poem?
+  - isPlayer: 1
+    line: What is its relation to the big paws over there?
+  - isPlayer: 0
+    line: Traditionally, one must bless the poem by reading it to a jaguar. If the
+      jaguar likes it, it is considered divine approval.
+  - isPlayer: 0
+    line: "That bastard, Kawaran, scared the jaguar. Now it won\u2019t let me get
+      close. How am I supposed to get its blessing?"
+  - isPlayer: 1
+    line: "Do you really need it? Can\u2019t you just fake it?"
+  - isPlayer: 0
+    line: "That will bring bad luck for the rest of my life. C\u2019mon, I will tell
+      you where he went."
+  - isPlayer: 0
+    line: And, I have what you are looking for. Help me and the glyph is yours.
+  - isPlayer: 1
+    line: Alright! What do I do?
+  - isPlayer: 0
+    line: I will recite the poem and you will tell it to the jaguar.
+  - isPlayer: 1
+    line: Ok, hit me.
+  - isPlayer: 0
+    line: 'If this huge ass cat comes down the tree For certain, one will flee '
+  - isPlayer: 0
+    line: "It won\u2019t hesitate to put thou in a ditch This is the Mirrored One\u2019s
+      perfect pitch "
+  - isPlayer: 1
+    line: I can already tell this is not the one.
+  - isPlayer: 0
+    line: You are not the judge of that. So please.
+  current: -1

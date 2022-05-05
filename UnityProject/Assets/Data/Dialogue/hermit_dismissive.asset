@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   lines:
   - isPlayer: 0
-    line: Say hi to the Name Namesson!
+    line: Say hi to the Tizoc!
   - isPlayer: 0
     line: Go, find your friend.
   - isPlayer: 0

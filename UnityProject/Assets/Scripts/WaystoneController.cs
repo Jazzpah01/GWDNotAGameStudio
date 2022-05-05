@@ -39,10 +39,18 @@ public class WaystoneController : MonoBehaviour, IInteractant
         }
 
         if (left.sprite == null || right.sprite == null)
+        {
+            GetComponent<Interactable>().SetInteractable();
             return;
+        }
 
         print("Submit! ChangeScene in WaystoneUI");
         LevelManager.ChangeScene();
+    }
+
+    public void SetGlyph()
+    {
+
     }
 
 

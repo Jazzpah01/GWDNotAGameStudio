@@ -10,7 +10,6 @@ public class GiveGlyphEvent : QuestEvent
 
     public override void Execute(SceneContext context)
     {
-        Debug.Log("Giving!");
         GlyphManager.playerGlyphs.Add(glyph);
         WaystoneUI.instance.Resetup();
         CallBack();
@@ -18,7 +17,6 @@ public class GiveGlyphEvent : QuestEvent
 
     public override bool ShouldExecute(SceneContext context)
     {
-        Debug.Log("Should give?");
         return !GlyphManager.playerGlyphs.Contains(glyph);
     }
 }

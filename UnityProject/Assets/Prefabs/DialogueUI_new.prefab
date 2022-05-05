@@ -460,8 +460,8 @@ MonoBehaviour:
     way. He started to visit the town regularly and eventually decided to settle
     in the town.
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 3284424074fd0cd47b0337357ef8905f, type: 2}
-  m_sharedMaterial: {fileID: 8483786293438631873, guid: 3284424074fd0cd47b0337357ef8905f, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: f9d7367acb2623340a5f197224252459, type: 2}
+  m_sharedMaterial: {fileID: -1381699226790166955, guid: f9d7367acb2623340a5f197224252459, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -497,7 +497,7 @@ MonoBehaviour:
   m_textAlignment: 65535
   m_characterSpacing: 0
   m_wordSpacing: 0
-  m_lineSpacing: -50
+  m_lineSpacing: 0
   m_lineSpacingMax: 0
   m_paragraphSpacing: 0
   m_charWidthMaxAdj: 0

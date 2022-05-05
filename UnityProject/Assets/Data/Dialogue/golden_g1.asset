@@ -10,20 +10,14 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c6a835d05eaa80b419430c51f8e79900, type: 3}
-  m_Name: ft_initial
+  m_Name: golden_g1
   m_EditorClassIdentifier: 
   lines:
-  - isPlayer: 1
-    line: Tizoc?
   - isPlayer: 0
-    line: Huh?
+    line: If you choose me, you can have my fire codex with mean things about all
+      the people I know.
   - isPlayer: 1
-    line: Are you Name?
+    line: Will I be in it?
   - isPlayer: 0
-    line: Who is asking?
-  - isPlayer: 1
-    line: "The name is Ootsa. I heard\u2026"
-  - isPlayer: 0
-    line: "I don\u2019t know what you heard but I don\u2019t have it. Good day to
-      you!"
-  current: 0
+    line: Not if you choose me.
+  current: -1

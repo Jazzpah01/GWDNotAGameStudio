@@ -19,13 +19,18 @@ MonoBehaviour:
     Data3: 174364302
     Data4: 1783670800
   Banks:
+<<<<<<< HEAD
   - {fileID: 5345573164738149018}
+=======
+  - {fileID: 2646624577055663148}
+>>>>>>> 9d6b37508af6ce001a45adfe36e21867d4116a5b
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
+<<<<<<< HEAD
   Length: 2250
 --- !u!114 &-8726743743791991131
 MonoBehaviour:
@@ -81,6 +86,9 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 13605
+=======
+  Length: 2638
+>>>>>>> 9d6b37508af6ce001a45adfe36e21867d4116a5b
 --- !u!114 &-6074732205434318191
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -100,6 +108,7 @@ MonoBehaviour:
     Data3: -1104084825
     Data4: 307849288
   Banks:
+<<<<<<< HEAD
   - {fileID: 6507139071202492389}
   IsStream: 0
   Is3D: 0
@@ -137,6 +146,17 @@ MonoBehaviour:
   MaxDistance: 20
   Length: 38000
 --- !u!114 &-4503475774658731278
+=======
+  - {fileID: 7569993827903557155}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 656
+--- !u!114 &-5265559275745007825
+>>>>>>> 9d6b37508af6ce001a45adfe36e21867d4116a5b
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -151,12 +171,21 @@ MonoBehaviour:
   Path: gwdFMOD/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
+<<<<<<< HEAD
   lastModified: 637873737190506408
   FileSizes:
   - Name: Desktop
     Value: 1758
   Exists: 1
 --- !u!114 &-3975510886262343689
+=======
+  lastModified: 637866991863779494
+  FileSizes:
+  - Name: Desktop
+    Value: 1062
+  Exists: 1
+--- !u!114 &-3391267732048549235
+>>>>>>> 9d6b37508af6ce001a45adfe36e21867d4116a5b
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -166,6 +195,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+<<<<<<< HEAD
   m_Name: bank:/Background Music.bank
   m_EditorClassIdentifier: 
   Path: gwdFMOD/Build/Desktop/Background Music.bank
@@ -284,6 +314,18 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 1828
+=======
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: gwdFMOD/Build/Desktop/Master.bank
+  Name: Master
+  StudioPath: bank:/Master
+  lastModified: 637866991863769493
+  FileSizes:
+  - Name: Desktop
+    Value: 1036
+  Exists: 1
+>>>>>>> 9d6b37508af6ce001a45adfe36e21867d4116a5b
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -297,6 +339,7 @@ MonoBehaviour:
   m_Name: FMODStudioCache
   m_EditorClassIdentifier: 
   EditorBanks:
+<<<<<<< HEAD
   - {fileID: -4503475774658731278}
   - {fileID: 6507139071202492389}
   - {fileID: 5345573164738149018}
@@ -330,6 +373,26 @@ MonoBehaviour:
   cacheTime: 637873737190506408
   cacheVersion: 10
 --- !u!114 &455546949183411898
+=======
+  - {fileID: -5265559275745007825}
+  - {fileID: 7569993827903557155}
+  - {fileID: 2646624577055663148}
+  - {fileID: -3391267732048549235}
+  EditorEvents:
+  - {fileID: -6074732205434318191}
+  - {fileID: 4527809457698103644}
+  - {fileID: 8951964514713132447}
+  - {fileID: -8775076582533105861}
+  - {fileID: 3558165542667943408}
+  EditorParameters: []
+  MasterBanks:
+  - {fileID: -3391267732048549235}
+  StringsBanks:
+  - {fileID: -5265559275745007825}
+  cacheTime: 637866991863779494
+  cacheVersion: 10
+--- !u!114 &2646624577055663148
+>>>>>>> 9d6b37508af6ce001a45adfe36e21867d4116a5b
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -339,6 +402,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+<<<<<<< HEAD
   m_Name: bank:/Dialouge.bank
   m_EditorClassIdentifier: 
   Path: gwdFMOD/Build/Desktop/Dialouge.bank
@@ -396,6 +460,17 @@ MonoBehaviour:
   Type: 0
   IsGlobal: 1
   Labels: []
+=======
+  m_Name: bank:/Glyph.bank
+  m_EditorClassIdentifier: 
+  Path: gwdFMOD/Build/Desktop/Glyph.bank
+  Name: Glyph
+  StudioPath: bank:/Glyph
+  lastModified: 637866991863759494
+  FileSizes:
+  - Name: Desktop
+    Value: 298336
+>>>>>>> 9d6b37508af6ce001a45adfe36e21867d4116a5b
   Exists: 1
 --- !u!114 &3558165542667943408
 MonoBehaviour:
@@ -416,14 +491,22 @@ MonoBehaviour:
     Data3: -233533259
     Data4: -1952723351
   Banks:
+<<<<<<< HEAD
   - {fileID: 5345573164738149018}
+=======
+  - {fileID: 2646624577055663148}
+>>>>>>> 9d6b37508af6ce001a45adfe36e21867d4116a5b
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
+<<<<<<< HEAD
   Length: 6500
+=======
+  Length: 9822
+>>>>>>> 9d6b37508af6ce001a45adfe36e21867d4116a5b
 --- !u!114 &4527809457698103644
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -443,6 +526,7 @@ MonoBehaviour:
     Data3: 1238089623
     Data4: -1296574310
   Banks:
+<<<<<<< HEAD
   - {fileID: 6507139071202492389}
   IsStream: 0
   Is3D: 0
@@ -498,12 +582,16 @@ MonoBehaviour:
     Data4: -1492965847
   Banks:
   - {fileID: 455546949183411898}
+=======
+  - {fileID: 7569993827903557155}
+>>>>>>> 9d6b37508af6ce001a45adfe36e21867d4116a5b
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
+<<<<<<< HEAD
   Length: 1828
 --- !u!114 &5345573164738149018
 MonoBehaviour:
@@ -553,6 +641,10 @@ MonoBehaviour:
   MaxDistance: 20
   Length: 2560
 --- !u!114 &6507139071202492389
+=======
+  Length: 1593
+--- !u!114 &7569993827903557155
+>>>>>>> 9d6b37508af6ce001a45adfe36e21867d4116a5b
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -567,6 +659,7 @@ MonoBehaviour:
   Path: gwdFMOD/Build/Desktop/Character.bank
   Name: Character
   StudioPath: bank:/Character
+<<<<<<< HEAD
   lastModified: 637873737190420249
   FileSizes:
   - Name: Desktop
@@ -600,6 +693,14 @@ MonoBehaviour:
   MaxDistance: 20
   Length: 2351
 --- !u!114 &6957939129421033718
+=======
+  lastModified: 637866991863719504
+  FileSizes:
+  - Name: Desktop
+    Value: 22336
+  Exists: 1
+--- !u!114 &8951964514713132447
+>>>>>>> 9d6b37508af6ce001a45adfe36e21867d4116a5b
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -609,6 +710,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+<<<<<<< HEAD
   m_Name: event:/Dialougue/Oosta Sad
   m_EditorClassIdentifier: 
   Path: event:/Dialougue/Oosta Sad
@@ -646,12 +748,25 @@ MonoBehaviour:
     Data4: 1657866820
   Banks:
   - {fileID: 455546949183411898}
+=======
+  m_Name: event:/Glyphs/Teleport
+  m_EditorClassIdentifier: 
+  Path: event:/Glyphs/Teleport
+  Guid:
+    Data1: 1722716416
+    Data2: 1277952784
+    Data3: -1663111761
+    Data4: -97957680
+  Banks:
+  - {fileID: 2646624577055663148}
+>>>>>>> 9d6b37508af6ce001a45adfe36e21867d4116a5b
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
+<<<<<<< HEAD
   Length: 2951
 --- !u!114 &8355847689012072180
 MonoBehaviour:
@@ -673,3 +788,6 @@ MonoBehaviour:
   - Name: Desktop
     Value: 1218
   Exists: 1
+=======
+  Length: 12146
+>>>>>>> 9d6b37508af6ce001a45adfe36e21867d4116a5b

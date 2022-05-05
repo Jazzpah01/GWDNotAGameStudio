@@ -10,20 +10,14 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c6a835d05eaa80b419430c51f8e79900, type: 3}
-  m_Name: ft_initial
+  m_Name: festival_poem
   m_EditorClassIdentifier: 
   lines:
   - isPlayer: 1
-    line: Tizoc?
-  - isPlayer: 0
-    line: Huh?
+    line: 'A jaguar that stalks down his narrow cage can seldom see through his bars
+      of rage '
   - isPlayer: 1
-    line: Are you Name?
+    line: 'His claws are clipped and his tail is foul so he opens his throat to growl. '
   - isPlayer: 0
-    line: Who is asking?
-  - isPlayer: 1
-    line: "The name is Ootsa. I heard\u2026"
-  - isPlayer: 0
-    line: "I don\u2019t know what you heard but I don\u2019t have it. Good day to
-      you!"
-  current: 0
+    line: That gotta be it. As a token of your new role, accept this glyph.
+  current: -1

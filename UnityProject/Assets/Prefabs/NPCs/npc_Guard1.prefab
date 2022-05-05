@@ -218,6 +218,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: InteractText
       objectReference: {fileID: 0}
+    - target: {fileID: 8307264050883692454, guid: f264cae62e2920d4689e5a6ac59acf8b, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f264cae62e2920d4689e5a6ac59acf8b, type: 3}
 --- !u!224 &3145338658098131307 stripped

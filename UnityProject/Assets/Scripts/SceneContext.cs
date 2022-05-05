@@ -33,7 +33,6 @@ public class SceneContext
         }
 
         Interactable interact = ngo.GetComponent<Interactable>();
-        Debug.Log("HERE",interact);
 
         if (interact != null)
         {
@@ -53,7 +52,6 @@ public class SceneContext
     {
         if (interactables.Contains(interactable))
             return;
-        Debug.Log("HERE2", interactable);
 
         interactables.Add(interactable);
     }

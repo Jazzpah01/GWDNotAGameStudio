@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c6a835d05eaa80b419430c51f8e79900, type: 3}
+  m_Name: festival_poem
+  m_EditorClassIdentifier: 
+  lines:
+  - isPlayer: 1
+    line: 'A jaguar that stalks down his narrow cage can seldom see through his bars
+      of rage '
+  - isPlayer: 1
+    line: 'His claws are clipped and his tail is foul so he opens his throat to growl. '
+  - isPlayer: 0
+    line: That gotta be it. As a token of your new role, accept this glyph.
+  current: -1

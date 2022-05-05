@@ -49,14 +49,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   characterName: Hermit
-  npcPortrait: {fileID: 0}
+  npcPortrait: {fileID: 2570204825745611973, guid: 24c7c1c70c54f4f708ad3d84d7e0e222, type: 3}
   rig: {fileID: 1333667154897380025}
   hasMet: 0
   hasDialogue: 0
   hasFinishedDialogue: 0
   dialogueActive: 0
   dialogue: {fileID: 0}
-  dialogueUI: {fileID: 0}
+  dialogueUI: {fileID: 4281279641154399615}
   currentLine: 0
   delayInterval: 0.2
   lookAtPlayer: 1
@@ -196,6 +196,10 @@ PrefabInstance:
     - target: {fileID: 8307264050883692454, guid: f264cae62e2920d4689e5a6ac59acf8b, type: 3}
       propertyPath: m_Name
       value: InteractText
+      objectReference: {fileID: 0}
+    - target: {fileID: 8307264050883692454, guid: f264cae62e2920d4689e5a6ac59acf8b, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8761438962407871117, guid: f264cae62e2920d4689e5a6ac59acf8b, type: 3}
       propertyPath: m_fontSize

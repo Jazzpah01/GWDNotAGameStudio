@@ -26,4 +26,4 @@ MonoBehaviour:
   - isPlayer: 0
     line: "I don\u2019t know what you heard but I don\u2019t have it. Good day to
       you!"
-  current: -1
+  current: 0

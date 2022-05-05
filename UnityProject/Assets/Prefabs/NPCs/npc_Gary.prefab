@@ -49,7 +49,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   characterName: Gary
-  npcPortrait: {fileID: 0}
+  npcPortrait: {fileID: 2570204825745611973, guid: 40a47b56eb5d848cdbeb58e4c97c12a6, type: 3}
   rig: {fileID: 3044386284265882372}
   hasMet: 0
   hasDialogue: 0
@@ -379,6 +379,10 @@ PrefabInstance:
     - target: {fileID: 8307264050883692454, guid: f264cae62e2920d4689e5a6ac59acf8b, type: 3}
       propertyPath: m_Name
       value: InteractText
+      objectReference: {fileID: 0}
+    - target: {fileID: 8307264050883692454, guid: f264cae62e2920d4689e5a6ac59acf8b, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8761438962407871117, guid: f264cae62e2920d4689e5a6ac59acf8b, type: 3}
       propertyPath: m_fontSize

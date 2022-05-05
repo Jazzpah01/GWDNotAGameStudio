@@ -1,0 +1,36 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c6a835d05eaa80b419430c51f8e79900, type: 3}
+  m_Name: kwolan_initial
+  m_EditorClassIdentifier: 
+  lines:
+  - isPlayer: 1
+    line: Kwolan? I've been looking for you!
+  - isPlayer: 0
+    line: Oh look, the mighty jade thief Ootsa.
+  - isPlayer: 0
+    line: I guess now you realize the value of this "painted rubbish"?
+  - isPlayer: 1
+    line: ...
+  - isPlayer: 1
+    line: 30 Turkeys?
+  - isPlayer: 0
+    line: Or maybe you don't. You nearly spoiled the heist because of some petty
+      theft.
+  - isPlayer: 1
+    line: YOU'RE the one stealing cocoa beans from old ladies in the square.
+  - isPlayer: 0
+    line: It helps with my digesti- It doesn't matter, YOU screwed up, I'M gonna
+      go get rich.
+  - isPlayer: 0
+    line: See you under another sun.
+  current: -1

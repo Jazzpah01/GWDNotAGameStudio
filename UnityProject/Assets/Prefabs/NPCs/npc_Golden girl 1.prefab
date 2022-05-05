@@ -971,7 +971,7 @@ GameObject:
   - component: {fileID: 3415142681895952447}
   - component: {fileID: 1511747174742230286}
   m_Layer: 0
-  m_Name: Golden girl 1
+  m_Name: npc_Golden girl 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

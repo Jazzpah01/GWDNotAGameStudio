@@ -1,0 +1,56 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c6a835d05eaa80b419430c51f8e79900, type: 3}
+  m_Name: ft_at_waystone
+  m_EditorClassIdentifier: 
+  lines:
+  - isPlayer: 0
+    line: "You already have an idea about how the waystones work already but let\u2019s
+      go over it once again."
+  - isPlayer: 0
+    line: The waystone needs two glyphs to be activated. One of each type.
+  - isPlayer: 0
+    line: This will make you travel somewhere not here.
+  - isPlayer: 1
+    line: Yes, yes! Is that all?
+  - isPlayer: 0
+    line: Patience is the key. You have to be patient.
+  - isPlayer: 1
+    line: Sorry, carry on please.
+  - isPlayer: 0
+    line: You will get lost. Frequently. That is when patience will help.
+  - isPlayer: 0
+    line: I suggest you keep a tally of the places you have been. Try to recognise
+      patterns.
+  - isPlayer: 0
+    line: Take mental notes. Literal notes would not hurt either.
+  - isPlayer: 1
+    line: You are making this more complicated than it is.
+  - isPlayer: 0
+    line: It is complicated. Never underestimate the will of the waystone.
+  - isPlayer: 1
+    line: You keep talking about them as if they are alive.
+  - isPlayer: 0
+    line: Maybe they are. After all, they decide for you.
+  - isPlayer: 0
+    line: Get this! Sometimes you will want to return to a place but; two plus two
+      sometimes equals five.
+  - isPlayer: 1
+    line: Not sure, I follow.
+  - isPlayer: 0
+    line: A pair of glyphs might not always bring you in the same place that they
+      brought you before.
+  - isPlayer: 0
+    line: "You\u2019ll see what I mean. Be careful. Be patient! Be aware!"
+  - isPlayer: 0
+    line: Alas, it is time for me to part with these.
+  current: -1

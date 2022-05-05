@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c6a835d05eaa80b419430c51f8e79900, type: 3}
+  m_Name: bard_success
+  m_EditorClassIdentifier: 
+  lines:
+  - isPlayer: 0
+    line: Yes, that is it. Thank you for your help!
+  - isPlayer: 1
+    line: What about my prize? Information on Kwolan and the glyph.
+  - isPlayer: 0
+    line: "Your friend left immediately after he realised he already has this glyph.
+      I don\u2019t know where he went."
+  - isPlayer: 1
+    line: I thought you said you knew where he went. What about the glyph?
+  - isPlayer: 0
+    line: "Technically I shared his whereabouts. He went somewhere I don\u2019t know.
+      For the glyph, here take it."
+  - isPlayer: 0
+    line: I have a poem to recite. Bye!
+  current: -1

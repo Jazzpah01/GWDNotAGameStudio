@@ -23,7 +23,7 @@ MonoBehaviour:
     line: When someone has not returned after all these years, one can only assume
       the worst. How is he?
   - isPlayer: 1
-    line: The answer is not as simple as that question.
+    line: The answer is not as simple as that question
   - isPlayer: 0
     line: What is that supposed to mean?
   - isPlayer: 1
@@ -51,22 +51,21 @@ MonoBehaviour:
   - isPlayer: 1
     line: Speaking of stories, I heard you have quite a story, yourself.
   - isPlayer: 0
-    line: ' I knew you were going to ask that. The moment I saw you, I knew you came
-      from that damned stone. This is a small town and everyone knows each other.'
+    line: I knew you were going to ask that. The moment I saw you, I knew you came
+      from that damned stone. Small town.
   - isPlayer: 1
     line: Let me guess, people do not like strangers around here.
   - isPlayer: 0
-    line: Yeah, that is partially my fault too. They know about the stone because
-      of me and I guess people are still sceptical after I helped Tjetlik.
+    line: Yeah, that is partially my fault, too. I guess people are still sceptical
+      of the stone after I helped Tjetlik.
   - isPlayer: 1
-    line: Now you made me really curious about that.
+    line: "Now you\u2019ve made me really curious."
   - isPlayer: 0
     line: Sorry kid, not my story to tell.
   - isPlayer: 1
     line: Tell me yours, then.
   - isPlayer: 0
-    line: I will. I will. It is a long story and as you know nothing is for free.
-      How about a story for another?
+    line: I will, not for free though. How about a story for another?
   - isPlayer: 1
     line: Oh, you want to hear mine first.
   - isPlayer: 0
@@ -76,9 +75,9 @@ MonoBehaviour:
     line: "Alright! It all started when that idiot friend of mine came up with this
       \u201Cbrilliant\u201D plan\u2026"
   - isPlayer: 0
-    line: Why does it always start with an idiot and a plan?
+    line: Why does it always start with an idiot and a plan
   - isPlayer: 1
     line: Does it?
   - isPlayer: 1
-    line: Oh, absolutely!
+    line: Absolutely!
   current: -1

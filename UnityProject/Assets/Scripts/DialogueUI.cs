@@ -156,7 +156,7 @@ public class DialogueUI : MonoBehaviour
         if (npc != null && npc.npcPortrait != null)
         {
             this.npc = npc;
-            npcPortrait = npc.npcPortrait;
+            //npcPortrait = npc.npcPortrait;
             npcPortrait.sprite = npc.npcPortrait.sprite;
             npcPortrait.SetNativeSize();
         } else

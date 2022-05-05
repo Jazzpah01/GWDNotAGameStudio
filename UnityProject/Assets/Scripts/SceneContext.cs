@@ -104,4 +104,36 @@ public class SceneContext
             }
         }
     }
+
+    public NPCController GetNPC(GameObject prefab)
+    {
+        NPCController prefab_npc = prefab.GetComponent<NPCController>();
+        if (prefab_npc != null)
+        {
+            foreach (NPCController npc in npcs.ToArray())
+            {
+                if (prefab_npc.characterName == npc.characterName)
+                {
+                    return npc;
+                }
+            }
+        }
+        throw new System.Exception("NPC instance of prefab did not exist in scene context.");
+    }
+
+    public bool ContainsNPC(GameObject prefab)
+    {
+        NPCController prefab_npc = prefab.GetComponent<NPCController>();
+        if (prefab_npc != null)
+        {
+            foreach (NPCController npc in npcs.ToArray())
+            {
+                if (prefab_npc.characterName == npc.characterName)
+                {
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
 }

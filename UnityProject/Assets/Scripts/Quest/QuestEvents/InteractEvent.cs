@@ -20,7 +20,6 @@ public class InteractEvent : QuestEvent
         {
             if (item.ID == interactableObject.name)
             {
-                Debug.Log("Succes on execute!!!! " + setInteractable);
                 if (setInteractable)
                 {
                     item.SetInteractable(CallBack);
@@ -30,8 +29,6 @@ public class InteractEvent : QuestEvent
                 }
             }
         }
-
-        Debug.Log($"NO INTERACT: {interactableObject.name}");
     }
 
     public override bool ShouldExecute(SceneContext context)
@@ -40,14 +37,11 @@ public class InteractEvent : QuestEvent
 
         foreach (Interactable item in context.interactables)
         {
-            Debug.Log($"COMPARING {item.ID}...{interactableObject.name}");
             if (item.ID == interactableObject.name)
             {
-                Debug.Log("Succes on should!!!!");
                 return true;
             }
         }
-        Debug.Log($"NO INTERACT ON SHOULD: {interactableObject.name}");
         return false;
     }
 }

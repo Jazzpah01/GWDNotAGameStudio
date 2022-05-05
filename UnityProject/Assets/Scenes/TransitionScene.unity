@@ -674,7 +674,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   startDelay: 0.5
   endDelay: 0.5
-  rotationTime: 1
+  rotationTime: 1.2
   increment: 0.2
   rotationCurve:
     serializedVersion: 2
@@ -689,23 +689,41 @@ MonoBehaviour:
       inWeight: 0
       outWeight: 0
     - serializedVersion: 3
-      time: 0.8892692
-      value: 1.0227649
-      inSlope: 2.6820977
-      outSlope: 2.6820977
+      time: 0.26005924
+      value: 0.039984703
+      inSlope: 0.47930887
+      outSlope: 0.47930887
       tangentMode: 0
       weightedMode: 0
-      inWeight: 0.04826454
+      inWeight: 0.25201446
       outWeight: 0.33333334
     - serializedVersion: 3
-      time: 0.94745487
-      value: 0.99724954
-      inSlope: -1.142747
-      outSlope: -1.142747
+      time: 0.37947157
+      value: 0.18368131
+      inSlope: 1.9562818
+      outSlope: 1.9562818
       tangentMode: 0
       weightedMode: 0
       inWeight: 0.33333334
       outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 0.5936597
+      value: 0.8587481
+      inSlope: 1.5492725
+      outSlope: 1.5492725
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 0.7083803
+      value: 0.9679781
+      inSlope: 0.3683817
+      outSlope: 0.3683817
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.13480307
+      outWeight: 0.23901644
     - serializedVersion: 3
       time: 1
       value: 1

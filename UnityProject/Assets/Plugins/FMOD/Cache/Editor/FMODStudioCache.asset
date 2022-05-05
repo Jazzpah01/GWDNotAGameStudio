@@ -26,7 +26,61 @@ MonoBehaviour:
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 2638
+  Length: 2250
+--- !u!114 &-8726743743791991131
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Dialougue/Ootsa Yelling
+  m_EditorClassIdentifier: 
+  Path: event:/Dialougue/Ootsa Yelling
+  Guid:
+    Data1: 1898231120
+    Data2: 1329017283
+    Data3: -115922250
+    Data4: -71516138
+  Banks:
+  - {fileID: 455546949183411898}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 2716
+--- !u!114 &-8231868146942682209
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Character/Teleport
+  m_EditorClassIdentifier: 
+  Path: event:/Character/Teleport
+  Guid:
+    Data1: 1722716416
+    Data2: 1277952784
+    Data3: -1663111761
+    Data4: -97957680
+  Banks:
+  - {fileID: 5345573164738149018}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 13605
 --- !u!114 &-6074732205434318191
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -49,11 +103,39 @@ MonoBehaviour:
   - {fileID: 6507139071202492389}
   IsStream: 0
   Is3D: 0
-  IsOneShot: 1
-  Parameters: []
+  IsOneShot: 0
+  Parameters:
+  - {fileID: 3152779215021509611}
   MinDistance: 1
   MaxDistance: 20
   Length: 656
+--- !u!114 &-4751603740070987561
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Ambient/Music
+  m_EditorClassIdentifier: 
+  Path: event:/Ambient/Music
+  Guid:
+    Data1: 404145549
+    Data2: 1255551762
+    Data3: -426562675
+    Data4: -1721918690
+  Banks:
+  - {fileID: -3975510886262343689}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 38000
 --- !u!114 &-4503475774658731278
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -69,11 +151,139 @@ MonoBehaviour:
   Path: gwdFMOD/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 637872640583271247
+  lastModified: 637873737190506408
   FileSizes:
   - Name: Desktop
-    Value: 1062
+    Value: 1758
   Exists: 1
+--- !u!114 &-3975510886262343689
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Background Music.bank
+  m_EditorClassIdentifier: 
+  Path: gwdFMOD/Build/Desktop/Background Music.bank
+  Name: Background Music
+  StudioPath: bank:/Background Music
+  lastModified: 637873736889470714
+  FileSizes:
+  - Name: Desktop
+    Value: 274496
+  Exists: 1
+--- !u!114 &-3664467369868987723
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Character/Cursor Hover
+  m_EditorClassIdentifier: 
+  Path: event:/Character/Cursor Hover
+  Guid:
+    Data1: -302470945
+    Data2: 1215528060
+    Data3: 647740600
+    Data4: -1725377619
+  Banks:
+  - {fileID: 6507139071202492389}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 3250
+--- !u!114 &-2441611085037466947
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Dialougue/Hermit Upset
+  m_EditorClassIdentifier: 
+  Path: event:/Dialougue/Hermit Upset
+  Guid:
+    Data1: 1549764904
+    Data2: 1190620573
+    Data3: 1391422363
+    Data4: -119384019
+  Banks:
+  - {fileID: 455546949183411898}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 2000
+--- !u!114 &-308719002907804058
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Dialougue/Bard Sad
+  m_EditorClassIdentifier: 
+  Path: event:/Dialougue/Bard Sad
+  Guid:
+    Data1: 848494061
+    Data2: 1201465500
+    Data3: -1062611790
+    Data4: 1225344596
+  Banks:
+  - {fileID: 455546949183411898}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 2063
+--- !u!114 &-141789714890371335
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Dialougue/Hermit Neutral
+  m_EditorClassIdentifier: 
+  Path: event:/Dialougue/Hermit Neutral
+  Guid:
+    Data1: 244635931
+    Data2: 1210964411
+    Data3: -1230571842
+    Data4: 1256436458
+  Banks:
+  - {fileID: 455546949183411898}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 1828
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -91,19 +301,102 @@ MonoBehaviour:
   - {fileID: 6507139071202492389}
   - {fileID: 5345573164738149018}
   - {fileID: 8355847689012072180}
+  - {fileID: -3975510886262343689}
+  - {fileID: 455546949183411898}
   EditorEvents:
   - {fileID: -6074732205434318191}
   - {fileID: 4527809457698103644}
-  - {fileID: 8951964514713132447}
   - {fileID: -8775076582533105861}
   - {fileID: 3558165542667943408}
-  EditorParameters: []
+  - {fileID: -4751603740070987561}
+  - {fileID: -3664467369868987723}
+  - {fileID: 4704206578197181114}
+  - {fileID: -141789714890371335}
+  - {fileID: -2441611085037466947}
+  - {fileID: -8726743743791991131}
+  - {fileID: 6876974602202088825}
+  - {fileID: 6957939129421033718}
+  - {fileID: 8353233643449539695}
+  - {fileID: 6041703472631085977}
+  - {fileID: 5251574932917214925}
+  - {fileID: -308719002907804058}
+  - {fileID: -8231868146942682209}
+  EditorParameters:
+  - {fileID: 2384736800959211697}
   MasterBanks:
   - {fileID: 8355847689012072180}
   StringsBanks:
   - {fileID: -4503475774658731278}
-  cacheTime: 637872640583271247
+  cacheTime: 637873737190506408
   cacheVersion: 10
+--- !u!114 &455546949183411898
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Dialouge.bank
+  m_EditorClassIdentifier: 
+  Path: gwdFMOD/Build/Desktop/Dialouge.bank
+  Name: Dialouge
+  StudioPath: bank:/Dialouge
+  lastModified: 637873736889540518
+  FileSizes:
+  - Name: Desktop
+    Value: 518496
+  Exists: 1
+--- !u!114 &2384736800959211697
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Speedy
+  m_EditorClassIdentifier: 
+  Name: Speedy
+  StudioPath: parameter:/Speedy
+  Min: -10
+  Max: 10
+  Default: 0
+  ID:
+    data1: 1178358295
+    data2: 970567857
+  Type: 0
+  IsGlobal: 1
+  Labels: []
+  Exists: 1
+--- !u!114 &3152779215021509611
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Footsteps/Speedy
+  m_EditorClassIdentifier: 
+  Name: Speedy
+  StudioPath: 
+  Min: -10
+  Max: 10
+  Default: 0
+  ID:
+    data1: 1178358295
+    data2: 970567857
+  Type: 0
+  IsGlobal: 1
+  Labels: []
+  Exists: 1
 --- !u!114 &3558165542667943408
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -130,7 +423,7 @@ MonoBehaviour:
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 9822
+  Length: 6500
 --- !u!114 &4527809457698103644
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -157,7 +450,61 @@ MonoBehaviour:
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 1593
+  Length: 551
+--- !u!114 &4704206578197181114
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Dialougue/Bard Neutral
+  m_EditorClassIdentifier: 
+  Path: event:/Dialougue/Bard Neutral
+  Guid:
+    Data1: 1999574016
+    Data2: 1188104198
+    Data3: -803068242
+    Data4: 369274613
+  Banks:
+  - {fileID: 455546949183411898}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 2194
+--- !u!114 &5251574932917214925
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Dialougue/Golden Girls
+  m_EditorClassIdentifier: 
+  Path: event:/Dialougue/Golden Girls
+  Guid:
+    Data1: 248736705
+    Data2: 1273507025
+    Data3: 1876864157
+    Data4: -1492965847
+  Banks:
+  - {fileID: 455546949183411898}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 1828
 --- !u!114 &5345573164738149018
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -173,11 +520,38 @@ MonoBehaviour:
   Path: gwdFMOD/Build/Desktop/Glyph.bank
   Name: Glyph
   StudioPath: bank:/Glyph
-  lastModified: 637872640583241325
+  lastModified: 637873737190476794
   FileSizes:
   - Name: Desktop
-    Value: 298336
+    Value: 477632
   Exists: 1
+--- !u!114 &6041703472631085977
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Dialougue/Ootsa Neutral
+  m_EditorClassIdentifier: 
+  Path: event:/Dialougue/Ootsa Neutral
+  Guid:
+    Data1: 291328159
+    Data2: 1203387725
+    Data3: 2070210948
+    Data4: -1867150278
+  Banks:
+  - {fileID: 455546949183411898}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 2560
 --- !u!114 &6507139071202492389
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -193,11 +567,92 @@ MonoBehaviour:
   Path: gwdFMOD/Build/Desktop/Character.bank
   Name: Character
   StudioPath: bank:/Character
-  lastModified: 637872640583201423
+  lastModified: 637873737190420249
   FileSizes:
   - Name: Desktop
-    Value: 22336
+    Value: 212288
   Exists: 1
+--- !u!114 &6876974602202088825
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Dialougue/Ootsa Annoyed
+  m_EditorClassIdentifier: 
+  Path: event:/Dialougue/Ootsa Annoyed
+  Guid:
+    Data1: -166340523
+    Data2: 1132535540
+    Data3: -1731428675
+    Data4: -909582648
+  Banks:
+  - {fileID: 455546949183411898}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 2351
+--- !u!114 &6957939129421033718
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Dialougue/Oosta Sad
+  m_EditorClassIdentifier: 
+  Path: event:/Dialougue/Oosta Sad
+  Guid:
+    Data1: -2053084555
+    Data2: 1078062801
+    Data3: 1669277101
+    Data4: 90365669
+  Banks:
+  - {fileID: 455546949183411898}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 2847
+--- !u!114 &8353233643449539695
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Dialougue/Guard
+  m_EditorClassIdentifier: 
+  Path: event:/Dialougue/Guard
+  Guid:
+    Data1: 357240455
+    Data2: 1310023852
+    Data3: 1797106579
+    Data4: 1657866820
+  Banks:
+  - {fileID: 455546949183411898}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 2951
 --- !u!114 &8355847689012072180
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -213,35 +668,8 @@ MonoBehaviour:
   Path: gwdFMOD/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 637872640583251294
+  lastModified: 637873737190496416
   FileSizes:
   - Name: Desktop
-    Value: 1036
+    Value: 1218
   Exists: 1
---- !u!114 &8951964514713132447
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Glyphs/Teleport
-  m_EditorClassIdentifier: 
-  Path: event:/Glyphs/Teleport
-  Guid:
-    Data1: 1722716416
-    Data2: 1277952784
-    Data3: -1663111761
-    Data4: -97957680
-  Banks:
-  - {fileID: 5345573164738149018}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 12146

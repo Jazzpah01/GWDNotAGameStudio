@@ -1,0 +1,67 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-7405414259299107910
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3c964c08cad4f2c44b6222b5e55e4999, type: 3}
+  m_Name: StartDialogue
+  m_EditorClassIdentifier: 
+  questIndex: 1
+  questIncrease: 1
+  dialogue: {fileID: 11400000, guid: 2ed61c3f9e26a754789571d8e7558661, type: 2}
+  npcPrefab: {fileID: 1340676740333891396, guid: e5c68e9ca7d452a4a8c875c658171880, type: 3}
+--- !u!114 &-994735787923163652
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3c964c08cad4f2c44b6222b5e55e4999, type: 3}
+  m_Name: StartDialogue
+  m_EditorClassIdentifier: 
+  questIndex: 2
+  questIncrease: 0
+  dialogue: {fileID: 11400000, guid: f639d28bc183d4547b4c49de3165d8b7, type: 2}
+  npcPrefab: {fileID: 0}
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 76812cc4cf143ee40a123a38a320e2de, type: 3}
+  m_Name: StartDialogueTest
+  m_EditorClassIdentifier: 
+  customEditing: 1
+  questEvents:
+  - {fileID: 622185699554680104}
+  - {fileID: -7405414259299107910}
+  - {fileID: -994735787923163652}
+--- !u!114 &622185699554680104
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3c964c08cad4f2c44b6222b5e55e4999, type: 3}
+  m_Name: StartDialogue
+  m_EditorClassIdentifier: 
+  questIndex: 0
+  questIncrease: 1
+  dialogue: {fileID: 11400000, guid: f639d28bc183d4547b4c49de3165d8b7, type: 2}
+  npcPrefab: {fileID: 0}

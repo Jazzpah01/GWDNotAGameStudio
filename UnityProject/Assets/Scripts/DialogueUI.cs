@@ -17,6 +17,12 @@ public class DialogueUI : MonoBehaviour
     public Image npcPortrait;
 
     public Dialogue dialogue;
+
+    internal void SetDialogue(object npc, Dialogue dialogue, Action callBack)
+    {
+        throw new NotImplementedException();
+    }
+
     public GameObject player;
     public GameObject npc;
     public Action callback;
@@ -152,7 +158,7 @@ public class DialogueUI : MonoBehaviour
             dialogue.current = -1;
         }
 
-        if (npc.npcPortrait != null)
+        if (npc != null && npc.npcPortrait != null)
         {
             npcPortrait = npc.npcPortrait;
         } else

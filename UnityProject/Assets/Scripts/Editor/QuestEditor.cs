@@ -187,6 +187,10 @@ public class QuestEditor : Editor
                 return CreateInstance<GiveGlyphEvent>();
             case QuestEventType.SetInteractable:
                 return CreateInstance<InteractEvent>();
+            case QuestEventType.StartQuest:
+                return CreateInstance<StartQuestEvent>();
+            case QuestEventType.StartDialogue:
+                return CreateInstance<StartDialogueEvent>();
             default:
                 throw new Exception("Event isn't implemented!");
         }

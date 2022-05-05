@@ -22,7 +22,6 @@ public class Interactable : MonoBehaviour
     {
         interactant = GetComponent<IInteractant>();
         ID = gameObject.name.Replace("(Clone)","");
-        isInteractable = false;
         interactText.SetActive(false);
         playerInside = false;
         LevelManager.instance.sceneContext.AddInteractable(this);

@@ -13,7 +13,6 @@ public class SetDialogueEvent : QuestEvent
     {
         foreach (NPCController npc in context.npcs)
         {
-            Debug.Log("Npc exists!");
             if (npc.name != null && npc.name != "" && 
                 npc.characterName == this.npcPrefab.GetComponent<NPCController>().characterName)
             {

@@ -185,6 +185,8 @@ public class QuestEditor : Editor
                 return CreateInstance<RemoveGameObjectEvent>();
             case QuestEventType.GiveGlyph:
                 return CreateInstance<GiveGlyphEvent>();
+            case QuestEventType.SetInteractable:
+                return CreateInstance<InteractEvent>();
             default:
                 throw new Exception("Event isn't implemented!");
         }

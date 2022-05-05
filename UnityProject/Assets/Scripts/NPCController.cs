@@ -6,7 +6,7 @@ using TMPro;
 using System;
 using DG.Tweening;
 
-public class NPCController : MonoBehaviour
+public class NPCController : MonoBehaviour, IInteractant
 {
     GameManager game;
     private GameObject player;
@@ -21,7 +21,6 @@ public class NPCController : MonoBehaviour
     public bool hasMet;
     public bool hasDialogue;
     public bool hasFinishedDialogue;
-    public bool playerInRange = false;
     public bool dialogueActive = false;
 
     public Dialogue dialogue;
@@ -36,12 +35,16 @@ public class NPCController : MonoBehaviour
     private Color orange = new Color(0.8f, 0.8f, 0.3f, 1f);
     private Color defaultTextColor;
 
+    private Interactable interactable;
+
     public bool lookAtPlayer = true;
 
+    public bool InRange { get; set; }
 
     private void Awake()
     {
         game = GameManager.instance;
+        interactable = GetComponent<Interactable>();
     }
 
     // Start is called before the first frame update
@@ -49,10 +52,9 @@ public class NPCController : MonoBehaviour
     {
         this.anim = rig.GetComponent<Animator>();
         if (GameManager.instance != null) player = GameManager.instance.player;
-        text = dialogueUI.GetComponent<TextMeshPro>();
         if (text != null) Debug.Log("text init success");
-        defaultTextColor = text.color;
-        ClearText();
+        //defaultTextColor = text.color;
+        //ClearText();
         if (dialogue != null) dialogue.current = -1;
         delayTimer = 0f;
         dialogueActive = false;
@@ -61,22 +63,7 @@ public class NPCController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        /*
-        delayTimer += Time.deltaTime;
-
-        player.GetComponent<CharacterController>().isInDialogue = dialogueActive;
-
-        if (!playerInRange || dialogue == null)
-        {
-            //ClearText();
-            //dialogueActive = false;
-            return;
-        }
-
-        if (dialogueActive && !playerInRange) dialogueActive = false;
-        */
-
-        if (playerInRange && lookAtPlayer)
+        if (InRange && lookAtPlayer)
         {
             if (player.transform.position.x < transform.position.x) // turn npc towards player
             {
@@ -87,46 +74,13 @@ public class NPCController : MonoBehaviour
             }
         }
 
-        if (playerInRange && dialogue!= null && !DialogueUI.instance.dialogueActive)
+        if (InRange && dialogue!= null && !DialogueUI.instance.dialogueActive)
         {
             DialogueUI.instance.dialogueAvailable = true;
         } else
         {
             DialogueUI.instance.dialogueAvailable = false;
         }
-        
-
-        /*
-        if (playerInRange && !dialogueActive)
-        {
-            StartDialoguePrompt();
-        }
-
-        if (Input.GetKey(KeyCode.E) && playerInRange)
-        {
-            dialogueActive = true;
-            hasMet = true;
-        }
-
-        if (playerInRange && dialogueActive && delayTimer > delayInterval)
-        {
-            
-            if (Input.GetKeyDown(KeyCode.E)) DNext();
-            if (Input.GetKeyDown(KeyCode.Q)) DPrevious();
-        }
-
-        if (hasFinishedDialogue && dialogue.current == dialogue.lines.Count)
-        {
-            EndDialoguePrompt();
-            if (Input.GetKeyDown(KeyCode.E))
-            {
-                Debug.Log("ENDING DIALOGUE");
-                ClearText();
-                dialogueActive = false;
-                playerInRange = false; // TODO: fix this ugly ass hack
-            }
-        }
-        */
 
     }
 
@@ -142,13 +96,13 @@ public class NPCController : MonoBehaviour
         {
             this.dialogue = null;
             this.callback = null;
+            interactable.SetUninteractable();
         } else
         {
             this.dialogue = dialogue;
             this.callback = callback;
             dialogue.current = -1;
-
-            DialogueUI.instance.SetDialogue(this, dialogue, callback);
+            interactable.SetInteractable();
         }
     }
 
@@ -184,7 +138,7 @@ public class NPCController : MonoBehaviour
         if (dialogue.current - 1 < 0)
         {
             dialogue.current = -1;
-            StartDialoguePrompt();
+            //StartDialoguePrompt();
             dialogueActive = false;
         } else {
             dialogue.current--;
@@ -232,41 +186,23 @@ public class NPCController : MonoBehaviour
         //
     }
 
-    private void StartDialoguePrompt()
-    {
-        text.text = "( Press [E] to start conversation! )";
-        dialogue.current = -1;
-        hasFinishedDialogue = false;
-    }
+    //private void StartDialoguePrompt()
+    //{
+    //    text.text = "( Press [E] to start conversation! )";
+    //    dialogue.current = -1;
+    //    hasFinishedDialogue = false;
+    //}
 
-    private void EndDialoguePrompt()
-    {
-        text.text = "( Press [E] to end conversation... )";
-    }
+    //private void EndDialoguePrompt()
+    //{
+    //    text.text = "( Press [E] to end conversation... )";
+    //}
 
-    private void ClearText()
-    {
-        text.text = "";
-    }
+    //private void ClearText()
+    //{
+    //    text.text = "";
+    //}
 
-    private void OnTriggerEnter2D(Collider2D collision)
-    {
-        // activate dialogue prompt
-        if (collision.gameObject.tag == "Player")
-        {
-            playerInRange = true;
-        }
-    }
-
-    private void OnTriggerExit2D(Collider2D collision)
-    {
-
-        if (collision.gameObject.tag == "Player")
-        {
-            playerInRange = false;
-        }
-
-    }
 
     public void MoveGary(Vector2 goalPos, float duration)
     {
@@ -300,5 +236,11 @@ public class NPCController : MonoBehaviour
         {
             rig.transform.localScale = new Vector3(1f, 1f, 1f);
         }
+    }
+
+    public void Interact()
+    {
+        DialogueUI.instance.SetDialogue(this, dialogue, callback);
+        DialogueUI.instance.StartDialogue();
     }
 }

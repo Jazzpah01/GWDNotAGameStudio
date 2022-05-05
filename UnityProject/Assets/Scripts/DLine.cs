@@ -7,4 +7,5 @@ public class DLine
 {
     public bool isPlayer;
     public string line;
+    public FMODUnity.EventReference voice;
 }

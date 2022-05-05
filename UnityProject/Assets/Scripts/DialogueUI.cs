@@ -18,13 +18,8 @@ public class DialogueUI : MonoBehaviour
 
     public Dialogue dialogue;
 
-    internal void SetDialogue(object npc, Dialogue dialogue, Action callBack)
-    {
-        throw new NotImplementedException();
-    }
-
     public GameObject player;
-    public GameObject npc;
+    public NPCController npc;
     public Action callback;
 
     public bool dialogueAvailable;
@@ -160,6 +155,7 @@ public class DialogueUI : MonoBehaviour
 
         if (npc != null && npc.npcPortrait != null)
         {
+            this.npc = npc;
             npcPortrait = npc.npcPortrait;
         } else
         {
@@ -215,7 +211,18 @@ public class DialogueUI : MonoBehaviour
         }
 
         tmp.text = dialogue.lines[dialogue.current].line;
+
+        if (dialogue.lines[dialogue.current].isPlayer)
+        {
+            CharacterController player = LevelManager.instance.playerPrefab.GetComponent<CharacterController>();
+            FMODUnity.RuntimeManager.PlayOneShot(player.defaultVoice);
+        } else
+        {
+            FMODUnity.RuntimeManager.PlayOneShot(npc.defaultVoice);
+        }
+
         currentLine = dialogue.current;
+
         Debug.Log("DialogueUI: line " + currentLine + " set!");
     }
 

@@ -16,13 +16,16 @@ public class InitialLevel : MonoBehaviour
 
     public Places places;
 
-    public Quest initialQuest;
+    public List<Quest> initialQuests;
 
     public static bool gameInitialized = false;
+    public static bool firstSceneLoaded = false;
 
     void Start()
     {
         //GameManager.instance.playerGlyphs = playerGlyphs;
+
+        firstSceneLoaded = false;
 
         foreach (Glyph glyph in playerGlyphs)
         {
@@ -41,9 +44,13 @@ public class InitialLevel : MonoBehaviour
 
         PlaceManager._places = places;
 
-        QuestManager.currentQuests.Add(initialQuest);
-        initialQuest.Init();
+        foreach (Quest item in initialQuests)
+        {
+            QuestManager.currentQuests.Add(item);
+            item.Init();
+        }
 
-        SceneManager.LoadScene(landscapeGlyph.sceneName);
+        //SceneManager.LoadScene(landscapeGlyph.sceneName);
+        LevelManager.ChangeScene();
     }
 }

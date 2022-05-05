@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: 3_volcano
   m_EditorClassIdentifier: 
   icon: {fileID: 21300000, guid: 49523c745f5ce4238b8cf646d7c259fd, type: 3}
-  seed: 0
+  seed: 4
   sceneName: 3_volcano
   locations:
   - landscape: {fileID: 0}
@@ -21,10 +21,10 @@ MonoBehaviour:
     backGround: {fileID: 21300000, guid: f99a4797a5d4441c8add26ea4dc0e63f, type: 3}
   - landscape: {fileID: 0}
     biome: {fileID: 11400000, guid: 6d5bf97df702444cdb6b05f0c5a3ad88, type: 2}
-    backGround: {fileID: 21300000, guid: 0be5c40058f904bed8dbf8aa1cb9d0cd, type: 3}
+    backGround: {fileID: 21300000, guid: f496f6a1538df4617af6f7200e58673c, type: 3}
   - landscape: {fileID: 0}
     biome: {fileID: 11400000, guid: 0301f76479b63394a89d420f7fc684ac, type: 2}
     backGround: {fileID: 21300000, guid: 33193610c82549340b9e425efcca3548, type: 3}
   - landscape: {fileID: 0}
     biome: {fileID: 11400000, guid: 8642289d9e19747d0811a4c248263909, type: 2}
-    backGround: {fileID: 21300000, guid: f496f6a1538df4617af6f7200e58673c, type: 3}
+    backGround: {fileID: 21300000, guid: 0be5c40058f904bed8dbf8aa1cb9d0cd, type: 3}

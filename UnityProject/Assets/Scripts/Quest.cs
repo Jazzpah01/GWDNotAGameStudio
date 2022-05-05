@@ -5,7 +5,6 @@ using UnityEngine;
 [CreateAssetMenu(menuName ="Assets/Quest")]
 public class Quest : ScriptableObject
 {
-    public string guid;
     [HideInInspector] public bool customEditing = true;
     private int questIndex = 0;
 
@@ -20,7 +19,7 @@ public class Quest : ScriptableObject
             for (int j = 0; j < questEvents.Count; j++)
             {
                 i += questEvents[j].questIncrease;
-                if (questEvents[j].questIndex > value || i <= questIndex)
+                if (questEvents[j].questIndex > value || questEvents[j].questIndex <= questIndex)
                     continue;
 
                 if (questEvents[j].questIndex >= questIndex && 

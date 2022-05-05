@@ -7,5 +7,9 @@ public enum QuestEventType
     EnterScene,
     SetDialogue,
     SpawnGameObject,
-    RemoveGameObject
+    RemoveGameObject,
+    GiveGlyph,
+    SetInteractable,
+    StartQuest,
+    StartDialogue
 }

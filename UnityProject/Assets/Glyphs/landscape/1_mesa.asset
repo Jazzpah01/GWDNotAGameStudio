@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: 1_mesa
   m_EditorClassIdentifier: 
   icon: {fileID: 21300000, guid: b6ba75a5f33a443deacae62133f27037, type: 3}
-  seed: 0
+  seed: 2
   sceneName: 1_mesa
   locations:
   - landscape: {fileID: 0}
@@ -21,10 +21,10 @@ MonoBehaviour:
     backGround: {fileID: 21300000, guid: b7dc0e935ec0b46cfae352c16771a088, type: 3}
   - landscape: {fileID: 0}
     biome: {fileID: 11400000, guid: 6d5bf97df702444cdb6b05f0c5a3ad88, type: 2}
-    backGround: {fileID: 21300000, guid: d12a586e0570647a18bc80d714793f49, type: 3}
+    backGround: {fileID: 21300000, guid: 273c12114df0c4fe7812b4db313afb8e, type: 3}
   - landscape: {fileID: 0}
     biome: {fileID: 11400000, guid: 0301f76479b63394a89d420f7fc684ac, type: 2}
     backGround: {fileID: 21300000, guid: 0825fa20094308d4d98e6f3815f89ee7, type: 3}
   - landscape: {fileID: 0}
     biome: {fileID: 11400000, guid: 8642289d9e19747d0811a4c248263909, type: 2}
-    backGround: {fileID: 21300000, guid: 273c12114df0c4fe7812b4db313afb8e, type: 3}
+    backGround: {fileID: 21300000, guid: d12a586e0570647a18bc80d714793f49, type: 3}

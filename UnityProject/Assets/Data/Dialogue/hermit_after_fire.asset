@@ -14,12 +14,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   lines:
   - isPlayer: 0
-    line: 'Thank you! You saved my home. At least a very substantial part of it. '
+    line: Thank you! You saved my home. At least a very substantial part of it.
   - isPlayer: 1
     line: You are welcome, I guess.
   - isPlayer: 0
-    line: I apologise! I have not interacted with anyone for quite a while. My manners
-      are not as sharp as they used to be.
+    line: My apologies! I forgot how to interact with real people. The manners are
+      not as sharp as they used to be.
   - isPlayer: 1
     line: "What do you mean? You can\u2019t be here all alone."
   - isPlayer: 0
@@ -28,14 +28,15 @@ MonoBehaviour:
     line: That cannot be true, how do you even stay alive? Stay sane?
   - isPlayer: 0
     line: What an odd question? There are animals and imaginary friends, of course!
-      Did you know turkeys tend to be very well-spoken?
+  - isPlayer: 0
+    line: Did you know turkeys tend to be very well-spoken?
   - isPlayer: 1
     line: I did not know that.
   - isPlayer: 0
     line: Squirrels tell the best jokes but raccoons are plain rude.
   - isPlayer: 1
     line: That is very enlightening but are you sure you have not seen anyone else?
-      You see, I am looking for my friend.
+      I am looking for my friend.
   - isPlayer: 0
     line: Child, I may not discern imaginary from actual but you are the only person
       I have seen this week.
@@ -52,25 +53,26 @@ MonoBehaviour:
   - isPlayer: 1
     line: So you know how to go back. Tell me how to do it.
   - isPlayer: 0
-    line: Easy, there. I do not know how to travel with the glyphs. I needed a place
-      to escape and I had been told to use these two to come here.
+    line: Easy, there. I do not know how to travel with the glyphs.
+  - isPlayer: 0
+    line: I just needed a place to escape and I had been told to use these two to
+      come here.
   - isPlayer: 1
     line: What did you run from?
   - isPlayer: 0
-    line: "That is a very long story that I don\u2019t feel ready to tell, even after
-      all these years."
+    line: "That is a very long story that I don\u2019t feel ready to tell."
   - isPlayer: 1
-    line: "Understandable. You said you had been told to use these \u201Cglyphs\u201D.
-      Who told you that?"
+    line: Understandable. You said you had been told to use these glyphs. Who told
+      you that?
   - isPlayer: 0
-    line: Years ago, some guy appeared in my town. He asked for food and a place
-      to stay so I let him stay for the night.
+    line: 'Years ago, some guy appeared in my town. He asked for food and a place
+      to stay so I let him stay for the night. '
   - isPlayer: 0
-    line: He disappeared the very next day. Everyone thought he was a ghost but he
-      was not. He was merely a traveller who lost his way.
+    line: 'He disappeared the very next day. Everyone thought he was a ghost but
+      he was merely a traveller who lost his way. '
   - isPlayer: 0
-    line: 'He started to visit the town regularly and eventually decided to settle
-      in the town. '
+    line: He started to visit the town regularly and eventually decided to settle
+      in the town.
   - isPlayer: 1
     line: 'Where is this person? '
   - isPlayer: 0
@@ -84,7 +86,7 @@ MonoBehaviour:
       it whenever I was ready to go back to the town.
   - isPlayer: 0
     line: I am not ready and you need this more than I do. Go find him and tell them
-      I sent you.
+      Tjetlik sent you.
   - isPlayer: 1
     line: Thank you!
   current: -1

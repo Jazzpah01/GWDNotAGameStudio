@@ -9,6 +9,7 @@ public class GameManager : MonoBehaviour
     //public static QuestManager qManager; // is static
     public Canvas canvasUI;
     public WaystoneUI waystoneUI;
+    public DialogueUI dialogueUI;
     public GameObject player;
 
     private bool isUIopen;
@@ -69,13 +70,10 @@ public class GameManager : MonoBehaviour
             DelayedStart();
         }
         
-        if (waystoneUI != null) waystoneUI.gameObject.SetActive(isUIopen);
+        //if (waystoneUI != null) waystoneUI.gameObject.SetActive(isUIopen);
 
-
-        if (isUIopen)
-        {
-
-        }
+        if (dialogueUI != null) dialogueUI.gameObject.SetActive(isDialogueActive);
+        
     }
 
     
@@ -89,7 +87,6 @@ public class GameManager : MonoBehaviour
     public void setIsUIopen(bool isOpen)
     {
         isUIopen = isOpen;
-        Debug.Log("UI open is:   " + isOpen);
     }
 
     public bool getIsDialogueActive()

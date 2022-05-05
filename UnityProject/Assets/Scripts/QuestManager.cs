@@ -21,16 +21,7 @@ public class QuestManager : MonoBehaviour
 
     private void Update()
     {
-        SceneContext context = LevelManager.instance.sceneContext;
-
-        foreach (QuestEvent eventt in questEventsToExecute.ToArray())
-        {
-            if (eventt.ShouldExecute(context))
-            {
-                eventt.Execute(context);
-            }
-            questEventsToExecute.Remove(eventt);
-        }
+        ExecuteEvents();
     }
 
     public static void SubscribeEvent(QuestEvent questEvent)
@@ -42,5 +33,25 @@ public class QuestManager : MonoBehaviour
             return;
 
         instance.questEventsToExecute.Add(questEvent);
+    }
+
+    public static void ExecuteEvents()
+    {
+        if (instance.questEventsToExecute.Count <= 0)
+            return;
+
+        SceneContext context = LevelManager.instance.sceneContext;
+
+        int count = instance.questEventsToExecute.Count;
+
+        for (int i = 0; i < count; i++)
+        {
+            if (instance.questEventsToExecute[i].ShouldExecute(context))
+            {
+                instance.questEventsToExecute[i].Execute(context);
+            }
+        }
+
+        instance.questEventsToExecute.RemoveRange(0, count);
     }
 }

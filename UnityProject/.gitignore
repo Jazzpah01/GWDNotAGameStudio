@@ -80,6 +80,11 @@ Logs/
                     
 # Ignore the Cache folder since it is updated locally.
 [Aa]ssets/Plugins/FMOD/Cache/*
+**/FMODStudioCache.asset
+**/FMODStudioCache.asset.meta
+[Aa]ssets/Plugins/FMOD/Cache.meta
+[Aa]ssets/Plugins/FMOD/Cache/Editor.meta
+Assets/Plugins/FMOD/Cache/Editor/FMODStudioCache.asset
                     
 # Ignore bank files in the StreamingAssets folder.
 [Aa]ssets/StreamingAssets/**/*.bank

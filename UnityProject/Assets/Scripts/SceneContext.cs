@@ -12,6 +12,8 @@ public class SceneContext
 
     public List<NPCController> npcs = new List<NPCController>();
 
+    public List<Interactable> interactables = new List<Interactable>();
+
     public void SpawnGameObject(GameObject prefab, Vector2 position, Vector2 scale)
     {
         GameObject ngo = MonoBehaviour.Instantiate(prefab);
@@ -27,9 +29,33 @@ public class SceneContext
 
         if (npc != null)
         {
-            Debug.Log("NPC added!");
             npcs.Add(npc);
         }
+
+        Interactable interact = ngo.GetComponent<Interactable>();
+        Debug.Log("HERE",interact);
+
+        if (interact != null)
+        {
+            interactables.Add(interact);
+        }
+    }
+
+    public void AddNPC(NPCController npc)
+    {
+        if (npcs.Contains(npc))
+            return;
+
+        npcs.Add(npc);
+    }
+
+    public void AddInteractable(Interactable interactable)
+    {
+        if (interactables.Contains(interactable))
+            return;
+        Debug.Log("HERE2", interactable);
+
+        interactables.Add(interactable);
     }
 
     public void RemoveGameObject(GameObject prefab)
@@ -43,12 +69,71 @@ public class SceneContext
             EventObjects[prefab].Clear();
         } else
         {
-            NPCController npc = prefab.GetComponentInChildren<NPCController>();
             //Make NPC that didn't spawn in quest removeable
-            //foreach (var item in collection)
-            //{
+            NPCController npc = prefab.GetComponent<NPCController>();
+            if (npc != null)
+            {
+                foreach (NPCController othernpc in npcs.ToArray())
+                {
+                    if (npc.characterName == othernpc.characterName)
+                    {
+                        npcs.Remove(othernpc);
+                        EventObjects.Remove(othernpc.gameObject);
+                    }
 
-            //}
+                    MonoBehaviour.Destroy(othernpc.gameObject);
+                }
+            }
+
+            if (prefab == null)
+                return;
+
+            Interactable interactable = prefab.GetComponent<Interactable>();
+            if (interactable != null)
+            {
+                foreach (Interactable otherinteractable in interactables.ToArray())
+                {
+                    if (interactable.ID == otherinteractable.ID)
+                    {
+                        interactables.Remove(otherinteractable);
+                        EventObjects.Remove(otherinteractable.gameObject);
+                    }
+
+                    MonoBehaviour.Destroy(otherinteractable.gameObject);
+                }
+            }
         }
+    }
+
+    public NPCController GetNPC(GameObject prefab)
+    {
+        NPCController prefab_npc = prefab.GetComponent<NPCController>();
+        if (prefab_npc != null)
+        {
+            foreach (NPCController npc in npcs.ToArray())
+            {
+                if (prefab_npc.characterName == npc.characterName)
+                {
+                    return npc;
+                }
+            }
+        }
+        throw new System.Exception("NPC instance of prefab did not exist in scene context.");
+    }
+
+    public bool ContainsNPC(GameObject prefab)
+    {
+        NPCController prefab_npc = prefab.GetComponent<NPCController>();
+        if (prefab_npc != null)
+        {
+            foreach (NPCController npc in npcs.ToArray())
+            {
+                if (prefab_npc.characterName == npc.characterName)
+                {
+                    return true;
+                }
+            }
+        }
+        return false;
     }
 }

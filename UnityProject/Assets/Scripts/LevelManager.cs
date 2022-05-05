@@ -48,6 +48,8 @@ public class LevelManager : MonoBehaviour
         if (!populateThis)
             return;
 
+        StartCoroutine(Fader.FadeOut(1f));
+
         finishedLoading = false;
 
         if (!InitialLevel.gameInitialized)
@@ -58,10 +60,15 @@ public class LevelManager : MonoBehaviour
             return;
         }
 
+        
+
         DOTween.Init(); // empty param = default settings
-        SetupGlyphs();
+        //SetupGlyphs();
         PopulateScene();
+        SetPlaceNPCs();
         ExecuteQuestEvents();
+
+        InitialLevel.firstSceneLoaded = true;
 
         finishedLoading = true;
         
@@ -74,6 +81,11 @@ public class LevelManager : MonoBehaviour
 
     public void SetupGlyphs()
     {
+        if (!InitialLevel.firstSceneLoaded)
+            return;
+
+        GlyphManager.oldTimeIndex = GlyphManager.timeIndex;
+
         GlyphManager.timeIndex += (GlyphManager.GetIndex(GlyphManager.landscape) +
             GlyphManager.GetIndex(GlyphManager.biome));
         GlyphManager.timeIndex %= GlyphManager.collection.times.Count;
@@ -152,6 +164,15 @@ public class LevelManager : MonoBehaviour
         placeManager.LoadPlace();
     }
 
+    public void SetPlaceNPCs()
+    {
+        NPCController[] npcs = placeManager.GetComponentsInChildren<NPCController>();
+        foreach (NPCController npc in npcs)
+        {
+            sceneContext.AddNPC(npc);
+        }
+    }
+
     public void ExecuteQuestEvents()
     {
         List<QuestEvent> toExecute = new List<QuestEvent>();
@@ -159,29 +180,44 @@ public class LevelManager : MonoBehaviour
 
         foreach (Quest quest in QuestManager.currentQuests)
         {
-            foreach (QuestEvent qevent in quest.questEvents)
+            for (int i = 0; i < quest.questEvents.Count; i++)
             {
-                if (qevent.questIndex > quest.QuestIndex)
+                QuestEvent questEvent = quest.questEvents[i];
+
+                if (questEvent.questIndex > quest.QuestIndex)
                     continue;
 
-                if (qevent.ShouldExecute(sceneContext))
-                {
-                    toExecute.Add(qevent);
-                }
+                QuestManager.SubscribeEvent(questEvent);
             }
         }
 
+        QuestManager.ExecuteEvents();
+
         loadingQuestEvents = false;
-        foreach (QuestEvent item in toExecute)
+    }
+
+    public static void ChangeScene()
+    {
+        LevelManager.instance.SetupGlyphs();
+
+        init = true;
+
+        if (!InitialLevel.firstSceneLoaded)
         {
-            item.Execute(sceneContext);
+            print("Setting scene.");
+            SetScene(GlyphManager.landscape.sceneName);
+        } else
+        {
+            print("Setting transition scene.");
+            LevelManager.instance.StartCoroutine( Fader.FadeIn(1f,
+                delegate { SetScene("TransitionScene"); }
+            ));
         }
     }
 
-    public void ChangeScene()
+    public static void SetScene(string sceneName)
     {
-        init = true;
-        USceneManager.LoadScene(GlyphManager.landscape.sceneName);
+        USceneManager.LoadScene(sceneName);
     }
 
     public int GetWeightedIndex(List<IWeighted> weights)

@@ -2,6 +2,7 @@ using JStuff.TwoD.Platformer;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using DG.Tweening;
 
 public class CharacterController : MonoBehaviour
 {
@@ -30,6 +31,10 @@ public class CharacterController : MonoBehaviour
     public bool isInDialogue;
     public int currentQuest;
 
+    public bool isInCutscene = false;
+
+    public static CharacterController instance;
+
 
     private bool Flipped
     {
@@ -49,10 +54,15 @@ public class CharacterController : MonoBehaviour
         }
     }
 
+    private void Awake()
+    {
+        instance = this;
+    }
+
     private void Start()
     {
         this.anim = GetComponentInChildren<Animator>();
-        if (this.anim != null) Debug.Log("Character Animator initialized");
+        //if (this.anim != null) Debug.Log("Character Animator initialized");
         isWalking = false;
         FlipSprite(false);
     }
@@ -136,7 +146,7 @@ public class CharacterController : MonoBehaviour
                 body.RemoveFilter(bouncy);
                 bouncing = false;
             }
-        } else
+        } else if (!isInCutscene)
         {
             SetWalking(false);
         }
@@ -156,5 +166,19 @@ public class CharacterController : MonoBehaviour
         {
             rig.localScale = new Vector3(1f, 1f, 1f);
         }
+    }
+
+    public void WalkTo(Vector2 goalPos, float duration)
+    {
+        FlipSprite(goalPos.x < transform.position.x);
+        SetWalking(true);
+
+        transform.DOMove(goalPos, duration).SetEase(Ease.Linear).OnComplete(delegate { SetWalking(false); });
+
+    }
+
+    private void StopWalking()
+    {
+        SetWalking(false);
     }
 }

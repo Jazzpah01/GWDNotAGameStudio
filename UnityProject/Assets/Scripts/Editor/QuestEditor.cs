@@ -36,6 +36,11 @@ public class QuestEditor : Editor
             AssetDatabase.SaveAssets();
         }
 
+        if (GUILayout.Button("Sort"))
+        {
+            quest.questEvents.Sort();
+        }
+
         if (quest.questEvents != null)
         {
             for (int i = 0; i < quest.questEvents.Count; i++)
@@ -178,6 +183,14 @@ public class QuestEditor : Editor
                 return CreateInstance<SpawnGameObjectEvent>();
             case QuestEventType.RemoveGameObject:
                 return CreateInstance<RemoveGameObjectEvent>();
+            case QuestEventType.GiveGlyph:
+                return CreateInstance<GiveGlyphEvent>();
+            case QuestEventType.SetInteractable:
+                return CreateInstance<InteractEvent>();
+            case QuestEventType.StartQuest:
+                return CreateInstance<StartQuestEvent>();
+            case QuestEventType.StartDialogue:
+                return CreateInstance<StartDialogueEvent>();
             default:
                 throw new Exception("Event isn't implemented!");
         }

@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c6a835d05eaa80b419430c51f8e79900, type: 3}
+  m_Name: festival_initial
+  m_EditorClassIdentifier: 
+  lines:
+  - isPlayer: 0
+    line: Yass! Eat it! It is that time of the year again. The Enemy of Both Sides
+      must be devoured.
+  - isPlayer: 0
+    line: Serving you as the Mirrored One, I had a lovely year but everything good
+      must come to an end.
+  - isPlayer: 0
+    line: I invite all of the candidates to the stage, for the continuation of the
+      cycle. Follow his words with yours.
+  - isPlayer: 0
+    line: Hear us, the Lord of the Near and Nigh! Show yourself in the form of your
+      next body.
+  - isPlayer: 0
+    line: 'A free jaguar leaps on the back of the wind     and floats downstream
+      till the current ends '
+  - isPlayer: 0
+    line: 'and dips his crown in the white sun rays and dares to claim the sky. '
+  current: -1

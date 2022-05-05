@@ -160,7 +160,8 @@ public class DialogueUI : MonoBehaviour
 
         if (npc != null && npc.npcPortrait != null)
         {
-            npcPortrait = npc.npcPortrait;
+            npcPortrait.sprite = npc.npcPortrait.sprite;
+            npcPortrait.SetNativeSize();
         } else
         {
             Debug.Log("DialogueUI.SetDialogue(): Dialogue NPC has no Portrait!");

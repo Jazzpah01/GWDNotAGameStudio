@@ -39,6 +39,8 @@ public class NPCController : MonoBehaviour, IInteractant
 
     public bool lookAtPlayer = true;
 
+    public FMODUnity.EventReference defaultVoice;
+
     public bool InRange { get; set; }
 
     private void Awake()

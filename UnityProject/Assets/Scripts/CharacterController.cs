@@ -8,7 +8,11 @@ public class CharacterController : MonoBehaviour
 {
     [Header("FMOD")]
     public FMODUnity.EventReference bumpEvent;
+    public FMODUnity.EventReference aquiredGlyph;
     public FMODUnity.StudioEventEmitter walkEmitter;
+    public FMODUnity.StudioEventEmitter music1Emitter;
+    public FMODUnity.StudioEventEmitter music2Emitter;
+    public FMODUnity.EventReference defaultVoice;
 
     [Header("Other")]
     public Body2d body;
@@ -65,6 +69,20 @@ public class CharacterController : MonoBehaviour
         //if (this.anim != null) Debug.Log("Character Animator initialized");
         isWalking = false;
         FlipSprite(false);
+
+        if (Random.value < 0.5f)
+        {
+            music1Emitter.Play();
+        } else
+        {
+            music2Emitter.Play();
+        }
+    }
+
+    private void OnDisable()
+    {
+        music1Emitter.Stop();
+        music2Emitter.Stop();
     }
 
     // Update is called once per frame

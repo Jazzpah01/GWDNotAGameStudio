@@ -12,6 +12,7 @@ public class GiveGlyphEvent : QuestEvent
     {
         GlyphManager.playerGlyphs.Add(glyph);
         WaystoneUI.instance.Resetup();
+        FMODUnity.RuntimeManager.PlayOneShot(LevelManager.instance.playerPrefab.GetComponent<CharacterController>().aquiredGlyph);
         CallBack();
     }
 

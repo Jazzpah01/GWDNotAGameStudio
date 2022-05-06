@@ -60,6 +60,13 @@ MonoBehaviour:
   currentLine: 0
   delayInterval: 0.2
   lookAtPlayer: 1
+  defaultVoice:
+    Guid:
+      Data1: 244635931
+      Data2: 1210964411
+      Data3: -1230571842
+      Data4: 1256436458
+    Path: event:/Dialougue/Hermit Neutral
 --- !u!61 &7298694616215967852
 BoxCollider2D:
   m_ObjectHideFlags: 0

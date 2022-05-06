@@ -1,0 +1,50 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-526683499611701242
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3c964c08cad4f2c44b6222b5e55e4999, type: 3}
+  m_Name: StartDialogue
+  m_EditorClassIdentifier: 
+  questIndex: 1
+  questIncrease: 0
+  dialogue: {fileID: 11400000, guid: a0805e72491264e48954ff9c22e85c37, type: 2}
+  npcPrefab: {fileID: 0}
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 76812cc4cf143ee40a123a38a320e2de, type: 3}
+  m_Name: Skull
+  m_EditorClassIdentifier: 
+  customEditing: 1
+  questEvents:
+  - {fileID: 4993975373206828989}
+  - {fileID: -526683499611701242}
+--- !u!114 &4993975373206828989
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 62426580d6b6b304898bb26ac02fb2a3, type: 3}
+  m_Name: SetInteractable
+  m_EditorClassIdentifier: 
+  questIndex: 0
+  questIncrease: 1
+  interactableObject: {fileID: 3726393918471186588, guid: 6b3d408b51a0b45efab368e1bb29925a, type: 3}
+  setInteractable: 1

@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 079ec28394fd7604da8902c0f258cd9d, type: 3}
   m_Name: GiveGlyph
   m_EditorClassIdentifier: 
-  questIndex: 1
+  questIndex: 2
   questIncrease: 0
   glyph: {fileID: 11400000, guid: cdf2469a907c9804aa2c92605877951e, type: 2}
 --- !u!114 &-5988928378920131533
@@ -58,7 +58,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 079ec28394fd7604da8902c0f258cd9d, type: 3}
   m_Name: GiveGlyph
   m_EditorClassIdentifier: 
-  questIndex: 1
+  questIndex: 2
   questIncrease: 0
   glyph: {fileID: 11400000, guid: 8642289d9e19747d0811a4c248263909, type: 2}
 --- !u!114 &11400000
@@ -78,10 +78,27 @@ MonoBehaviour:
   - {fileID: -2868769490990174921}
   - {fileID: -5988928378920131533}
   - {fileID: 5926659682585069735}
+  - {fileID: 2720913526869253218}
   - {fileID: 2952079545680119193}
   - {fileID: -6637127320420990948}
   - {fileID: -1541259013593180954}
   - {fileID: 4239409043357921919}
+--- !u!114 &2720913526869253218
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3c964c08cad4f2c44b6222b5e55e4999, type: 3}
+  m_Name: StartDialogue
+  m_EditorClassIdentifier: 
+  questIndex: 1
+  questIncrease: 1
+  dialogue: {fileID: 11400000, guid: a0805e72491264e48954ff9c22e85c37, type: 2}
+  npcPrefab: {fileID: 0}
 --- !u!114 &2952079545680119193
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -94,7 +111,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 079ec28394fd7604da8902c0f258cd9d, type: 3}
   m_Name: GiveGlyph
   m_EditorClassIdentifier: 
-  questIndex: 1
+  questIndex: 2
   questIncrease: 0
   glyph: {fileID: 11400000, guid: 0301f76479b63394a89d420f7fc684ac, type: 2}
 --- !u!114 &4239409043357921919
@@ -109,7 +126,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 079ec28394fd7604da8902c0f258cd9d, type: 3}
   m_Name: GiveGlyph
   m_EditorClassIdentifier: 
-  questIndex: 1
+  questIndex: 2
   questIncrease: 0
   glyph: {fileID: 11400000, guid: 0f37ff6e7fd4c3b45a49fd59091b0812, type: 2}
 --- !u!114 &5926659682585069735

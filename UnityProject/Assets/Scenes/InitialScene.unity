@@ -457,6 +457,8 @@ MonoBehaviour:
   places: {fileID: 11400000, guid: ec094f54de3afdf44972ffc97a19af96, type: 2}
   initialQuests:
   - {fileID: 11400000, guid: 85f2abb236411474c945511d64fc32a3, type: 2}
+  - {fileID: 11400000, guid: d578846839b5542afabdf690282cf3a1, type: 2}
+  - {fileID: 11400000, guid: 753f1073d9cdf4b7090ddc18bc51dac3, type: 2}
 --- !u!4 &1491654869
 Transform:
   m_ObjectHideFlags: 0

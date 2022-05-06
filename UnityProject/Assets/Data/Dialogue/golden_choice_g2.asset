@@ -15,8 +15,29 @@ MonoBehaviour:
   lines:
   - isPlayer: 0
     line: Yaaas! I won because I'm pretty!
+    voice:
+      Guid:
+        Data1: 248736705
+        Data2: 1273507025
+        Data3: 1876864157
+        Data4: -1492965847
+      Path: event:/Dialougue/Golden Girls
   - isPlayer: 0
     line: Here's your carving, simp.
+    voice:
+      Guid:
+        Data1: 248736705
+        Data2: 1273507025
+        Data3: 1876864157
+        Data4: -1492965847
+      Path: event:/Dialougue/Golden Girls
   - isPlayer: 0
     line: Ditch the gold, girls. We're the turkey girls now.
+    voice:
+      Guid:
+        Data1: 248736705
+        Data2: 1273507025
+        Data3: 1876864157
+        Data4: -1492965847
+      Path: event:/Dialougue/Golden Girls
   current: -1

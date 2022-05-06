@@ -15,4 +15,11 @@ MonoBehaviour:
   lines:
   - isPlayer: 0
     line: DON'T talk to me, I need to find out where to buy a new outfit.
+    voice:
+      Guid:
+        Data1: 248736705
+        Data2: 1273507025
+        Data3: 1876864157
+        Data4: -1492965847
+      Path: event:/Dialougue/Golden Girls
   current: -1

@@ -28,6 +28,13 @@ public class Interactable : MonoBehaviour
         interactText.SetActive(false);
         playerInside = false;
         LevelManager.instance.sceneContext.AddInteractable(this);
+        if (startInteractable)
+        {
+            SetInteractable();
+        } else
+        {
+            SetUninteractable();
+        }
     }
 
     private void OnTriggerEnter2D(Collider2D collision)

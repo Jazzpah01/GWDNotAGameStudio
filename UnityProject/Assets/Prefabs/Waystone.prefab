@@ -181,10 +181,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e5b3d57936818994286a99188181c979, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ID: 
+  startInteractable: 1
+  interactOnEnter: 0
   interactText: {fileID: 2348474248349115497}
+  ID: 
   playerInside: 0
-  isInteractable: 1
+  isInteractable: 0
 --- !u!1 &1982995018691703324
 GameObject:
   m_ObjectHideFlags: 0

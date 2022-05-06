@@ -90,6 +90,7 @@ public class DialogueUI : MonoBehaviour
             Debug.Log("DialogueUI: Entering Dialogue...");
         } else if (!animActive && !dialogueActive && isEntry) // ending dialogue
         {
+            CharacterController.playerBusy = false;
             ExitUI();
             Debug.Log("DialogueUI: Finishing Dialogue...");
         }

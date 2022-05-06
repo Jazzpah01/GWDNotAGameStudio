@@ -143,13 +143,6 @@ MonoBehaviour:
       Data3: 1238089623
       Data4: -1296574310
     Path: event:/Character/Wall Bump
-  walkEvent:
-    Guid:
-      Data1: -1874089204
-      Data2: 1257187022
-      Data3: -1104084825
-      Data4: 307849288
-    Path: event:/Character/Footsteps
   walkEmitter: {fileID: -2509703402849642663}
   body: {fileID: 4509995404389645563}
   running: {fileID: 0}
@@ -159,7 +152,6 @@ MonoBehaviour:
   isInDialogue: 0
   currentQuest: 0
   isInCutscene: 0
-  footstepSpeed: 0.1
 --- !u!114 &4509995404389645563
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -526,15 +518,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 586267169695330952, guid: bdbaa0aae3afc214db102157261738cd, type: 3}
       propertyPath: m_BackGroundColor.b
-      value: 0.9050573
+      value: 0.9811321
       objectReference: {fileID: 0}
     - target: {fileID: 586267169695330952, guid: bdbaa0aae3afc214db102157261738cd, type: 3}
       propertyPath: m_BackGroundColor.g
-      value: 1
+      value: 0.85617656
       objectReference: {fileID: 0}
     - target: {fileID: 586267169695330952, guid: bdbaa0aae3afc214db102157261738cd, type: 3}
       propertyPath: m_BackGroundColor.r
-      value: 0.4575472
+      value: 0.90972894
       objectReference: {fileID: 0}
     - target: {fileID: 586267169695330954, guid: bdbaa0aae3afc214db102157261738cd, type: 3}
       propertyPath: m_Name

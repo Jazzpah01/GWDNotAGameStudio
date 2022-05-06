@@ -24,6 +24,9 @@ public class StartQuestEvent : QuestEvent
 
                 QuestManager.SubscribeEvent(questEvent);
             }
+
+            CallBack();
+            Debug.Log("Starting new quest");
         }
     }
 

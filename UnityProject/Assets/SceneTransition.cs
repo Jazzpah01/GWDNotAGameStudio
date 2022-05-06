@@ -16,6 +16,9 @@ public class SceneTransition : MonoBehaviour
     [Header("References")]
     public RectTransform subObject;
 
+    [Header("FMOD")]
+    public FMODUnity.EventReference teleport;
+
     [Header("Debug Params")]
     public float debugStartRotation;
     public float debugEndRotation;
@@ -30,6 +33,8 @@ public class SceneTransition : MonoBehaviour
     private void Start()
     {
         timePassed = 0f;
+
+        FMODUnity.RuntimeManager.PlayOneShot(teleport);
 
         // Set fading
         isFading = true;

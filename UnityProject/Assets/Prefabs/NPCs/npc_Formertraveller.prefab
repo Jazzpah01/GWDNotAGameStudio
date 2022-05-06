@@ -111,7 +111,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 03aad89612a7df54aa239a374f1f5577, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  characterName: 
+  characterName: Former Traveller
   npcPortrait: {fileID: 2570204825745611973, guid: 947d9a00622294258bda3160d7dd548d, type: 3}
   rig: {fileID: 2489913649274648707}
   hasMet: 0

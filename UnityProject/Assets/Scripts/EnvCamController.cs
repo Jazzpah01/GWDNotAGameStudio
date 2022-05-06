@@ -6,7 +6,7 @@ public class EnvCamController : MonoBehaviour
 {
     public static EnvCamController instance;
 
-    private GameObject player;
+    public GameObject player;
 
     public GameObject Background;
     public GameObject Sun;

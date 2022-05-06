@@ -78,6 +78,80 @@ MonoBehaviour:
     line: Why does it always start with an idiot and a plan
   - isPlayer: 1
     line: Does it?
-  - isPlayer: 1
+  - isPlayer: 0
     line: Absolutely!
+  - isPlayer: 1
+    line: ...
+  - isPlayer: 0
+    line: ...
+  - isPlayer: 1
+    line: ...
+  - isPlayer: 0
+    line: "He couldn\u2019t go back home and lived miserably ever after. The end."
+  - isPlayer: 1
+    line: You forgot the part where he helped the young stranger.
+  - isPlayer: 0
+    line: No, I did not. I already told you. Not happening.
+  - isPlayer: 1
+    line: "C\u2019mon old man. You know I gotta find my friend."
+  - isPlayer: 0
+    line: Did you follow anything I said? It is a dead end, kiddo.
+  - isPlayer: 1
+    line: What if it is not? I have found Tjetlik, I have found you.
+  - isPlayer: 0
+    line: SO WHAT? You got lucky.
+  - isPlayer: 1
+    line: There must be other glyphs out there.
+  - isPlayer: 0
+    line: "DON\u2019T YOU THINK I RATHER GO BACK TO MY FAMILY, IF THERE WERE?"
+  - isPlayer: 0
+    line: I am sorry. Reminiscing it all got me heated.
+  - isPlayer: 1
+    line: I know there are other glyphs out there. Kwolan got the rest.
+  - isPlayer: 0
+    line: Even if there are, I was not able to find them. What makes you think that
+      you can?
+  - isPlayer: 1
+    line: "I don\u2019t have to find them all. I can just use the ones Kwolan got
+      and wait for him to appear."
+  - isPlayer: 0
+    line: What if he never shows up?
+  - isPlayer: 1
+    line: I will wait until he does. He must be looking for me, too.
+  - isPlayer: 1
+    line: He will eventually use the same glyphs that will bring him to the same
+      place.
+  - isPlayer: 0
+    line: It is not that simple. The glyphs have their own will.
+  - isPlayer: 1
+    line: What?
+  - isPlayer: 0
+    line: "Remember, I tried to go back home but couldn\u2019t."
+  - isPlayer: 0
+    line: "Then I tried to come back here after that first time but I couldn\u2019t,
+      even though I used the same pair of glyphs."
+  - isPlayer: 1
+    line: "You\u2019re here now. "
+  - isPlayer: 0
+    line: "Don\u2019t get smart with me. You already know how I got back."
+  - isPlayer: 0
+    line: Trial and error until I got it right. If you can call this right, that
+      is.
+  - isPlayer: 1
+    line: I can do the same.
+  - isPlayer: 1
+    line: Kwolan can do the same, I will wait.
+  - isPlayer: 0
+    line: "You really care about this Kwolan, don\u2019t you?"
+  - isPlayer: 1
+    line: Yes. I guess I do.
+  - isPlayer: 0
+    line: "That settles it. I won\u2019t be able to change your mind no matter what
+      I say."
+  - isPlayer: 0
+    line: Meet me at the waystone.
+  - isPlayer: 0
+    line: 
+  - isPlayer: 0
+    line: 
   current: -1

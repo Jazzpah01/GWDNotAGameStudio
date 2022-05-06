@@ -460,8 +460,8 @@ MonoBehaviour:
     way. He started to visit the town regularly and eventually decided to settle
     in the town.
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: f9d7367acb2623340a5f197224252459, type: 2}
-  m_sharedMaterial: {fileID: -1381699226790166955, guid: f9d7367acb2623340a5f197224252459, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 3284424074fd0cd47b0337357ef8905f, type: 2}
+  m_sharedMaterial: {fileID: 8483786293438631873, guid: 3284424074fd0cd47b0337357ef8905f, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -497,7 +497,7 @@ MonoBehaviour:
   m_textAlignment: 65535
   m_characterSpacing: 0
   m_wordSpacing: 0
-  m_lineSpacing: 0
+  m_lineSpacing: -50
   m_lineSpacingMax: 0
   m_paragraphSpacing: 0
   m_charWidthMaxAdj: 0
@@ -622,6 +622,28 @@ MonoBehaviour:
   landscapeSlot: {fileID: 0}
   biomeSlot: {fileID: 0}
   playerItemPrefab: {fileID: 8587204107816313666, guid: 68c3fa90d7b650648a31b02dcedbd6f8, type: 3}
+  interact:
+    Guid:
+      Data1: -1839576300
+      Data2: 1327057923
+      Data3: 174364302
+      Data4: 1783670800
+    Path: event:/Glyphs/Interaction
+  gainGlyph:
+    Guid:
+      Data1: -1656270151
+      Data2: 1147754346
+      Data3: -233533259
+      Data4: -1952723351
+    Path: event:/Glyphs/Aqusistion
+  transition:
+    Guid:
+      Data1: 1722716416
+      Data2: 1277952784
+      Data3: -1663111761
+      Data4: -97957680
+    Path: event:/Character/Teleport
+  hoverEmitter: {fileID: 0}
 --- !u!1 &7842467871881070667
 GameObject:
   m_ObjectHideFlags: 0

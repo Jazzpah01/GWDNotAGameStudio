@@ -15,8 +15,29 @@ MonoBehaviour:
   lines:
   - isPlayer: 0
     line: 'I''m blue Da ba dee da ba di '
+    voice:
+      Guid:
+        Data1: 848494061
+        Data2: 1201465500
+        Data3: -1062611790
+        Data4: 1225344596
+      Path: event:/Dialougue/Bard Sad
   - isPlayer: 0
     line: 'If I was green I would die Da ba dee da ba di '
+    voice:
+      Guid:
+        Data1: 848494061
+        Data2: 1201465500
+        Data3: -1062611790
+        Data4: 1225344596
+      Path: event:/Dialougue/Bard Sad
   - isPlayer: 0
     line: Sure.
+    voice:
+      Guid:
+        Data1: -2053084555
+        Data2: 1078062801
+        Data3: 1669277101
+        Data4: 90365669
+      Path: event:/Dialougue/Oosta Sad
   current: -1

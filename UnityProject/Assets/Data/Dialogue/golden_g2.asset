@@ -16,4 +16,11 @@ MonoBehaviour:
   - isPlayer: 0
     line: You can have a stone carving of me and my perfect body. So you can always
       worship me
+    voice:
+      Guid:
+        Data1: 248736705
+        Data2: 1273507025
+        Data3: 1876864157
+        Data4: -1492965847
+      Path: event:/Dialougue/Golden Girls
   current: -1

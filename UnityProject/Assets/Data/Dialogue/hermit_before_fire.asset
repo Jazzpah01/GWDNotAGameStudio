@@ -15,14 +15,56 @@ MonoBehaviour:
   lines:
   - isPlayer: 0
     line: "Hey, you! Don\u2019t just stand there! Help me!"
+    voice:
+      Guid:
+        Data1: 1549764904
+        Data2: 1190620573
+        Data3: 1391422363
+        Data4: -119384019
+      Path: event:/Dialougue/Hermit Upset
   - isPlayer: 1
     line: What do I do?
+    voice:
+      Guid:
+        Data1: 291328159
+        Data2: 1203387725
+        Data3: 2070210948
+        Data4: -1867150278
+      Path: event:/Dialougue/Ootsa Neutral
   - isPlayer: 0
     line: Give me a morale boost? What do you think? Grab that bucket.
+    voice:
+      Guid:
+        Data1: 1549764904
+        Data2: 1190620573
+        Data3: 1391422363
+        Data4: -119384019
+      Path: event:/Dialougue/Hermit Upset
   - isPlayer: 1
     line: You are not making this easy.
+    voice:
+      Guid:
+        Data1: -166340523
+        Data2: 1132535540
+        Data3: -1731428675
+        Data4: -909582648
+      Path: event:/Dialougue/Ootsa Annoyed
   - isPlayer: 0
     line: I am sorry, could you kindly grab the damned bucket and help?
+    voice:
+      Guid:
+        Data1: 244635931
+        Data2: 1210964411
+        Data3: -1230571842
+        Data4: 1256436458
+      Path: event:/Dialougue/Hermit Neutral
   - isPlayer: 1
     line: Sure thing!
+    voice:
+      Guid:
+        Data1: 291328159
+        Data2: 1203387725
+        Data3: 2070210948
+        Data4: -1867150278
+      Path: event:/Dialougue/Ootsa Neutral
   current: -1

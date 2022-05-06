@@ -15,15 +15,57 @@ MonoBehaviour:
   lines:
   - isPlayer: 1
     line: Tizoc?
+    voice:
+      Guid:
+        Data1: 291328159
+        Data2: 1203387725
+        Data3: 2070210948
+        Data4: -1867150278
+      Path: event:/Dialougue/Ootsa Neutral
   - isPlayer: 0
     line: Huh?
+    voice:
+      Guid:
+        Data1: 357240455
+        Data2: 1310023852
+        Data3: 1797106579
+        Data4: 1657866820
+      Path: event:/Dialougue/Guard
   - isPlayer: 1
-    line: Are you Name?
+    line: Are you Tizoc?
+    voice:
+      Guid:
+        Data1: 291328159
+        Data2: 1203387725
+        Data3: 2070210948
+        Data4: -1867150278
+      Path: event:/Dialougue/Ootsa Neutral
   - isPlayer: 0
     line: Who is asking?
+    voice:
+      Guid:
+        Data1: 357240455
+        Data2: 1310023852
+        Data3: 1797106579
+        Data4: 1657866820
+      Path: event:/Dialougue/Guard
   - isPlayer: 1
     line: "The name is Ootsa. I heard\u2026"
+    voice:
+      Guid:
+        Data1: 291328159
+        Data2: 1203387725
+        Data3: 2070210948
+        Data4: -1867150278
+      Path: event:/Dialougue/Ootsa Neutral
   - isPlayer: 0
     line: "I don\u2019t know what you heard but I don\u2019t have it. Good day to
       you!"
+    voice:
+      Guid:
+        Data1: 357240455
+        Data2: 1310023852
+        Data3: 1797106579
+        Data4: 1657866820
+      Path: event:/Dialougue/Guard
   current: 0

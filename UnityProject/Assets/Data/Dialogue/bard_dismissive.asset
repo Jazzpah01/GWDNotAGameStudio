@@ -15,8 +15,29 @@ MonoBehaviour:
   lines:
   - isPlayer: 0
     line: Have you found Kahmora?
+    voice:
+      Guid:
+        Data1: 0
+        Data2: 0
+        Data3: 0
+        Data4: 0
+      Path: 
   - isPlayer: 0
     line: I said bye to thee.
+    voice:
+      Guid:
+        Data1: 0
+        Data2: 0
+        Data3: 0
+        Data4: 0
+      Path: 
   - isPlayer: 0
     line: Thank thou!
+    voice:
+      Guid:
+        Data1: 0
+        Data2: 0
+        Data3: 0
+        Data4: 0
+      Path: 
   current: -1

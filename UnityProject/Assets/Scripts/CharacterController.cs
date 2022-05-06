@@ -39,6 +39,8 @@ public class CharacterController : MonoBehaviour
 
     public static CharacterController instance;
 
+    public static bool playerBusy = false;
+
 
     private bool Flipped
     {

@@ -6,12 +6,15 @@ using UnityEngine;
 [RequireComponent(typeof(BoxCollider2D))]
 public class Interactable : MonoBehaviour
 {
-    public string ID;
+    [Header("Options")]
+    public bool startInteractable = false;
+    public bool interactOnEnter = false;
 
     [Header("References")]
     public GameObject interactText;
 
-
+    [Header("Debug")]
+    public string ID;
     public bool playerInside = false;
     public bool isInteractable;
 
@@ -34,7 +37,16 @@ public class Interactable : MonoBehaviour
 
         playerInside = true;
         if (isInteractable)
-            interactText.SetActive(true);
+        {
+            if (interactOnEnter)
+            {
+                Interact();
+            } else
+            {
+                interactText.SetActive(true);
+            }
+        }
+            
 
         if (interactant != null)
             interactant.InRange = true;
@@ -54,24 +66,11 @@ public class Interactable : MonoBehaviour
 
     private void Update()
     {
-        if (!(playerInside && Input.GetKeyDown(KeyCode.E) && isInteractable))
+        if (!(playerInside && Input.GetKeyDown(KeyCode.E) && isInteractable && !CharacterController.playerBusy))
             return;
 
-        playerInside = false;
-        interactText.SetActive(false);
-
         // Player hit collider AND pressed E
-        if (interactant == null)
-        {
-            if (callback != null)
-                callback();
-        }
-        else
-        {
-            if (callback != null)
-                callback();
-            interactant.Interact();
-        }
+        Interact();
     }
 
     public void SetInteractable(Action callback = null)
@@ -87,5 +86,21 @@ public class Interactable : MonoBehaviour
         this.callback = null;
         this.isInteractable = false;
         this.interactText.SetActive(false);
+    }
+
+    public void Interact()
+    {
+        interactText.SetActive(false);
+        if (interactant == null)
+        {
+            if (callback != null)
+                callback();
+        }
+        else
+        {
+            if (callback != null)
+                callback();
+            interactant.Interact();
+        }
     }
 }

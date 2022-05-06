@@ -105,6 +105,7 @@ public class DialogueUI : MonoBehaviour
         if (!dialogueActive && !animActive && !isEntry)
         {
             dialogueActive = true;
+            CharacterController.playerBusy = true;
             Debug.Log("DialogueUI: Dialogue successfully forced active!");
         } else if (dialogueActive)
         {
@@ -173,6 +174,7 @@ public class DialogueUI : MonoBehaviour
             dialogueActive = false;
             dialogue.SetComplete(true);
             if (callback != null) callback(); //callback for quest progression
+            CharacterController.playerBusy = false;
         } else
         {
             dialogue.current++;

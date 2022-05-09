@@ -1,0 +1,68 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-3544071338545727260
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 34046101b1f069c428a58bb51b915585, type: 3}
+  m_Name: SetDialogue
+  m_EditorClassIdentifier: 
+  questIndex: 1
+  questIncrease: 0
+  npcPrefab: {fileID: 7720447589996262763, guid: 78360422be2474665865ef7e940fe46a, type: 3}
+  dialogue: {fileID: 11400000, guid: 30565082e947c4bffa482b819e90b4e3, type: 2}
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 76812cc4cf143ee40a123a38a320e2de, type: 3}
+  m_Name: StoneOracle
+  m_EditorClassIdentifier: 
+  customEditing: 1
+  questEvents:
+  - {fileID: 4656545076153397529}
+  - {fileID: 4067190928529101137}
+  - {fileID: -3544071338545727260}
+--- !u!114 &4067190928529101137
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 34046101b1f069c428a58bb51b915585, type: 3}
+  m_Name: SetDialogue
+  m_EditorClassIdentifier: 
+  questIndex: 0
+  questIncrease: 1
+  npcPrefab: {fileID: 7720447589996262763, guid: 78360422be2474665865ef7e940fe46a, type: 3}
+  dialogue: {fileID: 11400000, guid: f9b43757b6bd44b1d87bbb4e11abb920, type: 2}
+--- !u!114 &4656545076153397529
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 12a88f59804a1164699d9e31964ad621, type: 3}
+  m_Name: EnterScene
+  m_EditorClassIdentifier: 
+  questIndex: 0
+  questIncrease: 0
+  landscape: {fileID: 11400000, guid: caa56952924210c419bb3e0146bf0640, type: 2}
+  biome: {fileID: 11400000, guid: 6d5bf97df702444cdb6b05f0c5a3ad88, type: 2}
+  time: {fileID: 11400000, guid: 90e1f6d6cc3d1c046809ec48e8c7710d, type: 2}

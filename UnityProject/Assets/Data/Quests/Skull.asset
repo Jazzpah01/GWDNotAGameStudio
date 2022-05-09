@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   questIndex: 1
   questIncrease: 0
-  dialogue: {fileID: 11400000, guid: a0805e72491264e48954ff9c22e85c37, type: 2}
+  dialogue: {fileID: 11400000, guid: cdbd9015276b94af4ac5ae8ec2cc89a0, type: 2}
   npcPrefab: {fileID: 0}
 --- !u!114 &11400000
 MonoBehaviour:

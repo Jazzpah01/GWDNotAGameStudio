@@ -40,3 +40,21 @@ MonoBehaviour:
   - prefab: {fileID: 3830845542670251409, guid: 9420b1668a59848fd8924935bbbc1217, type: 3}
     offset: {x: 0, y: 0}
     weight: 0.8
+  - prefab: {fileID: 8394077003710325021, guid: 608dc2894ee014459a312727dba10dcc, type: 3}
+    offset: {x: 0, y: 0}
+    weight: 0.5
+  - prefab: {fileID: 4588034694050514462, guid: 1207d237da5f248268404a7f3cde9e94, type: 3}
+    offset: {x: 0, y: 0}
+    weight: 0.5
+  - prefab: {fileID: 7404856131701031803, guid: d5e8b7838227049a892672034a2e2531, type: 3}
+    offset: {x: 0, y: 0}
+    weight: 0.55
+  - prefab: {fileID: 726947072609307256, guid: 0bec9d07c6658482abfe8ab291f4686e, type: 3}
+    offset: {x: 0, y: 0}
+    weight: 0.474
+  - prefab: {fileID: 3990292439458779358, guid: c9eff7a0de78b4636b01f9372be91c4c, type: 3}
+    offset: {x: 0, y: 0}
+    weight: 0.55
+  - prefab: {fileID: 5040627475286125491, guid: 03fadf46eb42b498cbf21335cb9e35ca, type: 3}
+    offset: {x: 0, y: 0}
+    weight: 0.457

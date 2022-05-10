@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   icon: {fileID: 21300000, guid: b26bc0c1127463c4cbfcbf2af763ca20, type: 3}
   seed: 30
-  spawnrate: 1
+  spawnrate: 2
   foreGround:
   - prefab: {fileID: 105013297615864016, guid: e91a6932d209b4dc7ab23880bc6c9aec, type: 3}
     offset: {x: 0, y: 0}
@@ -36,4 +36,19 @@ MonoBehaviour:
     weight: 0.2
   - prefab: {fileID: 7453334811893153350, guid: eba7899196ec540449d2df04b0ddccbf, type: 3}
     offset: {x: 0, y: 0}
-    weight: 0.1
+    weight: 0.301
+  - prefab: {fileID: 3992269581648398497, guid: 0ac105ee2eceb4007a1ddeff66e68310, type: 3}
+    offset: {x: 0, y: 0}
+    weight: 0.522
+  - prefab: {fileID: 3387306187609559991, guid: f76d4e1cf8cd94b47864a18a99804dbe, type: 3}
+    offset: {x: 0, y: 0}
+    weight: 0.574
+  - prefab: {fileID: 590006248557722658, guid: 833a3421fb2674797a957ea7aeb3dac1, type: 3}
+    offset: {x: 0, y: 0}
+    weight: 0.491
+  - prefab: {fileID: 245057483225117375, guid: a26a7ec73745a45e2a2c11a2674a59ef, type: 3}
+    offset: {x: 0, y: 0}
+    weight: 0.584
+  - prefab: {fileID: 8582483096871154156, guid: acff586aab7704e71bd21b2e9b6f3e04, type: 3}
+    offset: {x: 0, y: 0}
+    weight: 0.491

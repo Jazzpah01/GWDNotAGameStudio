@@ -523,11 +523,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7592945159251958527, guid: 292483c3b6ee26a459c85199c81396f2, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 9.06
+      value: 9.03
       objectReference: {fileID: 0}
     - target: {fileID: 7592945159251958527, guid: 292483c3b6ee26a459c85199c81396f2, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.15
+      value: -0.97
       objectReference: {fileID: 0}
     - target: {fileID: 7592945159251958527, guid: 292483c3b6ee26a459c85199c81396f2, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1050,11 +1050,11 @@ PrefabInstance:
     - target: {fileID: 6384632770917283716, guid: 8ab6869a23b4c1143b8fa1a847ea70a0, type: 3}
       propertyPath: time
       value: 
-      objectReference: {fileID: 11400000, guid: 744a2e9ef0b94bb489b745c1eeb6556f, type: 2}
+      objectReference: {fileID: 11400000, guid: c4ef068ec96997a4181b8dd407818fb6, type: 2}
     - target: {fileID: 6384632770917283716, guid: 8ab6869a23b4c1143b8fa1a847ea70a0, type: 3}
       propertyPath: biome
       value: 
-      objectReference: {fileID: 11400000, guid: dd0fe0b9a6f069b42ab01f63d73696f4, type: 2}
+      objectReference: {fileID: 11400000, guid: 8642289d9e19747d0811a4c248263909, type: 2}
     - target: {fileID: 6384632770917283716, guid: 8ab6869a23b4c1143b8fa1a847ea70a0, type: 3}
       propertyPath: loadedTime
       value: 

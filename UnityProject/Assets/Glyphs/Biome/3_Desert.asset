@@ -48,16 +48,16 @@ MonoBehaviour:
     weight: 0.8
   - prefab: {fileID: 7033906810731616898, guid: c82d75f47f97c472e9beec714cdebda8, type: 3}
     offset: {x: 0, y: 0}
-    weight: 0.596
+    weight: 0.334
   - prefab: {fileID: 8319072980544420000, guid: c94ccfe872ed244269505fae502b98f8, type: 3}
     offset: {x: 0, y: 0}
-    weight: 0.526
+    weight: 0.346
   - prefab: {fileID: 5860830175559416685, guid: be296ee07cab9486a8756b904a0537f2, type: 3}
     offset: {x: 0, y: 0}
-    weight: 0.543
+    weight: 0.334
   - prefab: {fileID: 2811148461436457541, guid: fbfadadbbb63b49b998e075dd23bf071, type: 3}
     offset: {x: 0, y: 0}
-    weight: 0.485
+    weight: 0.328
   - prefab: {fileID: 1293979471149309746, guid: f0a13acd9543c4c2092b1aef66aca035, type: 3}
     offset: {x: 0, y: 0}
-    weight: 0.392
+    weight: 0.299

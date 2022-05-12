@@ -32,8 +32,8 @@ MonoBehaviour:
         Data4: -909582648
       Path: event:/Dialougue/Ootsa Annoyed
   - isPlayer: 0
-    line: My apologies! I forgot how to interact with real people. The manners are
-      not as sharp as they used to be.
+    line: 'My apologies! I tend to forget my manners when I mainly talk with the
+      rude raccoons. '
     voice:
       Guid:
         Data1: 244635931
@@ -42,7 +42,7 @@ MonoBehaviour:
         Data4: 1256436458
       Path: event:/Dialougue/Hermit Neutral
   - isPlayer: 1
-    line: "What do you mean? You can\u2019t be here all alone."
+    line: No one ever comes by?
     voice:
       Guid:
         Data1: 291328159
@@ -51,7 +51,8 @@ MonoBehaviour:
         Data4: -1867150278
       Path: event:/Dialougue/Ootsa Neutral
   - isPlayer: 0
-    line: "Yup, not a soul but good ol\u2019 me."
+    line: Oh yes, the local turkey Watotl always has an insightful gobble and the
+      squirrels crack me up with their nut-nut-jokes.
     voice:
       Guid:
         Data1: 244635931
@@ -60,7 +61,7 @@ MonoBehaviour:
         Data4: 1256436458
       Path: event:/Dialougue/Hermit Neutral
   - isPlayer: 1
-    line: That cannot be true, how do you even stay alive? Stay sane?
+    line: What about people? I'm looking for my friend who might have come by here.
     voice:
       Guid:
         Data1: 291328159
@@ -69,7 +70,8 @@ MonoBehaviour:
         Data4: -1867150278
       Path: event:/Dialougue/Ootsa Neutral
   - isPlayer: 0
-    line: What an odd question? There are animals and imaginary friends, of course!
+    line: "It's always hard to tell if they're real or not. But no, so far you're
+      the only soul who has appeared from\u2026"
     voice:
       Guid:
         Data1: 1549764904
@@ -78,7 +80,7 @@ MonoBehaviour:
         Data4: -119384019
       Path: event:/Dialougue/Hermit Upset
   - isPlayer: 0
-    line: Did you know turkeys tend to be very well-spoken?
+    line: You're a Traveller! I also travelled once and ended up here!
     voice:
       Guid:
         Data1: 244635931
@@ -87,7 +89,7 @@ MonoBehaviour:
         Data4: 1256436458
       Path: event:/Dialougue/Hermit Neutral
   - isPlayer: 1
-    line: I did not know that.
+    line: So you know how to use the pebbles?
     voice:
       Guid:
         Data1: -166340523
@@ -96,7 +98,8 @@ MonoBehaviour:
         Data4: -909582648
       Path: event:/Dialougue/Ootsa Annoyed
   - isPlayer: 0
-    line: Squirrels tell the best jokes but raccoons are plain rude.
+    line: Sun god no, I just housed a Traveller in my village. One day they came,
+      the next day they were gone. The others thought they were a ghost.
     voice:
       Guid:
         Data1: 244635931
@@ -104,9 +107,9 @@ MonoBehaviour:
         Data3: -1230571842
         Data4: 1256436458
       Path: event:/Dialougue/Hermit Neutral
-  - isPlayer: 1
-    line: That is very enlightening but are you sure you have not seen anyone else?
-      I am looking for my friend.
+  - isPlayer: 0
+    line: "The Traveller Tizoc eventually decided to settle in the village and helped
+      me escape from it when things got\u2026 hectic. "
     voice:
       Guid:
         Data1: -2053084555
@@ -114,9 +117,8 @@ MonoBehaviour:
         Data3: 1669277101
         Data4: 90365669
       Path: event:/Dialougue/Oosta Sad
-  - isPlayer: 0
-    line: Child, I may not discern imaginary from actual but you are the only person
-      I have seen this week.
+  - isPlayer: 1
+    line: Some rude raccoons invaded your home?
     voice:
       Guid:
         Data1: 1549764904
@@ -124,9 +126,8 @@ MonoBehaviour:
         Data3: 1391422363
         Data4: -119384019
       Path: event:/Dialougue/Hermit Upset
-  - isPlayer: 1
-    line: 'That is strange. My friend just disappeared after telling me to use these
-      pebbles. '
+  - isPlayer: 0
+    line: 'Long story short: I don''t wanna tell.'
     voice:
       Guid:
         Data1: -2053084555
@@ -135,8 +136,8 @@ MonoBehaviour:
         Data4: 90365669
       Path: event:/Dialougue/Oosta Sad
   - isPlayer: 0
-    line: "You placed them in a strange looking rock and you found yourself here,
-      didn\u2019t you?"
+    line: I've only told the turkey, but I know he can keep a secret, so no point
+      in asking him.
     voice:
       Guid:
         Data1: 244635931
@@ -145,7 +146,7 @@ MonoBehaviour:
         Data4: 1256436458
       Path: event:/Dialougue/Hermit Neutral
   - isPlayer: 1
-    line: How did you know?
+    line: Fine. But the Traveller, how do I get to them?
     voice:
       Guid:
         Data1: 291328159
@@ -154,7 +155,8 @@ MonoBehaviour:
         Data4: -1867150278
       Path: event:/Dialougue/Ootsa Neutral
   - isPlayer: 0
-    line: That is how I got here, myself.
+    line: You helped put out the fire, so have this. Tizoc gave me some glyphs if
+      I ever  wanted to come back, but I'm not ready. You need it more than I do.
     voice:
       Guid:
         Data1: 244635931
@@ -163,7 +165,7 @@ MonoBehaviour:
         Data4: 1256436458
       Path: event:/Dialougue/Hermit Neutral
   - isPlayer: 1
-    line: So you know how to go back. Tell me how to do it.
+    line: Thank you!
     voice:
       Guid:
         Data1: 1898231120
@@ -172,7 +174,7 @@ MonoBehaviour:
         Data4: -71516138
       Path: event:/Dialougue/Ootsa Yelling
   - isPlayer: 0
-    line: Easy, there. I do not know how to travel with the glyphs.
+    line: Tell them that Tjetlik sent you!
     voice:
       Guid:
         Data1: 244635931
@@ -180,137 +182,4 @@ MonoBehaviour:
         Data3: -1230571842
         Data4: 1256436458
       Path: event:/Dialougue/Hermit Neutral
-  - isPlayer: 0
-    line: I just needed a place to escape and I had been told to use these two to
-      come here.
-    voice:
-      Guid:
-        Data1: 244635931
-        Data2: 1210964411
-        Data3: -1230571842
-        Data4: 1256436458
-      Path: event:/Dialougue/Hermit Neutral
-  - isPlayer: 1
-    line: What did you run from?
-    voice:
-      Guid:
-        Data1: 291328159
-        Data2: 1203387725
-        Data3: 2070210948
-        Data4: -1867150278
-      Path: event:/Dialougue/Ootsa Neutral
-  - isPlayer: 0
-    line: "That is a very long story that I don\u2019t feel ready to tell."
-    voice:
-      Guid:
-        Data1: 1549764904
-        Data2: 1190620573
-        Data3: 1391422363
-        Data4: -119384019
-      Path: event:/Dialougue/Hermit Upset
-  - isPlayer: 1
-    line: Understandable. You said you had been told to use these glyphs. Who told
-      you that?
-    voice:
-      Guid:
-        Data1: 291328159
-        Data2: 1203387725
-        Data3: 2070210948
-        Data4: -1867150278
-      Path: event:/Dialougue/Ootsa Neutral
-  - isPlayer: 0
-    line: 'Years ago, some guy appeared in my town. He asked for food and a place
-      to stay so I let him stay for the night. '
-    voice:
-      Guid:
-        Data1: 244635931
-        Data2: 1210964411
-        Data3: -1230571842
-        Data4: 1256436458
-      Path: event:/Dialougue/Hermit Neutral
-  - isPlayer: 0
-    line: 'He disappeared the very next day. Everyone thought he was a ghost but
-      he was merely a traveller who lost his way. '
-    voice:
-      Guid:
-        Data1: 244635931
-        Data2: 1210964411
-        Data3: -1230571842
-        Data4: 1256436458
-      Path: event:/Dialougue/Hermit Neutral
-  - isPlayer: 0
-    line: He started to visit the town regularly and eventually decided to settle
-      in the town.
-    voice:
-      Guid:
-        Data1: 244635931
-        Data2: 1210964411
-        Data3: -1230571842
-        Data4: 1256436458
-      Path: event:/Dialougue/Hermit Neutral
-  - isPlayer: 1
-    line: 'Where is this person? '
-    voice:
-      Guid:
-        Data1: 291328159
-        Data2: 1203387725
-        Data3: 2070210948
-        Data4: -1867150278
-      Path: event:/Dialougue/Ootsa Neutral
-  - isPlayer: 0
-    line: They are still living in the town I assume.
-    voice:
-      Guid:
-        Data1: 244635931
-        Data2: 1210964411
-        Data3: -1230571842
-        Data4: 1256436458
-      Path: event:/Dialougue/Hermit Neutral
-  - isPlayer: 1
-    line: I need to talk to them. I gotta find Kwolan.
-    voice:
-      Guid:
-        Data1: 291328159
-        Data2: 1203387725
-        Data3: 2070210948
-        Data4: -1867150278
-      Path: event:/Dialougue/Ootsa Neutral
-  - isPlayer: 0
-    line: You helped me, kid. Let me help you back
-    voice:
-      Guid:
-        Data1: 244635931
-        Data2: 1210964411
-        Data3: -1230571842
-        Data4: 1256436458
-      Path: event:/Dialougue/Hermit Neutral
-  - isPlayer: 0
-    line: He gave me a third glyph, in case I changed my mind, telling me to use
-      it whenever I was ready to go back to the town.
-    voice:
-      Guid:
-        Data1: 244635931
-        Data2: 1210964411
-        Data3: -1230571842
-        Data4: 1256436458
-      Path: event:/Dialougue/Hermit Neutral
-  - isPlayer: 0
-    line: I am not ready and you need this more than I do. Go find him and tell them
-      Tjetlik sent you.
-    voice:
-      Guid:
-        Data1: 1549764904
-        Data2: 1190620573
-        Data3: 1391422363
-        Data4: -119384019
-      Path: event:/Dialougue/Hermit Upset
-  - isPlayer: 1
-    line: Thank you!
-    voice:
-      Guid:
-        Data1: 291328159
-        Data2: 1203387725
-        Data3: 2070210948
-        Data4: -1867150278
-      Path: event:/Dialougue/Ootsa Neutral
   current: -1

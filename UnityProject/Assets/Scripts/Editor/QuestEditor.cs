@@ -191,6 +191,8 @@ public class QuestEditor : Editor
                 return CreateInstance<StartQuestEvent>();
             case QuestEventType.StartDialogue:
                 return CreateInstance<StartDialogueEvent>();
+            case QuestEventType.Move:
+                return CreateInstance<MoveQuestEvent>();
             default:
                 throw new Exception("Event isn't implemented!");
         }

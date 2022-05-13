@@ -14,43 +14,132 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   lines:
   - isPlayer: 0
-    line: "You already have an idea about how the waystones work already but let\u2019s
-      go over it once again."
-  - isPlayer: 0
     line: The waystone needs two glyphs to be activated. One of each type.
+    voice:
+      Guid:
+        Data1: 0
+        Data2: 0
+        Data3: 0
+        Data4: 0
+      Path: 
   - isPlayer: 0
     line: This will make you travel somewhere not here.
+    voice:
+      Guid:
+        Data1: 0
+        Data2: 0
+        Data3: 0
+        Data4: 0
+      Path: 
   - isPlayer: 1
     line: Yes, yes! Is that all?
+    voice:
+      Guid:
+        Data1: 0
+        Data2: 0
+        Data3: 0
+        Data4: 0
+      Path: 
   - isPlayer: 0
-    line: Patience is the key. You have to be patient.
-  - isPlayer: 1
-    line: Sorry, carry on please.
-  - isPlayer: 0
-    line: You will get lost. Frequently. That is when patience will help.
+    line: You will get lost. Frequently. Patience is the key.
+    voice:
+      Guid:
+        Data1: 0
+        Data2: 0
+        Data3: 0
+        Data4: 0
+      Path: 
   - isPlayer: 0
     line: I suggest you keep a tally of the places you have been. Try to recognise
       patterns.
+    voice:
+      Guid:
+        Data1: 0
+        Data2: 0
+        Data3: 0
+        Data4: 0
+      Path: 
   - isPlayer: 0
     line: Take mental notes. Literal notes would not hurt either.
+    voice:
+      Guid:
+        Data1: 0
+        Data2: 0
+        Data3: 0
+        Data4: 0
+      Path: 
   - isPlayer: 1
     line: You are making this more complicated than it is.
+    voice:
+      Guid:
+        Data1: 0
+        Data2: 0
+        Data3: 0
+        Data4: 0
+      Path: 
   - isPlayer: 0
     line: It is complicated. Never underestimate the will of the waystone.
+    voice:
+      Guid:
+        Data1: 0
+        Data2: 0
+        Data3: 0
+        Data4: 0
+      Path: 
   - isPlayer: 1
     line: You keep talking about them as if they are alive.
+    voice:
+      Guid:
+        Data1: 0
+        Data2: 0
+        Data3: 0
+        Data4: 0
+      Path: 
   - isPlayer: 0
     line: Maybe they are. After all, they decide for you.
+    voice:
+      Guid:
+        Data1: 0
+        Data2: 0
+        Data3: 0
+        Data4: 0
+      Path: 
   - isPlayer: 0
     line: Get this! Sometimes you will want to return to a place but; two plus two
       sometimes equals five.
+    voice:
+      Guid:
+        Data1: 0
+        Data2: 0
+        Data3: 0
+        Data4: 0
+      Path: 
   - isPlayer: 1
     line: Not sure, I follow.
+    voice:
+      Guid:
+        Data1: 0
+        Data2: 0
+        Data3: 0
+        Data4: 0
+      Path: 
   - isPlayer: 0
     line: A pair of glyphs might not always bring you in the same place that they
       brought you before.
-  - isPlayer: 0
-    line: "You\u2019ll see what I mean. Be careful. Be patient! Be aware!"
+    voice:
+      Guid:
+        Data1: 0
+        Data2: 0
+        Data3: 0
+        Data4: 0
+      Path: 
   - isPlayer: 0
     line: Alas, it is time for me to part with these.
+    voice:
+      Guid:
+        Data1: 0
+        Data2: 0
+        Data3: 0
+        Data4: 0
+      Path: 
   current: -1

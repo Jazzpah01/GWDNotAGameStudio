@@ -13,45 +13,9 @@ MonoBehaviour:
   m_Name: ft_glyphs
   m_EditorClassIdentifier: 
   lines:
-  - isPlayer: 1
-    line: Thank you for everything!
-    voice:
-      Guid:
-        Data1: -2053084555
-        Data2: 1078062801
-        Data3: 1669277101
-        Data4: 90365669
-      Path: event:/Dialougue/Oosta Sad
-  - isPlayer: 0
-    line: "Don\u2019t thank me, I am not doing a good deed, sending you to find something
-      you will not."
-    voice:
-      Guid:
-        Data1: 357240455
-        Data2: 1310023852
-        Data3: 1797106579
-        Data4: 1657866820
-      Path: event:/Dialougue/Guard
-  - isPlayer: 1
-    line: I will.
-    voice:
-      Guid:
-        Data1: 291328159
-        Data2: 1203387725
-        Data3: 2070210948
-        Data4: -1867150278
-      Path: event:/Dialougue/Ootsa Neutral
-  - isPlayer: 0
-    line: "I hope you will. Before you go there is something\u2026"
-    voice:
-      Guid:
-        Data1: 357240455
-        Data2: 1310023852
-        Data3: 1797106579
-        Data4: 1657866820
-      Path: event:/Dialougue/Guard
   - isPlayer: 0
     line: If you happen to find my hometown, can you find my family and tell my story?
+      We all wear this pendant. It is a family thing. Tell them I'm sorry.
     voice:
       Guid:
         Data1: 357240455
@@ -59,31 +23,4 @@ MonoBehaviour:
         Data3: 1797106579
         Data4: 1657866820
       Path: event:/Dialougue/Guard
-  - isPlayer: 1
-    line: How am I going to recognise them?
-    voice:
-      Guid:
-        Data1: 291328159
-        Data2: 1203387725
-        Data3: 2070210948
-        Data4: -1867150278
-      Path: event:/Dialougue/Ootsa Neutral
-  - isPlayer: 0
-    line: We all wear this pendant. It is a family thing. Tell them I'm sorry.
-    voice:
-      Guid:
-        Data1: 357240455
-        Data2: 1310023852
-        Data3: 1797106579
-        Data4: 1657866820
-      Path: event:/Dialougue/Guard
-  - isPlayer: 1
-    line: Sure thing, Tizoc! Take care.
-    voice:
-      Guid:
-        Data1: 291328159
-        Data2: 1203387725
-        Data3: 2070210948
-        Data4: -1867150278
-      Path: event:/Dialougue/Ootsa Neutral
   current: -1

@@ -63,4 +63,20 @@ public class Region : MonoBehaviour
             }
         }
     }
+
+    public static bool Collision(Region r1, Region r2)
+    {
+        if (r1.positionAxis != r2.positionAxis)
+            return false;
+
+        if (r1.PositionMin.x < r2.PositionMin.x + r2.Size.x &&
+            r1.PositionMin.x + r1.Size.x > r2.PositionMin.x &&
+            r1.PositionMin.y < r2.PositionMin.y + r2.Size.y &&
+            r1.PositionMin.y + r1.Size.y > r2.PositionMin.y)
+        {
+            return true;
+        }
+
+        return false;
+    }
 }

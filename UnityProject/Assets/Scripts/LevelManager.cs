@@ -64,6 +64,8 @@ public class LevelManager : MonoBehaviour
 
         DOTween.Init(); // empty param = default settings
         //SetupGlyphs();
+        LoadPlace();
+        SpawnRegionCollisions();
         PopulateScene();
         SetPlaceNPCs();
         ExecuteQuestEvents();
@@ -94,8 +96,6 @@ public class LevelManager : MonoBehaviour
 
     public void PopulateScene()
     {
-        backgroundRegions = spawnRegions.GetComponentsInChildren<SpawnRegion>();
-
         // Spawn player
         GameObject player = Instantiate(playerPrefab);
         GameManager.instance.player = player;
@@ -157,7 +157,10 @@ public class LevelManager : MonoBehaviour
                 ren.sortingOrder = assetArea.sortingOrder;
             }
         }
+    }
 
+    public void LoadPlace()
+    {
         // Load place
         placeManager.biome = GlyphManager.biome;
         placeManager.time = GlyphManager.time;
@@ -246,7 +249,35 @@ public class LevelManager : MonoBehaviour
 
         return weights.Count - 1;
     }
+
+    public void SpawnRegionCollisions()
+    {
+        backgroundRegions = spawnRegions.GetComponentsInChildren<SpawnRegion>();
+        List<SpawnRegion> sp = backgroundRegions.ToList();
+        Debug.Log(backgroundRegions.Length);
+
+        foreach (NoSpawnRegion nosr in placeManager.currentPlace.GetComponentsInChildren<NoSpawnRegion>())
+        {
+            foreach (SpawnRegion sr in backgroundRegions.ToArray())
+            {
+                if (Region.Collision(nosr, sr))
+                {
+                    Debug.Log("Collisions!");
+                    Destroy(sr.gameObject);
+                } else
+                {
+                    if (sp.Contains(sr))
+                        sp.Remove(sr);
+                }
+            }
+        }
+
+        backgroundRegions = sp.ToArray();
+        Debug.Log(backgroundRegions.Length);
+    }
 }
+
+
 
 public interface IWeighted
 {

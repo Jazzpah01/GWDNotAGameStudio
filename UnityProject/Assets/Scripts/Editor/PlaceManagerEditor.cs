@@ -21,10 +21,5 @@ public class PlaceManagerEditor : Editor
         {
             obj.SavePlace();
         }
-
-        if (GUILayout.Button("Cleanup Scene"))
-        {
-            obj.CleanupScene();
-        }
     }
 }

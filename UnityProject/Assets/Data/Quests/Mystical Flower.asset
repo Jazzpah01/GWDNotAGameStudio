@@ -1,0 +1,179 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-8833194096159175531
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 34046101b1f069c428a58bb51b915585, type: 3}
+  m_Name: SetDialogue
+  m_EditorClassIdentifier: 
+  questIndex: 4
+  questIncrease: 1
+  npcPrefab: {fileID: 1862752981726964725, guid: 561c375eb39ca45599df2da8b8f4cc68, type: 3}
+  dialogue: {fileID: 11400000, guid: 37714bad8d225f048855ddf5a0e58ca4, type: 2}
+--- !u!114 &-8590878047895325445
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 62426580d6b6b304898bb26ac02fb2a3, type: 3}
+  m_Name: SetInteractable
+  m_EditorClassIdentifier: 
+  questIndex: 1
+  questIncrease: 1
+  interactableObject: {fileID: 3735002686978342717, guid: e3f831a366232dc40942fec34e25ce2d, type: 3}
+  setInteractable: 0
+--- !u!114 &-7466703650459224640
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 62426580d6b6b304898bb26ac02fb2a3, type: 3}
+  m_Name: SetInteractable
+  m_EditorClassIdentifier: 
+  questIndex: 3
+  questIncrease: 1
+  interactableObject: {fileID: 3735002686978342717, guid: c017cd476069c2e4f9f8474c5234c39c, type: 3}
+  setInteractable: 0
+--- !u!114 &-1867376094185432030
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 34046101b1f069c428a58bb51b915585, type: 3}
+  m_Name: SetDialogue
+  m_EditorClassIdentifier: 
+  questIndex: 2
+  questIncrease: 1
+  npcPrefab: {fileID: 3735002686978342717, guid: e3f831a366232dc40942fec34e25ce2d, type: 3}
+  dialogue: {fileID: 11400000, guid: 07212c31c2a29ad478d331f91dffd68c, type: 2}
+--- !u!114 &-342781954152321720
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4360fe7d5ce7c4644931e761bc79349a, type: 3}
+  m_Name: SpawnGameObject
+  m_EditorClassIdentifier: 
+  questIndex: 1
+  questIncrease: 0
+  landscape: {fileID: 11400000, guid: 0f37ff6e7fd4c3b45a49fd59091b0812, type: 2}
+  biome: {fileID: 11400000, guid: 6d5bf97df702444cdb6b05f0c5a3ad88, type: 2}
+  time: {fileID: 11400000, guid: 6039305ef7b849941b0144aa37501464, type: 2}
+  prefab: {fileID: 3735002686978342717, guid: e3f831a366232dc40942fec34e25ce2d, type: 3}
+  position: {x: 0, y: 0}
+  scale: {x: 1, y: 1}
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 76812cc4cf143ee40a123a38a320e2de, type: 3}
+  m_Name: Mystical Flower
+  m_EditorClassIdentifier: 
+  customEditing: 1
+  questEvents:
+  - {fileID: 982597743086486713}
+  - {fileID: -342781954152321720}
+  - {fileID: -8590878047895325445}
+  - {fileID: -1867376094185432030}
+  - {fileID: 2830234784377612089}
+  - {fileID: -7466703650459224640}
+  - {fileID: 7264421177288330345}
+  - {fileID: -8833194096159175531}
+  - {fileID: 1117573725987067588}
+--- !u!114 &982597743086486713
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 34046101b1f069c428a58bb51b915585, type: 3}
+  m_Name: SetDialogue
+  m_EditorClassIdentifier: 
+  questIndex: 0
+  questIncrease: 1
+  npcPrefab: {fileID: 1862752981726964725, guid: 561c375eb39ca45599df2da8b8f4cc68, type: 3}
+  dialogue: {fileID: 11400000, guid: a68b0edca6562824fb6a53d80a968da7, type: 2}
+--- !u!114 &1117573725987067588
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 34046101b1f069c428a58bb51b915585, type: 3}
+  m_Name: SetDialogue
+  m_EditorClassIdentifier: 
+  questIndex: 5
+  questIncrease: 0
+  npcPrefab: {fileID: 1862752981726964725, guid: 561c375eb39ca45599df2da8b8f4cc68, type: 3}
+  dialogue: {fileID: 11400000, guid: cc542ab199fa0b14e865f9a48c35c399, type: 2}
+--- !u!114 &2830234784377612089
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4360fe7d5ce7c4644931e761bc79349a, type: 3}
+  m_Name: SpawnGameObject
+  m_EditorClassIdentifier: 
+  questIndex: 3
+  questIncrease: 0
+  landscape: {fileID: 11400000, guid: 0f37ff6e7fd4c3b45a49fd59091b0812, type: 2}
+  biome: {fileID: 11400000, guid: 6d5bf97df702444cdb6b05f0c5a3ad88, type: 2}
+  time: {fileID: 11400000, guid: 6039305ef7b849941b0144aa37501464, type: 2}
+  prefab: {fileID: 3735002686978342717, guid: c017cd476069c2e4f9f8474c5234c39c, type: 3}
+  position: {x: 0, y: 0}
+  scale: {x: 1, y: 1}
+--- !u!114 &7264421177288330345
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c66578638b9a8a747bd4a9362316af27, type: 3}
+  m_Name: RemoveGameObject
+  m_EditorClassIdentifier: 
+  questIndex: 4
+  questIncrease: 0
+  landscape: {fileID: 11400000, guid: 0f37ff6e7fd4c3b45a49fd59091b0812, type: 2}
+  biome: {fileID: 11400000, guid: 6d5bf97df702444cdb6b05f0c5a3ad88, type: 2}
+  time: {fileID: 11400000, guid: 6039305ef7b849941b0144aa37501464, type: 2}
+  prefab: {fileID: 3735002686978342717, guid: c017cd476069c2e4f9f8474c5234c39c, type: 3}

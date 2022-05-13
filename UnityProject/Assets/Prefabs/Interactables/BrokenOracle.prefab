@@ -134,7 +134,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   characterName: Broken Oracle
   npcPortrait: {fileID: 7461274213759369477, guid: 4a8376c48f3b843489b2a6c9a7100bf2, type: 3}
-  rig: {fileID: 0}
+  rig: {fileID: 6982363313943350090}
   hasMet: 0
   hasDialogue: 0
   hasFinishedDialogue: 0
@@ -192,7 +192,7 @@ MonoBehaviour:
   startInteractable: 0
   interactOnEnter: 0
   interactText: {fileID: 7544611812191606419}
-  ID: 
+  id: 
   playerInside: 0
   isInteractable: 0
 --- !u!1001 &2016078658139984181

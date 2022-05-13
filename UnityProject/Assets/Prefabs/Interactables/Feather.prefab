@@ -73,7 +73,7 @@ SpriteRenderer:
   m_SortingLayerID: 447356643
   m_SortingLayer: 2
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 9ea21e24969b74dadad6e5cd57eea83f, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 60df5cf07bef5f94ab5b618d224e1152, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -97,7 +97,7 @@ GameObject:
   - component: {fileID: 3613430569906729789}
   - component: {fileID: 3557115854586208358}
   m_Layer: 0
-  m_Name: StoneOracle
+  m_Name: Feather
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -132,9 +132,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 03aad89612a7df54aa239a374f1f5577, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  characterName: Stone Oracle
+  characterName: Feather
   npcPortrait: {fileID: 7461274213759369477, guid: 94cbde94ba60549f88a0d963fafebb78, type: 3}
-  rig: {fileID: 6982363313943350090}
+  rig: {fileID: 0}
   hasMet: 0
   hasDialogue: 0
   hasFinishedDialogue: 0
@@ -164,7 +164,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.020080566, y: 3.8816965}
+  m_Offset: {x: 0.005440831, y: 0.6477896}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -175,7 +175,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 18.46988, y: 7.985906}
+  m_Size: {x: 1.3170307, y: 1.7838671}
   m_EdgeRadius: 0
 --- !u!114 &3557115854586208358
 MonoBehaviour:

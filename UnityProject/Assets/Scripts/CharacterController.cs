@@ -10,6 +10,7 @@ public class CharacterController : MonoBehaviour
     public FMODUnity.EventReference bumpEvent;
     public FMODUnity.EventReference aquiredGlyph;
     public FMODUnity.StudioEventEmitter walkEmitter;
+    public float walkEmitterSpeed = 4;
     public FMODUnity.StudioEventEmitter music1Emitter;
     public FMODUnity.StudioEventEmitter music2Emitter;
     public FMODUnity.EventReference defaultVoice;
@@ -94,6 +95,7 @@ public class CharacterController : MonoBehaviour
             FMODUnity.RuntimeManager.PlayOneShot(bumpEvent);
 
         grounded = body.grounded;
+        walkEmitter.SetParameter("Speedy", walkEmitterSpeed);
 
         if (!isInDialogue)
         {

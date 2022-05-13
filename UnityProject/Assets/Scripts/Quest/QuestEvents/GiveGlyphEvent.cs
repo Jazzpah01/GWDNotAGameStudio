@@ -10,14 +10,18 @@ public class GiveGlyphEvent : QuestEvent
 
     public override void Execute(SceneContext context)
     {
+        CallBack();
+
+        if (GlyphManager.playerGlyphs.Contains(glyph))
+            return;
+
         GlyphManager.playerGlyphs.Add(glyph);
         WaystoneUI.instance.Resetup();
         FMODUnity.RuntimeManager.PlayOneShot(LevelManager.instance.playerPrefab.GetComponent<CharacterController>().aquiredGlyph);
-        CallBack();
     }
 
     public override bool ShouldExecute(SceneContext context)
     {
-        return !GlyphManager.playerGlyphs.Contains(glyph);
+        return true;
     }
 }

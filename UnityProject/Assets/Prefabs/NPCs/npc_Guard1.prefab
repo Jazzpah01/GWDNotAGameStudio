@@ -9,7 +9,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1365957205060835681}
-  - component: {fileID: 5269320444728912362}
   - component: {fileID: 6081823362693461143}
   - component: {fileID: 4571908993470183248}
   - component: {fileID: 5683664968562023723}
@@ -37,26 +36,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!95 &5269320444728912362
-Animator:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 161218106855915778}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 94d9406f02b8e4f57bb9d94112c99973, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!61 &6081823362693461143
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -95,8 +74,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e5b3d57936818994286a99188181c979, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ID: 
+  startInteractable: 0
+  interactOnEnter: 0
   interactText: {fileID: 5219735006408961845}
+  id: 
   playerInside: 0
   isInteractable: 0
 --- !u!114 &5683664968562023723
@@ -123,6 +104,13 @@ MonoBehaviour:
   currentLine: 0
   delayInterval: 0.2
   lookAtPlayer: 1
+  defaultVoice:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
 --- !u!1001 &4267563028576659603
 PrefabInstance:
   m_ObjectHideFlags: 0

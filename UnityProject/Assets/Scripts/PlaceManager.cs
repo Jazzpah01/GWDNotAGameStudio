@@ -171,7 +171,7 @@ public class PlaceManager : MonoBehaviour
         loadedLandscape = null;
         loadedBiome = null;
         loadedTime = null;
-        Destroy(currentPlace);
+        DestroyImmediate(currentPlace,true);
         currentPlace = null;
     }
 

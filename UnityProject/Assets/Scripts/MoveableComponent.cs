@@ -6,6 +6,7 @@ using UnityEngine;
 public class MoveableComponent : MonoBehaviour, IMoveable
 {
     public Animator animator;
+    public GameObject rig;
 
     private Interactable interactable;
 
@@ -36,11 +37,24 @@ public class MoveableComponent : MonoBehaviour, IMoveable
                 ReachedGoal();
             }
 
-            transform.position += (Vector3)direction.normalized * MoveableSpeed;
+            transform.position += (Vector3)direction.normalized * MoveableSpeed * Time.deltaTime;
 
             if (Vector2.Dot(targetMovingPosition - (Vector2)transform.position, direction) < 0)
             {
+                Debug.Log("YAS GIRL WALK");
                 ReachedGoal();
+            }
+
+            if (direction.x > 0)
+            {
+                Vector3 scale = rig.transform.localScale;
+                scale.x = Mathf.Abs(scale.x);
+                rig.transform.localScale = scale;
+            } else
+            {
+                Vector3 scale = rig.transform.localScale;
+                scale.x = -Mathf.Abs(scale.x);
+                rig.transform.localScale = scale;
             }
         }
     }
@@ -56,6 +70,8 @@ public class MoveableComponent : MonoBehaviour, IMoveable
         movingCallback = callback;
         isMoving = true;
         targetMovingPosition = position;
+
+        animator.SetBool("isWalking", true);
     }
 
     public void ReachedGoal()
@@ -68,5 +84,7 @@ public class MoveableComponent : MonoBehaviour, IMoveable
         isMoving = false;
         if (movingCallback != null)
             movingCallback();
+
+        animator.SetBool("isWalking", false);
     }
 }

@@ -1050,11 +1050,11 @@ PrefabInstance:
     - target: {fileID: 6384632770917283716, guid: 8ab6869a23b4c1143b8fa1a847ea70a0, type: 3}
       propertyPath: time
       value: 
-      objectReference: {fileID: 11400000, guid: 6039305ef7b849941b0144aa37501464, type: 2}
+      objectReference: {fileID: 11400000, guid: c4ef068ec96997a4181b8dd407818fb6, type: 2}
     - target: {fileID: 6384632770917283716, guid: 8ab6869a23b4c1143b8fa1a847ea70a0, type: 3}
       propertyPath: biome
       value: 
-      objectReference: {fileID: 11400000, guid: 0301f76479b63394a89d420f7fc684ac, type: 2}
+      objectReference: {fileID: 11400000, guid: 8642289d9e19747d0811a4c248263909, type: 2}
     - target: {fileID: 6384632770917283716, guid: 8ab6869a23b4c1143b8fa1a847ea70a0, type: 3}
       propertyPath: loadedTime
       value: 

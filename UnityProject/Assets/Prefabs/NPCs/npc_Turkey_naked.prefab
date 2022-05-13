@@ -97,7 +97,7 @@ GameObject:
   - component: {fileID: 3613430569906729789}
   - component: {fileID: 3557115854586208358}
   m_Layer: 0
-  m_Name: Turkey_naked
+  m_Name: npc_Turkey_naked
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

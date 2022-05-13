@@ -15,7 +15,15 @@ MonoBehaviour:
   lines:
   - isPlayer: 0
     line: If you happen to find my hometown, can you find my family and tell my story?
-      We all wear this pendant. It is a family thing. Tell them I'm sorry.
+    voice:
+      Guid:
+        Data1: 357240455
+        Data2: 1310023852
+        Data3: 1797106579
+        Data4: 1657866820
+      Path: event:/Dialougue/Guard
+  - isPlayer: 0
+    line: We all wear this pendant. It is a family thing. Tell them I'm sorry.
     voice:
       Guid:
         Data1: 357240455

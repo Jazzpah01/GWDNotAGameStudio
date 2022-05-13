@@ -99,7 +99,7 @@ MonoBehaviour:
       Path: event:/Dialougue/Ootsa Annoyed
   - isPlayer: 0
     line: Sun god no, I just housed a Traveller in my village. One day they came,
-      the next day they were gone. The others thought they were a ghost.
+      the next they were gone.
     voice:
       Guid:
         Data1: 244635931
@@ -155,8 +155,8 @@ MonoBehaviour:
         Data4: -1867150278
       Path: event:/Dialougue/Ootsa Neutral
   - isPlayer: 0
-    line: You helped put out the fire, so have this. Tizoc gave me some glyphs if
-      I ever  wanted to come back, but I'm not ready. You need it more than I do.
+    line: You helped with the fire, so have this. Tizoc told me to use it on my way
+      back, but I'm not ready. You need it more than I do.
     voice:
       Guid:
         Data1: 244635931

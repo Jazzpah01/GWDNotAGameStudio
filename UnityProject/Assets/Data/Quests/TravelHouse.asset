@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c964c08cad4f2c44b6222b5e55e4999, type: 3}
   m_Name: StartDialogue
   m_EditorClassIdentifier: 
-  questIndex: 6
+  questIndex: 12
   questIncrease: 1
   dialogue: {fileID: 11400000, guid: 55062c1d5934d482294a1b247b262378, type: 2}
   npcPrefab: {fileID: 0}
@@ -28,8 +28,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c66578638b9a8a747bd4a9362316af27, type: 3}
   m_Name: RemoveGameObject
   m_EditorClassIdentifier: 
-  questIndex: 3
-  questIncrease: 0
+  questIndex: 5
+  questIncrease: 1
   landscape: {fileID: 11400000, guid: caa56952924210c419bb3e0146bf0640, type: 2}
   biome: {fileID: 11400000, guid: 0301f76479b63394a89d420f7fc684ac, type: 2}
   time: {fileID: 11400000, guid: 6039305ef7b849941b0144aa37501464, type: 2}
@@ -46,7 +46,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4360fe7d5ce7c4644931e761bc79349a, type: 3}
   m_Name: SpawnGameObject
   m_EditorClassIdentifier: 
-  questIndex: 5
+  questIndex: 9
   questIncrease: 1
   landscape: {fileID: 11400000, guid: caa56952924210c419bb3e0146bf0640, type: 2}
   biome: {fileID: 11400000, guid: 0301f76479b63394a89d420f7fc684ac, type: 2}
@@ -67,7 +67,7 @@ MonoBehaviour:
   m_Name: RemoveGameObject
   m_EditorClassIdentifier: 
   questIndex: 2
-  questIncrease: 0
+  questIncrease: 1
   landscape: {fileID: 11400000, guid: cdf2469a907c9804aa2c92605877951e, type: 2}
   biome: {fileID: 11400000, guid: dd0fe0b9a6f069b42ab01f63d73696f4, type: 2}
   time: {fileID: 11400000, guid: 744a2e9ef0b94bb489b745c1eeb6556f, type: 2}
@@ -100,7 +100,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 34046101b1f069c428a58bb51b915585, type: 3}
   m_Name: SetDialogue
   m_EditorClassIdentifier: 
-  questIndex: 8
+  questIndex: 16
   questIncrease: 1
   npcPrefab: {fileID: 1340676740333891396, guid: 34f000447c7f84292bb0bfb17e97bca2, type: 3}
   dialogue: {fileID: 11400000, guid: 50324e3d188794c5a91eb913cd3a1645, type: 2}
@@ -136,8 +136,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4360fe7d5ce7c4644931e761bc79349a, type: 3}
   m_Name: SpawnGameObject
   m_EditorClassIdentifier: 
-  questIndex: 3
-  questIncrease: 0
+  questIndex: 6
+  questIncrease: 1
   landscape: {fileID: 11400000, guid: caa56952924210c419bb3e0146bf0640, type: 2}
   biome: {fileID: 11400000, guid: 0301f76479b63394a89d420f7fc684ac, type: 2}
   time: {fileID: 11400000, guid: 6039305ef7b849941b0144aa37501464, type: 2}
@@ -188,8 +188,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4360fe7d5ce7c4644931e761bc79349a, type: 3}
   m_Name: SpawnGameObject
   m_EditorClassIdentifier: 
-  questIndex: 7
-  questIncrease: 0
+  questIndex: 14
+  questIncrease: 1
   landscape: {fileID: 11400000, guid: 4f07cc7fa8f6a0a47817e9f0b54c5dea, type: 2}
   biome: {fileID: 11400000, guid: 8642289d9e19747d0811a4c248263909, type: 2}
   time: {fileID: 11400000, guid: 90e1f6d6cc3d1c046809ec48e8c7710d, type: 2}
@@ -208,8 +208,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c66578638b9a8a747bd4a9362316af27, type: 3}
   m_Name: RemoveGameObject
   m_EditorClassIdentifier: 
-  questIndex: 6
-  questIncrease: 0
+  questIndex: 11
+  questIncrease: 1
   landscape: {fileID: 11400000, guid: caa56952924210c419bb3e0146bf0640, type: 2}
   biome: {fileID: 11400000, guid: 0301f76479b63394a89d420f7fc684ac, type: 2}
   time: {fileID: 11400000, guid: 6039305ef7b849941b0144aa37501464, type: 2}
@@ -226,8 +226,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c66578638b9a8a747bd4a9362316af27, type: 3}
   m_Name: RemoveGameObject
   m_EditorClassIdentifier: 
-  questIndex: 2
-  questIncrease: 0
+  questIndex: 3
+  questIncrease: 1
   landscape: {fileID: 11400000, guid: cdf2469a907c9804aa2c92605877951e, type: 2}
   biome: {fileID: 11400000, guid: dd0fe0b9a6f069b42ab01f63d73696f4, type: 2}
   time: {fileID: 11400000, guid: 744a2e9ef0b94bb489b745c1eeb6556f, type: 2}
@@ -244,8 +244,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c66578638b9a8a747bd4a9362316af27, type: 3}
   m_Name: RemoveGameObject
   m_EditorClassIdentifier: 
-  questIndex: 6
-  questIncrease: 0
+  questIndex: 10
+  questIncrease: 1
   landscape: {fileID: 11400000, guid: caa56952924210c419bb3e0146bf0640, type: 2}
   biome: {fileID: 11400000, guid: 0301f76479b63394a89d420f7fc684ac, type: 2}
   time: {fileID: 11400000, guid: 6039305ef7b849941b0144aa37501464, type: 2}
@@ -262,7 +262,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4360fe7d5ce7c4644931e761bc79349a, type: 3}
   m_Name: SpawnGameObject
   m_EditorClassIdentifier: 
-  questIndex: 3
+  questIndex: 7
   questIncrease: 1
   landscape: {fileID: 11400000, guid: caa56952924210c419bb3e0146bf0640, type: 2}
   biome: {fileID: 11400000, guid: 0301f76479b63394a89d420f7fc684ac, type: 2}
@@ -282,8 +282,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c66578638b9a8a747bd4a9362316af27, type: 3}
   m_Name: RemoveGameObject
   m_EditorClassIdentifier: 
-  questIndex: 7
-  questIncrease: 0
+  questIndex: 13
+  questIncrease: 1
   landscape: {fileID: 11400000, guid: 4f07cc7fa8f6a0a47817e9f0b54c5dea, type: 2}
   biome: {fileID: 11400000, guid: 8642289d9e19747d0811a4c248263909, type: 2}
   time: {fileID: 11400000, guid: 90e1f6d6cc3d1c046809ec48e8c7710d, type: 2}
@@ -300,7 +300,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 34046101b1f069c428a58bb51b915585, type: 3}
   m_Name: SetDialogue
   m_EditorClassIdentifier: 
-  questIndex: 4
+  questIndex: 8
   questIncrease: 1
   npcPrefab: {fileID: 1340676740333891396, guid: 34f000447c7f84292bb0bfb17e97bca2, type: 3}
   dialogue: {fileID: 11400000, guid: 24a5e1d4b76ff4c68837c13d528cf93b, type: 2}
@@ -316,7 +316,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 34046101b1f069c428a58bb51b915585, type: 3}
   m_Name: SetDialogue
   m_EditorClassIdentifier: 
-  questIndex: 9
+  questIndex: 17
   questIncrease: 0
   npcPrefab: {fileID: 1340676740333891396, guid: 34f000447c7f84292bb0bfb17e97bca2, type: 3}
   dialogue: {fileID: 11400000, guid: 2e637aec956834a18a420b359095b872, type: 2}
@@ -332,7 +332,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c964c08cad4f2c44b6222b5e55e4999, type: 3}
   m_Name: StartDialogue
   m_EditorClassIdentifier: 
-  questIndex: 2
+  questIndex: 4
   questIncrease: 1
   dialogue: {fileID: 11400000, guid: 9173e9591622c429e83507b37e25383e, type: 2}
   npcPrefab: {fileID: 0}
@@ -348,7 +348,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4360fe7d5ce7c4644931e761bc79349a, type: 3}
   m_Name: SpawnGameObject
   m_EditorClassIdentifier: 
-  questIndex: 7
+  questIndex: 15
   questIncrease: 1
   landscape: {fileID: 11400000, guid: 4f07cc7fa8f6a0a47817e9f0b54c5dea, type: 2}
   biome: {fileID: 11400000, guid: 8642289d9e19747d0811a4c248263909, type: 2}

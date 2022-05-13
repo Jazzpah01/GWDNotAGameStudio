@@ -28,7 +28,7 @@ public class Interactable : MonoBehaviour
     } 
 
     IInteractant interactant;
-    Action callback;
+    public Action callback = null;
 
     private void Awake()
     {

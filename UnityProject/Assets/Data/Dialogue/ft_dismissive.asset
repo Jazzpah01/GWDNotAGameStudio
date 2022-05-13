@@ -17,27 +17,27 @@ MonoBehaviour:
     line: What else do you want? Get outta here!
     voice:
       Guid:
-        Data1: 357240455
-        Data2: 1310023852
-        Data3: 1797106579
-        Data4: 1657866820
-      Path: event:/Dialougue/Guard
+        Data1: 0
+        Data2: 0
+        Data3: 0
+        Data4: 0
+      Path: 
   - isPlayer: 0
     line: Tell them I'm sorry.
     voice:
       Guid:
-        Data1: 357240455
-        Data2: 1310023852
-        Data3: 1797106579
-        Data4: 1657866820
-      Path: event:/Dialougue/Guard
+        Data1: 0
+        Data2: 0
+        Data3: 0
+        Data4: 0
+      Path: 
   - isPlayer: 0
     line: Changed your mind?
     voice:
       Guid:
-        Data1: 357240455
-        Data2: 1310023852
-        Data3: 1797106579
-        Data4: 1657866820
-      Path: event:/Dialougue/Guard
+        Data1: 0
+        Data2: 0
+        Data3: 0
+        Data4: 0
+      Path: 
   current: -1

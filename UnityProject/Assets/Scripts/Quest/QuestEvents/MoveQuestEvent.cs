@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class MoveQuestEvent : QuestEvent
 {
-    public override QuestEventType questEventType => throw new System.NotImplementedException();
+    public override QuestEventType questEventType => QuestEventType.Move;
 
     public GameObject moveablePrefab;
     public float speed;
@@ -12,11 +12,20 @@ public class MoveQuestEvent : QuestEvent
 
     public override void Execute(SceneContext context)
     {
-        
+        foreach (GameObject go in context.UnorderedEventObjects)
+        {
+            IMoveable moveable = go.GetComponent<IMoveable>();
+            if (moveable != null && moveablePrefab.name == moveable.ID)
+            {
+                moveable.MoveableSpeed = speed;
+                moveable.MoveTo(toPosition, CallBack);
+            }
+        }
     }
 
     public override bool ShouldExecute(SceneContext context)
     {
-        throw new System.NotImplementedException();
+        // Now only NPC, make player too
+        return !hasExecuted && context.ContainsNPC(moveablePrefab);
     }
 }

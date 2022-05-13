@@ -9,6 +9,7 @@ public class SceneContext
     /// Value: List of game objects of the prefab.
     /// </summary>
     public Dictionary<GameObject, List<GameObject>> EventObjects = new Dictionary<GameObject, List<GameObject>>();
+    public List<GameObject> UnorderedEventObjects = new List<GameObject>();
 
     public List<NPCController> npcs = new List<NPCController>();
 
@@ -24,6 +25,8 @@ public class SceneContext
             EventObjects.Add(prefab, new List<GameObject>());
 
         EventObjects[prefab].Add(ngo);
+
+        UnorderedEventObjects.Add(ngo);
 
         NPCController npc = ngo.GetComponent<NPCController>();
 
@@ -45,6 +48,9 @@ public class SceneContext
         if (npcs.Contains(npc))
             return;
 
+        if (!UnorderedEventObjects.Contains(npc.gameObject))
+            UnorderedEventObjects.Add(npc.gameObject);
+
         npcs.Add(npc);
     }
 
@@ -52,6 +58,9 @@ public class SceneContext
     {
         if (interactables.Contains(interactable))
             return;
+
+        if (!UnorderedEventObjects.Contains(interactable.gameObject))
+            UnorderedEventObjects.Add(interactable.gameObject);
 
         interactables.Add(interactable);
     }
@@ -63,6 +72,7 @@ public class SceneContext
             foreach (GameObject go in EventObjects[prefab].ToArray())
             {
                 MonoBehaviour.Destroy(go);
+                UnorderedEventObjects.Remove(go);
             }
             EventObjects[prefab].Clear();
         } else
@@ -79,7 +89,10 @@ public class SceneContext
                         npcs.Remove(othernpc);
 
                         if (EventObjects.ContainsKey(othernpc.gameObject))
-                            EventObjects.Remove(othernpc.gameObject);
+                            EventObjects[othernpc.gameObject].Clear();
+
+                        if (UnorderedEventObjects.Contains(othernpc.gameObject))
+                            UnorderedEventObjects.Remove(othernpc.gameObject);
 
                         if (othernpc.gameObject != null)
                             MonoBehaviour.Destroy(othernpc.gameObject);
@@ -102,7 +115,10 @@ public class SceneContext
                         interactables.Remove(otherinteractable);
 
                         if (EventObjects.ContainsKey(otherinteractable.gameObject))
-                            EventObjects.Remove(otherinteractable.gameObject);
+                            EventObjects[otherinteractable.gameObject].Clear();
+
+                        if (UnorderedEventObjects.Contains(otherinteractable.gameObject))
+                            UnorderedEventObjects.Remove(otherinteractable.gameObject);
 
                         if (otherinteractable.gameObject != null)
                             MonoBehaviour.Destroy(otherinteractable.gameObject);

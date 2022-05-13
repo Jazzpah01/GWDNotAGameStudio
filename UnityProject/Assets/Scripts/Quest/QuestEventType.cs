@@ -11,5 +11,6 @@ public enum QuestEventType
     GiveGlyph,
     SetInteractable,
     StartQuest,
-    StartDialogue
+    StartDialogue,
+    Move
 }

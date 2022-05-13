@@ -15,143 +15,112 @@ MonoBehaviour:
   lines:
   - isPlayer: 1
     line: Wait! Tjetlik sent his greetings.
+    voice:
+      Guid:
+        Data1: 0
+        Data2: 0
+        Data3: 0
+        Data4: 0
+      Path: 
   - isPlayer: 0
     line: Tjetlik? That old man is still alive?
+    voice:
+      Guid:
+        Data1: 0
+        Data2: 0
+        Data3: 0
+        Data4: 0
+      Path: 
   - isPlayer: 1
-    line: You sound surprised.
+    line: 'And he sure likes to go around butt-naked, having laughs with squirrels. '
+    voice:
+      Guid:
+        Data1: 0
+        Data2: 0
+        Data3: 0
+        Data4: 0
+      Path: 
   - isPlayer: 0
-    line: When someone has not returned after all these years, one can only assume
-      the worst. How is he?
-  - isPlayer: 1
-    line: The answer is not as simple as that question
-  - isPlayer: 0
-    line: What is that supposed to mean?
-  - isPlayer: 1
-    line: 'Physically he seemed to be doing amazing for an old guy. '
-  - isPlayer: 0
-    line: But?
-  - isPlayer: 1
-    line: And a naked one at that.
-  - isPlayer: 0
-    line: Excuse me?
-  - isPlayer: 1
-    line: "Nothing. It is just\u2026 Tjetlik likes to go around butt-naked, having
-      laughs with squirrels."
-  - isPlayer: 0
-    line: Hahaha! That is Tjetlik, alright.
-  - isPlayer: 1
-    line: You mean he was like that even before he left?
-  - isPlayer: 0
-    line: Yes, he was always that fun. Is he ever coming back?
+    line: Hahaha! That is Tjetlik, alright. Is he ever coming back?
+    voice:
+      Guid:
+        Data1: 0
+        Data2: 0
+        Data3: 0
+        Data4: 0
+      Path: 
   - isPlayer: 1
     line: He said he was not ready yet. Why did he leave in the first place?
-  - isPlayer: 0
-    line: It is a silly thing but if Tjetlik did not tell you the story, I am not
-      going to either.
-  - isPlayer: 1
-    line: Speaking of stories, I heard you have quite a story, yourself.
-  - isPlayer: 0
-    line: I knew you were going to ask that. The moment I saw you, I knew you came
-      from that damned stone. Small town.
-  - isPlayer: 1
-    line: Let me guess, people do not like strangers around here.
-  - isPlayer: 0
-    line: Yeah, that is partially my fault, too. I guess people are still sceptical
-      of the stone after I helped Tjetlik.
-  - isPlayer: 1
-    line: "Now you\u2019ve made me really curious."
+    voice:
+      Guid:
+        Data1: 0
+        Data2: 0
+        Data3: 0
+        Data4: 0
+      Path: 
   - isPlayer: 0
     line: Sorry kid, not my story to tell.
+    voice:
+      Guid:
+        Data1: 0
+        Data2: 0
+        Data3: 0
+        Data4: 0
+      Path: 
   - isPlayer: 1
     line: Tell me yours, then.
+    voice:
+      Guid:
+        Data1: 0
+        Data2: 0
+        Data3: 0
+        Data4: 0
+      Path: 
   - isPlayer: 0
     line: I will, not for free though. How about a story for another?
+    voice:
+      Guid:
+        Data1: 0
+        Data2: 0
+        Data3: 0
+        Data4: 0
+      Path: 
   - isPlayer: 1
-    line: Oh, you want to hear mine first.
-  - isPlayer: 0
-    line: "That\u2019s the deal. Come, my house is this way. Feel free to start on
-      the way."
-  - isPlayer: 1
-    line: "Alright! It all started when that idiot friend of mine came up with this
+    line: "A: Alright! It started when that idiot friend of mine came up with this
       \u201Cbrilliant\u201D plan\u2026"
-  - isPlayer: 0
-    line: Why does it always start with an idiot and a plan
+    voice:
+      Guid:
+        Data1: 0
+        Data2: 0
+        Data3: 0
+        Data4: 0
+      Path: 
   - isPlayer: 1
-    line: Does it?
+    line: ... ... ...
+    voice:
+      Guid:
+        Data1: 0
+        Data2: 0
+        Data3: 0
+        Data4: 0
+      Path: 
   - isPlayer: 0
-    line: Absolutely!
-  - isPlayer: 1
-    line: ...
+    line: '... ... ... '
+    voice:
+      Guid:
+        Data1: 0
+        Data2: 0
+        Data3: 0
+        Data4: 0
+      Path: 
   - isPlayer: 0
-    line: ...
-  - isPlayer: 1
-    line: ...
-  - isPlayer: 0
-    line: "He couldn\u2019t go back home and lived miserably ever after. The end."
-  - isPlayer: 1
-    line: You forgot the part where he helped the young stranger.
-  - isPlayer: 0
-    line: No, I did not. I already told you. Not happening.
-  - isPlayer: 1
-    line: "C\u2019mon old man. You know I gotta find my friend."
-  - isPlayer: 0
-    line: Did you follow anything I said? It is a dead end, kiddo.
-  - isPlayer: 1
-    line: What if it is not? I have found Tjetlik, I have found you.
-  - isPlayer: 0
-    line: SO WHAT? You got lucky.
-  - isPlayer: 1
-    line: There must be other glyphs out there.
-  - isPlayer: 0
-    line: "DON\u2019T YOU THINK I RATHER GO BACK TO MY FAMILY, IF THERE WERE?"
-  - isPlayer: 0
-    line: I am sorry. Reminiscing it all got me heated.
-  - isPlayer: 1
-    line: I know there are other glyphs out there. Kwolan got the rest.
-  - isPlayer: 0
-    line: Even if there are, I was not able to find them. What makes you think that
-      you can?
-  - isPlayer: 1
-    line: "I don\u2019t have to find them all. I can just use the ones Kwolan got
-      and wait for him to appear."
-  - isPlayer: 0
-    line: What if he never shows up?
-  - isPlayer: 1
-    line: I will wait until he does. He must be looking for me, too.
-  - isPlayer: 1
-    line: He will eventually use the same glyphs that will bring him to the same
-      place.
-  - isPlayer: 0
-    line: It is not that simple. The glyphs have their own will.
-  - isPlayer: 1
-    line: What?
-  - isPlayer: 0
-    line: "Remember, I tried to go back home but couldn\u2019t."
-  - isPlayer: 0
-    line: "Then I tried to come back here after that first time but I couldn\u2019t,
-      even though I used the same pair of glyphs."
-  - isPlayer: 1
-    line: "You\u2019re here now. "
-  - isPlayer: 0
-    line: "Don\u2019t get smart with me. You already know how I got back."
-  - isPlayer: 0
-    line: Trial and error until I got it right. If you can call this right, that
-      is.
-  - isPlayer: 1
-    line: I can do the same.
-  - isPlayer: 1
-    line: Kwolan can do the same, I will wait.
-  - isPlayer: 0
-    line: "You really care about this Kwolan, don\u2019t you?"
-  - isPlayer: 1
-    line: Yes. I guess I do.
-  - isPlayer: 0
-    line: "That settles it. I won\u2019t be able to change your mind no matter what
-      I say."
-  - isPlayer: 0
-    line: Meet me at the waystone.
-  - isPlayer: 0
-    line: 
-  - isPlayer: 0
-    line: 
+    line: "\u2026 I couldn\u2019t go back home and lived miserably ever after. The
+      end."
+    voice:
+      Guid:
+        Data1: 0
+        Data2: 0
+        Data3: 0
+        Data4: 0
+      Path: 
   current: -1

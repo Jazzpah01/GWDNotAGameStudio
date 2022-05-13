@@ -14,9 +14,18 @@ public class Interactable : MonoBehaviour
     public GameObject interactText;
 
     [Header("Debug")]
-    public string ID;
+    public string id;
     public bool playerInside = false;
     public bool isInteractable;
+
+    public string ID
+    {
+        get
+        {
+            id = gameObject.name.Replace("(Clone)", "");
+            return id;
+        }
+    } 
 
     IInteractant interactant;
     Action callback;
@@ -24,7 +33,7 @@ public class Interactable : MonoBehaviour
     private void Awake()
     {
         interactant = GetComponent<IInteractant>();
-        ID = gameObject.name.Replace("(Clone)","");
+        id = gameObject.name.Replace("(Clone)","");
         interactText.SetActive(false);
         playerInside = false;
         LevelManager.instance.sceneContext.AddInteractable(this);

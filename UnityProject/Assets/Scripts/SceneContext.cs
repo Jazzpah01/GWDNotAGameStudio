@@ -67,6 +67,7 @@ public class SceneContext
             EventObjects[prefab].Clear();
         } else
         {
+            Debug.Log("REMOVING STUFF");
             //Make NPC that didn't spawn in quest removeable
             NPCController npc = prefab.GetComponent<NPCController>();
             if (npc != null)
@@ -76,10 +77,15 @@ public class SceneContext
                     if (npc.characterName == othernpc.characterName)
                     {
                         npcs.Remove(othernpc);
-                        EventObjects.Remove(othernpc.gameObject);
+
+                        if (EventObjects.ContainsKey(othernpc.gameObject))
+                            EventObjects.Remove(othernpc.gameObject);
+
+                        if (othernpc.gameObject != null)
+                            MonoBehaviour.Destroy(othernpc.gameObject);
                     }
 
-                    MonoBehaviour.Destroy(othernpc.gameObject);
+                    
                 }
             }
 
@@ -91,13 +97,18 @@ public class SceneContext
             {
                 foreach (Interactable otherinteractable in interactables.ToArray())
                 {
-                    if (interactable.ID == otherinteractable.ID)
+                    if (prefab.name == otherinteractable.ID)
                     {
                         interactables.Remove(otherinteractable);
-                        EventObjects.Remove(otherinteractable.gameObject);
+
+                        if (EventObjects.ContainsKey(otherinteractable.gameObject))
+                            EventObjects.Remove(otherinteractable.gameObject);
+
+                        if (otherinteractable.gameObject != null)
+                            MonoBehaviour.Destroy(otherinteractable.gameObject);
                     }
 
-                    MonoBehaviour.Destroy(otherinteractable.gameObject);
+                    
                 }
             }
         }

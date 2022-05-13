@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 34046101b1f069c428a58bb51b915585, type: 3}
   m_Name: SetDialogue
   m_EditorClassIdentifier: 
-  questIndex: 4
+  questIndex: 3
   questIncrease: 1
   npcPrefab: {fileID: 1862752981726964725, guid: 561c375eb39ca45599df2da8b8f4cc68, type: 3}
   dialogue: {fileID: 11400000, guid: 208e298740e962140a4dd6c82f863e8b, type: 2}
@@ -28,7 +28,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 079ec28394fd7604da8902c0f258cd9d, type: 3}
   m_Name: GiveGlyph
   m_EditorClassIdentifier: 
-  questIndex: 6
+  questIndex: 5
   questIncrease: 0
   glyph: {fileID: 11400000, guid: 8642289d9e19747d0811a4c248263909, type: 2}
 --- !u!114 &-8272949125686018138
@@ -43,7 +43,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 34046101b1f069c428a58bb51b915585, type: 3}
   m_Name: SetDialogue
   m_EditorClassIdentifier: 
-  questIndex: 3
+  questIndex: 2
   questIncrease: 1
   npcPrefab: {fileID: 8162052205935083975, guid: 627ba145cd3454d04bae4fbc3ff079f7, type: 3}
   dialogue: {fileID: 11400000, guid: 01682b23677e3744ca90a1c6cb00b68b, type: 2}
@@ -59,7 +59,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 34046101b1f069c428a58bb51b915585, type: 3}
   m_Name: SetDialogue
   m_EditorClassIdentifier: 
-  questIndex: 6
+  questIndex: 5
   questIncrease: 0
   npcPrefab: {fileID: 8636090863074201684, guid: e042809f2e2104bacaa38cc108cb9fa2, type: 3}
   dialogue: {fileID: 0}
@@ -75,7 +75,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 34046101b1f069c428a58bb51b915585, type: 3}
   m_Name: SetDialogue
   m_EditorClassIdentifier: 
-  questIndex: 2
+  questIndex: 1
   questIncrease: 1
   npcPrefab: {fileID: 8636090863074201684, guid: e042809f2e2104bacaa38cc108cb9fa2, type: 3}
   dialogue: {fileID: 11400000, guid: e2978fe0c9d494f4db5f7eada4a74d6b, type: 2}
@@ -92,7 +92,7 @@ MonoBehaviour:
   m_Name: SetDialogue
   m_EditorClassIdentifier: 
   questIndex: 0
-  questIncrease: 2
+  questIncrease: 1
   npcPrefab: {fileID: 8636090863074201684, guid: e042809f2e2104bacaa38cc108cb9fa2, type: 3}
   dialogue: {fileID: 11400000, guid: 071ae7472cb26ae4aa9830f1cc10b67a, type: 2}
 --- !u!114 &11400000
@@ -131,7 +131,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 34046101b1f069c428a58bb51b915585, type: 3}
   m_Name: SetDialogue
   m_EditorClassIdentifier: 
-  questIndex: 5
+  questIndex: 4
   questIncrease: 1
   npcPrefab: {fileID: 1862752981726964725, guid: 561c375eb39ca45599df2da8b8f4cc68, type: 3}
   dialogue: {fileID: 11400000, guid: 3524ee38422919c43853b65bc3c91ef2, type: 2}
@@ -147,7 +147,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 34046101b1f069c428a58bb51b915585, type: 3}
   m_Name: SetDialogue
   m_EditorClassIdentifier: 
-  questIndex: 5
+  questIndex: 4
   questIncrease: 1
   npcPrefab: {fileID: 8636090863074201684, guid: e042809f2e2104bacaa38cc108cb9fa2, type: 3}
   dialogue: {fileID: 11400000, guid: ff852adc698a78541b94e7976bcb2665, type: 2}
@@ -163,7 +163,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 34046101b1f069c428a58bb51b915585, type: 3}
   m_Name: SetDialogue
   m_EditorClassIdentifier: 
-  questIndex: 5
+  questIndex: 4
   questIncrease: 1
   npcPrefab: {fileID: 8162052205935083975, guid: 627ba145cd3454d04bae4fbc3ff079f7, type: 3}
   dialogue: {fileID: 11400000, guid: 1b0b9d22bfdf44f40b342f128a20afdd, type: 2}

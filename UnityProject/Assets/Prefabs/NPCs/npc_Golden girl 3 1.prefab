@@ -93,7 +93,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   characterName: Gg3
-  npcPortrait: {fileID: 2570204825745611973, guid: 11c1d6cf26b6c44eda6cce737457785c, type: 3}
+  npcPortrait: {fileID: 2570204825745611973, guid: da22c78fdcdf94d98883dd1dcf5655d9, type: 3}
   rig: {fileID: 3476580861983433319}
   hasMet: 0
   hasDialogue: 0
@@ -363,7 +363,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8307264050883692454, guid: f264cae62e2920d4689e5a6ac59acf8b, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f264cae62e2920d4689e5a6ac59acf8b, type: 3}

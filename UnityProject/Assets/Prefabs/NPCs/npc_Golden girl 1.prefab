@@ -80,7 +80,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.09594822, y: 1.2899864}
+  m_Offset: {x: -0.0021201372, y: 1.2899864}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -91,7 +91,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 6.437132, y: 2.684444}
+  m_Size: {x: 1.7018225, y: 2.684444}
   m_EdgeRadius: 0
 --- !u!114 &1511747174742230286
 MonoBehaviour:
@@ -208,7 +208,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8307264050883692454, guid: f264cae62e2920d4689e5a6ac59acf8b, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f264cae62e2920d4689e5a6ac59acf8b, type: 3}
@@ -247,19 +247,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1532258395214804065, guid: 78d0a402b72984a37a1fe3a033667f2d, type: 3}
       propertyPath: m_Bounds.m_Center.x
-      value: 0.041897595
+      value: 0.0024300814
       objectReference: {fileID: 0}
     - target: {fileID: 1532258395214804065, guid: 78d0a402b72984a37a1fe3a033667f2d, type: 3}
       propertyPath: m_Bounds.m_Center.y
-      value: 0.017908096
+      value: -0.0013200045
       objectReference: {fileID: 0}
     - target: {fileID: 1532258395214804065, guid: 78d0a402b72984a37a1fe3a033667f2d, type: 3}
       propertyPath: m_Bounds.m_Extent.x
-      value: 0.34776783
+      value: 0.32757002
       objectReference: {fileID: 0}
     - target: {fileID: 1532258395214804065, guid: 78d0a402b72984a37a1fe3a033667f2d, type: 3}
       propertyPath: m_Bounds.m_Extent.y
-      value: 0.5694381
+      value: 0.57777
       objectReference: {fileID: 0}
     - target: {fileID: 1979768821107162050, guid: 78d0a402b72984a37a1fe3a033667f2d, type: 3}
       propertyPath: m_Bounds.m_Center.x
@@ -299,19 +299,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7584184774920288456, guid: 78d0a402b72984a37a1fe3a033667f2d, type: 3}
       propertyPath: m_Bounds.m_Center.x
-      value: 0.026090741
+      value: 0.0045599937
       objectReference: {fileID: 0}
     - target: {fileID: 7584184774920288456, guid: 78d0a402b72984a37a1fe3a033667f2d, type: 3}
       propertyPath: m_Bounds.m_Center.y
-      value: -0.01521045
+      value: 0.00016009808
       objectReference: {fileID: 0}
     - target: {fileID: 7584184774920288456, guid: 78d0a402b72984a37a1fe3a033667f2d, type: 3}
       propertyPath: m_Bounds.m_Extent.x
-      value: 0.5438275
+      value: 0.5504401
       objectReference: {fileID: 0}
     - target: {fileID: 7584184774920288456, guid: 78d0a402b72984a37a1fe3a033667f2d, type: 3}
       propertyPath: m_Bounds.m_Extent.y
-      value: 0.6311071
+      value: 0.62828004
       objectReference: {fileID: 0}
     - target: {fileID: 8413340614162972264, guid: 78d0a402b72984a37a1fe3a033667f2d, type: 3}
       propertyPath: m_RootOrder
@@ -359,19 +359,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9120694838712258710, guid: 78d0a402b72984a37a1fe3a033667f2d, type: 3}
       propertyPath: m_Bounds.m_Center.x
-      value: 0.039834082
+      value: 0.001980126
       objectReference: {fileID: 0}
     - target: {fileID: 9120694838712258710, guid: 78d0a402b72984a37a1fe3a033667f2d, type: 3}
       propertyPath: m_Bounds.m_Center.y
-      value: 0.016923845
+      value: -0.0013349652
       objectReference: {fileID: 0}
     - target: {fileID: 9120694838712258710, guid: 78d0a402b72984a37a1fe3a033667f2d, type: 3}
       propertyPath: m_Bounds.m_Extent.x
-      value: 0.34566003
+      value: 0.3280201
       objectReference: {fileID: 0}
     - target: {fileID: 9120694838712258710, guid: 78d0a402b72984a37a1fe3a033667f2d, type: 3}
       propertyPath: m_Bounds.m_Extent.y
-      value: 0.57070315
+      value: 0.5784751
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 78d0a402b72984a37a1fe3a033667f2d, type: 3}

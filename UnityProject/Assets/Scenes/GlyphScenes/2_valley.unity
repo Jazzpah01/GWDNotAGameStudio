@@ -839,11 +839,11 @@ PrefabInstance:
     - target: {fileID: 6384632770917283716, guid: 8ab6869a23b4c1143b8fa1a847ea70a0, type: 3}
       propertyPath: time
       value: 
-      objectReference: {fileID: 11400000, guid: 744a2e9ef0b94bb489b745c1eeb6556f, type: 2}
+      objectReference: {fileID: 11400000, guid: c4ef068ec96997a4181b8dd407818fb6, type: 2}
     - target: {fileID: 6384632770917283716, guid: 8ab6869a23b4c1143b8fa1a847ea70a0, type: 3}
       propertyPath: biome
       value: 
-      objectReference: {fileID: 11400000, guid: dd0fe0b9a6f069b42ab01f63d73696f4, type: 2}
+      objectReference: {fileID: 11400000, guid: 8642289d9e19747d0811a4c248263909, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8ab6869a23b4c1143b8fa1a847ea70a0, type: 3}
 --- !u!1001 &1272210292

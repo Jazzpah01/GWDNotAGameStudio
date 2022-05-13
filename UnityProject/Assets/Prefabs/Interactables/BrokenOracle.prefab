@@ -143,7 +143,7 @@ MonoBehaviour:
   dialogueUI: {fileID: 7544611812191606419}
   currentLine: 0
   delayInterval: 0.2
-  lookAtPlayer: 1
+  lookAtPlayer: 0
   defaultVoice:
     Guid:
       Data1: 0

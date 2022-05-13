@@ -41,7 +41,19 @@ public class NPCController : MonoBehaviour, IInteractant
 
     public FMODUnity.EventReference defaultVoice;
 
+
+
     public bool InRange { get; set; }
+
+    public string ID
+    {
+        get
+        {
+            return gameObject.name.Replace("(Clone)", "");
+        }
+    }
+
+    public float MoveableSpeed { set; get; }
 
     private void Awake()
     {
@@ -65,6 +77,7 @@ public class NPCController : MonoBehaviour, IInteractant
     // Update is called once per frame
     void Update()
     {
+        // Interactability & dialogue
         if (InRange && lookAtPlayer)
         {
             if (player.transform.position.x < transform.position.x) // turn npc towards player
@@ -245,4 +258,6 @@ public class NPCController : MonoBehaviour, IInteractant
         DialogueUI.instance.SetDialogue(this, dialogue, callback);
         DialogueUI.instance.StartDialogue();
     }
+
+    
 }

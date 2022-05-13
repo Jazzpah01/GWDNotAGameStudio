@@ -68,67 +68,8 @@ MonoBehaviour:
         Data4: -909582648
       Path: event:/Dialougue/Ootsa Annoyed
   - isPlayer: 0
-    line: "During the festivities of Ocelotl, they cast a Mirrored One, who impersonates
-      the Jaguar God for a year. Living as a god for a year. Everyone treats you
-      as one. When the next festival arrives, the Mirrored One recites a poem\u2026"
-    voice:
-      Guid:
-        Data1: 1999574016
-        Data2: 1188104198
-        Data3: -803068242
-        Data4: 369274613
-      Path: event:/Dialougue/Bard Neutral
-  - isPlayer: 0
-    line: Traditionally, one must bless the poem by reading it to a jaguar. If the
-      jaguar likes it, it is considered divine approval.
-    voice:
-      Guid:
-        Data1: 1999574016
-        Data2: 1188104198
-        Data3: -803068242
-        Data4: 369274613
-      Path: event:/Dialougue/Bard Neutral
-  - isPlayer: 0
-    line: Ugh! You both are so frustrating. First that idiot comes and pisses my
-      jaguar off and then you.
-    voice:
-      Guid:
-        Data1: 848494061
-        Data2: 1201465500
-        Data3: -1062611790
-        Data4: 1225344596
-      Path: event:/Dialougue/Bard Sad
-  - isPlayer: 1
-    line: 'Sorry, friend! We did not grow up in a religious environment. '
-    voice:
-      Guid:
-        Data1: 291328159
-        Data2: 1203387725
-        Data3: 2070210948
-        Data4: -1867150278
-      Path: event:/Dialougue/Ootsa Neutral
-  - isPlayer: 0
-    line: Oh how I envy you. Look at me trying to serenade a fuckin cat. Mirrored
-      One my ass!
-    voice:
-      Guid:
-        Data1: 848494061
-        Data2: 1201465500
-        Data3: -1062611790
-        Data4: 1225344596
-      Path: event:/Dialougue/Bard Sad
-  - isPlayer: 1
-    line: Hey hey hey! Relax. What is really going on here?
-    voice:
-      Guid:
-        Data1: 291328159
-        Data2: 1203387725
-        Data3: 2070210948
-        Data4: -1867150278
-      Path: event:/Dialougue/Ootsa Neutral
-  - isPlayer: 0
     line: During the festivities of Ocelotl, they cast a Mirrored One, who impersonates
-      the god for a year.
+      the Jaguar God for a year.
     voice:
       Guid:
         Data1: 1999574016
@@ -137,8 +78,8 @@ MonoBehaviour:
         Data4: 369274613
       Path: event:/Dialougue/Bard Neutral
   - isPlayer: 0
-    line: Living as a god for a year. Everyone treats you as one. Sign me the fuck
-      up, one thinks.
+    line: "Living as a god for a year. Everyone treats you as one. When the next
+      festival arrives, the Mirrored One recites a poem\u2026"
     voice:
       Guid:
         Data1: 1999574016
@@ -146,76 +87,18 @@ MonoBehaviour:
         Data3: -803068242
         Data4: 369274613
       Path: event:/Dialougue/Bard Neutral
-  - isPlayer: 0
-    line: "Here is the catch though. When the next festival arrives, the Mirrored
-      One must speak his word. I couldn\u2019t come up with it."
-    voice:
-      Guid:
-        Data1: 1999574016
-        Data2: 1188104198
-        Data3: -803068242
-        Data4: 369274613
-      Path: event:/Dialougue/Bard Neutral
-  - isPlayer: 1
-    line: What do you mean by his word?
-    voice:
-      Guid:
-        Data1: 291328159
-        Data2: 1203387725
-        Data3: 2070210948
-        Data4: -1867150278
-      Path: event:/Dialougue/Ootsa Neutral
-  - isPlayer: 0
-    line: A cursed poem. Mirrored One recites a poem in the next festival and hands
-      the role over. Guess, who does not have a poem?
-    voice:
-      Guid:
-        Data1: 848494061
-        Data2: 1201465500
-        Data3: -1062611790
-        Data4: 1225344596
-      Path: event:/Dialougue/Bard Sad
-  - isPlayer: 1
-    line: What is its relation to the big paws over there?
-    voice:
-      Guid:
-        Data1: 291328159
-        Data2: 1203387725
-        Data3: 2070210948
-        Data4: -1867150278
-      Path: event:/Dialougue/Ootsa Neutral
   - isPlayer: 0
     line: Traditionally, one must bless the poem by reading it to a jaguar. If the
       jaguar likes it, it is considered divine approval.
     voice:
       Guid:
-        Data1: 848494061
-        Data2: 1201465500
-        Data3: -1062611790
-        Data4: 1225344596
-      Path: event:/Dialougue/Bard Sad
-  - isPlayer: 0
-    line: "That bastard, Kawaran, scared the jaguar. Now it won\u2019t let me get
-      close. How am I supposed to get its blessing?"
-    voice:
-      Guid:
         Data1: 1999574016
         Data2: 1188104198
         Data3: -803068242
         Data4: 369274613
       Path: event:/Dialougue/Bard Neutral
-  - isPlayer: 1
-    line: "Do you really need it? Can\u2019t you just fake it?"
-    voice:
-      Guid:
-        Data1: -166340523
-        Data2: 1132535540
-        Data3: -1731428675
-        Data4: -909582648
-      Path: event:/Dialougue/Ootsa Annoyed
   - isPlayer: 0
-    line: "That will bring bad luck for the rest of my life. C\u2019mon, I will tell
-      you where he went."
+    line: "That bastard scared the jaguar. Now it won\u2019t let me get close."
     voice:
       Guid:
         Data1: 848494061
@@ -223,35 +106,8 @@ MonoBehaviour:
         Data3: -1062611790
         Data4: 1225344596
       Path: event:/Dialougue/Bard Sad
-  - isPlayer: 0
-    line: And, I have what you are looking for. Help me and the glyph is yours.
-    voice:
-      Guid:
-        Data1: 1999574016
-        Data2: 1188104198
-        Data3: -803068242
-        Data4: 369274613
-      Path: event:/Dialougue/Bard Neutral
   - isPlayer: 1
-    line: Alright! What do I do?
-    voice:
-      Guid:
-        Data1: 1898231120
-        Data2: 1329017283
-        Data3: -115922250
-        Data4: -71516138
-      Path: event:/Dialougue/Ootsa Yelling
-  - isPlayer: 0
-    line: I will recite the poem and you will tell it to the jaguar.
-    voice:
-      Guid:
-        Data1: 1999574016
-        Data2: 1188104198
-        Data3: -803068242
-        Data4: 369274613
-      Path: event:/Dialougue/Bard Neutral
-  - isPlayer: 1
-    line: Ok, hit me.
+    line: "Is that bastard named Kwolan? My height, darker skin, sharp nose\u2026"
     voice:
       Guid:
         Data1: 291328159
@@ -259,6 +115,34 @@ MonoBehaviour:
         Data3: 2070210948
         Data4: -1867150278
       Path: event:/Dialougue/Ootsa Neutral
+  - isPlayer: 0
+    line: I shall answer thy questions on one condition. If thou canst help me, I
+      will help thee.
+    voice:
+      Guid:
+        Data1: 848494061
+        Data2: 1201465500
+        Data3: -1062611790
+        Data4: 1225344596
+      Path: event:/Dialougue/Bard Sad
+  - isPlayer: 1
+    line: What do you need?
+    voice:
+      Guid:
+        Data1: 291328159
+        Data2: 1203387725
+        Data3: 2070210948
+        Data4: -1867150278
+      Path: event:/Dialougue/Ootsa Neutral
+  - isPlayer: 0
+    line: 'I will recite the poem and you will transfer it to the jaguar. '
+    voice:
+      Guid:
+        Data1: 1999574016
+        Data2: 1188104198
+        Data3: -803068242
+        Data4: 369274613
+      Path: event:/Dialougue/Bard Neutral
   - isPlayer: 0
     line: 'If this huge ass cat comes down the tree For certain, one will flee '
     voice:
@@ -279,16 +163,16 @@ MonoBehaviour:
         Data4: 369274613
       Path: event:/Dialougue/Bard Neutral
   - isPlayer: 1
-    line: I can already tell this is not the one.
+    line: I can tell this is not the one.
     voice:
       Guid:
-        Data1: -166340523
-        Data2: 1132535540
-        Data3: -1731428675
-        Data4: -909582648
-      Path: event:/Dialougue/Ootsa Annoyed
+        Data1: 1999574016
+        Data2: 1188104198
+        Data3: -803068242
+        Data4: 369274613
+      Path: event:/Dialougue/Bard Neutral
   - isPlayer: 0
-    line: You are not the judge of that. So please.
+    line: You are not the judge of that. Go!
     voice:
       Guid:
         Data1: 1999574016

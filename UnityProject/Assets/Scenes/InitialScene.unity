@@ -451,9 +451,7 @@ MonoBehaviour:
   biomeGlyph: {fileID: 11400000, guid: 8642289d9e19747d0811a4c248263909, type: 2}
   landscapeGlyph: {fileID: 11400000, guid: 0f37ff6e7fd4c3b45a49fd59091b0812, type: 2}
   glyphCollection: {fileID: 11400000, guid: 55b020531aeb9884b83d360c2939f61a, type: 2}
-  playerGlyphs:
-  - {fileID: 11400000, guid: caa56952924210c419bb3e0146bf0640, type: 2}
-  - {fileID: 11400000, guid: dd0fe0b9a6f069b42ab01f63d73696f4, type: 2}
+  playerGlyphs: []
   places: {fileID: 11400000, guid: ec094f54de3afdf44972ffc97a19af96, type: 2}
   initialQuests:
   - {fileID: 11400000, guid: f3b0e5d7466d34965a185ed01eac626f, type: 2}

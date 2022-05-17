@@ -17,11 +17,11 @@ MonoBehaviour:
     line: Have you seen a person running around with some rocks?
     voice:
       Guid:
-        Data1: 291328159
-        Data2: 1203387725
-        Data3: 2070210948
-        Data4: -1867150278
-      Path: event:/Dialougue/Ootsa Neutral
+        Data1: 1898231120
+        Data2: 1329017283
+        Data3: -115922250
+        Data4: -71516138
+      Path: event:/Dialougue/Ootsa Yelling
   - isPlayer: 0
     line: Do they look like you?
     voice:
@@ -35,11 +35,11 @@ MonoBehaviour:
     line: Yes.
     voice:
       Guid:
-        Data1: 291328159
-        Data2: 1203387725
-        Data3: 2070210948
-        Data4: -1867150278
-      Path: event:/Dialougue/Ootsa Neutral
+        Data1: 1957640647
+        Data2: 1212946211
+        Data3: 2051163539
+        Data4: 2062734785
+      Path: event:/Dialougue/Ootsa Happy
   - isPlayer: 0
     line: What a shame. But yes, they came by and said we were all beautiful.
     voice:
@@ -53,11 +53,11 @@ MonoBehaviour:
     line: That's true,  I like your outfits.
     voice:
       Guid:
-        Data1: 291328159
-        Data2: 1203387725
-        Data3: 2070210948
-        Data4: -1867150278
-      Path: event:/Dialougue/Ootsa Neutral
+        Data1: 1957640647
+        Data2: 1212946211
+        Data3: 2051163539
+        Data4: 2062734785
+      Path: event:/Dialougue/Ootsa Happy
   - isPlayer: 0
     line: WHY would you SAY that, you're just as rude as your ugly friend.
     voice:

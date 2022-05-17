@@ -14,7 +14,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   lines:
   - isPlayer: 0
-    line: 
+    line: Gobble.
+    voice:
+      Guid:
+        Data1: 0
+        Data2: 0
+        Data3: 0
+        Data4: 0
+      Path: 
+  - isPlayer: 1
+    line: Hejsa.
     voice:
       Guid:
         Data1: 0

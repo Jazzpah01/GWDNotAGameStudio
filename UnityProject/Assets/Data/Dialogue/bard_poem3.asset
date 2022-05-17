@@ -17,11 +17,11 @@ MonoBehaviour:
     line: What else you got?
     voice:
       Guid:
-        Data1: -166340523
-        Data2: 1132535540
-        Data3: -1731428675
-        Data4: -909582648
-      Path: event:/Dialougue/Ootsa Annoyed
+        Data1: 291328159
+        Data2: 1203387725
+        Data3: 2070210948
+        Data4: -1867150278
+      Path: event:/Dialougue/Ootsa Neutral
   - isPlayer: 0
     line: He cried like a baby He screamed like a panther
     voice:
@@ -35,9 +35,9 @@ MonoBehaviour:
     line: 'In the middle of the night He offered a scrumptious bite '
     voice:
       Guid:
-        Data1: 1999574016
-        Data2: 1188104198
-        Data3: -803068242
-        Data4: 369274613
-      Path: event:/Dialougue/Bard Neutral
+        Data1: 848494061
+        Data2: 1201465500
+        Data3: -1062611790
+        Data4: 1225344596
+      Path: event:/Dialougue/Bard Sad
   current: -1

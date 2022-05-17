@@ -13,6 +13,15 @@ MonoBehaviour:
   m_Name: bard_poem4
   m_EditorClassIdentifier: 
   lines:
+  - isPlayer: 1
+    line: Even worse. Any other one?
+    voice:
+      Guid:
+        Data1: 848494061
+        Data2: 1201465500
+        Data3: -1062611790
+        Data4: 1225344596
+      Path: event:/Dialougue/Bard Sad
   - isPlayer: 0
     line: 'A jaguar that stalks down his narrow cage can seldom see through his bars
       of rage '

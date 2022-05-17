@@ -10,19 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c6a835d05eaa80b419430c51f8e79900, type: 3}
-  m_Name: bard_poem3
+  m_Name: bard_Ootsapoem3
   m_EditorClassIdentifier: 
   lines:
   - isPlayer: 1
-    line: Nope. What else you got?
-    voice:
-      Guid:
-        Data1: -166340523
-        Data2: 1132535540
-        Data3: -1731428675
-        Data4: -909582648
-      Path: event:/Dialougue/Ootsa Annoyed
-  - isPlayer: 0
     line: He cried like a baby He screamed like a panther
     voice:
       Guid:
@@ -31,7 +22,7 @@ MonoBehaviour:
         Data3: -1062611790
         Data4: 1225344596
       Path: event:/Dialougue/Bard Sad
-  - isPlayer: 0
+  - isPlayer: 1
     line: 'In the middle of the night He offered a scrumptious bite '
     voice:
       Guid:

@@ -33,7 +33,7 @@ MonoBehaviour:
         Data4: -1867150278
       Path: event:/Dialougue/Ootsa Neutral
   - isPlayer: 0
-    line: That gotta be it. As a token of your new role, accept this glyph.
+    line: That's gotta be it. As a token of your new role, accept this glyph.
     voice:
       Guid:
         Data1: 244635931

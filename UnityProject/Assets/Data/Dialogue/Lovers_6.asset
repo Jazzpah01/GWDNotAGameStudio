@@ -95,7 +95,7 @@ MonoBehaviour:
         Data4: 0
       Path: 
   - isPlayer: 0
-    line: It's on the bench over there... give it to him next time?
+    line: It's hung up next to the entrance... give it to him next time?
     voice:
       Guid:
         Data1: 0

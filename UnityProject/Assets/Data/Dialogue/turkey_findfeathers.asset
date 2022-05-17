@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   lines:
   - isPlayer: 0
-    line: Gobble.
+    line: Gobble gobble :(
     voice:
       Guid:
         Data1: 0
@@ -23,7 +23,97 @@ MonoBehaviour:
         Data4: 0
       Path: 
   - isPlayer: 1
-    line: Hejsa.
+    line: Hi little friend, what happened to you?
+    voice:
+      Guid:
+        Data1: 0
+        Data2: 0
+        Data3: 0
+        Data4: 0
+      Path: 
+  - isPlayer: 0
+    line: Gobble gobble >:(
+    voice:
+      Guid:
+        Data1: 0
+        Data2: 0
+        Data3: 0
+        Data4: 0
+      Path: 
+  - isPlayer: 1
+    line: Yes I can see you lost your feathers, but how?
+    voice:
+      Guid:
+        Data1: 0
+        Data2: 0
+        Data3: 0
+        Data4: 0
+      Path: 
+  - isPlayer: 0
+    line: "\u2026"
+    voice:
+      Guid:
+        Data1: 0
+        Data2: 0
+        Data3: 0
+        Data4: 0
+      Path: 
+  - isPlayer: 1
+    line: "Sorry, I guess it\u2019s a touchy subject. Where are your feathers now?"
+    voice:
+      Guid:
+        Data1: 0
+        Data2: 0
+        Data3: 0
+        Data4: 0
+      Path: 
+  - isPlayer: 0
+    line: "Gobble, gobble, gobble, gobble\u2026"
+    voice:
+      Guid:
+        Data1: 0
+        Data2: 0
+        Data3: 0
+        Data4: 0
+      Path: 
+  - isPlayer: 1
+    line: All over? How many are you missing?
+    voice:
+      Guid:
+        Data1: 0
+        Data2: 0
+        Data3: 0
+        Data4: 0
+      Path: 
+  - isPlayer: 0
+    line: Gobble gobble gobble gobble gobble gobble gobble gobble gobble gobble
+    voice:
+      Guid:
+        Data1: 0
+        Data2: 0
+        Data3: 0
+        Data4: 0
+      Path: 
+  - isPlayer: 1
+    line: "Ten, that\u2019s a lot! Well, I\u2019ll pick them up if I see any!"
+    voice:
+      Guid:
+        Data1: 0
+        Data2: 0
+        Data3: 0
+        Data4: 0
+      Path: 
+  - isPlayer: 0
+    line: Gobble gobble <3
+    voice:
+      Guid:
+        Data1: 0
+        Data2: 0
+        Data3: 0
+        Data4: 0
+      Path: 
+  - isPlayer: 1
+    line: Huh, I guess Tjetlik was right, turkeys are good conversation partners.
     voice:
       Guid:
         Data1: 0

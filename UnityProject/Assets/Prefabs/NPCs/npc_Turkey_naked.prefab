@@ -133,7 +133,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   characterName: Turkey
-  npcPortrait: {fileID: 7461274213759369477, guid: 94cbde94ba60549f88a0d963fafebb78, type: 3}
+  npcPortrait: {fileID: 2570204825745611973, guid: 762317882b06169489531f37b385c5e7, type: 3}
   rig: {fileID: 6982363313943350090}
   hasMet: 0
   hasDialogue: 0
@@ -164,7 +164,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.005440831, y: 0.32790625}
+  m_Offset: {x: 0.019851685, y: 0.4503994}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -175,7 +175,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.3170307, y: 2.423634}
+  m_Size: {x: 2.2969766, y: 2.6686206}
   m_EdgeRadius: 0
 --- !u!114 &3557115854586208358
 MonoBehaviour:

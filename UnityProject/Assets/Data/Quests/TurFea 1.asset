@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 76812cc4cf143ee40a123a38a320e2de, type: 3}
-  m_Name: Turkey feathers 1
+  m_Name: TurFea 1
   m_EditorClassIdentifier: 
   customEditing: 1
   questEvents:
@@ -31,10 +31,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   questIndex: 1
   questIncrease: 0
-  landscape: {fileID: 0}
-  biome: {fileID: 0}
-  time: {fileID: 0}
-  prefab: {fileID: 0}
+  landscape: {fileID: 11400000, guid: 4f07cc7fa8f6a0a47817e9f0b54c5dea, type: 2}
+  biome: {fileID: 11400000, guid: dd0fe0b9a6f069b42ab01f63d73696f4, type: 2}
+  time: {fileID: 11400000, guid: 744a2e9ef0b94bb489b745c1eeb6556f, type: 2}
+  prefab: {fileID: 7720447589996262763, guid: 91885193c9ef95244a69c192da9c83a5, type: 3}
 --- !u!114 &6240780944054788827
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -49,11 +49,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   questIndex: 0
   questIncrease: 0
-  landscape: {fileID: 11400000, guid: 0f37ff6e7fd4c3b45a49fd59091b0812, type: 2}
-  biome: {fileID: 11400000, guid: 8642289d9e19747d0811a4c248263909, type: 2}
-  time: {fileID: 11400000, guid: c4ef068ec96997a4181b8dd407818fb6, type: 2}
-  prefab: {fileID: 0}
-  position: {x: 0, y: 0}
+  landscape: {fileID: 11400000, guid: 4f07cc7fa8f6a0a47817e9f0b54c5dea, type: 2}
+  biome: {fileID: 11400000, guid: dd0fe0b9a6f069b42ab01f63d73696f4, type: 2}
+  time: {fileID: 11400000, guid: 744a2e9ef0b94bb489b745c1eeb6556f, type: 2}
+  prefab: {fileID: 7720447589996262763, guid: 91885193c9ef95244a69c192da9c83a5, type: 3}
+  position: {x: -1.62, y: -3.34}
   scale: {x: 1, y: 1}
 --- !u!114 &7399832952371280837
 MonoBehaviour:
@@ -69,5 +69,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   questIndex: 0
   questIncrease: 1
-  interactableObject: {fileID: 0}
+  interactableObject: {fileID: 7720447589996262763, guid: 91885193c9ef95244a69c192da9c83a5, type: 3}
   setInteractable: 1

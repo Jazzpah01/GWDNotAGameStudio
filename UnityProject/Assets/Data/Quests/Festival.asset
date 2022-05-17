@@ -101,7 +101,6 @@ MonoBehaviour:
   customEditing: 1
   questEvents:
   - {fileID: 5836007998586683141}
-  - {fileID: 7804923551966121430}
   - {fileID: -5514489047459849893}
   - {fileID: 649522452821994503}
   - {fileID: -1647208340573268933}
@@ -207,23 +206,3 @@ MonoBehaviour:
   questIndex: 5
   questIncrease: 0
   questToInitiate: {fileID: 11400000, guid: 9081fc702c8bd47ec9b8982ee9160365, type: 2}
---- !u!114 &7804923551966121430
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4360fe7d5ce7c4644931e761bc79349a, type: 3}
-  m_Name: SpawnGameObject
-  m_EditorClassIdentifier: 
-  questIndex: 0
-  questIncrease: 0
-  landscape: {fileID: 11400000, guid: 4f07cc7fa8f6a0a47817e9f0b54c5dea, type: 2}
-  biome: {fileID: 11400000, guid: 0301f76479b63394a89d420f7fc684ac, type: 2}
-  time: {fileID: 11400000, guid: 90e1f6d6cc3d1c046809ec48e8c7710d, type: 2}
-  prefab: {fileID: 161218106855915778, guid: d5c47780554534b4cb28f8ddbb62ab4c, type: 3}
-  position: {x: 32, y: -3.29}
-  scale: {x: 1, y: 1}

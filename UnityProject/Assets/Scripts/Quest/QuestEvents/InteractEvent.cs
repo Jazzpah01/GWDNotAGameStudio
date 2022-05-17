@@ -18,6 +18,9 @@ public class InteractEvent : QuestEvent
 
         foreach (Interactable item in context.interactables)
         {
+            if (item == null)
+                continue;
+
             if (item.ID == interactableObject.name)
             {
                 if (setInteractable)

@@ -22,6 +22,7 @@ public class Interactable : MonoBehaviour
     {
         get
         {
+            if (gameObject == null) return "NULL";
             id = gameObject.name.Replace("(Clone)", "");
             return id;
         }

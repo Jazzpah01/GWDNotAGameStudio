@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   lines:
   - isPlayer: 0
-    line: Have you found Kahmora?
+    line: Ayo ayo!
     voice:
       Guid:
         Data1: 1999574016
@@ -23,7 +23,16 @@ MonoBehaviour:
         Data4: 369274613
       Path: event:/Dialougue/Bard Neutral
   - isPlayer: 0
-    line: I said bye to thee.
+    line: Sayin thou grindin but thou ain't goin nowhere
+    voice:
+      Guid:
+        Data1: 1999574016
+        Data2: 1188104198
+        Data3: -803068242
+        Data4: 369274613
+      Path: event:/Dialougue/Bard Neutral
+  - isPlayer: 0
+    line: Why thou procrastinating, girl?
     voice:
       Guid:
         Data1: 848494061
@@ -31,13 +40,4 @@ MonoBehaviour:
         Data3: -1062611790
         Data4: 1225344596
       Path: event:/Dialougue/Bard Sad
-  - isPlayer: 0
-    line: Thank thou!
-    voice:
-      Guid:
-        Data1: 1999574016
-        Data2: 1188104198
-        Data3: -803068242
-        Data4: 369274613
-      Path: event:/Dialougue/Bard Neutral
   current: -1

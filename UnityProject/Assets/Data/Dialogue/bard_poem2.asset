@@ -13,6 +13,15 @@ MonoBehaviour:
   m_Name: bard_poem2
   m_EditorClassIdentifier: 
   lines:
+  - isPlayer: 1
+    line: No reaction. Any other ideas?
+    voice:
+      Guid:
+        Data1: 848494061
+        Data2: 1201465500
+        Data3: -1062611790
+        Data4: 1225344596
+      Path: event:/Dialougue/Bard Sad
   - isPlayer: 0
     line: 'I''m blue Da ba dee da ba di '
     voice:

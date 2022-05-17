@@ -1,0 +1,35 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c6a835d05eaa80b419430c51f8e79900, type: 3}
+  m_Name: bard_Ootsapoem4
+  m_EditorClassIdentifier: 
+  lines:
+  - isPlayer: 1
+    line: 'A jaguar that stalks down his narrow cage can seldom see through his bars
+      of rage '
+    voice:
+      Guid:
+        Data1: 1999574016
+        Data2: 1188104198
+        Data3: -803068242
+        Data4: 369274613
+      Path: event:/Dialougue/Bard Neutral
+  - isPlayer: 1
+    line: 'His claws are clipped and his tail is foul so he opens his throat to growl. '
+    voice:
+      Guid:
+        Data1: 848494061
+        Data2: 1201465500
+        Data3: -1062611790
+        Data4: 1225344596
+      Path: event:/Dialougue/Bard Sad
+  current: -1

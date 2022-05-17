@@ -90,7 +90,7 @@ GameObject:
   - component: {fileID: 6883559642930416245}
   - component: {fileID: 5382941641891164675}
   m_Layer: 0
-  m_Name: Goatskull
+  m_Name: DogFigurine
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

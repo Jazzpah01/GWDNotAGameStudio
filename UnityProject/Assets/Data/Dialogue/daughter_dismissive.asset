@@ -17,18 +17,18 @@ MonoBehaviour:
     line: I have nothing more to say.
     voice:
       Guid:
-        Data1: 0
-        Data2: 0
-        Data3: 0
-        Data4: 0
-      Path: 
+        Data1: 248736705
+        Data2: 1273507025
+        Data3: 1876864157
+        Data4: -1492965847
+      Path: event:/Dialougue/Golden Girls
   - isPlayer: 0
     line: Leave!
     voice:
       Guid:
-        Data1: 0
-        Data2: 0
-        Data3: 0
-        Data4: 0
-      Path: 
+        Data1: 248736705
+        Data2: 1273507025
+        Data3: 1876864157
+        Data4: -1492965847
+      Path: event:/Dialougue/Golden Girls
   current: -1

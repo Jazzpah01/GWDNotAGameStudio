@@ -16,6 +16,21 @@ MonoBehaviour:
   questIncrease: 1
   npcPrefab: {fileID: 1862752981726964725, guid: 561c375eb39ca45599df2da8b8f4cc68, type: 3}
   dialogue: {fileID: 11400000, guid: 208e298740e962140a4dd6c82f863e8b, type: 2}
+--- !u!114 &-8500487106298992247
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dbe2eaf5432e827408a41b3da938eff9, type: 3}
+  m_Name: StartQuest
+  m_EditorClassIdentifier: 
+  questIndex: 5
+  questIncrease: 1
+  questToInitiate: {fileID: 11400000, guid: 6c4fcc6e5ce1f0140975457e44cf5710, type: 2}
 --- !u!114 &-8455134445218562036
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -59,10 +74,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 34046101b1f069c428a58bb51b915585, type: 3}
   m_Name: SetDialogue
   m_EditorClassIdentifier: 
-  questIndex: 5
+  questIndex: 6
   questIncrease: 0
   npcPrefab: {fileID: 8636090863074201684, guid: e042809f2e2104bacaa38cc108cb9fa2, type: 3}
-  dialogue: {fileID: 0}
+  dialogue: {fileID: 11400000, guid: dd5105e15209612449206ea0f0442b39, type: 2}
 --- !u!114 &-2452930818783378327
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -79,6 +94,22 @@ MonoBehaviour:
   questIncrease: 1
   npcPrefab: {fileID: 8636090863074201684, guid: e042809f2e2104bacaa38cc108cb9fa2, type: 3}
   dialogue: {fileID: 11400000, guid: e2978fe0c9d494f4db5f7eada4a74d6b, type: 2}
+--- !u!114 &-2399119652082349952
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 34046101b1f069c428a58bb51b915585, type: 3}
+  m_Name: SetDialogue
+  m_EditorClassIdentifier: 
+  questIndex: 6
+  questIncrease: 0
+  npcPrefab: {fileID: 8162052205935083975, guid: 627ba145cd3454d04bae4fbc3ff079f7, type: 3}
+  dialogue: {fileID: 11400000, guid: dd5105e15209612449206ea0f0442b39, type: 2}
 --- !u!114 &-584906020495934858
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -118,7 +149,9 @@ MonoBehaviour:
   - {fileID: 4628215135405441123}
   - {fileID: 1227120760195903085}
   - {fileID: -8455134445218562036}
+  - {fileID: -8500487106298992247}
   - {fileID: -2733027428019478057}
+  - {fileID: -2399119652082349952}
 --- !u!114 &1227120760195903085
 MonoBehaviour:
   m_ObjectHideFlags: 0

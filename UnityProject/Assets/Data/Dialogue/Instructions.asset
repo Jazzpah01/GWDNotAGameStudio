@@ -10,7 +10,25 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c6a835d05eaa80b419430c51f8e79900, type: 3}
-  m_Name: New Dialogue
+  m_Name: Instructions
   m_EditorClassIdentifier: 
-  lines: []
+  lines:
+  - isPlayer: 1
+    line: (Click on your glyphs to insert them)
+    voice:
+      Guid:
+        Data1: 0
+        Data2: 0
+        Data3: 0
+        Data4: 0
+      Path: 
+  - isPlayer: 1
+    line: (Travel with E when near the waystone)
+    voice:
+      Guid:
+        Data1: 0
+        Data2: 0
+        Data3: 0
+        Data4: 0
+      Path: 
   current: -1

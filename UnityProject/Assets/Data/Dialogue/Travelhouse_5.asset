@@ -17,127 +17,127 @@ MonoBehaviour:
     line: Hey! Here you are again!
     voice:
       Guid:
-        Data1: 0
-        Data2: 0
-        Data3: 0
-        Data4: 0
-      Path: 
+        Data1: 1957640647
+        Data2: 1212946211
+        Data3: 2051163539
+        Data4: 2062734785
+      Path: event:/Dialougue/Ootsa Happy
   - isPlayer: 1
     line: Will you please tell me what's going on with your house?
     voice:
       Guid:
-        Data1: 0
-        Data2: 0
-        Data3: 0
-        Data4: 0
-      Path: 
+        Data1: -166340523
+        Data2: 1132535540
+        Data3: -1731428675
+        Data4: -909582648
+      Path: event:/Dialougue/Ootsa Annoyed
   - isPlayer: 1
     line: Or at least if you've seen my friend?
     voice:
       Guid:
-        Data1: 0
-        Data2: 0
-        Data3: 0
-        Data4: 0
-      Path: 
+        Data1: -166340523
+        Data2: 1132535540
+        Data3: -1731428675
+        Data4: -909582648
+      Path: event:/Dialougue/Ootsa Annoyed
   - isPlayer: 0
     line: Found me again, have you?
     voice:
       Guid:
-        Data1: 0
-        Data2: 0
-        Data3: 0
-        Data4: 0
-      Path: 
+        Data1: 1549764904
+        Data2: 1190620573
+        Data3: 1391422363
+        Data4: -119384019
+      Path: event:/Dialougue/Hermit Upset
   - isPlayer: 0
     line: Fine, I'm tired, so I'll answer your questions.
     voice:
       Guid:
-        Data1: 0
-        Data2: 0
-        Data3: 0
-        Data4: 0
-      Path: 
+        Data1: 244635931
+        Data2: 1210964411
+        Data3: -1230571842
+        Data4: 1256436458
+      Path: event:/Dialougue/Hermit Neutral
   - isPlayer: 0
     line: This house has pieces of the Waystones.
     voice:
       Guid:
-        Data1: 0
-        Data2: 0
-        Data3: 0
-        Data4: 0
-      Path: 
+        Data1: 244635931
+        Data2: 1210964411
+        Data3: -1230571842
+        Data4: 1256436458
+      Path: event:/Dialougue/Hermit Neutral
   - isPlayer: 0
     line: So it can travel, much like you do.
     voice:
       Guid:
-        Data1: 0
-        Data2: 0
-        Data3: 0
-        Data4: 0
-      Path: 
+        Data1: 244635931
+        Data2: 1210964411
+        Data3: -1230571842
+        Data4: 1256436458
+      Path: event:/Dialougue/Hermit Neutral
   - isPlayer: 0
     line: But not everywhere... You might have noticed there's shards left when I
       leave.
     voice:
       Guid:
-        Data1: 0
-        Data2: 0
-        Data3: 0
-        Data4: 0
-      Path: 
+        Data1: 244635931
+        Data2: 1210964411
+        Data3: -1230571842
+        Data4: 1256436458
+      Path: event:/Dialougue/Hermit Neutral
   - isPlayer: 0
     line: My house can only travel to those shards.
     voice:
       Guid:
-        Data1: 0
-        Data2: 0
-        Data3: 0
-        Data4: 0
-      Path: 
+        Data1: 244635931
+        Data2: 1210964411
+        Data3: -1230571842
+        Data4: 1256436458
+      Path: event:/Dialougue/Hermit Neutral
   - isPlayer: 0
     line: Wherever they are.
     voice:
       Guid:
-        Data1: 0
-        Data2: 0
-        Data3: 0
-        Data4: 0
-      Path: 
+        Data1: 244635931
+        Data2: 1210964411
+        Data3: -1230571842
+        Data4: 1256436458
+      Path: event:/Dialougue/Hermit Neutral
   - isPlayer: 0
     line: And! I saw some other traveller once, but I escaped immediately!
     voice:
       Guid:
-        Data1: 0
-        Data2: 0
-        Data3: 0
-        Data4: 0
-      Path: 
+        Data1: 244635931
+        Data2: 1210964411
+        Data3: -1230571842
+        Data4: 1256436458
+      Path: event:/Dialougue/Hermit Neutral
   - isPlayer: 0
     line: Never saw them again...
     voice:
       Guid:
-        Data1: 0
-        Data2: 0
-        Data3: 0
-        Data4: 0
-      Path: 
+        Data1: 244635931
+        Data2: 1210964411
+        Data3: -1230571842
+        Data4: 1256436458
+      Path: event:/Dialougue/Hermit Neutral
   - isPlayer: 0
     line: Now leave me alone! I'm tired.
     voice:
       Guid:
-        Data1: 0
-        Data2: 0
-        Data3: 0
-        Data4: 0
-      Path: 
+        Data1: 1549764904
+        Data2: 1190620573
+        Data3: 1391422363
+        Data4: -119384019
+      Path: event:/Dialougue/Hermit Upset
   - isPlayer: 1
     line: Fine, thank you anyway.
     voice:
       Guid:
-        Data1: 0
-        Data2: 0
-        Data3: 0
-        Data4: 0
-      Path: 
+        Data1: 1957640647
+        Data2: 1212946211
+        Data3: 2051163539
+        Data4: 2062734785
+      Path: event:/Dialougue/Ootsa Happy
   current: -1

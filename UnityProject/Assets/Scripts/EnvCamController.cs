@@ -20,6 +20,7 @@ public class EnvCamController : MonoBehaviour
 
     // cloud stuff
     public GameObject cloud_prefab;
+    public List<GameObject> cloud_prefabs;
     public Vector2 cloud_spawn; // TODO: decide cloud spawn position
     private float cloud_timer;
     public float cloud_interval;
@@ -60,6 +61,9 @@ public class EnvCamController : MonoBehaviour
         }
 
         // cloud spawning
+        int rand = Random.Range(0, cloud_prefabs.Count);
+        cloud_prefab = cloud_prefabs[rand];
+
         cloud_timer += Time.deltaTime;
         if (GameManager.instance.player != null && cloud_prefab != null && cloud_timer > cloud_interval && clouds_active < cloud_capacity)
         {
@@ -72,7 +76,7 @@ public class EnvCamController : MonoBehaviour
             cloud.GetComponent<CloudController>().SetMovesRight(cloud_moves_right);
             clouds_active++;
             cloud_timer = 0f;
-            Debug.Log("Cloud Spawned! (pos: " + spawnPos + " ) - moves right: " + cloud_moves_right + " - Number of active clouds = " + clouds_active);
+            Debug.Log(rand +" Cloud Spawned! (pos: " + spawnPos + " ) - moves right: " + cloud_moves_right + " - Number of active clouds = " + clouds_active);
         }
         else if (cloud_timer > cloud_interval)
         {

@@ -75,6 +75,21 @@ public class SceneContext
                 UnorderedEventObjects.Remove(go);
             }
             EventObjects[prefab].Clear();
+
+            foreach (NPCController npc in npcs.ToArray())
+            {
+                if (npc == null)
+                {
+                    npcs.Remove(npc);
+                }
+            }
+            foreach (Interactable intw in interactables.ToArray())
+            {
+                if (intw == null)
+                {
+                    interactables.Remove(intw);
+                }
+            }
         } else
         {
             Debug.Log("REMOVING STUFF");
@@ -84,6 +99,12 @@ public class SceneContext
             {
                 foreach (NPCController othernpc in npcs.ToArray())
                 {
+                    if (othernpc == null)
+                    {
+                        npcs.Remove(othernpc);
+                        continue;
+                    }
+
                     if (npc.characterName == othernpc.characterName)
                     {
                         npcs.Remove(othernpc);
@@ -110,6 +131,12 @@ public class SceneContext
             {
                 foreach (Interactable otherinteractable in interactables.ToArray())
                 {
+                    if (otherinteractable == null)
+                    {
+                        interactables.Remove(otherinteractable);
+                        continue;
+                    }
+
                     if (prefab.name == otherinteractable.ID)
                     {
                         interactables.Remove(otherinteractable);

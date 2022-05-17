@@ -7,8 +7,6 @@ using System;
 [CustomEditor(typeof(LocationData))]
 public class LocationsEditor : Editor
 {
-
-
     public override void OnInspectorGUI()
     {
         LocationData o = (LocationData)serializedObject.targetObject;

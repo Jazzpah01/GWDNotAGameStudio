@@ -41,8 +41,6 @@ public class LevelManager : MonoBehaviour
     {
         instance = this;
         sceneContext = new SceneContext();
-
-        
     }
 
     private void Start()
@@ -165,6 +163,7 @@ public class LevelManager : MonoBehaviour
     public void LoadPlace()
     {
         // Load place
+        placeManager.CleanupSceneRuntime();
         placeManager.biome = GlyphManager.biome;
         placeManager.time = GlyphManager.time;
         placeManager.LoadPlace();

@@ -99,33 +99,9 @@ public class PlaceManager : MonoBehaviour
         }
     }
 
-    public void SavePlace()
-    {
-        GlyphLandscape landscape = levelManager.landscapeGlyph;
+    
 
-        if (landscape == null || biome == null || time == null)
-        {
-            throw new System.Exception("ERROR: Cannot save place when some of the glyphs are not specified.");
-        }
-
-        SetupLocalPlaces();
-
-        int x = GlyphManager.GetIndex(landscape);
-        int y = GlyphManager.GetIndex(biome);
-        int z = GlyphManager.GetIndex(time);
-
-        if (currentPlace == null)
-        {
-            currentPlace = InitializePlace();
-        }
-
-        currentPlace.name = $"Place of ({x},{y},{z})";
-        _places.SavePlacePrefab(x, y, z, currentPlace);
-
-        CleanupScene();
-    }
-
-    private GameObject InitializePlace()
+    public GameObject InitializePlace()
     {
         GlyphLandscape landscape = levelManager.landscapeGlyph;
 
@@ -139,7 +115,7 @@ public class PlaceManager : MonoBehaviour
         return place;
     }
 
-    private void SetupLocalPlaces()
+    public void SetupLocalPlaces()
     {
         if (_places == null)
         {
@@ -172,6 +148,18 @@ public class PlaceManager : MonoBehaviour
         loadedBiome = null;
         loadedTime = null;
         DestroyImmediate(currentPlace,true);
+        currentPlace = null;
+    }
+
+    public void CleanupSceneRuntime()
+    {
+        biome = null;
+        time = null;
+
+        loadedLandscape = null;
+        loadedBiome = null;
+        loadedTime = null;
+        Destroy(currentPlace);
         currentPlace = null;
     }
 

@@ -116,7 +116,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 5046098145165154673}
-  - {fileID: 821236183218964685}
+  - {fileID: 3439543263100073475}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -134,23 +134,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   characterName: Turkey
   npcPortrait: {fileID: 7461274213759369477, guid: 94cbde94ba60549f88a0d963fafebb78, type: 3}
-  rig: {fileID: 0}
+  rig: {fileID: 6982363313943350090}
   hasMet: 0
   hasDialogue: 0
   hasFinishedDialogue: 0
   dialogueActive: 0
   dialogue: {fileID: 0}
-  dialogueUI: {fileID: 7544611812191606419}
+  dialogueUI: {fileID: 0}
   currentLine: 0
   delayInterval: 0.2
   lookAtPlayer: 1
   defaultVoice:
     Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
+      Data1: -1197581765
+      Data2: 1310792267
+      Data3: 1238089623
+      Data4: -1296574310
+    Path: event:/Character/Wall Bump
 --- !u!61 &3613430569906729789
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -191,11 +191,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   startInteractable: 0
   interactOnEnter: 0
-  interactText: {fileID: 7544611812191606419}
+  interactText: {fileID: 5507326005468571741}
   id: 
   playerInside: 0
   isInteractable: 0
---- !u!1001 &2016078658139984181
+--- !u!1001 &4549945628707401723
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -272,7 +272,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1197694917331704312, guid: f264cae62e2920d4689e5a6ac59acf8b, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 2.26
+      value: 0.19
       objectReference: {fileID: 0}
     - target: {fileID: 1197694917331704312, guid: f264cae62e2920d4689e5a6ac59acf8b, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -290,15 +290,19 @@ PrefabInstance:
       propertyPath: m_Name
       value: InteractText
       objectReference: {fileID: 0}
+    - target: {fileID: 8307264050883692454, guid: f264cae62e2920d4689e5a6ac59acf8b, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f264cae62e2920d4689e5a6ac59acf8b, type: 3}
---- !u!224 &821236183218964685 stripped
+--- !u!224 &3439543263100073475 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 1197694917331704312, guid: f264cae62e2920d4689e5a6ac59acf8b, type: 3}
-  m_PrefabInstance: {fileID: 2016078658139984181}
+  m_PrefabInstance: {fileID: 4549945628707401723}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &7544611812191606419 stripped
+--- !u!1 &5507326005468571741 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8307264050883692454, guid: f264cae62e2920d4689e5a6ac59acf8b, type: 3}
-  m_PrefabInstance: {fileID: 2016078658139984181}
+  m_PrefabInstance: {fileID: 4549945628707401723}
   m_PrefabAsset: {fileID: 0}

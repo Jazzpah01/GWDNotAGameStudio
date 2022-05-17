@@ -64,7 +64,8 @@ public class NPCController : MonoBehaviour, IInteractant
     // Start is called before the first frame update
     void Start()
     {
-        this.anim = rig.GetComponent<Animator>();
+        if (rig != null)
+            this.anim = rig.GetComponent<Animator>();
         if (GameManager.instance != null) player = GameManager.instance.player;
         if (text != null) Debug.Log("text init success");
         //defaultTextColor = text.color;
@@ -82,10 +83,12 @@ public class NPCController : MonoBehaviour, IInteractant
         {
             if (player.transform.position.x < transform.position.x) // turn npc towards player
             {
-                rig.transform.localScale = new Vector3(-1f, 1f, 1f);
+                if (rig != null)
+                    rig.transform.localScale = new Vector3(-1f, 1f, 1f);
             } else
             {
-                rig.transform.localScale = new Vector3(1f, 1f, 1f);
+                if (rig != null)
+                    rig.transform.localScale = new Vector3(1f, 1f, 1f);
             }
         }
 

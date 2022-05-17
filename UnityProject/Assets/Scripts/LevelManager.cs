@@ -267,10 +267,11 @@ public class LevelManager : MonoBehaviour
                 {
                     Debug.Log("Collisions!");
                     Destroy(sr.gameObject);
-                } else
-                {
                     if (sp.Contains(sr))
                         sp.Remove(sr);
+                } else
+                {
+                    
                 }
             }
         }

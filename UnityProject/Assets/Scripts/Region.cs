@@ -69,13 +69,16 @@ public class Region : MonoBehaviour
         if (r1.positionAxis != r2.positionAxis)
             return false;
 
-        if (r1.PositionMin.x < r2.PositionMin.x + r2.Size.x &&
-            r1.PositionMin.x + r1.Size.x > r2.PositionMin.x &&
-            r1.PositionMin.y < r2.PositionMin.y + r2.Size.y &&
-            r1.PositionMin.y + r1.Size.y > r2.PositionMin.y)
-        {
-            return true;
-        }
+        return (r1.PositionMin.x <= r2.PositionMax.x && r1.PositionMax.x >= r2.PositionMin.x) &&
+               (r1.PositionMin.y <= r2.PositionMax.y && r1.PositionMax.y >= r2.PositionMin.y);
+
+        //if (r1.PositionMin.x < r2.PositionMin.x + r2.Size.x &&
+        //    r1.PositionMin.x + r1.Size.x > r2.PositionMin.x &&
+        //    r1.PositionMin.y < r2.PositionMin.y + r2.Size.y &&
+        //    r1.PositionMin.y + r1.Size.y > r2.PositionMin.y)
+        //{
+        //    return true;
+        //}
 
         return false;
     }

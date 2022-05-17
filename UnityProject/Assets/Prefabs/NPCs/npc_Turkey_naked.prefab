@@ -116,7 +116,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 5046098145165154673}
-  - {fileID: 821236183218964685}
+  - {fileID: 3439543263100073475}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -140,7 +140,7 @@ MonoBehaviour:
   hasFinishedDialogue: 0
   dialogueActive: 0
   dialogue: {fileID: 0}
-  dialogueUI: {fileID: 7544611812191606419}
+  dialogueUI: {fileID: 0}
   currentLine: 0
   delayInterval: 0.2
   lookAtPlayer: 1
@@ -191,11 +191,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   startInteractable: 0
   interactOnEnter: 0
-  interactText: {fileID: 7544611812191606419}
+  interactText: {fileID: 5507326005468571741}
   id: 
   playerInside: 0
   isInteractable: 0
---- !u!1001 &2016078658139984181
+--- !u!1001 &4549945628707401723
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -232,11 +232,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1197694917331704312, guid: f264cae62e2920d4689e5a6ac59acf8b, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 3.685
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 1197694917331704312, guid: f264cae62e2920d4689e5a6ac59acf8b, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 1.1734
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 1197694917331704312, guid: f264cae62e2920d4689e5a6ac59acf8b, type: 3}
       propertyPath: m_LocalPosition.x
@@ -268,11 +268,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1197694917331704312, guid: f264cae62e2920d4689e5a6ac59acf8b, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 0
+      value: 2.2
       objectReference: {fileID: 0}
     - target: {fileID: 1197694917331704312, guid: f264cae62e2920d4689e5a6ac59acf8b, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 1.09
+      value: 0.19
       objectReference: {fileID: 0}
     - target: {fileID: 1197694917331704312, guid: f264cae62e2920d4689e5a6ac59acf8b, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -294,35 +294,15 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 8761438962407871117, guid: f264cae62e2920d4689e5a6ac59acf8b, type: 3}
-      propertyPath: m_text
-      value: ...
-      objectReference: {fileID: 0}
-    - target: {fileID: 8761438962407871117, guid: f264cae62e2920d4689e5a6ac59acf8b, type: 3}
-      propertyPath: m_fontSize
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 8761438962407871117, guid: f264cae62e2920d4689e5a6ac59acf8b, type: 3}
-      propertyPath: m_margin.w
-      value: 2.905838
-      objectReference: {fileID: 0}
-    - target: {fileID: 8761438962407871117, guid: f264cae62e2920d4689e5a6ac59acf8b, type: 3}
-      propertyPath: m_margin.x
-      value: 2.8490229
-      objectReference: {fileID: 0}
-    - target: {fileID: 8761438962407871117, guid: f264cae62e2920d4689e5a6ac59acf8b, type: 3}
-      propertyPath: m_fontSizeBase
-      value: 5
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f264cae62e2920d4689e5a6ac59acf8b, type: 3}
---- !u!224 &821236183218964685 stripped
+--- !u!224 &3439543263100073475 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 1197694917331704312, guid: f264cae62e2920d4689e5a6ac59acf8b, type: 3}
-  m_PrefabInstance: {fileID: 2016078658139984181}
+  m_PrefabInstance: {fileID: 4549945628707401723}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &7544611812191606419 stripped
+--- !u!1 &5507326005468571741 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8307264050883692454, guid: f264cae62e2920d4689e5a6ac59acf8b, type: 3}
-  m_PrefabInstance: {fileID: 2016078658139984181}
+  m_PrefabInstance: {fileID: 4549945628707401723}
   m_PrefabAsset: {fileID: 0}

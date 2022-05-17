@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   icon: {fileID: 21300000, guid: b26bc0c1127463c4cbfcbf2af763ca20, type: 3}
   seed: 30
-  spawnrate: 2
+  spawnrate: 1.6
   foreGround:
   - prefab: {fileID: 105013297615864016, guid: e91a6932d209b4dc7ab23880bc6c9aec, type: 3}
     offset: {x: 0, y: 0}

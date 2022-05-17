@@ -30,22 +30,6 @@ MonoBehaviour:
   questIndex: 4
   questIncrease: 0
   glyph: {fileID: 11400000, guid: 6d5bf97df702444cdb6b05f0c5a3ad88, type: 2}
---- !u!114 &-4605714048899293597
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 34046101b1f069c428a58bb51b915585, type: 3}
-  m_Name: SetDialogue
-  m_EditorClassIdentifier: 
-  questIndex: 5
-  questIncrease: 0
-  npcPrefab: {fileID: 1535640502985467393, guid: d8ff4a065bef94499a1537894e9aff95, type: 3}
-  dialogue: {fileID: 11400000, guid: ae6a4d6a6c70a384d8adee5767aeae33, type: 2}
 --- !u!114 &-2012742591487917399
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -119,10 +103,25 @@ MonoBehaviour:
   - {fileID: 9107155848552211546}
   - {fileID: -5599556823208762846}
   - {fileID: 4913685339926152023}
-  - {fileID: 4108896651616559094}
-  - {fileID: -4605714048899293597}
   - {fileID: -993677569547652233}
   - {fileID: -9169545638725161002}
+  - {fileID: 1442942510272585285}
+  - {fileID: 4883169457868978897}
+--- !u!114 &1442942510272585285
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dbe2eaf5432e827408a41b3da938eff9, type: 3}
+  m_Name: StartQuest
+  m_EditorClassIdentifier: 
+  questIndex: 4
+  questIncrease: 0
+  questToInitiate: {fileID: 11400000, guid: c3d1fce8819acb04c85d96f744362381, type: 2}
 --- !u!114 &1495996819786598149
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -140,7 +139,7 @@ MonoBehaviour:
   landscape: {fileID: 11400000, guid: 4f07cc7fa8f6a0a47817e9f0b54c5dea, type: 2}
   biome: {fileID: 11400000, guid: dd0fe0b9a6f069b42ab01f63d73696f4, type: 2}
   time: {fileID: 11400000, guid: 6039305ef7b849941b0144aa37501464, type: 2}
---- !u!114 &4108896651616559094
+--- !u!114 &4883169457868978897
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -153,9 +152,9 @@ MonoBehaviour:
   m_Name: SetDialogue
   m_EditorClassIdentifier: 
   questIndex: 4
-  questIncrease: 1
+  questIncrease: 0
   npcPrefab: {fileID: 1535640502985467393, guid: d8ff4a065bef94499a1537894e9aff95, type: 3}
-  dialogue: {fileID: 11400000, guid: 05bfa3ac855fee94f87374ed70d74355, type: 2}
+  dialogue: {fileID: 11400000, guid: ae6a4d6a6c70a384d8adee5767aeae33, type: 2}
 --- !u!114 &4913685339926152023
 MonoBehaviour:
   m_ObjectHideFlags: 0

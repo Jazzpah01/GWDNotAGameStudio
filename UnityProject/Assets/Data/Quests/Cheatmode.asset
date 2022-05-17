@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 079ec28394fd7604da8902c0f258cd9d, type: 3}
   m_Name: GiveGlyph
   m_EditorClassIdentifier: 
-  questIndex: 2
+  questIndex: 1
   questIncrease: 0
   glyph: {fileID: 11400000, guid: cdf2469a907c9804aa2c92605877951e, type: 2}
 --- !u!114 &-5988928378920131533
@@ -46,6 +46,21 @@ MonoBehaviour:
   questIncrease: 1
   interactableObject: {fileID: 5391139065057589334, guid: 9f49cc4a8bb7e4ef5a45fa29703d7685, type: 3}
   setInteractable: 1
+--- !u!114 &-1988515765120158685
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 079ec28394fd7604da8902c0f258cd9d, type: 3}
+  m_Name: GiveGlyph
+  m_EditorClassIdentifier: 
+  questIndex: 1
+  questIncrease: 0
+  glyph: {fileID: 11400000, guid: dd0fe0b9a6f069b42ab01f63d73696f4, type: 2}
 --- !u!114 &-1541259013593180954
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -58,7 +73,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 079ec28394fd7604da8902c0f258cd9d, type: 3}
   m_Name: GiveGlyph
   m_EditorClassIdentifier: 
-  questIndex: 2
+  questIndex: 1
   questIncrease: 0
   glyph: {fileID: 11400000, guid: 8642289d9e19747d0811a4c248263909, type: 2}
 --- !u!114 &11400000
@@ -83,6 +98,8 @@ MonoBehaviour:
   - {fileID: -6637127320420990948}
   - {fileID: -1541259013593180954}
   - {fileID: 4239409043357921919}
+  - {fileID: -1988515765120158685}
+  - {fileID: 7175040759647400997}
 --- !u!114 &2720913526869253218
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -111,7 +128,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 079ec28394fd7604da8902c0f258cd9d, type: 3}
   m_Name: GiveGlyph
   m_EditorClassIdentifier: 
-  questIndex: 2
+  questIndex: 1
   questIncrease: 0
   glyph: {fileID: 11400000, guid: 0301f76479b63394a89d420f7fc684ac, type: 2}
 --- !u!114 &4239409043357921919
@@ -126,7 +143,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 079ec28394fd7604da8902c0f258cd9d, type: 3}
   m_Name: GiveGlyph
   m_EditorClassIdentifier: 
-  questIndex: 2
+  questIndex: 1
   questIncrease: 0
   glyph: {fileID: 11400000, guid: 0f37ff6e7fd4c3b45a49fd59091b0812, type: 2}
 --- !u!114 &5926659682585069735
@@ -144,3 +161,18 @@ MonoBehaviour:
   questIndex: 1
   questIncrease: 0
   glyph: {fileID: 11400000, guid: 6d5bf97df702444cdb6b05f0c5a3ad88, type: 2}
+--- !u!114 &7175040759647400997
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 079ec28394fd7604da8902c0f258cd9d, type: 3}
+  m_Name: GiveGlyph
+  m_EditorClassIdentifier: 
+  questIndex: 1
+  questIncrease: 0
+  glyph: {fileID: 11400000, guid: caa56952924210c419bb3e0146bf0640, type: 2}

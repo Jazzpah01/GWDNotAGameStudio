@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="AudioFile" id="{020c2ed9-4120-49c1-81e1-6a3ee5c1d0ad}">
+		<property name="assetPath">
+			<value>Ootsa_Happy1.mp3</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>1.5151020408163265</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{d72e42ed-61d3-471d-9c5a-b5cebd374c05}</destination>
+		</relationship>
+	</object>
+</objects>

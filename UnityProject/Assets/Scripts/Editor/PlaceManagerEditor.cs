@@ -19,7 +19,33 @@ public class PlaceManagerEditor : Editor
 
         if (GUILayout.Button("Save Place"))
         {
-            obj.SavePlace();
+            SavePlace(obj);
         }
+    }
+
+    public static void SavePlace(PlaceManager placeManager)
+    {
+        GlyphLandscape landscape = placeManager.levelManager.landscapeGlyph;
+
+        if (landscape == null || placeManager.biome == null || placeManager.time == null)
+        {
+            throw new System.Exception("ERROR: Cannot save place when some of the glyphs are not specified.");
+        }
+
+        placeManager.SetupLocalPlaces();
+
+        int x = GlyphManager.GetIndex(landscape);
+        int y = GlyphManager.GetIndex(placeManager.biome);
+        int z = GlyphManager.GetIndex(placeManager.time);
+
+        if (placeManager.currentPlace == null)
+        {
+            placeManager.currentPlace = placeManager.InitializePlace();
+        }
+
+        placeManager.currentPlace.name = $"Place of ({x},{y},{z})";
+        PlacesEditor.SavePlacePrefab(placeManager.places, x, y, z, placeManager.currentPlace);
+
+        placeManager.CleanupScene();
     }
 }

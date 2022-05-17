@@ -134,7 +134,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   characterName: Turkey
   npcPortrait: {fileID: 7461274213759369477, guid: 94cbde94ba60549f88a0d963fafebb78, type: 3}
-  rig: {fileID: 0}
+  rig: {fileID: 6982363313943350090}
   hasMet: 0
   hasDialogue: 0
   hasFinishedDialogue: 0
@@ -146,11 +146,11 @@ MonoBehaviour:
   lookAtPlayer: 1
   defaultVoice:
     Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
+      Data1: -1197581765
+      Data2: 1310792267
+      Data3: 1238089623
+      Data4: -1296574310
+    Path: event:/Character/Wall Bump
 --- !u!61 &3613430569906729789
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -232,11 +232,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1197694917331704312, guid: f264cae62e2920d4689e5a6ac59acf8b, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 20
+      value: 3.685
       objectReference: {fileID: 0}
     - target: {fileID: 1197694917331704312, guid: f264cae62e2920d4689e5a6ac59acf8b, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 5
+      value: 1.1734
       objectReference: {fileID: 0}
     - target: {fileID: 1197694917331704312, guid: f264cae62e2920d4689e5a6ac59acf8b, type: 3}
       propertyPath: m_LocalPosition.x
@@ -268,11 +268,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1197694917331704312, guid: f264cae62e2920d4689e5a6ac59acf8b, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 2.2
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1197694917331704312, guid: f264cae62e2920d4689e5a6ac59acf8b, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 2.26
+      value: 1.09
       objectReference: {fileID: 0}
     - target: {fileID: 1197694917331704312, guid: f264cae62e2920d4689e5a6ac59acf8b, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -289,6 +289,30 @@ PrefabInstance:
     - target: {fileID: 8307264050883692454, guid: f264cae62e2920d4689e5a6ac59acf8b, type: 3}
       propertyPath: m_Name
       value: InteractText
+      objectReference: {fileID: 0}
+    - target: {fileID: 8307264050883692454, guid: f264cae62e2920d4689e5a6ac59acf8b, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8761438962407871117, guid: f264cae62e2920d4689e5a6ac59acf8b, type: 3}
+      propertyPath: m_text
+      value: ...
+      objectReference: {fileID: 0}
+    - target: {fileID: 8761438962407871117, guid: f264cae62e2920d4689e5a6ac59acf8b, type: 3}
+      propertyPath: m_fontSize
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8761438962407871117, guid: f264cae62e2920d4689e5a6ac59acf8b, type: 3}
+      propertyPath: m_margin.w
+      value: 2.905838
+      objectReference: {fileID: 0}
+    - target: {fileID: 8761438962407871117, guid: f264cae62e2920d4689e5a6ac59acf8b, type: 3}
+      propertyPath: m_margin.x
+      value: 2.8490229
+      objectReference: {fileID: 0}
+    - target: {fileID: 8761438962407871117, guid: f264cae62e2920d4689e5a6ac59acf8b, type: 3}
+      propertyPath: m_fontSizeBase
+      value: 5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f264cae62e2920d4689e5a6ac59acf8b, type: 3}

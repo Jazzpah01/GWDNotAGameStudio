@@ -93,7 +93,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8384340229226585430}
-  - component: {fileID: 6255659912864902340}
   - component: {fileID: 3613430569906729789}
   - component: {fileID: 3557115854586208358}
   m_Layer: 0
@@ -120,37 +119,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &6255659912864902340
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7720447589996262763}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 03aad89612a7df54aa239a374f1f5577, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  characterName: Feather
-  npcPortrait: {fileID: 7461274213759369477, guid: 94cbde94ba60549f88a0d963fafebb78, type: 3}
-  rig: {fileID: 0}
-  hasMet: 0
-  hasDialogue: 0
-  hasFinishedDialogue: 0
-  dialogueActive: 0
-  dialogue: {fileID: 0}
-  dialogueUI: {fileID: 7544611812191606419}
-  currentLine: 0
-  delayInterval: 0.2
-  lookAtPlayer: 1
-  defaultVoice:
-    Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
 --- !u!61 &3613430569906729789
 BoxCollider2D:
   m_ObjectHideFlags: 0

@@ -51,6 +51,21 @@ MonoBehaviour:
   biome: {fileID: 11400000, guid: 8642289d9e19747d0811a4c248263909, type: 2}
   time: {fileID: 11400000, guid: c4ef068ec96997a4181b8dd407818fb6, type: 2}
   prefab: {fileID: 5346684185266132660, guid: 91a82242c1ed6fa45b0ed864cf3dcc5f, type: 3}
+--- !u!114 &-4285754639720682625
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 079ec28394fd7604da8902c0f258cd9d, type: 3}
+  m_Name: GiveGlyph
+  m_EditorClassIdentifier: 
+  questIndex: 6
+  questIncrease: 0
+  glyph: {fileID: 11400000, guid: caa56952924210c419bb3e0146bf0640, type: 2}
 --- !u!114 &-2247162463116263531
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -120,6 +135,8 @@ MonoBehaviour:
   - {fileID: -2247162463116263531}
   - {fileID: -370365903044715633}
   - {fileID: -771234454408015338}
+  - {fileID: 7664535850474541654}
+  - {fileID: -4285754639720682625}
 --- !u!114 &451433085832208456
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -137,6 +154,21 @@ MonoBehaviour:
   moveablePrefab: {fileID: 5346684185266132660, guid: 91a82242c1ed6fa45b0ed864cf3dcc5f, type: 3}
   speed: 6
   toPosition: {x: 9, y: -3.27}
+--- !u!114 &7664535850474541654
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 079ec28394fd7604da8902c0f258cd9d, type: 3}
+  m_Name: GiveGlyph
+  m_EditorClassIdentifier: 
+  questIndex: 6
+  questIncrease: 0
+  glyph: {fileID: 11400000, guid: dd0fe0b9a6f069b42ab01f63d73696f4, type: 2}
 --- !u!114 &8682085042071841615
 MonoBehaviour:
   m_ObjectHideFlags: 0

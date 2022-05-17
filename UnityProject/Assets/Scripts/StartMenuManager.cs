@@ -14,7 +14,7 @@ public class StartMenuManager : MonoBehaviour
     public GameObject creditsPanel;
 
     private bool isStarting = false;
-    private float timer;
+    private float timer = 0f;
 
     // Start is called before the first frame update
     void Start()
@@ -30,12 +30,19 @@ public class StartMenuManager : MonoBehaviour
         btnExit.onClick.AddListener(ExitGame);
 
         //blackFader.gameObject.SetActive(false);
-        blackFader.gameObject.SetActive(false);
+        
     }
 
     // Update is called once per frame
     void Update()
     {
+        if (studioTitlePanel.activeSelf)
+        {
+            timer += Time.deltaTime;
+            if (timer > 4f) studioTitlePanel.SetActive(false);
+        }
+
+
         if (isStarting)
         {
             timer += Time.deltaTime;

@@ -27,11 +27,11 @@ MonoBehaviour:
     line: 'His claws are clipped and his tail is foul so he opens his throat to growl. '
     voice:
       Guid:
-        Data1: 291328159
-        Data2: 1203387725
-        Data3: 2070210948
-        Data4: -1867150278
-      Path: event:/Dialougue/Ootsa Neutral
+        Data1: -2053084555
+        Data2: 1078062801
+        Data3: 1669277101
+        Data4: 90365669
+      Path: event:/Dialougue/Oosta Sad
   - isPlayer: 0
     line: That gotta be it. As a token of your new role, accept this glyph.
     voice:

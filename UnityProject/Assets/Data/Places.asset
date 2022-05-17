@@ -51,7 +51,7 @@ MonoBehaviour:
   - {fileID: 702154282231471100, guid: e43f5024900c546989d1926f804ddfd5, type: 3}
   - {fileID: 0}
   - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 2490614933682031855, guid: d795e4c2166b64dc8aeab5275e9fe225, type: 3}
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
@@ -76,7 +76,7 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 3711034865486492210, guid: 5fc636df6f6374c11a799c28828165b4, type: 3}
   - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 2590694214536447062, guid: 026190aa930d149e68812b4af3c7c8d0, type: 3}
   currentLengthOfX: 4
   currentLengthOfY: 4
   currentLengthOfZ: 4

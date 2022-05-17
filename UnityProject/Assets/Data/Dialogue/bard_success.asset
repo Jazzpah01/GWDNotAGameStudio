@@ -26,14 +26,14 @@ MonoBehaviour:
     line: What about my prize?
     voice:
       Guid:
-        Data1: -166340523
-        Data2: 1132535540
-        Data3: -1731428675
-        Data4: -909582648
-      Path: event:/Dialougue/Ootsa Annoyed
+        Data1: 1957640647
+        Data2: 1212946211
+        Data3: 2051163539
+        Data4: 2062734785
+      Path: event:/Dialougue/Ootsa Happy
   - isPlayer: 0
-    line: "Your friend left immediately after he saw my glyph. He said he had the
-      same. I don\u2019t know where he went."
+    line: "Thy friend left immediately after he saw my glyph. He already had this
+      one. I don\u2019t know where he went."
     voice:
       Guid:
         Data1: 1999574016

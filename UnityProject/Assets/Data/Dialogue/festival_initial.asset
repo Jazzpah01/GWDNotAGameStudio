@@ -28,11 +28,11 @@ MonoBehaviour:
       must come to an end.
     voice:
       Guid:
-        Data1: 1549764904
-        Data2: 1190620573
-        Data3: 1391422363
-        Data4: -119384019
-      Path: event:/Dialougue/Hermit Upset
+        Data1: 244635931
+        Data2: 1210964411
+        Data3: -1230571842
+        Data4: 1256436458
+      Path: event:/Dialougue/Hermit Neutral
   - isPlayer: 0
     line: I invite all of the candidates to the stage, for the continuation of the
       cycle. Follow his words with yours.
@@ -48,21 +48,21 @@ MonoBehaviour:
       next body.
     voice:
       Guid:
-        Data1: 244635931
-        Data2: 1210964411
-        Data3: -1230571842
-        Data4: 1256436458
-      Path: event:/Dialougue/Hermit Neutral
+        Data1: 1549764904
+        Data2: 1190620573
+        Data3: 1391422363
+        Data4: -119384019
+      Path: event:/Dialougue/Hermit Upset
   - isPlayer: 0
     line: 'A free jaguar leaps on the back of the wind     and floats downstream
       till the current ends '
     voice:
       Guid:
-        Data1: 244635931
-        Data2: 1210964411
-        Data3: -1230571842
-        Data4: 1256436458
-      Path: event:/Dialougue/Hermit Neutral
+        Data1: 1549764904
+        Data2: 1190620573
+        Data3: 1391422363
+        Data4: -119384019
+      Path: event:/Dialougue/Hermit Upset
   - isPlayer: 0
     line: 'and dips his crown in the white sun rays and dares to claim the sky. '
     voice:

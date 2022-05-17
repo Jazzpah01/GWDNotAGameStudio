@@ -17,136 +17,136 @@ MonoBehaviour:
     line: Pssssst...
     voice:
       Guid:
-        Data1: 0
-        Data2: 0
-        Data3: 0
-        Data4: 0
-      Path: 
+        Data1: 244635931
+        Data2: 1210964411
+        Data3: -1230571842
+        Data4: 1256436458
+      Path: event:/Dialougue/Hermit Neutral
   - isPlayer: 0
     line: Hey! Kid! Over here!
     voice:
       Guid:
-        Data1: 0
-        Data2: 0
-        Data3: 0
-        Data4: 0
-      Path: 
+        Data1: 244635931
+        Data2: 1210964411
+        Data3: -1230571842
+        Data4: 1256436458
+      Path: event:/Dialougue/Hermit Neutral
   - isPlayer: 1
     line: Me? I'm not a kid...
     voice:
       Guid:
-        Data1: 0
-        Data2: 0
-        Data3: 0
-        Data4: 0
-      Path: 
+        Data1: -166340523
+        Data2: 1132535540
+        Data3: -1731428675
+        Data4: -909582648
+      Path: event:/Dialougue/Ootsa Annoyed
   - isPlayer: 0
     line: Fine... Hey! Grown-up!
     voice:
       Guid:
-        Data1: 0
-        Data2: 0
-        Data3: 0
-        Data4: 0
-      Path: 
+        Data1: 244635931
+        Data2: 1210964411
+        Data3: -1230571842
+        Data4: 1256436458
+      Path: event:/Dialougue/Hermit Neutral
   - isPlayer: 0
     line: Have you met the Stone Oracle?
     voice:
       Guid:
-        Data1: 0
-        Data2: 0
-        Data3: 0
-        Data4: 0
-      Path: 
+        Data1: 244635931
+        Data2: 1210964411
+        Data3: -1230571842
+        Data4: 1256436458
+      Path: event:/Dialougue/Hermit Neutral
   - isPlayer: 0
     line: ...asshole stole my spot...
     voice:
       Guid:
-        Data1: 0
-        Data2: 0
-        Data3: 0
-        Data4: 0
-      Path: 
+        Data1: 1549764904
+        Data2: 1190620573
+        Data3: 1391422363
+        Data4: -119384019
+      Path: event:/Dialougue/Hermit Upset
   - isPlayer: 1
     line: What?
     voice:
       Guid:
-        Data1: 0
-        Data2: 0
-        Data3: 0
-        Data4: 0
-      Path: 
+        Data1: -166340523
+        Data2: 1132535540
+        Data3: -1731428675
+        Data4: -909582648
+      Path: event:/Dialougue/Ootsa Annoyed
   - isPlayer: 0
     line: I was the oracle once! Before this broken mess of a world.
     voice:
       Guid:
-        Data1: 0
-        Data2: 0
-        Data3: 0
-        Data4: 0
-      Path: 
+        Data1: 1549764904
+        Data2: 1190620573
+        Data3: 1391422363
+        Data4: -119384019
+      Path: event:/Dialougue/Hermit Upset
   - isPlayer: 1
     line: What do you mean? It wasn't always like this?
     voice:
       Guid:
-        Data1: 0
-        Data2: 0
-        Data3: 0
-        Data4: 0
-      Path: 
+        Data1: -2053084555
+        Data2: 1078062801
+        Data3: 1669277101
+        Data4: 90365669
+      Path: event:/Dialougue/Oosta Sad
   - isPlayer: 0
     line: Of course not! And, most importantly, once I was the Oracle!
     voice:
       Guid:
-        Data1: 0
-        Data2: 0
-        Data3: 0
-        Data4: 0
-      Path: 
+        Data1: 1549764904
+        Data2: 1190620573
+        Data3: 1391422363
+        Data4: -119384019
+      Path: event:/Dialougue/Hermit Upset
   - isPlayer: 0
     line: And I was so much nicer than that asshole...
     voice:
       Guid:
-        Data1: 0
-        Data2: 0
-        Data3: 0
-        Data4: 0
-      Path: 
+        Data1: 244635931
+        Data2: 1210964411
+        Data3: -1230571842
+        Data4: 1256436458
+      Path: event:/Dialougue/Hermit Neutral
   - isPlayer: 1
     line: But wait, about the world
     voice:
       Guid:
-        Data1: 0
-        Data2: 0
-        Data3: 0
-        Data4: 0
-      Path: 
+        Data1: 1898231120
+        Data2: 1329017283
+        Data3: -115922250
+        Data4: -71516138
+      Path: event:/Dialougue/Ootsa Yelling
   - isPlayer: 0
     line: Who cares about the world! You should go check him out, see how much worse
       than me he is.
     voice:
       Guid:
-        Data1: 0
-        Data2: 0
-        Data3: 0
-        Data4: 0
-      Path: 
+        Data1: 1549764904
+        Data2: 1190620573
+        Data3: 1391422363
+        Data4: -119384019
+      Path: event:/Dialougue/Hermit Upset
   - isPlayer: 0
     line: He's in some flat jungle somewhere from what I remember. Asshole...
     voice:
       Guid:
-        Data1: 0
-        Data2: 0
-        Data3: 0
-        Data4: 0
-      Path: 
+        Data1: 244635931
+        Data2: 1210964411
+        Data3: -1230571842
+        Data4: 1256436458
+      Path: event:/Dialougue/Hermit Neutral
   - isPlayer: 0
     line: You'll see how much worse than me he is!
     voice:
       Guid:
-        Data1: 0
-        Data2: 0
-        Data3: 0
-        Data4: 0
-      Path: 
+        Data1: 244635931
+        Data2: 1210964411
+        Data3: -1230571842
+        Data4: 1256436458
+      Path: event:/Dialougue/Hermit Neutral
   current: -1

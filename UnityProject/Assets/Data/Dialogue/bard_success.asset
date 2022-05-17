@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: bard_success
   m_EditorClassIdentifier: 
   lines:
-  - isPlayer: 0
+  - isPlayer: 1
     line: Yes, that is it!
     voice:
       Guid:

@@ -17,9 +17,9 @@ MonoBehaviour:
     line: Leave me alone! I'm resting.
     voice:
       Guid:
-        Data1: 0
-        Data2: 0
-        Data3: 0
-        Data4: 0
-      Path: 
+        Data1: 244635931
+        Data2: 1210964411
+        Data3: -1230571842
+        Data4: 1256436458
+      Path: event:/Dialougue/Hermit Neutral
   current: -1

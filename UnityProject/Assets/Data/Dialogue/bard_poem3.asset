@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   lines:
   - isPlayer: 1
-    line: What else you got?
+    line: Nope. What else you got?
     voice:
       Guid:
         Data1: 291328159

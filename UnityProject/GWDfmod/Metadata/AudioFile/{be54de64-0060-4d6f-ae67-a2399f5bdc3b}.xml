@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="AudioFile" id="{be54de64-0060-4d6f-ae67-a2399f5bdc3b}">
+		<property name="assetPath">
+			<value>Ootsa_Yelling1.mp3</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>1.9591836734693877</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{d72e42ed-61d3-471d-9c5a-b5cebd374c05}</destination>
+		</relationship>
+	</object>
+</objects>

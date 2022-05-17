@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dbe2eaf5432e827408a41b3da938eff9, type: 3}
   m_Name: StartQuest
   m_EditorClassIdentifier: 
-  questIndex: 5
+  questIndex: 4
   questIncrease: 0
   questToInitiate: {fileID: 11400000, guid: 800307a43ae6445e990fff9914bd4983, type: 2}
 --- !u!114 &-5599556823208762846
@@ -94,7 +94,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dbe2eaf5432e827408a41b3da938eff9, type: 3}
   m_Name: StartQuest
   m_EditorClassIdentifier: 
-  questIndex: 5
+  questIndex: 4
   questIncrease: 0
   questToInitiate: {fileID: 11400000, guid: 376cd7a00a3ac44b0aae4c341292608a, type: 2}
 --- !u!114 &11400000
@@ -219,7 +219,7 @@ MonoBehaviour:
   questIncrease: 1
   moveablePrefab: {fileID: 1535640502985467393, guid: d8ff4a065bef94499a1537894e9aff95, type: 3}
   speed: 5
-  toPosition: {x: 4, y: -3.3}
+  toPosition: {x: 6, y: -3.3}
 --- !u!114 &9107155848552211546
 MonoBehaviour:
   m_ObjectHideFlags: 0

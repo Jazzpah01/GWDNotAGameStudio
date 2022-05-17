@@ -123,6 +123,22 @@ MonoBehaviour:
   - {fileID: -4605714048899293597}
   - {fileID: -993677569547652233}
   - {fileID: -9169545638725161002}
+  - {fileID: 1442942510272585285}
+--- !u!114 &1442942510272585285
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dbe2eaf5432e827408a41b3da938eff9, type: 3}
+  m_Name: StartQuest
+  m_EditorClassIdentifier: 
+  questIndex: 5
+  questIncrease: 0
+  questToInitiate: {fileID: 11400000, guid: c3d1fce8819acb04c85d96f744362381, type: 2}
 --- !u!114 &1495996819786598149
 MonoBehaviour:
   m_ObjectHideFlags: 0

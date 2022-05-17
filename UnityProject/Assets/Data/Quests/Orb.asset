@@ -1,0 +1,50 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-7969809086598785066
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 62426580d6b6b304898bb26ac02fb2a3, type: 3}
+  m_Name: SetInteractable
+  m_EditorClassIdentifier: 
+  questIndex: 0
+  questIncrease: 1
+  interactableObject: {fileID: 1362074571238933036, guid: e84a30a847ee06f45a4787d7fef7140c, type: 3}
+  setInteractable: 1
+--- !u!114 &-2720496147208928102
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3c964c08cad4f2c44b6222b5e55e4999, type: 3}
+  m_Name: StartDialogue
+  m_EditorClassIdentifier: 
+  questIndex: 1
+  questIncrease: 0
+  dialogue: {fileID: 11400000, guid: 802b9e374d60c264191e8feb93ab96c7, type: 2}
+  npcPrefab: {fileID: 0}
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 76812cc4cf143ee40a123a38a320e2de, type: 3}
+  m_Name: Orb
+  m_EditorClassIdentifier: 
+  customEditing: 1
+  questEvents:
+  - {fileID: -7969809086598785066}
+  - {fileID: -2720496147208928102}

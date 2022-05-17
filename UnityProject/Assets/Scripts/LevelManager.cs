@@ -41,17 +41,12 @@ public class LevelManager : MonoBehaviour
     {
         instance = this;
         sceneContext = new SceneContext();
+
+        
     }
 
     private void Start()
     {
-        if (!populateThis)
-            return;
-
-        StartCoroutine(Fader.FadeOut(1f));
-
-        finishedLoading = false;
-
         if (!InitialLevel.gameInitialized)
         {
             // TODO: set location glyph to match the scene.
@@ -60,7 +55,12 @@ public class LevelManager : MonoBehaviour
             return;
         }
 
-        
+        if (!populateThis)
+            return;
+
+        StartCoroutine(Fader.FadeOut(1f));
+
+        finishedLoading = false;
 
         DOTween.Init(); // empty param = default settings
         //SetupGlyphs();
@@ -117,10 +117,11 @@ public class LevelManager : MonoBehaviour
             biomeIndex++;
             float factor = 1f;
 
-            int toSpawn = Mathf.FloorToInt(spawnRate * assetArea.Range.x * biome.spawnrate * assetArea.spawnrate);
+            float toSpawn = (spawnRate * assetArea.Range.x * biome.spawnrate * assetArea.spawnrate);
 
             // Use scene information to populate stuff
-            for (int i = 0; i < toSpawn; i++)
+            float i = 0;
+            while (i < toSpawn)
             {
                 float x = (float)rng.NextDouble() % 1f * assetArea.Range.x + assetArea.PositionMin.x;
                 float y = assetArea.PositionMin.y;
@@ -155,6 +156,8 @@ public class LevelManager : MonoBehaviour
                 }
 
                 ren.sortingOrder = assetArea.sortingOrder;
+
+                i += GlyphManager.biome.foreGround[index].weight;
             }
         }
     }

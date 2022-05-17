@@ -79,7 +79,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dbe2eaf5432e827408a41b3da938eff9, type: 3}
   m_Name: StartQuest
   m_EditorClassIdentifier: 
-  questIndex: 6
+  questIndex: 4
   questIncrease: 0
   questToInitiate: {fileID: 11400000, guid: 85f2abb236411474c945511d64fc32a3, type: 2}
 --- !u!114 &-370365903044715633

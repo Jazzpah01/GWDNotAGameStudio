@@ -17,45 +17,45 @@ MonoBehaviour:
     line: Hmm... this is a strange plant
     voice:
       Guid:
-        Data1: 0
-        Data2: 0
-        Data3: 0
-        Data4: 0
-      Path: 
+        Data1: -166340523
+        Data2: 1132535540
+        Data3: -1731428675
+        Data4: -909582648
+      Path: event:/Dialougue/Ootsa Annoyed
   - isPlayer: 0
     line: Mi a Sinsemilla
     voice:
       Guid:
-        Data1: 0
-        Data2: 0
-        Data3: 0
-        Data4: 0
-      Path: 
+        Data1: 357240455
+        Data2: 1310023852
+        Data3: 1797106579
+        Data4: 1657866820
+      Path: event:/Dialougue/Guard
   - isPlayer: 0
     line: Mi wi tek yuh pan a journey...
     voice:
       Guid:
-        Data1: 0
-        Data2: 0
-        Data3: 0
-        Data4: 0
-      Path: 
+        Data1: 357240455
+        Data2: 1310023852
+        Data3: 1797106579
+        Data4: 1657866820
+      Path: event:/Dialougue/Guard
   - isPlayer: 1
     line: I like to travel...
     voice:
       Guid:
-        Data1: 0
-        Data2: 0
-        Data3: 0
-        Data4: 0
-      Path: 
+        Data1: 1957640647
+        Data2: 1212946211
+        Data3: 2051163539
+        Data4: 2062734785
+      Path: event:/Dialougue/Ootsa Happy
   - isPlayer: 0
     line: Den tek dis an fly
     voice:
       Guid:
-        Data1: 0
-        Data2: 0
-        Data3: 0
-        Data4: 0
-      Path: 
+        Data1: 357240455
+        Data2: 1310023852
+        Data3: 1797106579
+        Data4: 1657866820
+      Path: event:/Dialougue/Guard
   current: -1

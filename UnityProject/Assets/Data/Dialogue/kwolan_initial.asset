@@ -15,22 +15,85 @@ MonoBehaviour:
   lines:
   - isPlayer: 1
     line: Kwolan? I've been looking for you!
+    voice:
+      Guid:
+        Data1: 1957640647
+        Data2: 1212946211
+        Data3: 2051163539
+        Data4: 2062734785
+      Path: event:/Dialougue/Ootsa Happy
   - isPlayer: 0
     line: Oh look, the mighty jade thief Ootsa.
+    voice:
+      Guid:
+        Data1: 357240455
+        Data2: 1310023852
+        Data3: 1797106579
+        Data4: 1657866820
+      Path: event:/Dialougue/Guard
   - isPlayer: 0
     line: I guess now you realize the value of this "painted rubbish"?
+    voice:
+      Guid:
+        Data1: 357240455
+        Data2: 1310023852
+        Data3: 1797106579
+        Data4: 1657866820
+      Path: event:/Dialougue/Guard
   - isPlayer: 1
     line: ...
+    voice:
+      Guid:
+        Data1: 0
+        Data2: 0
+        Data3: 0
+        Data4: 0
+      Path: 
   - isPlayer: 1
     line: 30 Turkeys?
+    voice:
+      Guid:
+        Data1: -166340523
+        Data2: 1132535540
+        Data3: -1731428675
+        Data4: -909582648
+      Path: event:/Dialougue/Ootsa Annoyed
   - isPlayer: 0
     line: Or maybe you don't. You nearly spoiled the heist because of some petty
       theft.
+    voice:
+      Guid:
+        Data1: 357240455
+        Data2: 1310023852
+        Data3: 1797106579
+        Data4: 1657866820
+      Path: event:/Dialougue/Guard
   - isPlayer: 1
     line: YOU'RE the one stealing cocoa beans from old ladies in the square.
+    voice:
+      Guid:
+        Data1: -166340523
+        Data2: 1132535540
+        Data3: -1731428675
+        Data4: -909582648
+      Path: event:/Dialougue/Ootsa Annoyed
   - isPlayer: 0
     line: It helps with my digesti- It doesn't matter, YOU screwed up, I'M gonna
       go get rich.
+    voice:
+      Guid:
+        Data1: 357240455
+        Data2: 1310023852
+        Data3: 1797106579
+        Data4: 1657866820
+      Path: event:/Dialougue/Guard
   - isPlayer: 0
     line: See you under another sun.
+    voice:
+      Guid:
+        Data1: 357240455
+        Data2: 1310023852
+        Data3: 1797106579
+        Data4: 1657866820
+      Path: event:/Dialougue/Guard
   current: -1

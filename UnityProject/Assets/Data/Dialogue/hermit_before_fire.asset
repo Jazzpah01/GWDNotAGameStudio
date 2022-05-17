@@ -26,11 +26,11 @@ MonoBehaviour:
     line: What do I do?
     voice:
       Guid:
-        Data1: 291328159
-        Data2: 1203387725
-        Data3: 2070210948
-        Data4: -1867150278
-      Path: event:/Dialougue/Ootsa Neutral
+        Data1: 1898231120
+        Data2: 1329017283
+        Data3: -115922250
+        Data4: -71516138
+      Path: event:/Dialougue/Ootsa Yelling
   - isPlayer: 0
     line: Give me a morale boost? What do you think? Grab that bucket.
     voice:
@@ -53,18 +53,18 @@ MonoBehaviour:
     line: I am sorry, could you kindly grab the damned bucket and help?
     voice:
       Guid:
-        Data1: 244635931
-        Data2: 1210964411
-        Data3: -1230571842
-        Data4: 1256436458
-      Path: event:/Dialougue/Hermit Neutral
+        Data1: 1549764904
+        Data2: 1190620573
+        Data3: 1391422363
+        Data4: -119384019
+      Path: event:/Dialougue/Hermit Upset
   - isPlayer: 1
     line: Sure thing!
     voice:
       Guid:
-        Data1: 291328159
-        Data2: 1203387725
-        Data3: 2070210948
-        Data4: -1867150278
-      Path: event:/Dialougue/Ootsa Neutral
+        Data1: 1898231120
+        Data2: 1329017283
+        Data3: -115922250
+        Data4: -71516138
+      Path: event:/Dialougue/Ootsa Yelling
   current: -1

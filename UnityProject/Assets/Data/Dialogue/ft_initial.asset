@@ -17,19 +17,19 @@ MonoBehaviour:
     line: "Tizoc? My name is Ootsa. I heard\u2026"
     voice:
       Guid:
-        Data1: 0
-        Data2: 0
-        Data3: 0
-        Data4: 0
-      Path: 
+        Data1: 1957640647
+        Data2: 1212946211
+        Data3: 2051163539
+        Data4: 2062734785
+      Path: event:/Dialougue/Ootsa Happy
   - isPlayer: 0
     line: "I don\u2019t know what you heard but I don\u2019t have it. Good day to
       you!"
     voice:
       Guid:
-        Data1: 0
-        Data2: 0
-        Data3: 0
-        Data4: 0
-      Path: 
+        Data1: 848494061
+        Data2: 1201465500
+        Data3: -1062611790
+        Data4: 1225344596
+      Path: event:/Dialougue/Bard Sad
   current: -1

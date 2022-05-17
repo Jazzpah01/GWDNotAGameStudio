@@ -17,18 +17,18 @@ MonoBehaviour:
     line: Hey!
     voice:
       Guid:
-        Data1: 0
-        Data2: 0
-        Data3: 0
-        Data4: 0
-      Path: 
+        Data1: 1549764904
+        Data2: 1190620573
+        Data3: 1391422363
+        Data4: -119384019
+      Path: event:/Dialougue/Hermit Upset
   - isPlayer: 0
     line: Did you find him? He's the worst!
     voice:
       Guid:
-        Data1: 0
-        Data2: 0
-        Data3: 0
-        Data4: 0
-      Path: 
+        Data1: 1549764904
+        Data2: 1190620573
+        Data3: 1391422363
+        Data4: -119384019
+      Path: event:/Dialougue/Hermit Upset
   current: -1

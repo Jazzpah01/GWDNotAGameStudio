@@ -10,16 +10,25 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c6a835d05eaa80b419430c51f8e79900, type: 3}
-  m_Name: Golden_dismiss
+  m_Name: daughter_dismissive
   m_EditorClassIdentifier: 
   lines:
   - isPlayer: 0
-    line: What else do you need?
+    line: I have nothing more to say.
     voice:
       Guid:
-        Data1: 0
-        Data2: 0
-        Data3: 0
-        Data4: 0
-      Path: 
+        Data1: 248736705
+        Data2: 1273507025
+        Data3: 1876864157
+        Data4: -1492965847
+      Path: event:/Dialougue/Golden Girls
+  - isPlayer: 0
+    line: Leave!
+    voice:
+      Guid:
+        Data1: 248736705
+        Data2: 1273507025
+        Data3: 1876864157
+        Data4: -1492965847
+      Path: event:/Dialougue/Golden Girls
   current: -1

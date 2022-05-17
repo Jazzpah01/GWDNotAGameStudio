@@ -17,20 +17,20 @@ MonoBehaviour:
     line: So? Did you find him?
     voice:
       Guid:
-        Data1: 0
-        Data2: 0
-        Data3: 0
-        Data4: 0
-      Path: 
+        Data1: 1999574016
+        Data2: 1188104198
+        Data3: -803068242
+        Data4: 369274613
+      Path: event:/Dialougue/Bard Neutral
   - isPlayer: 1
     line: ' I did! He sent a letter back!'
     voice:
       Guid:
-        Data1: 0
-        Data2: 0
-        Data3: 0
-        Data4: 0
-      Path: 
+        Data1: 1957640647
+        Data2: 1212946211
+        Data3: 2051163539
+        Data4: 2062734785
+      Path: event:/Dialougue/Ootsa Happy
   - isPlayer: 0
     line: ...
     voice:
@@ -53,27 +53,27 @@ MonoBehaviour:
     line: Oh my! He still remembers me!
     voice:
       Guid:
-        Data1: 0
-        Data2: 0
-        Data3: 0
-        Data4: 0
-      Path: 
+        Data1: 1999574016
+        Data2: 1188104198
+        Data3: -803068242
+        Data4: 369274613
+      Path: event:/Dialougue/Bard Neutral
   - isPlayer: 0
     line: Would you mind carrying a second letter to him?
     voice:
       Guid:
-        Data1: 0
-        Data2: 0
-        Data3: 0
-        Data4: 0
-      Path: 
+        Data1: 1999574016
+        Data2: 1188104198
+        Data3: -803068242
+        Data4: 369274613
+      Path: event:/Dialougue/Bard Neutral
   - isPlayer: 1
     line: Sure, why not...
     voice:
       Guid:
-        Data1: 0
-        Data2: 0
-        Data3: 0
-        Data4: 0
-      Path: 
+        Data1: -166340523
+        Data2: 1132535540
+        Data3: -1731428675
+        Data4: -909582648
+      Path: event:/Dialougue/Ootsa Annoyed
   current: -1

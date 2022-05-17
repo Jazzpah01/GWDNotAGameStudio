@@ -17,18 +17,18 @@ MonoBehaviour:
     line: Whoa!
     voice:
       Guid:
-        Data1: 0
-        Data2: 0
-        Data3: 0
-        Data4: 0
-      Path: 
+        Data1: 291328159
+        Data2: 1203387725
+        Data3: 2070210948
+        Data4: -1867150278
+      Path: event:/Dialougue/Ootsa Neutral
   - isPlayer: 1
     line: What just happened?
     voice:
       Guid:
-        Data1: 0
-        Data2: 0
-        Data3: 0
-        Data4: 0
-      Path: 
+        Data1: -166340523
+        Data2: 1132535540
+        Data3: -1731428675
+        Data4: -909582648
+      Path: event:/Dialougue/Ootsa Annoyed
   current: -1

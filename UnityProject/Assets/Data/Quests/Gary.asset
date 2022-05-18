@@ -128,13 +128,14 @@ MonoBehaviour:
   customEditing: 1
   questEvents:
   - {fileID: -7729350891373483026}
+  - {fileID: 5377907910040391487}
   - {fileID: 8682085042071841615}
   - {fileID: -6820025706437604641}
   - {fileID: 451433085832208456}
   - {fileID: -4681746138606825968}
+  - {fileID: -771234454408015338}
   - {fileID: -2247162463116263531}
   - {fileID: -370365903044715633}
-  - {fileID: -771234454408015338}
   - {fileID: 7664535850474541654}
   - {fileID: -4285754639720682625}
 --- !u!114 &451433085832208456
@@ -154,6 +155,22 @@ MonoBehaviour:
   moveablePrefab: {fileID: 5346684185266132660, guid: 91a82242c1ed6fa45b0ed864cf3dcc5f, type: 3}
   speed: 6
   toPosition: {x: 9, y: -3.27}
+--- !u!114 &5377907910040391487
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 65cb9413371a36945baf975dfab9df1e, type: 3}
+  m_Name: InstantMove
+  m_EditorClassIdentifier: 
+  questIndex: 0
+  questIncrease: 0
+  moveablePrefab: {fileID: 4509995404389645508, guid: c1406cc5652e89642ba823afd0885d17, type: 3}
+  position: {x: -11.6, y: -2.5}
 --- !u!114 &7664535850474541654
 MonoBehaviour:
   m_ObjectHideFlags: 0

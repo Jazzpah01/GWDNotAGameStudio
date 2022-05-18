@@ -98,6 +98,7 @@ public class LevelManager : MonoBehaviour
         GameObject player = Instantiate(playerPrefab);
         GameManager.instance.player = player;
         player.transform.position = spawnPoint.position;
+        LevelManager.instance.sceneContext.UnorderedEventObjects.Add(player);
 
         // Spawn background
         environmentController.SpawnBackground(backgroundPrefab);

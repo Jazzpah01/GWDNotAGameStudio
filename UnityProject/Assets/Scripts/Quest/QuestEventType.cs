@@ -12,5 +12,6 @@ public enum QuestEventType
     SetInteractable,
     StartQuest,
     StartDialogue,
-    Move
+    Move,
+    InstantMove
 }

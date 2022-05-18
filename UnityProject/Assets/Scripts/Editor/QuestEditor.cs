@@ -193,6 +193,8 @@ public class QuestEditor : Editor
                 return CreateInstance<StartDialogueEvent>();
             case QuestEventType.Move:
                 return CreateInstance<MoveQuestEvent>();
+            case QuestEventType.InstantMove:
+                return CreateInstance<InstantMoveEvent>();
             default:
                 throw new Exception("Event isn't implemented!");
         }

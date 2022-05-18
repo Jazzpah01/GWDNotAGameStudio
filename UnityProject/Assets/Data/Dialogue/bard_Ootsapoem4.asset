@@ -18,18 +18,18 @@ MonoBehaviour:
       of rage '
     voice:
       Guid:
-        Data1: 2049681800
-        Data2: 1282832120
-        Data3: -1282392390
-        Data4: 499208373
-      Path: event:/Dialougue/Bard Neutral
+        Data1: -237699141
+        Data2: 1305245023
+        Data3: -2026030693
+        Data4: 1276201133
+      Path: event:/Dialougue/Ootsa Sad
   - isPlayer: 1
     line: 'His claws are clipped and his tail is foul so he opens his throat to growl. '
     voice:
       Guid:
-        Data1: -1899364056
-        Data2: 1210250111
-        Data3: -1039744324
-        Data4: -28817070
-      Path: event:/Dialougue/Bard Sad
+        Data1: -237699141
+        Data2: 1305245023
+        Data3: -2026030693
+        Data4: 1276201133
+      Path: event:/Dialougue/Ootsa Sad
   current: -1

@@ -17,28 +17,28 @@ MonoBehaviour:
     line: 'If this huge ass cat comes down the tree For certain, one will flee '
     voice:
       Guid:
-        Data1: 2049681800
-        Data2: 1282832120
-        Data3: -1282392390
-        Data4: 499208373
-      Path: event:/Dialougue/Bard Neutral
+        Data1: -1935079684
+        Data2: 1073976493
+        Data3: 1693384614
+        Data4: -329634975
+      Path: event:/Dialougue/Ootsa Neutral
   - isPlayer: 1
     line: "It won\u2019t hesitate to put thou in a ditch This is the Mirrored One\u2019s
       perfect pitch "
     voice:
       Guid:
-        Data1: 2049681800
-        Data2: 1282832120
-        Data3: -1282392390
-        Data4: 499208373
-      Path: event:/Dialougue/Bard Neutral
+        Data1: -1935079684
+        Data2: 1073976493
+        Data3: 1693384614
+        Data4: -329634975
+      Path: event:/Dialougue/Ootsa Neutral
   - isPlayer: 1
     line: ...hmmm, guess it doesn't like that one....
     voice:
       Guid:
-        Data1: 2049681800
-        Data2: 1282832120
-        Data3: -1282392390
-        Data4: 499208373
-      Path: event:/Dialougue/Bard Neutral
+        Data1: 1169388150
+        Data2: 1187427504
+        Data3: 750741400
+        Data4: -881433314
+      Path: event:/Dialougue/Ootsa Annoyed
   current: 1

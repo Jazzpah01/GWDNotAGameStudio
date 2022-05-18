@@ -14,12 +14,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   lines:
   - isPlayer: 1
-    line: Yes! Looks lik it liked this one!
+    line: Yes! Looks like it liked this one!
     voice:
       Guid:
-        Data1: 2049681800
-        Data2: 1282832120
-        Data3: -1282392390
-        Data4: 499208373
-      Path: event:/Dialougue/Bard Neutral
+        Data1: -1696260203
+        Data2: 1270012750
+        Data3: -950513238
+        Data4: -501567759
+      Path: event:/Dialougue/Ootsa Happy
   current: -1

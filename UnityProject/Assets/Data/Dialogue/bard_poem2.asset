@@ -17,11 +17,11 @@ MonoBehaviour:
     line: No reaction. Any other ideas?
     voice:
       Guid:
-        Data1: -1899364056
-        Data2: 1210250111
-        Data3: -1039744324
-        Data4: -28817070
-      Path: event:/Dialougue/Bard Sad
+        Data1: 1169388150
+        Data2: 1187427504
+        Data3: 750741400
+        Data4: -881433314
+      Path: event:/Dialougue/Ootsa Annoyed
   - isPlayer: 0
     line: 'I''m blue Da ba dee da ba di '
     voice:

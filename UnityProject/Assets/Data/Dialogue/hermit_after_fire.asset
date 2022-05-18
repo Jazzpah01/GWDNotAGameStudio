@@ -70,8 +70,8 @@ MonoBehaviour:
         Data4: -329634975
       Path: event:/Dialougue/Ootsa Neutral
   - isPlayer: 0
-    line: "It's always hard to tell if they're real or not. But no, so far you're
-      the only soul who has appeared from\u2026"
+    line: It's always hard to tell if they're real or not. But no, so far you're
+      the only soul who has appeared from...
     voice:
       Guid:
         Data1: 1660483865
@@ -80,7 +80,8 @@ MonoBehaviour:
         Data4: -1120239517
       Path: event:/Dialougue/Hermit Upset
   - isPlayer: 0
-    line: You're a Traveller! I also travelled once and ended up here!
+    line: You came from the stone. You're a Traveller! I also travelled once and
+      ended up here!
     voice:
       Guid:
         Data1: 2098502593
@@ -89,7 +90,7 @@ MonoBehaviour:
         Data4: -1562522929
       Path: event:/Dialougue/Hermit Neutral
   - isPlayer: 1
-    line: So you know how to use the pebbles?
+    line: No, I am just a petty thief! So you know how to use the pebbles?
     voice:
       Guid:
         Data1: -1696260203
@@ -182,4 +183,4 @@ MonoBehaviour:
         Data3: -1311228279
         Data4: -1562522929
       Path: event:/Dialougue/Hermit Neutral
-  current: 8
+  current: -1

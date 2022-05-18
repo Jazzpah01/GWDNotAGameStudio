@@ -7,4 +7,5 @@ public interface IMoveable: IEventObject
 {
     public float MoveableSpeed { get; set; }
     public void MoveTo(Vector2 position, Action callback = null);
+    public void InstantMove(Vector2 position);
 }

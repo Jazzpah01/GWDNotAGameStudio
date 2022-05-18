@@ -80,6 +80,7 @@ public class CharacterController : MonoBehaviour
         {
             music2Emitter.Play();
         }
+
     }
 
     private void OnDisable()

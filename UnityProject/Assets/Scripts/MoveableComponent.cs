@@ -87,4 +87,9 @@ public class MoveableComponent : MonoBehaviour, IMoveable
 
         animator.SetBool("isWalking", false);
     }
+
+    public void InstantMove(Vector2 position)
+    {
+        transform.position = position;
+    }
 }

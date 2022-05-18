@@ -31,4 +31,13 @@ MonoBehaviour:
         Data3: -1062611790
         Data4: 1225344596
       Path: event:/Dialougue/Bard Sad
-  current: -1
+  - isPlayer: 1
+    line: Nope, not that one either...
+    voice:
+      Guid:
+        Data1: 848494061
+        Data2: 1201465500
+        Data3: -1062611790
+        Data4: 1225344596
+      Path: event:/Dialougue/Bard Sad
+  current: 1

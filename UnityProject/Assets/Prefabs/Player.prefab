@@ -160,6 +160,7 @@ GameObject:
   - component: {fileID: 4509995404389645566}
   - component: {fileID: 4509995404389645567}
   - component: {fileID: -2509703402849642663}
+  - component: {fileID: 2366939178648018968}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -215,15 +216,16 @@ MonoBehaviour:
       Data4: -1952723351
     Path: event:/Glyphs/Aqusistion
   walkEmitter: {fileID: -2509703402849642663}
+  walkEmitterSpeed: 4
   music1Emitter: {fileID: 5002875619658801407}
   music2Emitter: {fileID: 1620407595653536658}
   defaultVoice:
     Guid:
-      Data1: 291328159
-      Data2: 1203387725
-      Data3: 2070210948
-      Data4: -1867150278
-    Path: event:/Dialougue/Ootsa Neutral
+      Data1: -1696260203
+      Data2: 1270012750
+      Data3: -950513238
+      Data4: -501567759
+    Path: event:/Dialougue/Ash (Ootsa) Happy
   body: {fileID: 4509995404389645563}
   running: {fileID: 0}
   crouch: {fileID: 0}
@@ -325,6 +327,20 @@ MonoBehaviour:
   OverrideAttenuation: 0
   OverrideMinDistance: 1
   OverrideMaxDistance: 20
+--- !u!114 &2366939178648018968
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4509995404389645508}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 04311156faaf42042a5ce0210eab625f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animator: {fileID: 3780529015960042506}
+  rig: {fileID: 6151859645556712903}
 --- !u!1 &5544851379067825989
 GameObject:
   m_ObjectHideFlags: 0
@@ -544,9 +560,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: de149babd1f674dbbb5005173f024bcd, type: 3}
+--- !u!95 &3780529015960042506 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 2946826691328715774, guid: de149babd1f674dbbb5005173f024bcd, type: 3}
+  m_PrefabInstance: {fileID: 2058734777641687028}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &5014707694078836132 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6414755668836739664, guid: de149babd1f674dbbb5005173f024bcd, type: 3}
+  m_PrefabInstance: {fileID: 2058734777641687028}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &6151859645556712903 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5318139417354089011, guid: de149babd1f674dbbb5005173f024bcd, type: 3}
   m_PrefabInstance: {fileID: 2058734777641687028}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &4032691295116083184

@@ -17,9 +17,9 @@ MonoBehaviour:
     line: What is this orb?
     voice:
       Guid:
-        Data1: 291328159
-        Data2: 1203387725
-        Data3: 2070210948
-        Data4: -1867150278
+        Data1: -1935079684
+        Data2: 1073976493
+        Data3: 1693384614
+        Data4: -329634975
       Path: event:/Dialougue/Ootsa Neutral
   current: -1

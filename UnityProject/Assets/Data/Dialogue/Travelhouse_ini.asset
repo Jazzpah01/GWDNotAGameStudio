@@ -17,27 +17,27 @@ MonoBehaviour:
     line: Hi! I am looking for my friend...
     voice:
       Guid:
-        Data1: 291328159
-        Data2: 1203387725
-        Data3: 2070210948
-        Data4: -1867150278
+        Data1: -1935079684
+        Data2: 1073976493
+        Data3: 1693384614
+        Data4: -329634975
       Path: event:/Dialougue/Ootsa Neutral
   - isPlayer: 0
     line: Oh no! Someone found me!
     voice:
       Guid:
-        Data1: 1549764904
-        Data2: 1190620573
-        Data3: 1391422363
-        Data4: -119384019
+        Data1: 1660483865
+        Data2: 1328419391
+        Data3: 1235749303
+        Data4: -1120239517
       Path: event:/Dialougue/Hermit Upset
   - isPlayer: 0
     line: Ta ta!
     voice:
       Guid:
-        Data1: 1549764904
-        Data2: 1190620573
-        Data3: 1391422363
-        Data4: -119384019
+        Data1: 1660483865
+        Data2: 1328419391
+        Data3: 1235749303
+        Data4: -1120239517
       Path: event:/Dialougue/Hermit Upset
   current: -1

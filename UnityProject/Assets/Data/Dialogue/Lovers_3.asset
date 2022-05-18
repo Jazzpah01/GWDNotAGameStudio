@@ -17,27 +17,27 @@ MonoBehaviour:
     line: Is it ready?
     voice:
       Guid:
-        Data1: 291328159
-        Data2: 1203387725
-        Data3: 2070210948
-        Data4: -1867150278
+        Data1: -1935079684
+        Data2: 1073976493
+        Data3: 1693384614
+        Data4: -329634975
       Path: event:/Dialougue/Ootsa Neutral
   - isPlayer: 0
     line: Yes! I left it on that bench.
     voice:
       Guid:
-        Data1: 244635931
-        Data2: 1210964411
-        Data3: -1230571842
-        Data4: 1256436458
+        Data1: 2098502593
+        Data2: 1242762822
+        Data3: -1311228279
+        Data4: -1562522929
       Path: event:/Dialougue/Hermit Neutral
   - isPlayer: 0
     line: Please give it to her if you run into her again!
     voice:
       Guid:
-        Data1: 244635931
-        Data2: 1210964411
-        Data3: -1230571842
-        Data4: 1256436458
+        Data1: 2098502593
+        Data2: 1242762822
+        Data3: -1311228279
+        Data4: -1562522929
       Path: event:/Dialougue/Hermit Neutral
   current: -1

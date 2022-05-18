@@ -17,36 +17,36 @@ MonoBehaviour:
     line: YES! I LOOK AWESOME!
     voice:
       Guid:
-        Data1: 244635931
-        Data2: 1210964411
-        Data3: -1230571842
-        Data4: 1256436458
+        Data1: 2098502593
+        Data2: 1242762822
+        Data3: -1311228279
+        Data4: -1562522929
       Path: event:/Dialougue/Hermit Neutral
   - isPlayer: 1
     line: Is that all you wanted it for?
     voice:
       Guid:
-        Data1: -166340523
-        Data2: 1132535540
-        Data3: -1731428675
-        Data4: -909582648
+        Data1: 1169388150
+        Data2: 1187427504
+        Data3: 750741400
+        Data4: -881433314
       Path: event:/Dialougue/Ootsa Annoyed
   - isPlayer: 0
     line: Of course! Look at me! I am amazing!
     voice:
       Guid:
-        Data1: 244635931
-        Data2: 1210964411
-        Data3: -1230571842
-        Data4: 1256436458
+        Data1: 2098502593
+        Data2: 1242762822
+        Data3: -1311228279
+        Data4: -1562522929
       Path: event:/Dialougue/Hermit Neutral
   - isPlayer: 1
     line: Whatever...
     voice:
       Guid:
-        Data1: -166340523
-        Data2: 1132535540
-        Data3: -1731428675
-        Data4: -909582648
+        Data1: 1169388150
+        Data2: 1187427504
+        Data3: 750741400
+        Data4: -881433314
       Path: event:/Dialougue/Ootsa Annoyed
   current: -1

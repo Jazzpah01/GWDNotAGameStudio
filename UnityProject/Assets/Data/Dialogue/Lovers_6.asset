@@ -17,73 +17,73 @@ MonoBehaviour:
     line: Hi! I found your lover again!
     voice:
       Guid:
-        Data1: -166340523
-        Data2: 1132535540
-        Data3: -1731428675
-        Data4: -909582648
+        Data1: 1169388150
+        Data2: 1187427504
+        Data3: 750741400
+        Data4: -881433314
       Path: event:/Dialougue/Ootsa Annoyed
   - isPlayer: 1
     line: He sent you.... this.
     voice:
       Guid:
-        Data1: -2053084555
-        Data2: 1078062801
-        Data3: 1669277101
-        Data4: 90365669
-      Path: event:/Dialougue/Oosta Sad
+        Data1: -237699141
+        Data2: 1305245023
+        Data3: -2026030693
+        Data4: 1276201133
+      Path: event:/Dialougue/Ootsa Sad
   - isPlayer: 0
     line: What? A dog figurine?
     voice:
       Guid:
-        Data1: 848494061
-        Data2: 1201465500
-        Data3: -1062611790
-        Data4: 1225344596
+        Data1: -1899364056
+        Data2: 1210250111
+        Data3: -1039744324
+        Data4: -28817070
       Path: event:/Dialougue/Bard Sad
   - isPlayer: 0
     line: Does he think I'm still twelve?
     voice:
       Guid:
-        Data1: 848494061
-        Data2: 1201465500
-        Data3: -1062611790
-        Data4: 1225344596
+        Data1: -1899364056
+        Data2: 1210250111
+        Data3: -1039744324
+        Data4: -28817070
       Path: event:/Dialougue/Bard Sad
   - isPlayer: 0
     line: This kind of sucks, right?
     voice:
       Guid:
-        Data1: 848494061
-        Data2: 1201465500
-        Data3: -1062611790
-        Data4: 1225344596
+        Data1: -1899364056
+        Data2: 1210250111
+        Data3: -1039744324
+        Data4: -28817070
       Path: event:/Dialougue/Bard Sad
   - isPlayer: 1
     line: Yeeeeaaah...
     voice:
       Guid:
-        Data1: -2053084555
-        Data2: 1078062801
-        Data3: 1669277101
-        Data4: 90365669
-      Path: event:/Dialougue/Oosta Sad
+        Data1: -237699141
+        Data2: 1305245023
+        Data3: -2026030693
+        Data4: 1276201133
+      Path: event:/Dialougue/Ootsa Sad
   - isPlayer: 0
     line: Ugh, fine. I made a bird crochet a while ago.
     voice:
       Guid:
-        Data1: 848494061
-        Data2: 1201465500
-        Data3: -1062611790
-        Data4: 1225344596
+        Data1: -1899364056
+        Data2: 1210250111
+        Data3: -1039744324
+        Data4: -28817070
       Path: event:/Dialougue/Bard Sad
   - isPlayer: 0
     line: It's really bad, but maybe he'll appreciate it.
     voice:
       Guid:
-        Data1: 1999574016
-        Data2: 1188104198
-        Data3: -803068242
-        Data4: 369274613
+        Data1: 2049681800
+        Data2: 1282832120
+        Data3: -1282392390
+        Data4: 499208373
       Path: event:/Dialougue/Bard Neutral
   - isPlayer: 0
     line: It's hung up next to the entrance... give it to him next time?

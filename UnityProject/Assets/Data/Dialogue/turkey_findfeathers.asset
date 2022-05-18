@@ -17,38 +17,38 @@ MonoBehaviour:
     line: Gobble gobble :(
     voice:
       Guid:
-        Data1: 0
-        Data2: 0
-        Data3: 0
-        Data4: 0
-      Path: 
+        Data1: 458838773
+        Data2: 1124938063
+        Data3: -1429901650
+        Data4: -939057212
+      Path: event:/Dialougue/Turkey
   - isPlayer: 1
     line: Hi little friend, what happened to you?
     voice:
       Guid:
-        Data1: 0
-        Data2: 0
-        Data3: 0
-        Data4: 0
-      Path: 
+        Data1: -1696260203
+        Data2: 1270012750
+        Data3: -950513238
+        Data4: -501567759
+      Path: event:/Dialougue/Ootsa Happy
   - isPlayer: 0
     line: Gobble gobble >:(
     voice:
       Guid:
-        Data1: 0
-        Data2: 0
-        Data3: 0
-        Data4: 0
-      Path: 
+        Data1: 458838773
+        Data2: 1124938063
+        Data3: -1429901650
+        Data4: -939057212
+      Path: event:/Dialougue/Turkey
   - isPlayer: 1
     line: Yes I can see you lost your feathers, but how?
     voice:
       Guid:
-        Data1: 0
-        Data2: 0
-        Data3: 0
-        Data4: 0
-      Path: 
+        Data1: -237699141
+        Data2: 1305245023
+        Data3: -2026030693
+        Data4: 1276201133
+      Path: event:/Dialougue/Ootsa Sad
   - isPlayer: 0
     line: "\u2026"
     voice:
@@ -62,63 +62,63 @@ MonoBehaviour:
     line: "Sorry, I guess it\u2019s a touchy subject. Where are your feathers now?"
     voice:
       Guid:
-        Data1: 0
-        Data2: 0
-        Data3: 0
-        Data4: 0
-      Path: 
+        Data1: -237699141
+        Data2: 1305245023
+        Data3: -2026030693
+        Data4: 1276201133
+      Path: event:/Dialougue/Ootsa Sad
   - isPlayer: 0
     line: "Gobble, gobble, gobble, gobble\u2026"
     voice:
       Guid:
-        Data1: 0
-        Data2: 0
-        Data3: 0
-        Data4: 0
-      Path: 
+        Data1: 458838773
+        Data2: 1124938063
+        Data3: -1429901650
+        Data4: -939057212
+      Path: event:/Dialougue/Turkey
   - isPlayer: 1
     line: All over? How many are you missing?
     voice:
       Guid:
-        Data1: 0
-        Data2: 0
-        Data3: 0
-        Data4: 0
-      Path: 
+        Data1: -1935079684
+        Data2: 1073976493
+        Data3: 1693384614
+        Data4: -329634975
+      Path: event:/Dialougue/Ootsa Neutral
   - isPlayer: 0
     line: Gobble gobble gobble gobble gobble gobble gobble gobble gobble gobble
     voice:
       Guid:
-        Data1: 0
-        Data2: 0
-        Data3: 0
-        Data4: 0
-      Path: 
+        Data1: 458838773
+        Data2: 1124938063
+        Data3: -1429901650
+        Data4: -939057212
+      Path: event:/Dialougue/Turkey
   - isPlayer: 1
     line: "Ten, that\u2019s a lot! Well, I\u2019ll pick them up if I see any!"
     voice:
       Guid:
-        Data1: 0
-        Data2: 0
-        Data3: 0
-        Data4: 0
-      Path: 
+        Data1: -1935079684
+        Data2: 1073976493
+        Data3: 1693384614
+        Data4: -329634975
+      Path: event:/Dialougue/Ootsa Neutral
   - isPlayer: 0
     line: Gobble gobble <3
     voice:
       Guid:
-        Data1: 0
-        Data2: 0
-        Data3: 0
-        Data4: 0
-      Path: 
+        Data1: 458838773
+        Data2: 1124938063
+        Data3: -1429901650
+        Data4: -939057212
+      Path: event:/Dialougue/Turkey
   - isPlayer: 1
     line: Huh, I guess Tjetlik was right, turkeys are good conversation partners.
     voice:
       Guid:
-        Data1: 0
-        Data2: 0
-        Data3: 0
-        Data4: 0
-      Path: 
+        Data1: -1935079684
+        Data2: 1073976493
+        Data3: 1693384614
+        Data4: -329634975
+      Path: event:/Dialougue/Ootsa Neutral
   current: -1

@@ -17,169 +17,169 @@ MonoBehaviour:
     line: Thank you! You saved my home. At least a very substantial part of it.
     voice:
       Guid:
-        Data1: 244635931
-        Data2: 1210964411
-        Data3: -1230571842
-        Data4: 1256436458
+        Data1: 2098502593
+        Data2: 1242762822
+        Data3: -1311228279
+        Data4: -1562522929
       Path: event:/Dialougue/Hermit Neutral
   - isPlayer: 1
     line: You are welcome, I guess.
     voice:
       Guid:
-        Data1: -166340523
-        Data2: 1132535540
-        Data3: -1731428675
-        Data4: -909582648
+        Data1: 1169388150
+        Data2: 1187427504
+        Data3: 750741400
+        Data4: -881433314
       Path: event:/Dialougue/Ootsa Annoyed
   - isPlayer: 0
     line: 'My apologies! I tend to forget my manners when I mainly talk with the
       rude raccoons. '
     voice:
       Guid:
-        Data1: 244635931
-        Data2: 1210964411
-        Data3: -1230571842
-        Data4: 1256436458
+        Data1: 2098502593
+        Data2: 1242762822
+        Data3: -1311228279
+        Data4: -1562522929
       Path: event:/Dialougue/Hermit Neutral
   - isPlayer: 1
     line: No one ever comes by?
     voice:
       Guid:
-        Data1: 291328159
-        Data2: 1203387725
-        Data3: 2070210948
-        Data4: -1867150278
+        Data1: -1935079684
+        Data2: 1073976493
+        Data3: 1693384614
+        Data4: -329634975
       Path: event:/Dialougue/Ootsa Neutral
   - isPlayer: 0
     line: Oh yes, the local turkey Watotl always has an insightful gobble and the
       squirrels crack me up with their nut-nut-jokes.
     voice:
       Guid:
-        Data1: 244635931
-        Data2: 1210964411
-        Data3: -1230571842
-        Data4: 1256436458
+        Data1: 2098502593
+        Data2: 1242762822
+        Data3: -1311228279
+        Data4: -1562522929
       Path: event:/Dialougue/Hermit Neutral
   - isPlayer: 1
     line: What about people? I'm looking for my friend who might have come by here.
     voice:
       Guid:
-        Data1: 291328159
-        Data2: 1203387725
-        Data3: 2070210948
-        Data4: -1867150278
+        Data1: -1935079684
+        Data2: 1073976493
+        Data3: 1693384614
+        Data4: -329634975
       Path: event:/Dialougue/Ootsa Neutral
   - isPlayer: 0
     line: "It's always hard to tell if they're real or not. But no, so far you're
       the only soul who has appeared from\u2026"
     voice:
       Guid:
-        Data1: 1549764904
-        Data2: 1190620573
-        Data3: 1391422363
-        Data4: -119384019
+        Data1: 1660483865
+        Data2: 1328419391
+        Data3: 1235749303
+        Data4: -1120239517
       Path: event:/Dialougue/Hermit Upset
   - isPlayer: 0
     line: You're a Traveller! I also travelled once and ended up here!
     voice:
       Guid:
-        Data1: 244635931
-        Data2: 1210964411
-        Data3: -1230571842
-        Data4: 1256436458
+        Data1: 2098502593
+        Data2: 1242762822
+        Data3: -1311228279
+        Data4: -1562522929
       Path: event:/Dialougue/Hermit Neutral
   - isPlayer: 1
     line: So you know how to use the pebbles?
     voice:
       Guid:
-        Data1: 1957640647
-        Data2: 1212946211
-        Data3: 2051163539
-        Data4: 2062734785
+        Data1: -1696260203
+        Data2: 1270012750
+        Data3: -950513238
+        Data4: -501567759
       Path: event:/Dialougue/Ootsa Happy
   - isPlayer: 0
     line: Sun god no, I just housed a Traveller in my village. One day they came,
       the next they were gone.
     voice:
       Guid:
-        Data1: 244635931
-        Data2: 1210964411
-        Data3: -1230571842
-        Data4: 1256436458
+        Data1: 2098502593
+        Data2: 1242762822
+        Data3: -1311228279
+        Data4: -1562522929
       Path: event:/Dialougue/Hermit Neutral
   - isPlayer: 0
     line: "The Traveller Tizoc eventually decided to settle in the village and helped
       me escape from it when things got\u2026 hectic. "
     voice:
       Guid:
-        Data1: 244635931
-        Data2: 1210964411
-        Data3: -1230571842
-        Data4: 1256436458
+        Data1: 2098502593
+        Data2: 1242762822
+        Data3: -1311228279
+        Data4: -1562522929
       Path: event:/Dialougue/Hermit Neutral
   - isPlayer: 1
     line: Some rude raccoons invaded your home?
     voice:
       Guid:
-        Data1: -166340523
-        Data2: 1132535540
-        Data3: -1731428675
-        Data4: -909582648
+        Data1: 1169388150
+        Data2: 1187427504
+        Data3: 750741400
+        Data4: -881433314
       Path: event:/Dialougue/Ootsa Annoyed
   - isPlayer: 0
     line: 'Long story short: I don''t wanna tell.'
     voice:
       Guid:
-        Data1: 1549764904
-        Data2: 1190620573
-        Data3: 1391422363
-        Data4: -119384019
+        Data1: 1660483865
+        Data2: 1328419391
+        Data3: 1235749303
+        Data4: -1120239517
       Path: event:/Dialougue/Hermit Upset
   - isPlayer: 0
     line: I've only told the turkey, but I know he can keep a secret, so no point
       in asking him.
     voice:
       Guid:
-        Data1: 1549764904
-        Data2: 1190620573
-        Data3: 1391422363
-        Data4: -119384019
+        Data1: 1660483865
+        Data2: 1328419391
+        Data3: 1235749303
+        Data4: -1120239517
       Path: event:/Dialougue/Hermit Upset
   - isPlayer: 1
     line: Fine. But the Traveller, how do I get to them?
     voice:
       Guid:
-        Data1: -166340523
-        Data2: 1132535540
-        Data3: -1731428675
-        Data4: -909582648
+        Data1: 1169388150
+        Data2: 1187427504
+        Data3: 750741400
+        Data4: -881433314
       Path: event:/Dialougue/Ootsa Annoyed
   - isPlayer: 0
     line: You helped with the fire, so have this. Tizoc told me to use it on my way
       back, but I'm not ready. You need it more than I do.
     voice:
       Guid:
-        Data1: 244635931
-        Data2: 1210964411
-        Data3: -1230571842
-        Data4: 1256436458
+        Data1: 2098502593
+        Data2: 1242762822
+        Data3: -1311228279
+        Data4: -1562522929
       Path: event:/Dialougue/Hermit Neutral
   - isPlayer: 1
     line: Thank you!
     voice:
       Guid:
-        Data1: 1957640647
-        Data2: 1212946211
-        Data3: 2051163539
-        Data4: 2062734785
+        Data1: -1696260203
+        Data2: 1270012750
+        Data3: -950513238
+        Data4: -501567759
       Path: event:/Dialougue/Ootsa Happy
   - isPlayer: 0
     line: Tell them that Tjetlik sent you!
     voice:
       Guid:
-        Data1: 244635931
-        Data2: 1210964411
-        Data3: -1230571842
-        Data4: 1256436458
+        Data1: 2098502593
+        Data2: 1242762822
+        Data3: -1311228279
+        Data4: -1562522929
       Path: event:/Dialougue/Hermit Neutral
   current: 8

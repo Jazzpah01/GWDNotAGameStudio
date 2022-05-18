@@ -18,58 +18,58 @@ MonoBehaviour:
       must be devoured.
     voice:
       Guid:
-        Data1: 244635931
-        Data2: 1210964411
-        Data3: -1230571842
-        Data4: 1256436458
+        Data1: 2098502593
+        Data2: 1242762822
+        Data3: -1311228279
+        Data4: -1562522929
       Path: event:/Dialougue/Hermit Neutral
   - isPlayer: 0
     line: Serving you as the Mirrored One, I had a lovely year but everything good
       must come to an end.
     voice:
       Guid:
-        Data1: 244635931
-        Data2: 1210964411
-        Data3: -1230571842
-        Data4: 1256436458
+        Data1: 2098502593
+        Data2: 1242762822
+        Data3: -1311228279
+        Data4: -1562522929
       Path: event:/Dialougue/Hermit Neutral
   - isPlayer: 0
     line: I invite all of the candidates to the stage, for the continuation of the
       cycle. Follow his words with yours.
     voice:
       Guid:
-        Data1: 244635931
-        Data2: 1210964411
-        Data3: -1230571842
-        Data4: 1256436458
+        Data1: 2098502593
+        Data2: 1242762822
+        Data3: -1311228279
+        Data4: -1562522929
       Path: event:/Dialougue/Hermit Neutral
   - isPlayer: 0
     line: Hear us, the Lord of the Near and Nigh! Show yourself in the form of your
       next body.
     voice:
       Guid:
-        Data1: 1549764904
-        Data2: 1190620573
-        Data3: 1391422363
-        Data4: -119384019
+        Data1: 1660483865
+        Data2: 1328419391
+        Data3: 1235749303
+        Data4: -1120239517
       Path: event:/Dialougue/Hermit Upset
   - isPlayer: 0
     line: 'A free jaguar leaps on the back of the wind     and floats downstream
       till the current ends '
     voice:
       Guid:
-        Data1: 1549764904
-        Data2: 1190620573
-        Data3: 1391422363
-        Data4: -119384019
+        Data1: 1660483865
+        Data2: 1328419391
+        Data3: 1235749303
+        Data4: -1120239517
       Path: event:/Dialougue/Hermit Upset
   - isPlayer: 0
     line: 'and dips his crown in the white sun rays and dares to claim the sky. '
     voice:
       Guid:
-        Data1: 244635931
-        Data2: 1210964411
-        Data3: -1230571842
-        Data4: 1256436458
+        Data1: 2098502593
+        Data2: 1242762822
+        Data3: -1311228279
+        Data4: -1562522929
       Path: event:/Dialougue/Hermit Neutral
   current: -1

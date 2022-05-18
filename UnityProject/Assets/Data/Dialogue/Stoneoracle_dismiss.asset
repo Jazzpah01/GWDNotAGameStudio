@@ -17,27 +17,27 @@ MonoBehaviour:
     line: Hey...
     voice:
       Guid:
-        Data1: 291328159
-        Data2: 1203387725
-        Data3: 2070210948
-        Data4: -1867150278
+        Data1: -1935079684
+        Data2: 1073976493
+        Data3: 1693384614
+        Data4: -329634975
       Path: event:/Dialougue/Ootsa Neutral
   - isPlayer: 0
     line: SILENCE!
     voice:
       Guid:
-        Data1: 357240455
-        Data2: 1310023852
-        Data3: 1797106579
-        Data4: 1657866820
-      Path: event:/Dialougue/Guard
+        Data1: 1638399616
+        Data2: 1282166293
+        Data3: -915448129
+        Data4: -1523740386
+      Path: event:/Dialougue/Ootsa Yelling
   - isPlayer: 0
     line: GO.
     voice:
       Guid:
-        Data1: 357240455
-        Data2: 1310023852
-        Data3: 1797106579
-        Data4: 1657866820
-      Path: event:/Dialougue/Guard
+        Data1: 1638399616
+        Data2: 1282166293
+        Data3: -915448129
+        Data4: -1523740386
+      Path: event:/Dialougue/Ootsa Yelling
   current: -1

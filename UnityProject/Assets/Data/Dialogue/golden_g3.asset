@@ -17,27 +17,27 @@ MonoBehaviour:
     line: You can have this painted rubbi- TREASURE I just found on the ground.
     voice:
       Guid:
-        Data1: 248736705
-        Data2: 1273507025
-        Data3: 1876864157
-        Data4: -1492965847
+        Data1: -1347247602
+        Data2: 1320939534
+        Data3: 111143092
+        Data4: 1289996209
       Path: event:/Dialougue/Golden Girls
   - isPlayer: 0
     line: Choose!
     voice:
       Guid:
-        Data1: 248736705
-        Data2: 1273507025
-        Data3: 1876864157
-        Data4: -1492965847
+        Data1: -1347247602
+        Data2: 1320939534
+        Data3: 111143092
+        Data4: 1289996209
       Path: event:/Dialougue/Golden Girls
   - isPlayer: 0
     line: "And you can't choose yourself, that\u2019s cheating!"
     voice:
       Guid:
-        Data1: 248736705
-        Data2: 1273507025
-        Data3: 1876864157
-        Data4: -1492965847
+        Data1: -1347247602
+        Data2: 1320939534
+        Data3: 111143092
+        Data4: 1289996209
       Path: event:/Dialougue/Golden Girls
   current: -1

@@ -160,7 +160,7 @@ GameObject:
   - component: {fileID: 4509995404389645566}
   - component: {fileID: 4509995404389645567}
   - component: {fileID: -2509703402849642663}
-  - component: {fileID: 2366939178648018968}
+  - component: {fileID: 7361088313513240378}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -221,11 +221,11 @@ MonoBehaviour:
   music2Emitter: {fileID: 1620407595653536658}
   defaultVoice:
     Guid:
-      Data1: -1696260203
-      Data2: 1270012750
-      Data3: -950513238
-      Data4: -501567759
-    Path: event:/Dialougue/Ash (Ootsa) Happy
+      Data1: -1935079684
+      Data2: 1073976493
+      Data3: 1693384614
+      Data4: -329634975
+    Path: event:/Dialougue/Ootsa Neutral
   body: {fileID: 4509995404389645563}
   running: {fileID: 0}
   crouch: {fileID: 0}
@@ -327,7 +327,7 @@ MonoBehaviour:
   OverrideAttenuation: 0
   OverrideMinDistance: 1
   OverrideMaxDistance: 20
---- !u!114 &2366939178648018968
+--- !u!114 &7361088313513240378
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

@@ -17,9 +17,9 @@ MonoBehaviour:
     line: Kwolan! Kwolan!
     voice:
       Guid:
-        Data1: 1898231120
-        Data2: 1329017283
-        Data3: -115922250
-        Data4: -71516138
+        Data1: 1638399616
+        Data2: 1282166293
+        Data3: -915448129
+        Data4: -1523740386
       Path: event:/Dialougue/Ootsa Yelling
   current: -1

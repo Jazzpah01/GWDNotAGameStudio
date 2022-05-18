@@ -134,7 +134,7 @@ MonoBehaviour:
       Data2: 1073976493
       Data3: 1693384614
       Data4: -329634975
-    Path: event:/Dialougue/Ash (Ootsa) Neutral
+    Path: event:/Dialougue/Ootsa Neutral
   body: {fileID: 0}
   running: {fileID: 0}
   crouch: {fileID: 0}

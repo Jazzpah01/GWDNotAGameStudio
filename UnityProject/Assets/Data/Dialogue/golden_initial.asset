@@ -17,55 +17,55 @@ MonoBehaviour:
     line: Have you seen a person running around with some rocks?
     voice:
       Guid:
-        Data1: 1898231120
-        Data2: 1329017283
-        Data3: -115922250
-        Data4: -71516138
+        Data1: 1638399616
+        Data2: 1282166293
+        Data3: -915448129
+        Data4: -1523740386
       Path: event:/Dialougue/Ootsa Yelling
   - isPlayer: 0
     line: Do they look like you?
     voice:
       Guid:
-        Data1: 248736705
-        Data2: 1273507025
-        Data3: 1876864157
-        Data4: -1492965847
+        Data1: -1347247602
+        Data2: 1320939534
+        Data3: 111143092
+        Data4: 1289996209
       Path: event:/Dialougue/Golden Girls
   - isPlayer: 1
     line: Yes.
     voice:
       Guid:
-        Data1: 1957640647
-        Data2: 1212946211
-        Data3: 2051163539
-        Data4: 2062734785
+        Data1: -1696260203
+        Data2: 1270012750
+        Data3: -950513238
+        Data4: -501567759
       Path: event:/Dialougue/Ootsa Happy
   - isPlayer: 0
     line: What a shame. But yes, they came by and said we were all beautiful.
     voice:
       Guid:
-        Data1: 248736705
-        Data2: 1273507025
-        Data3: 1876864157
-        Data4: -1492965847
+        Data1: -1347247602
+        Data2: 1320939534
+        Data3: 111143092
+        Data4: 1289996209
       Path: event:/Dialougue/Golden Girls
   - isPlayer: 1
     line: That's true,  I like your outfits.
     voice:
       Guid:
-        Data1: 1957640647
-        Data2: 1212946211
-        Data3: 2051163539
-        Data4: 2062734785
+        Data1: -1696260203
+        Data2: 1270012750
+        Data3: -950513238
+        Data4: -501567759
       Path: event:/Dialougue/Ootsa Happy
   - isPlayer: 0
     line: WHY would you SAY that, you're just as rude as your ugly friend.
     voice:
       Guid:
-        Data1: 248736705
-        Data2: 1273507025
-        Data3: 1876864157
-        Data4: -1492965847
+        Data1: -1347247602
+        Data2: 1320939534
+        Data3: 111143092
+        Data4: 1289996209
       Path: event:/Dialougue/Golden Girls
   - isPlayer: 1
     line: ???
@@ -80,46 +80,46 @@ MonoBehaviour:
     line: Okay so, on days of the rabbit we wear gold. So of course we're beautiful.
     voice:
       Guid:
-        Data1: 248736705
-        Data2: 1273507025
-        Data3: 1876864157
-        Data4: -1492965847
+        Data1: -1347247602
+        Data2: 1320939534
+        Data3: 111143092
+        Data4: 1289996209
       Path: event:/Dialougue/Golden Girls
   - isPlayer: 0
     line: "But one of us MUST be the prettiest. That's like\u2026 science."
     voice:
       Guid:
-        Data1: 248736705
-        Data2: 1273507025
-        Data3: 1876864157
-        Data4: -1492965847
+        Data1: -1347247602
+        Data2: 1320939534
+        Data3: 111143092
+        Data4: 1289996209
       Path: event:/Dialougue/Golden Girls
   - isPlayer: 0
     line: You have to choose who's the prettiest. Even though you clearly don't understand
       style.
     voice:
       Guid:
-        Data1: 248736705
-        Data2: 1273507025
-        Data3: 1876864157
-        Data4: -1492965847
+        Data1: -1347247602
+        Data2: 1320939534
+        Data3: 111143092
+        Data4: 1289996209
       Path: event:/Dialougue/Golden Girls
   - isPlayer: 1
     line: "Wow, only pretty on the outside I guess\u2026 But I choose\u2026"
     voice:
       Guid:
-        Data1: -166340523
-        Data2: 1132535540
-        Data3: -1731428675
-        Data4: -909582648
+        Data1: 1169388150
+        Data2: 1187427504
+        Data3: 750741400
+        Data4: -881433314
       Path: event:/Dialougue/Ootsa Annoyed
   - isPlayer: 0
     line: Wait! We gotta pitch, first.
     voice:
       Guid:
-        Data1: 248736705
-        Data2: 1273507025
-        Data3: 1876864157
-        Data4: -1492965847
+        Data1: -1347247602
+        Data2: 1320939534
+        Data3: 111143092
+        Data4: 1289996209
       Path: event:/Dialougue/Golden Girls
   current: -1

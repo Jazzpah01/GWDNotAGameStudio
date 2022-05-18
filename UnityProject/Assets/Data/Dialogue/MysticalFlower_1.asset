@@ -17,47 +17,47 @@ MonoBehaviour:
     line: If you have a moment we can tell you of a legend!
     voice:
       Guid:
-        Data1: 248736705
-        Data2: 1273507025
-        Data3: 1876864157
-        Data4: -1492965847
+        Data1: -1347247602
+        Data2: 1320939534
+        Data3: 111143092
+        Data4: 1289996209
       Path: event:/Dialougue/Golden Girls
   - isPlayer: 1
     line: I guess I can spare a moment...
     voice:
       Guid:
-        Data1: 291328159
-        Data2: 1203387725
-        Data3: 2070210948
-        Data4: -1867150278
+        Data1: -1935079684
+        Data2: 1073976493
+        Data3: 1693384614
+        Data4: -329634975
       Path: event:/Dialougue/Ootsa Neutral
   - isPlayer: 0
     line: So... legend has it that there is a mystical flower that has the ability
       to heal, create, relax, and help you travel the multiverse!
     voice:
       Guid:
-        Data1: 248736705
-        Data2: 1273507025
-        Data3: 1876864157
-        Data4: -1492965847
+        Data1: -1347247602
+        Data2: 1320939534
+        Data3: 111143092
+        Data4: 1289996209
       Path: event:/Dialougue/Golden Girls
   - isPlayer: 1
     line: What!? No such thing exists, let alone as a flower.
     voice:
       Guid:
-        Data1: -166340523
-        Data2: 1132535540
-        Data3: -1731428675
-        Data4: -909582648
+        Data1: 1169388150
+        Data2: 1187427504
+        Data3: 750741400
+        Data4: -881433314
       Path: event:/Dialougue/Ootsa Annoyed
   - isPlayer: 0
     line: No lie Ootsa, and if you can find this flower we can teach you how to unlock
       its mystical properties.
     voice:
       Guid:
-        Data1: 248736705
-        Data2: 1273507025
-        Data3: 1876864157
-        Data4: -1492965847
+        Data1: -1347247602
+        Data2: 1320939534
+        Data3: 111143092
+        Data4: 1289996209
       Path: event:/Dialougue/Golden Girls
   current: -1

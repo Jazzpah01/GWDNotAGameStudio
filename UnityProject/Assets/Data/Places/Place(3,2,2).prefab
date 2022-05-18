@@ -213,6 +213,22 @@ PrefabInstance:
       propertyPath: m_Bounds.m_Extent.y
       value: 0.35374993
       objectReference: {fileID: 0}
+    - target: {fileID: 7032458771797593176, guid: 186d55f05c45e44b0b801a05a71765c3, type: 3}
+      propertyPath: defaultVoice.Guid.Data1
+      value: 2098502593
+      objectReference: {fileID: 0}
+    - target: {fileID: 7032458771797593176, guid: 186d55f05c45e44b0b801a05a71765c3, type: 3}
+      propertyPath: defaultVoice.Guid.Data2
+      value: 1242762822
+      objectReference: {fileID: 0}
+    - target: {fileID: 7032458771797593176, guid: 186d55f05c45e44b0b801a05a71765c3, type: 3}
+      propertyPath: defaultVoice.Guid.Data3
+      value: -1311228279
+      objectReference: {fileID: 0}
+    - target: {fileID: 7032458771797593176, guid: 186d55f05c45e44b0b801a05a71765c3, type: 3}
+      propertyPath: defaultVoice.Guid.Data4
+      value: -1562522929
+      objectReference: {fileID: 0}
     - target: {fileID: 8769753177819995929, guid: 186d55f05c45e44b0b801a05a71765c3, type: 3}
       propertyPath: m_Bounds.m_Center.x
       value: -0.004455507

@@ -17,27 +17,27 @@ MonoBehaviour:
     line: Whoa! Sure am glad this thing is not alive anymore...
     voice:
       Guid:
-        Data1: 1957640647
-        Data2: 1212946211
-        Data3: 2051163539
-        Data4: 2062734785
+        Data1: -1696260203
+        Data2: 1270012750
+        Data3: -950513238
+        Data4: -501567759
       Path: event:/Dialougue/Ootsa Happy
   - isPlayer: 1
     line: What even is this?
     voice:
       Guid:
-        Data1: 1898231120
-        Data2: 1329017283
-        Data3: -115922250
-        Data4: -71516138
+        Data1: 1638399616
+        Data2: 1282166293
+        Data3: -915448129
+        Data4: -1523740386
       Path: event:/Dialougue/Ootsa Yelling
   - isPlayer: 1
     line: I'm so confused...
     voice:
       Guid:
-        Data1: -166340523
-        Data2: 1132535540
-        Data3: -1731428675
-        Data4: -909582648
+        Data1: 1169388150
+        Data2: 1187427504
+        Data3: 750741400
+        Data4: -881433314
       Path: event:/Dialougue/Ootsa Annoyed
   current: -1

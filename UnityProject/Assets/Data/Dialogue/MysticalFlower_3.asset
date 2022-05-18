@@ -17,36 +17,36 @@ MonoBehaviour:
     line: YAAASSSS QUEEN!! YOU FOUND IT!
     voice:
       Guid:
-        Data1: 248736705
-        Data2: 1273507025
-        Data3: 1876864157
-        Data4: -1492965847
+        Data1: -1347247602
+        Data2: 1320939534
+        Data3: 111143092
+        Data4: 1289996209
       Path: event:/Dialougue/Golden Girls
   - isPlayer: 1
     line: So how do we go on a journey?
     voice:
       Guid:
-        Data1: 291328159
-        Data2: 1203387725
-        Data3: 2070210948
-        Data4: -1867150278
+        Data1: -1935079684
+        Data2: 1073976493
+        Data3: 1693384614
+        Data4: -329634975
       Path: event:/Dialougue/Ootsa Neutral
   - isPlayer: 0
     line: Simple, we roll it up and puff puff pass.
     voice:
       Guid:
-        Data1: 248736705
-        Data2: 1273507025
-        Data3: 1876864157
-        Data4: -1492965847
+        Data1: -1347247602
+        Data2: 1320939534
+        Data3: 111143092
+        Data4: 1289996209
       Path: event:/Dialougue/Golden Girls
   - isPlayer: 1
     line: Ahh its like all my cares have melted away...
     voice:
       Guid:
-        Data1: 1957640647
-        Data2: 1212946211
-        Data3: 2051163539
-        Data4: 2062734785
+        Data1: -1696260203
+        Data2: 1270012750
+        Data3: -950513238
+        Data4: -501567759
       Path: event:/Dialougue/Ootsa Happy
   current: -1

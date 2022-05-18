@@ -17,27 +17,27 @@ MonoBehaviour:
     line: Say hi to the Tizoc!
     voice:
       Guid:
-        Data1: 244635931
-        Data2: 1210964411
-        Data3: -1230571842
-        Data4: 1256436458
+        Data1: 2098502593
+        Data2: 1242762822
+        Data3: -1311228279
+        Data4: -1562522929
       Path: event:/Dialougue/Hermit Neutral
   - isPlayer: 0
     line: Are you still around or am I imagining things again?
     voice:
       Guid:
-        Data1: 244635931
-        Data2: 1210964411
-        Data3: -1230571842
-        Data4: 1256436458
+        Data1: 2098502593
+        Data2: 1242762822
+        Data3: -1311228279
+        Data4: -1562522929
       Path: event:/Dialougue/Hermit Neutral
   - isPlayer: 0
     line: "Don\u2019t forget to visit me sometime"
     voice:
       Guid:
-        Data1: 244635931
-        Data2: 1210964411
-        Data3: -1230571842
-        Data4: 1256436458
+        Data1: 2098502593
+        Data2: 1242762822
+        Data3: -1311228279
+        Data4: -1562522929
       Path: event:/Dialougue/Hermit Neutral
   current: -1

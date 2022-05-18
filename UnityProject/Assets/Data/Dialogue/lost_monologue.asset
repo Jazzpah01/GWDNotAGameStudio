@@ -17,27 +17,27 @@ MonoBehaviour:
     line: Whoa, what just happened?
     voice:
       Guid:
-        Data1: -2053084555
-        Data2: 1078062801
-        Data3: 1669277101
-        Data4: 90365669
-      Path: event:/Dialougue/Oosta Sad
+        Data1: -237699141
+        Data2: 1305245023
+        Data3: -2026030693
+        Data4: 1276201133
+      Path: event:/Dialougue/Ootsa Sad
   - isPlayer: 1
     line: Kwolan? KWOLAN?
     voice:
       Guid:
-        Data1: 1898231120
-        Data2: 1329017283
-        Data3: -115922250
-        Data4: -71516138
+        Data1: 1638399616
+        Data2: 1282166293
+        Data3: -915448129
+        Data4: -1523740386
       Path: event:/Dialougue/Ootsa Yelling
   - isPlayer: 1
     line: Where is that bastard? What is this place?
     voice:
       Guid:
-        Data1: -166340523
-        Data2: 1132535540
-        Data3: -1731428675
-        Data4: -909582648
+        Data1: 1169388150
+        Data2: 1187427504
+        Data3: 750741400
+        Data4: -881433314
       Path: event:/Dialougue/Ootsa Annoyed
   current: -1

@@ -123,6 +123,24 @@ MonoBehaviour:
         Data3: -1039744324
         Data4: -28817070
       Path: event:/Dialougue/Bard Sad
+  - isPlayer: 1
+    line: Please show me how to use the stone! I have to find my friend!
+    voice:
+      Guid:
+        Data1: 1638399616
+        Data2: 1282166293
+        Data3: -915448129
+        Data4: -1523740386
+      Path: event:/Dialougue/Ootsa Yelling
+  - isPlayer: 0
+    line: After all that I told you? You are a fool but a daring one.
+    voice:
+      Guid:
+        Data1: -1899364056
+        Data2: 1210250111
+        Data3: -1039744324
+        Data4: -28817070
+      Path: event:/Dialougue/Bard Sad
   - isPlayer: 0
     line: Meet me at the stone!
     voice:

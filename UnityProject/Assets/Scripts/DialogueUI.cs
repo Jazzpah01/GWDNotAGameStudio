@@ -100,9 +100,9 @@ public class DialogueUI : MonoBehaviour
             if (Input.GetKey(KeyCode.Q)) DPrevious();
             if (Input.GetKey(KeyCode.Escape))
             {
-                dialogue.current = -1;
-                dialogueActive = false;
-                dialogue.SetComplete(false);
+                //dialogue.current = -1;
+                //dialogueActive = false;
+                //dialogue.SetComplete(false);
             }
         }
     }

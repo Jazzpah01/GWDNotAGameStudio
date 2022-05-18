@@ -17,11 +17,11 @@ MonoBehaviour:
     line: Even worse. Any other one?
     voice:
       Guid:
-        Data1: -1899364056
-        Data2: 1210250111
-        Data3: -1039744324
-        Data4: -28817070
-      Path: event:/Dialougue/Bard Sad
+        Data1: 1169388150
+        Data2: 1187427504
+        Data3: 750741400
+        Data4: -881433314
+      Path: event:/Dialougue/Ootsa Annoyed
   - isPlayer: 0
     line: 'A jaguar that stalks down his narrow cage can seldom see through his bars
       of rage '

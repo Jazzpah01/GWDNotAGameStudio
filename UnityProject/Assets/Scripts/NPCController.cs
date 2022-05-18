@@ -30,7 +30,7 @@ public class NPCController : MonoBehaviour, IInteractant
 
     private TextMeshPro text;
     private float delayTimer;
-    public float delayInterval = 0.2f;
+    private float delayInterval = 0.2f;
 
     private Color orange = new Color(0.8f, 0.8f, 0.3f, 1f);
     private Color defaultTextColor;
@@ -78,6 +78,11 @@ public class NPCController : MonoBehaviour, IInteractant
     // Update is called once per frame
     void Update()
     {
+        if (delayTimer > 0)
+        {
+            delayTimer -= Time.deltaTime;
+        }
+
         // Interactability & dialogue
         if (InRange && lookAtPlayer)
         {

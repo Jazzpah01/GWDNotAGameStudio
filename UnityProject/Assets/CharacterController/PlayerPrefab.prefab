@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 9200523212617699115}
   - component: {fileID: -8713784493234032176}
   - component: {fileID: 5234186764062223393}
+  - component: {fileID: 4683256697687616499}
   m_Layer: 0
   m_Name: PlayerPrefab
   m_TagString: Untagged
@@ -109,20 +110,31 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 586bf0e44ba86b24a8e56cb52d1129f9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  flipSound:
+  bumpEvent:
     Guid:
       Data1: -1197581765
       Data2: 1310792267
       Data3: 1238089623
       Data4: -1296574310
     Path: event:/Character/Wall Bump
-  walkSound:
+  aquiredGlyph:
     Guid:
-      Data1: -1874089204
-      Data2: 1257187022
-      Data3: -1104084825
-      Data4: 307849288
-    Path: event:/Character/Footsteps
+      Data1: -1656270151
+      Data2: 1147754346
+      Data3: -233533259
+      Data4: -1952723351
+    Path: event:/Glyphs/Aqusistion
+  walkEmitter: {fileID: 0}
+  walkEmitterSpeed: 4
+  music1Emitter: {fileID: 0}
+  music2Emitter: {fileID: 0}
+  defaultVoice:
+    Guid:
+      Data1: -1935079684
+      Data2: 1073976493
+      Data3: 1693384614
+      Data4: -329634975
+    Path: event:/Dialougue/Ootsa Neutral
   body: {fileID: 0}
   running: {fileID: 0}
   crouch: {fileID: 0}
@@ -130,6 +142,21 @@ MonoBehaviour:
   rig: {fileID: 0}
   isInDialogue: 0
   currentQuest: 0
+  isInCutscene: 0
+--- !u!114 &4683256697687616499
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9200523212617699094}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 04311156faaf42042a5ce0210eab625f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animator: {fileID: 0}
+  rig: {fileID: 0}
 --- !u!1 &9200523213395313397
 GameObject:
   m_ObjectHideFlags: 0

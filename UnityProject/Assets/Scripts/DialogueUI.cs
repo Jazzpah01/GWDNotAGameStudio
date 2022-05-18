@@ -38,6 +38,9 @@ public class DialogueUI : MonoBehaviour
     private float timer;
     public float delayInterval;
 
+    [Min(0.1f)]public float speakDelayInterval;
+    private float speakDelayTimer = 0f;
+
     float delayBeforeStart = 0f;
     float timeBtwChars = 0.1f;
     string leadingChar = "";
@@ -54,6 +57,7 @@ public class DialogueUI : MonoBehaviour
         instance = this;
         y_out = transform.position.y;
         y_in = y_out + 260f;
+        speakDelayTimer = 0;
     }
 
     
@@ -74,6 +78,11 @@ public class DialogueUI : MonoBehaviour
     void Update()
     {
         inputTimer += Time.deltaTime;
+
+        if (speakDelayTimer > 0)
+        {
+            speakDelayTimer -= Time.deltaTime;
+        }
 
         if (player != null) {
             player.GetComponent<CharacterController>().isInDialogue = dialogueActive;
@@ -100,9 +109,9 @@ public class DialogueUI : MonoBehaviour
             if (Input.GetKey(KeyCode.Q)) DPrevious();
             if (Input.GetKey(KeyCode.Escape))
             {
-                dialogue.current = -1;
-                dialogueActive = false;
-                dialogue.SetComplete(false);
+                //dialogue.current = -1;
+                //dialogueActive = false;
+                //dialogue.SetComplete(false);
             }
         }
     }
@@ -223,16 +232,22 @@ public class DialogueUI : MonoBehaviour
 
         tmp.text = dialogue.lines[dialogue.current].line;
 
-        if (!dialogue.lines[dialogue.current].voice.IsNull)
+        if (speakDelayTimer <= 0)
         {
-            FMODUnity.RuntimeManager.PlayOneShot(dialogue.lines[dialogue.current].voice);
-        } else if (dialogue.lines[dialogue.current].isPlayer)
-        {
-            CharacterController player = LevelManager.instance.playerPrefab.GetComponent<CharacterController>();
-            FMODUnity.RuntimeManager.PlayOneShot(player.defaultVoice);
-        } else
-        {
-            FMODUnity.RuntimeManager.PlayOneShot(npc.defaultVoice);
+            speakDelayTimer = speakDelayInterval;
+            if (!dialogue.lines[dialogue.current].voice.IsNull)
+            {
+                FMODUnity.RuntimeManager.PlayOneShot(dialogue.lines[dialogue.current].voice);
+            }
+            else if (dialogue.lines[dialogue.current].isPlayer)
+            {
+                CharacterController player = LevelManager.instance.playerPrefab.GetComponent<CharacterController>();
+                FMODUnity.RuntimeManager.PlayOneShot(player.defaultVoice);
+            }
+            else
+            {
+                FMODUnity.RuntimeManager.PlayOneShot(npc.defaultVoice);
+            }
         }
 
         currentLine = dialogue.current;

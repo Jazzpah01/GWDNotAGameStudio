@@ -17,6 +17,8 @@ public class SetDialogueEvent : QuestEvent
                 npc.characterName == this.npcPrefab.GetComponent<NPCController>().characterName)
             {
                 npc.SetDialogue(dialogue, CallBack);
+                NPCController prefabController = npcPrefab.GetComponent<NPCController>();
+                npc.defaultVoice = prefabController.defaultVoice;
                 return;
             }
         }

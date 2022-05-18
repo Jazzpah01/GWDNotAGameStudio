@@ -17,47 +17,47 @@ MonoBehaviour:
     line: Yes, that is it!
     voice:
       Guid:
-        Data1: 1999574016
-        Data2: 1188104198
-        Data3: -803068242
-        Data4: 369274613
+        Data1: 2049681800
+        Data2: 1282832120
+        Data3: -1282392390
+        Data4: 499208373
       Path: event:/Dialougue/Bard Neutral
   - isPlayer: 1
     line: What about my prize?
     voice:
       Guid:
-        Data1: 1957640647
-        Data2: 1212946211
-        Data3: 2051163539
-        Data4: 2062734785
+        Data1: -1696260203
+        Data2: 1270012750
+        Data3: -950513238
+        Data4: -501567759
       Path: event:/Dialougue/Ootsa Happy
   - isPlayer: 0
     line: "Thy friend left immediately after he saw my glyph. He already had this
       one. I don\u2019t know where he went."
     voice:
       Guid:
-        Data1: 1999574016
-        Data2: 1188104198
-        Data3: -803068242
-        Data4: 369274613
+        Data1: 2049681800
+        Data2: 1282832120
+        Data3: -1282392390
+        Data4: 499208373
       Path: event:/Dialougue/Bard Neutral
   - isPlayer: 1
     line: You said you knew where he went. What about the glyph, can I take it?
     voice:
       Guid:
-        Data1: -166340523
-        Data2: 1132535540
-        Data3: -1731428675
-        Data4: -909582648
+        Data1: 1169388150
+        Data2: 1187427504
+        Data3: 750741400
+        Data4: -881433314
       Path: event:/Dialougue/Ootsa Annoyed
   - isPlayer: 0
     line: "Technically I shared his whereabouts. He went somewhere I don\u2019t know.
       For the glyph, here take it."
     voice:
       Guid:
-        Data1: 1999574016
-        Data2: 1188104198
-        Data3: -803068242
-        Data4: 369274613
+        Data1: 2049681800
+        Data2: 1282832120
+        Data3: -1282392390
+        Data4: 499208373
       Path: event:/Dialougue/Bard Neutral
   current: -1

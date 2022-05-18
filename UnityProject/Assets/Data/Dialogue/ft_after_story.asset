@@ -18,39 +18,39 @@ MonoBehaviour:
       Kwolan got the rest.
     voice:
       Guid:
-        Data1: 0
-        Data2: 0
-        Data3: 0
-        Data4: 0
-      Path: 
+        Data1: 1169388150
+        Data2: 1187427504
+        Data3: 750741400
+        Data4: -881433314
+      Path: event:/Dialougue/Ootsa Annoyed
   - isPlayer: 0
     line: 'It is not that simple, kiddo. The glyphs have their own will. You gotta
       find them all. '
     voice:
       Guid:
-        Data1: 0
-        Data2: 0
-        Data3: 0
-        Data4: 0
-      Path: 
+        Data1: 2098502593
+        Data2: 1242762822
+        Data3: -1311228279
+        Data4: -1562522929
+      Path: event:/Dialougue/Hermit Neutral
   - isPlayer: 1
     line: What?
     voice:
       Guid:
-        Data1: 0
-        Data2: 0
-        Data3: 0
-        Data4: 0
-      Path: 
+        Data1: -1935079684
+        Data2: 1073976493
+        Data3: 1693384614
+        Data4: -329634975
+      Path: event:/Dialougue/Ootsa Neutral
   - isPlayer: 0
     line: "Remember, I tried to go back home but couldn\u2019t. Then I tried to come
       back here after that first time but I couldn\u2019t, even though I used the
       same pair of glyphs. "
     voice:
       Guid:
-        Data1: 0
-        Data2: 0
-        Data3: 0
-        Data4: 0
-      Path: 
+        Data1: 2098502593
+        Data2: 1242762822
+        Data3: -1311228279
+        Data4: -1562522929
+      Path: event:/Dialougue/Hermit Neutral
   current: -1

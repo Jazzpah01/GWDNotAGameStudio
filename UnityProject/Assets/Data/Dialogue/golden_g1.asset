@@ -18,27 +18,27 @@ MonoBehaviour:
       the people I know.
     voice:
       Guid:
-        Data1: 248736705
-        Data2: 1273507025
-        Data3: 1876864157
-        Data4: -1492965847
+        Data1: -1347247602
+        Data2: 1320939534
+        Data3: 111143092
+        Data4: 1289996209
       Path: event:/Dialougue/Golden Girls
   - isPlayer: 1
     line: Will I be in it?
     voice:
       Guid:
-        Data1: -2053084555
-        Data2: 1078062801
-        Data3: 1669277101
-        Data4: 90365669
-      Path: event:/Dialougue/Oosta Sad
+        Data1: -237699141
+        Data2: 1305245023
+        Data3: -2026030693
+        Data4: 1276201133
+      Path: event:/Dialougue/Ootsa Sad
   - isPlayer: 0
     line: Not if you choose me.
     voice:
       Guid:
-        Data1: 248736705
-        Data2: 1273507025
-        Data3: 1876864157
-        Data4: -1492965847
+        Data1: -1347247602
+        Data2: 1320939534
+        Data3: 111143092
+        Data4: 1289996209
       Path: event:/Dialougue/Golden Girls
   current: -1

@@ -107,10 +107,10 @@ MonoBehaviour:
   lookAtPlayer: 1
   defaultVoice:
     Guid:
-      Data1: 1999574016
-      Data2: 1188104198
-      Data3: -803068242
-      Data4: 369274613
+      Data1: 2049681800
+      Data2: 1282832120
+      Data3: -1282392390
+      Data4: 499208373
     Path: event:/Dialougue/Bard Neutral
 --- !u!114 &2314979790033106368
 MonoBehaviour:

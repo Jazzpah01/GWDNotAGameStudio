@@ -215,14 +215,15 @@ MonoBehaviour:
       Data4: -1952723351
     Path: event:/Glyphs/Aqusistion
   walkEmitter: {fileID: -2509703402849642663}
+  walkEmitterSpeed: 4
   music1Emitter: {fileID: 5002875619658801407}
   music2Emitter: {fileID: 1620407595653536658}
   defaultVoice:
     Guid:
-      Data1: 291328159
-      Data2: 1203387725
-      Data3: 2070210948
-      Data4: -1867150278
+      Data1: -1935079684
+      Data2: 1073976493
+      Data3: 1693384614
+      Data4: -329634975
     Path: event:/Dialougue/Ootsa Neutral
   body: {fileID: 4509995404389645563}
   running: {fileID: 0}

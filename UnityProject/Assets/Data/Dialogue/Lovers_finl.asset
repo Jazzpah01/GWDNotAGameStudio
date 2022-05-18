@@ -17,45 +17,45 @@ MonoBehaviour:
     line: Hey!
     voice:
       Guid:
-        Data1: 1957640647
-        Data2: 1212946211
-        Data3: 2051163539
-        Data4: 2062734785
+        Data1: -1696260203
+        Data2: 1270012750
+        Data3: -950513238
+        Data4: -501567759
       Path: event:/Dialougue/Ootsa Happy
   - isPlayer: 0
     line: Hello, kid.
     voice:
       Guid:
-        Data1: 848494061
-        Data2: 1201465500
-        Data3: -1062611790
-        Data4: 1225344596
+        Data1: -1899364056
+        Data2: 1210250111
+        Data3: -1039744324
+        Data4: -28817070
       Path: event:/Dialougue/Bard Sad
   - isPlayer: 0
     line: Don't suppose you've run into my former flame again?
     voice:
       Guid:
-        Data1: 848494061
-        Data2: 1201465500
-        Data3: -1062611790
-        Data4: 1225344596
+        Data1: -1899364056
+        Data2: 1210250111
+        Data3: -1039744324
+        Data4: -28817070
       Path: event:/Dialougue/Bard Sad
   - isPlayer: 0
     line: I was really disappointed...
     voice:
       Guid:
-        Data1: 848494061
-        Data2: 1201465500
-        Data3: -1062611790
-        Data4: 1225344596
+        Data1: -1899364056
+        Data2: 1210250111
+        Data3: -1039744324
+        Data4: -28817070
       Path: event:/Dialougue/Bard Sad
   - isPlayer: 0
     line: I guess not everyone ages well.
     voice:
       Guid:
-        Data1: 1999574016
-        Data2: 1188104198
-        Data3: -803068242
-        Data4: 369274613
+        Data1: 2049681800
+        Data2: 1282832120
+        Data3: -1282392390
+        Data4: 499208373
       Path: event:/Dialougue/Bard Neutral
   current: -1

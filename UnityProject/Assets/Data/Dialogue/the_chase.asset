@@ -17,54 +17,54 @@ MonoBehaviour:
     line: Wait, you dropped the loot!
     voice:
       Guid:
-        Data1: 0
-        Data2: 0
-        Data3: 0
-        Data4: 0
-      Path: 
+        Data1: 1778646076
+        Data2: 1199936924
+        Data3: -1238274150
+        Data4: 170168099
+      Path: event:/Dialougue/Ootsa Intro Line 9
   - isPlayer: 0
     line: Use them!
     voice:
       Guid:
-        Data1: 0
-        Data2: 0
-        Data3: 0
-        Data4: 0
-      Path: 
+        Data1: 2054555848
+        Data2: 1245528769
+        Data3: 297663660
+        Data4: 157223906
+      Path: event:/Dialougue/Gary (Kwolan) Intro Line 8
   - isPlayer: 1
     line: What?!
     voice:
       Guid:
-        Data1: 0
-        Data2: 0
-        Data3: 0
-        Data4: 0
-      Path: 
+        Data1: -496453588
+        Data2: 1243476244
+        Data3: -130009181
+        Data4: -419039596
+      Path: event:/Dialougue/Ootsa Intro Line 10
   - isPlayer: 0
     line: USE. THE. PEBBLES.
     voice:
       Guid:
-        Data1: 0
-        Data2: 0
-        Data3: 0
-        Data4: 0
-      Path: 
+        Data1: -483516025
+        Data2: 1137826262
+        Data3: -931138114
+        Data4: 866100418
+      Path: event:/Dialougue/Gary (Kwolan) Intro Line 9
   - isPlayer: 1
     line: Use them how? Where?
     voice:
       Guid:
-        Data1: 0
-        Data2: 0
-        Data3: 0
-        Data4: 0
-      Path: 
+        Data1: 312096120
+        Data2: 1233178238
+        Data3: -543890278
+        Data4: 518054036
+      Path: event:/Dialougue/Ootsa Intro Line 11
   - isPlayer: 1
     line: 'What the? '
     voice:
       Guid:
-        Data1: 0
-        Data2: 0
-        Data3: 0
-        Data4: 0
-      Path: 
-  current: 4
+        Data1: 354957119
+        Data2: 1134087162
+        Data3: 2013858980
+        Data4: -1678857066
+      Path: event:/Dialougue/Ootsa Intro Line 12
+  current: 5

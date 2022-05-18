@@ -17,119 +17,119 @@ MonoBehaviour:
     line: Wait! Tjetlik sent his greetings.
     voice:
       Guid:
-        Data1: 1898231120
-        Data2: 1329017283
-        Data3: -115922250
-        Data4: -71516138
+        Data1: 1638399616
+        Data2: 1282166293
+        Data3: -915448129
+        Data4: -1523740386
       Path: event:/Dialougue/Ootsa Yelling
   - isPlayer: 0
     line: Tjetlik? That old man is still alive?
     voice:
       Guid:
-        Data1: 1999574016
-        Data2: 1188104198
-        Data3: -803068242
-        Data4: 369274613
+        Data1: 2049681800
+        Data2: 1282832120
+        Data3: -1282392390
+        Data4: 499208373
       Path: event:/Dialougue/Bard Neutral
   - isPlayer: 1
     line: 'And he sure likes to go around butt-naked, having laughs with squirrels. '
     voice:
       Guid:
-        Data1: 1957640647
-        Data2: 1212946211
-        Data3: 2051163539
-        Data4: 2062734785
+        Data1: -1696260203
+        Data2: 1270012750
+        Data3: -950513238
+        Data4: -501567759
       Path: event:/Dialougue/Ootsa Happy
   - isPlayer: 0
     line: Hahaha! That is Tjetlik, alright. Is he ever coming back?
     voice:
       Guid:
-        Data1: 1999574016
-        Data2: 1188104198
-        Data3: -803068242
-        Data4: 369274613
+        Data1: 2049681800
+        Data2: 1282832120
+        Data3: -1282392390
+        Data4: 499208373
       Path: event:/Dialougue/Bard Neutral
   - isPlayer: 1
     line: He said he was not ready yet. Why did he leave in the first place?
     voice:
       Guid:
-        Data1: 291328159
-        Data2: 1203387725
-        Data3: 2070210948
-        Data4: -1867150278
+        Data1: -1935079684
+        Data2: 1073976493
+        Data3: 1693384614
+        Data4: -329634975
       Path: event:/Dialougue/Ootsa Neutral
   - isPlayer: 0
     line: Sorry kid, not my story to tell.
     voice:
       Guid:
-        Data1: 848494061
-        Data2: 1201465500
-        Data3: -1062611790
-        Data4: 1225344596
+        Data1: -1899364056
+        Data2: 1210250111
+        Data3: -1039744324
+        Data4: -28817070
       Path: event:/Dialougue/Bard Sad
   - isPlayer: 1
     line: Tell me yours, then.
     voice:
       Guid:
-        Data1: 291328159
-        Data2: 1203387725
-        Data3: 2070210948
-        Data4: -1867150278
+        Data1: -1935079684
+        Data2: 1073976493
+        Data3: 1693384614
+        Data4: -329634975
       Path: event:/Dialougue/Ootsa Neutral
   - isPlayer: 0
     line: I will, not for free though. How about a story for another?
     voice:
       Guid:
-        Data1: 1999574016
-        Data2: 1188104198
-        Data3: -803068242
-        Data4: 369274613
+        Data1: 2049681800
+        Data2: 1282832120
+        Data3: -1282392390
+        Data4: 499208373
       Path: event:/Dialougue/Bard Neutral
   - isPlayer: 1
     line: "A: Alright! It started when that idiot friend of mine came up with this
       \u201Cbrilliant\u201D plan\u2026"
     voice:
       Guid:
-        Data1: -166340523
-        Data2: 1132535540
-        Data3: -1731428675
-        Data4: -909582648
+        Data1: 1169388150
+        Data2: 1187427504
+        Data3: 750741400
+        Data4: -881433314
       Path: event:/Dialougue/Ootsa Annoyed
   - isPlayer: 1
     line: ... ... ...
     voice:
       Guid:
-        Data1: 1957640647
-        Data2: 1212946211
-        Data3: 2051163539
-        Data4: 2062734785
+        Data1: -1696260203
+        Data2: 1270012750
+        Data3: -950513238
+        Data4: -501567759
       Path: event:/Dialougue/Ootsa Happy
   - isPlayer: 0
     line: '... ... ... '
     voice:
       Guid:
-        Data1: 848494061
-        Data2: 1201465500
-        Data3: -1062611790
-        Data4: 1225344596
+        Data1: -1899364056
+        Data2: 1210250111
+        Data3: -1039744324
+        Data4: -28817070
       Path: event:/Dialougue/Bard Sad
   - isPlayer: 0
     line: "\u2026 I couldn\u2019t go back home and lived miserably ever after. The
       end."
     voice:
       Guid:
-        Data1: 848494061
-        Data2: 1201465500
-        Data3: -1062611790
-        Data4: 1225344596
+        Data1: -1899364056
+        Data2: 1210250111
+        Data3: -1039744324
+        Data4: -28817070
       Path: event:/Dialougue/Bard Sad
   - isPlayer: 0
     line: Meet me at the stone!
     voice:
       Guid:
-        Data1: 848494061
-        Data2: 1201465500
-        Data3: -1062611790
-        Data4: 1225344596
+        Data1: -1899364056
+        Data2: 1210250111
+        Data3: -1039744324
+        Data4: -28817070
       Path: event:/Dialougue/Bard Sad
   current: -1

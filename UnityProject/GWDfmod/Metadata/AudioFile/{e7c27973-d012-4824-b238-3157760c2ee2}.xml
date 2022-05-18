@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="AudioFile" id="{e7c27973-d012-4824-b238-3157760c2ee2}">
+		<property name="assetPath">
+			<value>Ootsa_Intro_Line9.mp3</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>2.2987755102040817</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{d72e42ed-61d3-471d-9c5a-b5cebd374c05}</destination>
+		</relationship>
+	</object>
+</objects>

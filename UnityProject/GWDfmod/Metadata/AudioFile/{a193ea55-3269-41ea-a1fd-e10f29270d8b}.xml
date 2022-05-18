@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="AudioFile" id="{a193ea55-3269-41ea-a1fd-e10f29270d8b}">
+		<property name="assetPath">
+			<value>Kwolan_Intro_Line9.mp3</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>1.8808163265306121</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{d72e42ed-61d3-471d-9c5a-b5cebd374c05}</destination>
+		</relationship>
+	</object>
+</objects>

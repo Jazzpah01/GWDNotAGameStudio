@@ -71,6 +71,7 @@ public class CharacterController : MonoBehaviour
 
     private void Start()
     {
+        playerBusy = false;
         this.anim = GetComponentInChildren<Animator>();
         //if (this.anim != null) Debug.Log("Character Animator initialized");
         isWalking = false;

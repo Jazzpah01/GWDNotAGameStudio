@@ -14,7 +14,7 @@ public class StartDialogueEvent : QuestEvent
         // Get npc from scene. If npcPrefab is null, then npc is null
         NPCController npc = (npcPrefab == null) ? null : context.GetNPC(npcPrefab);
 
-        DialogueUI.instance.SetDialogue(npc, dialogue, CallBack);
+        DialogueUI.instance.SetDialogue(npc, dialogue, false, CallBack);
         DialogueUI.instance.StartDialogue();
     }
 

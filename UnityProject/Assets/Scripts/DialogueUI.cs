@@ -50,6 +50,8 @@ public class DialogueUI : MonoBehaviour
     private float y_in;
     public float animSpeed;
 
+    bool canCancel;
+
 
     private void Awake()
     {
@@ -107,11 +109,11 @@ public class DialogueUI : MonoBehaviour
         if (dialogueActive && !animActive && isEntry && inputTimer > inputDelay) { 
             if (Input.GetKey(KeyCode.E)) DNext();
             if (Input.GetKey(KeyCode.Q)) DPrevious();
-            if (Input.GetKey(KeyCode.Escape))
+            if (canCancel && Input.GetKey(KeyCode.Escape))
             {
-                //dialogue.current = -1;
-                //dialogueActive = false;
-                //dialogue.SetComplete(false);
+                dialogue.current = -1;
+                dialogueActive = false;
+                dialogue.SetComplete(false);
             }
         }
     }
@@ -156,8 +158,9 @@ public class DialogueUI : MonoBehaviour
         });
     }
 
-    public void SetDialogue(NPCController npc, Dialogue d, Action callback = null)
+    public void SetDialogue(NPCController npc, Dialogue d, bool canCancel, Action callback = null)
     {
+        this.canCancel = canCancel;
 
         if (d == null)
         {
@@ -203,8 +206,11 @@ public class DialogueUI : MonoBehaviour
         inputTimer = 0f;
         if (dialogue.current - 1 < 0)
         {
-            dialogue.current = -1;
-            dialogueActive = false; // TODO: fix with animation
+            if (canCancel)
+            {
+                dialogue.current = -1;
+                dialogueActive = false; // TODO: fix with animation
+            }
         } else
         {
             dialogue.current--;

@@ -263,7 +263,7 @@ public class NPCController : MonoBehaviour, IInteractant
 
     public void Interact()
     {
-        DialogueUI.instance.SetDialogue(this, dialogue, callback);
+        DialogueUI.instance.SetDialogue(this, dialogue, true, callback);
         DialogueUI.instance.StartDialogue();
     }
 

@@ -15,7 +15,7 @@ MonoBehaviour:
   questIndex: 3
   questIncrease: 1
   moveablePrefab: {fileID: 5346684185266132660, guid: 91a82242c1ed6fa45b0ed864cf3dcc5f, type: 3}
-  speed: 0
+  speed: 5
   toPosition: {x: 17, y: -3.3}
 --- !u!114 &-6530721927153885023
 MonoBehaviour:
@@ -160,7 +160,7 @@ MonoBehaviour:
   questIndex: 5
   questIncrease: 1
   moveablePrefab: {fileID: 5346684185266132660, guid: 91a82242c1ed6fa45b0ed864cf3dcc5f, type: 3}
-  speed: 0
+  speed: 5
   toPosition: {x: 2, y: -3.3}
 --- !u!114 &7510143550690753073
 MonoBehaviour:

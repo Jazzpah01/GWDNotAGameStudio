@@ -50,7 +50,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.09689903, y: 1.2976751}
+  m_Offset: {x: 0.17961061, y: 1.2976751}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -61,7 +61,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 5.7449265, y: 2.6882362}
+  m_Size: {x: 2.6018827, y: 2.6882362}
   m_EdgeRadius: 0
 --- !u!114 &2660477639987731927
 MonoBehaviour:
@@ -103,7 +103,6 @@ MonoBehaviour:
   dialogue: {fileID: 0}
   dialogueUI: {fileID: 5118356806008173263}
   currentLine: 0
-  delayInterval: 0.2
   lookAtPlayer: 1
   defaultVoice:
     Guid:

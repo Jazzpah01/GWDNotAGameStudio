@@ -130,6 +130,8 @@ public class DialogueUI : MonoBehaviour
             Debug.Log("DialogueUI: Dialogue already active..");
         } else if (animActive)
         {
+            dialogueActive = true;
+            CharacterController.playerBusy = true;
             Debug.Log("DialogueUI: Animation ongoing..");
         }
         else if (isEntry)

@@ -103,7 +103,7 @@ MonoBehaviour:
   biome: {fileID: 11400000, guid: 6d5bf97df702444cdb6b05f0c5a3ad88, type: 2}
   time: {fileID: 11400000, guid: 6039305ef7b849941b0144aa37501464, type: 2}
   prefab: {fileID: 3735002686978342717, guid: c017cd476069c2e4f9f8474c5234c39c, type: 3}
-  position: {x: 0, y: 0}
+  position: {x: 38, y: -2.5}
   scale: {x: 1, y: 1}
 --- !u!114 &7264421177288330345
 MonoBehaviour:

@@ -33,7 +33,7 @@ MonoBehaviour:
   landscape: {fileID: 11400000, guid: caa56952924210c419bb3e0146bf0640, type: 2}
   biome: {fileID: 11400000, guid: 0301f76479b63394a89d420f7fc684ac, type: 2}
   time: {fileID: 11400000, guid: 6039305ef7b849941b0144aa37501464, type: 2}
-  prefab: {fileID: 8881740196160609262, guid: 6489e042d2712462a9897e329fdd92b8, type: 3}
+  prefab: {fileID: 7297475396622937328, guid: 1cb76abbb30d247eb90ed699bb909911, type: 3}
 --- !u!114 &-5154939530082148721
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -51,7 +51,7 @@ MonoBehaviour:
   landscape: {fileID: 11400000, guid: caa56952924210c419bb3e0146bf0640, type: 2}
   biome: {fileID: 11400000, guid: 0301f76479b63394a89d420f7fc684ac, type: 2}
   time: {fileID: 11400000, guid: 6039305ef7b849941b0144aa37501464, type: 2}
-  prefab: {fileID: 8881740196160609262, guid: 6489e042d2712462a9897e329fdd92b8, type: 3}
+  prefab: {fileID: 7297475396622937328, guid: 1cb76abbb30d247eb90ed699bb909911, type: 3}
   position: {x: -15.25, y: -2.85}
   scale: {x: 1, y: 1}
 --- !u!114 &-4255320869717697588
@@ -71,7 +71,7 @@ MonoBehaviour:
   landscape: {fileID: 11400000, guid: cdf2469a907c9804aa2c92605877951e, type: 2}
   biome: {fileID: 11400000, guid: dd0fe0b9a6f069b42ab01f63d73696f4, type: 2}
   time: {fileID: 11400000, guid: 744a2e9ef0b94bb489b745c1eeb6556f, type: 2}
-  prefab: {fileID: 6437824288103602867, guid: fe27612bafa974f43b8f2baea6dbbfe6, type: 3}
+  prefab: {fileID: 7297475396622937328, guid: ef0f34255ea8c4dce85eeb02ee64991f, type: 3}
 --- !u!114 &-4035886747893837867
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -121,7 +121,7 @@ MonoBehaviour:
   landscape: {fileID: 11400000, guid: cdf2469a907c9804aa2c92605877951e, type: 2}
   biome: {fileID: 11400000, guid: dd0fe0b9a6f069b42ab01f63d73696f4, type: 2}
   time: {fileID: 11400000, guid: 744a2e9ef0b94bb489b745c1eeb6556f, type: 2}
-  prefab: {fileID: 8881740196160609262, guid: 6489e042d2712462a9897e329fdd92b8, type: 3}
+  prefab: {fileID: 7297475396622937328, guid: 1cb76abbb30d247eb90ed699bb909911, type: 3}
   position: {x: 23, y: -3.3}
   scale: {x: 1, y: 1}
 --- !u!114 &-1152776132917414307
@@ -141,7 +141,7 @@ MonoBehaviour:
   landscape: {fileID: 11400000, guid: caa56952924210c419bb3e0146bf0640, type: 2}
   biome: {fileID: 11400000, guid: 0301f76479b63394a89d420f7fc684ac, type: 2}
   time: {fileID: 11400000, guid: 6039305ef7b849941b0144aa37501464, type: 2}
-  prefab: {fileID: 6437824288103602867, guid: fe27612bafa974f43b8f2baea6dbbfe6, type: 3}
+  prefab: {fileID: 7297475396622937328, guid: ef0f34255ea8c4dce85eeb02ee64991f, type: 3}
   position: {x: -15.25, y: -2.85}
   scale: {x: 1, y: 1}
 --- !u!114 &11400000
@@ -193,7 +193,7 @@ MonoBehaviour:
   landscape: {fileID: 11400000, guid: 4f07cc7fa8f6a0a47817e9f0b54c5dea, type: 2}
   biome: {fileID: 11400000, guid: 8642289d9e19747d0811a4c248263909, type: 2}
   time: {fileID: 11400000, guid: 90e1f6d6cc3d1c046809ec48e8c7710d, type: 2}
-  prefab: {fileID: 6437824288103602867, guid: fe27612bafa974f43b8f2baea6dbbfe6, type: 3}
+  prefab: {fileID: 7297475396622937328, guid: ef0f34255ea8c4dce85eeb02ee64991f, type: 3}
   position: {x: 36.91, y: -3.31}
   scale: {x: 1, y: 1}
 --- !u!114 &2518277380835405785
@@ -249,7 +249,7 @@ MonoBehaviour:
   landscape: {fileID: 11400000, guid: caa56952924210c419bb3e0146bf0640, type: 2}
   biome: {fileID: 11400000, guid: 0301f76479b63394a89d420f7fc684ac, type: 2}
   time: {fileID: 11400000, guid: 6039305ef7b849941b0144aa37501464, type: 2}
-  prefab: {fileID: 6437824288103602867, guid: fe27612bafa974f43b8f2baea6dbbfe6, type: 3}
+  prefab: {fileID: 7297475396622937328, guid: ef0f34255ea8c4dce85eeb02ee64991f, type: 3}
 --- !u!114 &5540776225457962310
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -287,7 +287,7 @@ MonoBehaviour:
   landscape: {fileID: 11400000, guid: 4f07cc7fa8f6a0a47817e9f0b54c5dea, type: 2}
   biome: {fileID: 11400000, guid: 8642289d9e19747d0811a4c248263909, type: 2}
   time: {fileID: 11400000, guid: 90e1f6d6cc3d1c046809ec48e8c7710d, type: 2}
-  prefab: {fileID: 8881740196160609262, guid: 6489e042d2712462a9897e329fdd92b8, type: 3}
+  prefab: {fileID: 7297475396622937328, guid: 1cb76abbb30d247eb90ed699bb909911, type: 3}
 --- !u!114 &7129742987839831095
 MonoBehaviour:
   m_ObjectHideFlags: 0

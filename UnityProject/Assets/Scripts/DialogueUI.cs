@@ -167,6 +167,7 @@ public class DialogueUI : MonoBehaviour
         if (d == null)
         {
             this.dialogue = null;
+            this.npcPortrait.sprite = null;
             this.callback = null;
         } else
         {
@@ -254,7 +255,8 @@ public class DialogueUI : MonoBehaviour
             }
             else
             {
-                FMODUnity.RuntimeManager.PlayOneShot(npc.defaultVoice);
+                if (npc != null)
+                    FMODUnity.RuntimeManager.PlayOneShot(npc.defaultVoice);
             }
         }
 

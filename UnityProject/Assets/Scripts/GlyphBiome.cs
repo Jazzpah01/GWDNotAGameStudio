@@ -6,5 +6,6 @@ using UnityEngine;
 public class GlyphBiome : Glyph
 {
     public float spawnrate = 1;
+    public Color roadColor;
     public List<TerrainObject> foreGround;
 }

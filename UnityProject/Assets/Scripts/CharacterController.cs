@@ -42,6 +42,9 @@ public class CharacterController : MonoBehaviour
 
     public static bool playerBusy = false;
 
+    [Header("Debug")]
+    public bool playerIsBusy;
+
 
     private bool Flipped
     {
@@ -92,6 +95,8 @@ public class CharacterController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        playerIsBusy = playerBusy;
+
         if (!grounded && body.grounded)
             FMODUnity.RuntimeManager.PlayOneShot(bumpEvent);
 

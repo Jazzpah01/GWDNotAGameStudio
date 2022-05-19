@@ -48,9 +48,9 @@ MonoBehaviour:
   customEditing: 1
   questEvents:
   - {fileID: -5821022894787387425}
-  - {fileID: 4451861650863712690}
+  - {fileID: 8827664118766306942}
   - {fileID: -811209886286004375}
---- !u!114 &4451861650863712690
+--- !u!114 &8827664118766306942
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -59,10 +59,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3c964c08cad4f2c44b6222b5e55e4999, type: 3}
-  m_Name: StartDialogue
+  m_Script: {fileID: 11500000, guid: 34046101b1f069c428a58bb51b915585, type: 3}
+  m_Name: SetDialogue
   m_EditorClassIdentifier: 
   questIndex: 0
   questIncrease: 1
-  dialogue: {fileID: 11400000, guid: c35327172f374ac46af01b58e112d723, type: 2}
   npcPrefab: {fileID: 1340676740333891396, guid: 186d55f05c45e44b0b801a05a71765c3, type: 3}
+  dialogue: {fileID: 11400000, guid: c35327172f374ac46af01b58e112d723, type: 2}
